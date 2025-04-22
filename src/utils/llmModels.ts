@@ -85,10 +85,10 @@ const getDescriptions = async (
         remove all the links and any other text that is not part of the description.
 
         the description should be in the following JSON format:
-        {{
+        {
         "description": 2-3 line paragraph
         "sourceUrls": [list of urls]
-        }}
+        }
         `;
 
     const result = await gptCall('gpt-4o', formatPrompt, 'user');

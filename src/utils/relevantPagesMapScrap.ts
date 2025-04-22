@@ -21,236 +21,338 @@ import FirecrawlApp, {
       Analyze the URL and determine if it is likely to contain the documents that can help in industry analysis such as reports, annual reports, publications, industry reports, mission plan, financial reports, etc.
       URL: ${link}
       RESPOND ONLY WITH JSON format no other text or explanation.
-      {{
+      {
+        "url": "${link}",
         "reason": "reason for the response",
         "isRelevant": true/false
-      }}`;
+      }`;
     const result = await gptCall('gpt-4o', prompt, 'system');
     const jsonResult = await extractJsonFromResponse(result);
     return jsonResult;
   }
-  
-  async function findObjectiveInTopPagesForDocuments(
-    links: string[],
-    objective: string,
-    checkPrompt: string,
-    checkRelevancy: boolean,
-  ) {
+
+  async function getPdfUrls(markdown: string, link: string): Promise<any> {
+    const pdfUrlPrompt = ` 
+    You are a data extraction assistant helping to analyze a government or institutional webpage provided in Markdown format.
+
+Your task is to extract only the relevant PDF document links that can support industry analysis, such as:
+- Annual Reports
+- Financial Reports
+- Sectoral Publications
+- Mission Plans
+- Whitepapers
+- Industry Strategy Documents
+
+Ignore any links that do not end in .pdf.
+
+For each PDF link found, extract and return the following structured JSON object:
+
+{
+  "sourceUrl": "${link}",
+  "documents": [
+    {
+      "year": 2022,                      // Extract from the filename or context. Leave null if not found.
+      "name": "Annual Report 2021-22",   // Use link text or infer from filename
+      "type": "Annual Report",           // Use keywords to classify (Annual Report, Mission Plan, etc.)
+      "description": "Short one-line summary of the document's purpose or content", // Use nearby text
+      "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
+    }
+  ]
+}
+
+Important Instructions:
+- Only include documents that help in industry or market analysis.
+- The type should be inferred if possible using keywords in the document name or nearby text.
+- The description should be concise (1 sentence max), extracted from surrounding paragraph/list text if available.
+- Ensure documentUrl always ends in .pdf.
+- Only include actual PDF URLs found in the markdown content.
+- Do not include any example URLs or placeholder URLs.
+
+Use this format exactly. Do not add extra commentary or explanation.`;
+
+    const prompt = pdfUrlPrompt + '\n\nwebsite - markdown data: ' + markdown;
+    const result = await gptCall('gpt-4.1', prompt, 'system');
+    
+    if (!result || result === 'Objective not met') {
+      return null;
+    }
+
+    try {
+      const jsonResult = await extractJsonFromResponse(result);
+      console.log('jsonResult from getPdfUrls', jsonResult);
+      return jsonResult;
+    } catch (error) {
+      console.error('Error in parsing PDF response:', error);
+      return null;
+    }
+  }
+
+  async function getNonPdfUrls(markdown: string): Promise<any> {
+    const nonPdfUrlPrompt = `
+    You are an intelligent web assistant that processes Markdown content from government, institutional, or company websites.
+
+Your task is to extract **only the links** (URLs) that are **likely to lead to pages containing important documents** for industry research and analysis, such as:
+- Annual Reports
+- Publications
+- Financial Reports
+- Whitepapers
+- Mission Plans
+- Strategy Documents
+- Sector/Industry Reports
+- Archives or Reports Pages
+
+Instructions:
+1. **Ignore** any links that point directly to .pdf files (those are handled in a separate step).
+2. **Only return** links that likely **lead to** document repositories or report listing pages (e.g., pages with headings like "Reports", "Publications", "Documents", "Resources", "Archives", "Downloads", etc.).
+3. Return a JSON array under the key possibleUrls containing only the actual URLs found in the provided markdown content.
+4. Do not include any example URLs or placeholder URLs.
+5. Only include URLs that are actually present in the markdown content.
+
+Return the response in this exact format:
+{
+  "possibleUrls": [
+    // List of actual URLs found in the markdown content otherwise return an empty array
+  ]
+}`;
+
+    const result = await gptCall('gpt-4.1', nonPdfUrlPrompt, 'system');
+    
+    if (!result) {
+      return null;
+    }
+
+    try {
+      const jsonResult = await extractJsonFromResponse(result);
+      console.log('jsonResult from getNonPdfUrls', jsonResult);
+      return jsonResult;
+    } catch (error) {
+      console.error('Error in parsing non-PDF response:', error);
+      return null;
+    }
+  }
+
+  async function bothUrl(links: string[]) {
     try {
       if (!links || links.length === 0) {
         console.log('No links found to analyze.');
         return null;
       }
-  
-      console.log(`Proceeding to analyze ${links.length} links:`, links);
+      console.log(`\n=== Starting analysis of ${links.length} initial links ===`);
+      console.log('Initial links:', links);
 
-      // Check relevancy of each link
-      let relevantLinks = links;
-      if(checkRelevancy){
-        const relevancyChecks = await Promise.all(
-          links.map(async (link) => {
-            const relevancyResult = await checkRelevantLink(link);
-            return {
-              link,
-              isRelevant: relevancyResult.isRelevant,
-              reason: relevancyResult.reason
-            };
-          })
-        );
-  
-        // Filter out non-relevant links
-        relevantLinks = relevancyChecks
-          .filter(check => check.isRelevant)
-          .map(check => check.link);
-  
-        if (relevantLinks.length === 0) {
-          console.log('No relevant links found after relevancy check.');
-          return null;
-        }
-        console.log(`Found ${relevantLinks.length} relevant links after relevancy check.`);
-      }
-      
       const foundDocuments = [];
       const allDocumentUrls = new Set(); // Using Set to automatically handle duplicates
       
       // Process all links asynchronously
-      const processingPromises = relevantLinks.map(async (link) => {
+      const processingPromises = links.map(async (link) => {
         try {
-          console.log(`\nProcessing link: ${link}`);
+          console.log(`\n=== Processing initial link: ${link} ===`);
           
           // Scrape the current link
+          console.log('Scraping content from link...');
           const markdown = await scrapeUrlAsync(firecrawlApp, link);
           
           if (!markdown) {
-            console.log(`No content found for link: ${link}`);
+            console.log(`❌ No content found for link: ${link}`);
             return null;
           }
-  
-          // Process this link's markdown immediately
-          console.log(`Analyzing content from: ${link}`);
-          const prompt = checkPrompt + '\n\nwebsite - markdown data: ' + markdown;
-          const result = await gptCall('gpt-4o', prompt, 'system');
-  
-          if (!result) {
-            console.log('No response from OpenAI for this page');
-            return null;
+          console.log('✅ Successfully scraped content from link');
+
+          // Get PDF URLs
+          console.log('Extracting PDF documents from content...');
+          const pdfResult = await getPdfUrls(markdown, link);
+          if (pdfResult && pdfResult.documents && pdfResult.documents.length > 0) {
+            console.log(`✅ Found ${pdfResult.documents.length} PDF documents in initial link`);
+            foundDocuments.push(pdfResult);
+            
+            pdfResult.documents.forEach(doc => {
+              if (doc.documentUrl) {
+                allDocumentUrls.add(doc.documentUrl);
+              }
+            });
+          } else {
+            console.log('❌ No PDF documents found in initial link');
           }
-  
-          if (result !== 'Objective not met') {
-            console.log('Objective potentially fulfilled. Checking for documents...');
-            try {
-              if (result.includes('{') && result.includes('}')) {
-                console.log('Response contains JSON, attempting to parse...');
-                const jsonResult = await extractJsonFromResponse(result);
-                console.log('Parsed JSON result:', JSON.stringify(jsonResult, null, 2));
-  
-                // Check if documents are available
-                if(jsonResult.is_documents_available){
-                  console.log('Documents found!');
-                  // Add to foundDocuments immediately
-                  foundDocuments.push(jsonResult);
+
+          // Get non-PDF URLs
+          console.log('Extracting non-PDF URLs from content...');
+          const nonPdfResult = await getNonPdfUrls(markdown);
+          if (nonPdfResult && nonPdfResult.possibleUrls) {
+            console.log(`Found ${nonPdfResult.possibleUrls.length} potential non-PDF URLs`);
+            
+            // Check relevancy of non-PDF URLs
+            console.log('Checking relevancy of non-PDF URLs...');
+            const relevancyChecks = await Promise.all(
+              nonPdfResult.possibleUrls.map(async (url) => {
+                const relevancyResult = await checkRelevantLink(url);
+                return {
+                  url,
+                  isRelevant: relevancyResult.isRelevant,
+                  reason: relevancyResult.reason
+                };
+              })
+            );
+
+            // Filter out non-relevant URLs
+            const relevantNonPdfUrls = relevancyChecks
+              .filter(check => check.isRelevant)
+              .map(check => check.url);
+
+            console.log(`Found ${relevantNonPdfUrls.length} relevant non-PDF URLs`);
+
+            if (relevantNonPdfUrls.length > 0) {
+              console.log('\n=== Processing relevant non-PDF URLs ===');
+              
+              // Process each relevant non-PDF URL
+              const secondIterationPromises = relevantNonPdfUrls.map(async (url) => {
+                try {
+                  console.log(`\nProcessing non-PDF URL: ${url}`);
+                  console.log('Scraping content from non-PDF URL...');
+                  const secondMarkdown = await scrapeUrlAsync(firecrawlApp, url);
                   
-                  // Extract and add all document URLs to the Set
-                  if (jsonResult.data && Array.isArray(jsonResult.data)) {
-                    jsonResult.data.forEach(doc => {
-                      if (doc.document_url) {
-                        allDocumentUrls.add(doc.document_url);
+                  if (!secondMarkdown) {
+                    console.log(`❌ No content found for non-PDF URL: ${url}`);
+                    return null;
+                  }
+                  console.log('✅ Successfully scraped content from non-PDF URL');
+
+                  // Get PDF URLs from the non-PDF URL
+                  console.log('Extracting PDF documents from non-PDF URL...');
+                  const secondPdfResult = await getPdfUrls(secondMarkdown, url);
+                  if (secondPdfResult && secondPdfResult.documents && secondPdfResult.documents.length > 0) {
+                    console.log(`✅ Found ${secondPdfResult.documents.length} additional PDF documents`);
+                    foundDocuments.push(secondPdfResult);
+                    
+                    secondPdfResult.documents.forEach(doc => {
+                      if (doc.documentUrl) {
+                        allDocumentUrls.add(doc.documentUrl);
                       }
                     });
+                  } else {
+                    console.log('❌ No PDF documents found in non-PDF URL');
                   }
-                  
-                  return jsonResult;
-                } else {
-                  console.log('No documents found in this result');
+                  return secondPdfResult;
+                } catch (error) {
+                  console.error(`❌ Error processing non-PDF URL ${url}:`, error);
                   return null;
                 }
-              } else {
-                console.log('No JSON object found in response');
-                return null;
-              }
-            } catch (error) {
-              console.error('Error in parsing response:', error);
-              return null;
+              });
+
+              // Wait for all second iteration processing to complete
+              await Promise.all(secondIterationPromises);
+              console.log('=== Completed processing of non-PDF URLs ===\n');
             }
           } else {
-            console.log('Objective not met in this page.');
-            return null;
+            console.log('❌ No non-PDF URLs found in initial link');
           }
+
+          return pdfResult;
         } catch (error) {
-          console.error(`Error processing link ${link}:`, error);
+          console.error(`❌ Error processing link ${link}:`, error);
           return null;
         }
       });
-  
+
       // Wait for all processing to complete
+      console.log('\n=== Waiting for all processing to complete ===');
       await Promise.all(processingPromises);
       
       // Convert Set to Array and log all unique document URLs
       const uniqueDocumentUrls = Array.from(allDocumentUrls);
-      // console.log('All unique document URLs found:', uniqueDocumentUrls);
-      
-      if (uniqueDocumentUrls.length > 0) {
-        console.log(`Found ${uniqueDocumentUrls.length} document entries with ${uniqueDocumentUrls.length} unique URLs`);
-        return uniqueDocumentUrls;
+
+      if (foundDocuments.length > 0) {
+        console.log('\n=== Final Results ===');
+        console.log(`✅ Found ${foundDocuments.length} document sets with ${uniqueDocumentUrls.length} unique PDF documents`);
+        console.log('Found documents:', foundDocuments);
+        return foundDocuments;
       } else {
-        console.log('No documents found in any of the pages.');
+        console.log('\n=== Final Results ===');
+        console.log('❌ No documents found in any of the processed pages');
         return null;
       }
     } catch (error) {
-      console.error('Error encountered during page analysis:', error);
+      console.error('❌ Error encountered during page analysis:', error);
       return null;
     }
   }
-  
-  async function findObjectiveInTopPages(
-    links: string[],
-    objective: string,
-    checkPrompt: string,
-  ) {
+
+  async function filterDocuments(documents: any[]) {
+    if (!documents || documents.length === 0) {
+      console.log('No documents to filter');
+      return null;
+    }
+
+    const filterPrompt = `
+You are assisting in curating a high-quality dataset of documents useful for industry analysis at the national level.
+
+You are given a JSON object containing:
+- sourceUrl: the original page where the documents were found
+- documents: a list of documents, each with a year, name, type, description, and documentUrl
+
+Your task is to filter and return only the documents that meet all of the following conditions:
+
+1. Are highly relevant for industry analysis, such as:
+   - Sectoral and industry-specific reports
+   - Annual or financial reports of ministries or national-level industry bodies
+   - Mission plans and strategic roadmaps
+   - Whitepapers and publications with analytical or statistical insights
+
+2. Are recent, i.e., published in the year 2021 or later
+
+3. Are national in scope — exclude any documents that are:
+   - Published by or for state governments
+   - Focused on a specific state or region
+   - Contain mentions in the title or description such as names of Indian states, state departments, or state-level programs
+
+4. Exclude any documents that are:
+   - General notices, circulars, tenders, guidelines, or operational memos
+   - Administrative documents not useful for industry analysis
+
+5. Only include documents that are in English. Exclude documents that are in Hindi, bilingual (e.g., Hindi-English), or any language other than English.
+
+6. Remove any duplicate documentUrls. If the same document appears under multiple sourceUrls, retain it only under the sourceUrl that makes the most sense — for example, if an annual report appears under both a general bulletin page and a dedicated annual reports page, keep it only under the annual reports page and remove it from the bulletin source.
+
+Return only the filtered documents in the same structure, like this:
+
+{
+  "sourceUrl": "...",
+  "documents": [
+    {
+      "year": ,
+      "name": "",
+      "type": "",
+      "description": "",
+      "documentUrl": ""
+    }
+  ]
+}
+
+Do not include any documents that do not meet all of the above criteria. Do not include any explanation or commentary — just return the filtered JSON object.`;
+
     try {
-      if (!links || links.length === 0) {
-        console.log('No links found to analyze.');
+      const finalResult = await gptCall('gpt-4.1', filterPrompt + '\n\n' + JSON.stringify(documents, null, 2), 'system');
+      const finalJsonResult = await extractJsonFromResponse(finalResult);
+      console.log('finalJsonResult from filterDocuments', finalJsonResult);
+      if (!finalJsonResult) {
+        console.log('No valid documents found in filtered results');
         return null;
       }
+
+      // Handle both single object and array of objects
+      const results = Array.isArray(finalJsonResult) ? finalJsonResult : [finalJsonResult];
       
-      console.log(`Proceeding to analyze ${links.length} links:`, links);
-
-      // Check relevancy of each link
-      const relevancyChecks = await Promise.all(
-        links.map(async (link) => {
-          const relevancyResult = await checkRelevantLink(link);
-          return {
-            link,
-            isRelevant: relevancyResult.isRelevant,
-            reason: relevancyResult.reason
-          };
-        })
-      );
-
-      // Filter out non-relevant links
-      const relevantLinks = relevancyChecks
-        .filter(check => check.isRelevant)
-        .map(check => check.link);
-
-      if (relevantLinks.length === 0) {
-        console.log('No relevant links found after relevancy check.');
-        return null;
-      }
-
-      console.log(`Found ${relevantLinks.length} relevant links after relevancy check.`);
-  
-      // Create tasks for all scraping operations
-      const scrapingPromises = relevantLinks.map((link) =>
-        scrapeUrlAsync(firecrawlApp, link),
-      );
-  
-      // Wait for all scraping tasks to complete
-      const allMarkdown = await Promise.all(scrapingPromises);
-  
-      // Filter out null values and combine markdown
-      const validMarkdown = allMarkdown.filter((md) => md !== null) as string[];
-  
-      if (!validMarkdown.length) {
-        console.log('No content found in any of the pages.');
-        return null;
-      }
-  
-      const combinedMarkdown = validMarkdown.join('\n');
-      const prompt =
-        checkPrompt +
-        '\n\nwebsite - markdown data from multiple pages: ' +
-        combinedMarkdown;
-  
-      const result = await gptCall('gpt-4o', prompt, 'system');
-  
-      if (!result) {
-        console.log('No response from OpenAI');
-        return null;
-      }
-  
-      if (result !== 'Objective not met') {
-        console.log(
-          'Objective potentially fulfilled. Relevant information identified.',
-        );
-        try {
-          if (result.includes('{') && result.includes('}')) {
-            console.log('this is result', result);
-            const jsonResult = await extractJsonFromResponse(result);
-            return jsonResult;
-          } else {
-            console.log('No JSON object found in response');
-            return null;
-          }
-        } catch (error) {
-          console.error('Error in parsing response:', error);
-          return null;
+      // Extract all document URLs
+      const allDocumentUrls = results.reduce((urls, result) => {
+        if (result.documents && Array.isArray(result.documents)) {
+          return urls.concat(result.documents.map(doc => doc.documentUrl));
         }
-      } else {
-        console.log('Objective not met in any of the pages.');
-        return null;
-      }
+        return urls;
+      }, []);
+
+      console.log('All document URLs from final results:', allDocumentUrls);
+      return results;
     } catch (error) {
-      console.error('Error encountered during page analysis:', error);
+      console.error('Error in filterDocuments:', error);
       return null;
     }
   }
@@ -421,6 +523,7 @@ import FirecrawlApp, {
   
       const mapWebsite = (await firecrawlApp.mapUrl(url, {
         includeSubdomains: true,
+        search: objective
       })) as MapResponse;
       const filteredPages = [...(mapWebsite.links || [])].filter(
         (page) => !String(page).toLowerCase().endsWith('.pdf'),
@@ -449,9 +552,9 @@ import FirecrawlApp, {
     }
   }
   export {
-    findObjectiveInTopPages,
-    findObjectiveInTopPagesForDocuments,
     findRelevantPageViaMap,
-    scrapeUrlAsync
+    scrapeUrlAsync,
+    bothUrl,
+    filterDocuments,
   };
   
