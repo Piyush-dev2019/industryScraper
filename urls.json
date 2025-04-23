@@ -1,232 +1,522 @@
 [
   {
-    "sourceUrl": "http://morth.nic.in/en/bulletins",
+    "sourceUrl": "https://pharma-dept.gov.in/annual-report",
     "documents": [
-      {
-        "year": 2023,
-        "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-        "type": "Annual Report",
-        "description": "A report detailing the operation of the Motor Vehicle Accident Fund and compensation statistics for hit and run accident victims for FY 2022-23.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "http://morth.nic.in/en/annual-reports",
-    "documents": [
-      {
-        "year": 2023,
-        "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-        "type": "Annual Report",
-        "description": "Report covering the Motor Vehicle Accident Fund and compensation scheme for hit and run accident victims in the fiscal year 2022-23.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "http://morth.nic.in/en/result-framework-document-rfd",
-    "documents": [
-      {
-        "year": 2022,
-        "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-        "type": "Annual Report",
-        "description": "Report on the Motor Vehicle Accident Fund and compensation payouts for hit & run victims for 2022.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://morth.nic.in/en/technical_circulars",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "Contract Maintenance of NHs",
-        "type": "Industry Strategy Document",
-        "description": "Guidelines and details regarding the maintenance of National Highways contracts.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/Letter-Planning-zone-03022025.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Expert Committee Report on Cost Effective Long-term Remedial Measures for Landslide Prone Areas in Hilly Regions",
-        "type": "Whitepaper",
-        "description": "Expert recommendations for addressing landslide risks in hilly regions along National Highways.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/OM%20with%20report_circulared_28112024.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Use of Waste Plastic in Bituminous Concrete Wearing Course Mix in National Highways Construction & Maintenance Works",
-        "type": "Sectoral Publication",
-        "description": "Guidelines on incorporating waste plastic into highway construction and maintenance.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/NH-Waste-Plastic-Circular_circulated_26112024.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "http://morth.nic.in/en/standard-document",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "Changes in the Model Bidding document/Model Concession Agreement being used for Monetization of Public-Funded Operational National Highway Projects under Tolling, Operation, Maintenance and Transfer (TOT) Model",
-        "type": "Industry Strategy Document",
-        "description": "Details amendments in the concession agreement model for monetizing operational national highway projects under the TOT model.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/2-Monetization%20of%20PublicFunded%20Operational%20National%20Highway%20Projects%20under%20TOT.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Changes in the provisions of Model Concession Agreement (MCA) for Capacity Augmentation on BOT (Toll)",
-        "type": "Industry Strategy Document",
-        "description": "Outlines revisions in the MCA for expanding BOT (Toll) highway projects to increase project capacity.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/3-(MCA)%20for%20Capacity%20Augmentation%20on%20BOT%20(Toll).pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Minutes of the Inter-Ministerial Committee (IMC) meeting held on 08.01.2024 and 02.02.2024 under the Chairmanship of Secretary (RT&H) to discuss the changes in MCA (Capacity Augmentation) on BOT(Toll) and MCA for TOT",
-        "type": "Whitepaper",
-        "description": "Records government committee discussions on changes to concession agreements for BOT and TOT highway models.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/1-Minutes%20of%20IMC%20meeting%2008.1.2024%20&%2002.02.2024.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Revised Document for Request for Proposal (RFP) for appointment of Consultancy Services for preparation of Detailed Project Report (DPR) in respect of National Highways and centrally sponsored road works",
-        "type": "Sectoral Publication",
-        "description": "Provides updated RFP documentation for hiring consultants to prepare project reports for national highways.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Uploaded-Circulated-09022024.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Deemed Approval",
-        "type": "Industry Strategy Document",
-        "description": "Policy circular or guideline related to deemed approval process in highway and road project development.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Deemed-Approval.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Minutes of the Meeting of the Inter-Ministerial Committee held on 19.07.2023 at 4:00PM to discuss the changes in model RFP and MCA of EPC, HAM and BOT (Toll) modes of contract",
-        "type": "Whitepaper",
-        "description": "Summarizes committee discussions on standardizing contracts for EPC, HAM, and BOT toll models in highways.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/4-minutes%20of%20IMC%2019.07.2023.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Inclusions of provisions regarding accepting E-Bank Guarantee and Insurance Surety Bonds as ‘Bid Security’ and ‘Performance Security’ in standard documents of EPC, HAM and BOT (Toll)",
-        "type": "Sectoral Publication",
-        "description": "Describes new provisions for financial securities in standard highway project contracts.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/1-A-Bid-security-Annexure.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Changes in Standard RFP for HAM and BOT (Toll) Projects",
-        "type": "Industry Strategy Document",
-        "description": "Details updates to standard RFPs for Hybrid Annuity and BOT (Toll) highway projects.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/1-Changes%20in%20standard%20RFP%20for%20HAM%20&%20BoT(Toll)001.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Changes in Model Concession Agreement of BOT (Toll) project permitting the change of ownership from 2 years to 1 year after Commercial Operation Date (COD)",
-        "type": "Industry Strategy Document",
-        "description": "Announces a policy change to allow earlier ownership transfer in BOT (Toll) highway projects.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/1-BOT(Toll)%20Circular001-1-21-03-2023.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Standard Request for Proposal (RFP) for National Highways and centrally sponsored road works proposed to be implemented on EPC Mode of Contract- Amendments to RFP regarding.",
-        "type": "Sectoral Publication",
-        "description": "Amendments to the RFP for projects delivered under the EPC (Engineering, Procurement, Construction) contract model.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Standard%20Request%20for%20Proposal%20(RFP)%20for%20National%20Highways001.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://morth.nic.in/en/annual-report",
-    "documents": [
-      {
-        "year": 2023,
-        "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-        "type": "Annual Report",
-        "description": "Annual summary on Motor Vehicle Accident Fund and compensation provided to victims of hit & run incidents.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
-      },
       {
         "year": 2025,
         "name": "Annual Report 2024-25",
         "type": "Annual Report",
-        "description": "Comprehensive annual report detailing initiatives and performance of the Ministry for 2024-25.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-English-with-Cover.pdf"
+        "description": "Comprehensive yearly report on the activities and initiatives of the Department of Pharmaceuticals for 2024-25.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20English%202024-25%20AR%20%281%29.pdf"
       },
       {
         "year": 2024,
         "name": "Annual Report 2023-24",
         "type": "Annual Report",
-        "description": "Yearly highlights and in-depth analysis of the Ministry's activities and achievements for 2023-24.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/AR-MoRTH_Annual%20Report_2023-24_English.pdf"
+        "description": "Annual review of the Department of Pharmaceuticals' operations and performance for 2023-24.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20version%20of%20Annual%20Report%202023-24.pdf"
       },
       {
         "year": 2023,
         "name": "Annual Report 2022-23",
         "type": "Annual Report",
-        "description": "Detailed annual progress report on road transport and highways sector for 2022-23.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/MoRTH%20Annual%20Report%20for%20the%20Year%202022-23%20in%20English.pdf"
+        "description": "Report outlining the key programs, policies, and achievements of the Department of Pharmaceuticals for 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3.pdf"
       },
       {
         "year": 2022,
         "name": "Annual Report 2021-22",
         "type": "Annual Report",
-        "description": "Summary of key activities, projects, and policy outcomes by the Ministry in 2021-22.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual%20Report_21-22-1.pdf"
-      },
-      {
-        "year": 2021,
-        "name": "Annual Report 2020-21",
-        "type": "Annual Report",
-        "description": "Annual performance review of the Ministry's initiatives for the year 2020-21.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual%20Report%20-%202021%20(English)_compressed.pdf"
+        "description": "Summary of major initiatives and sectoral performance of the Department of Pharmaceuticals for 2021-22.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20Annual%20Report%202021-22%20%281%29.pdf"
       }
     ]
   },
   {
-    "sourceUrl": "https://morth.nic.in/en/detailed-demands-grants",
+    "sourceUrl": "https://pharma-dept.gov.in/policy",
     "documents": [
       {
-        "year": 2025,
-        "name": "Detailed Demands for Grants for 2025-26",
-        "type": "Financial Report",
-        "description": "Budgetary statement detailing the demands for grants of the Ministry for FY 2025-26.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Revised-DDG-RTH-2025-26.pdf"
+        "year": 2024,
+        "name": "Uniform Code for Marketing Practices in Medical Devices (UCMPMD) 2024",
+        "type": "Industry Policy",
+        "description": "Code outlining marketing practices standards for medical device manufacturers and marketers.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCMPMD_0.pdf"
       },
       {
         "year": 2024,
-        "name": "Detailed Demands for Grants for 2024-25",
-        "type": "Financial Report",
-        "description": "Budgetary statement showing the demands for grants of the Ministry for FY 2024-25.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH-YR--2024-25%20(PDF).pdf"
+        "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024",
+        "type": "Industry Policy",
+        "description": "Regulates marketing practices within the pharmaceutical sector to ensure ethical promotion.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCPMP%202024%20for%20website.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Export Promotion Council for Medical Devices: Establishment Order",
+        "type": "Industry Strategy Document",
+        "description": "Order regarding the establishment and objectives of EPC-MD for medical device export promotion.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DoP%20OM%20Dated%2005122022%20reg%20Establishing%20of%20EPC-MD_0.pdf"
       },
       {
         "year": 2023,
-        "name": "Detailed Demands for Grants for 2023-24",
+        "name": "National Medical Device Policy 2023 - Gazette Notification",
+        "type": "Industry Policy",
+        "description": "Official policy framework to guide strategic growth and regulation of the medical devices sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Strategy Document on National Medical Devices Policy, 2023",
+        "type": "Strategy Document",
+        "description": "Strategic insights and approaches for implementing the National Medical Devices Policy, 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20NMDP%202023_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "National Policy on Research & Development and Innovation in the Pharma-Med Tech Sector in India",
+        "type": "Industry Policy",
+        "description": "Framework supporting R&D and innovation in India's pharma and med-tech sector for industry growth.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Notification%20-%20R%26D%20Policy.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/study-report",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Study report on Bridging Academia-Industry Gap to achieve Self-reliance",
+        "type": "Study Report",
+        "description": "Examines strategies to bridge the gap between academia and industry for pharmaceutical self-reliance.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Study%20Report%20-%20Bridging%20Academia-Industry%20Gap%20to%20achieve%20Self-reliance_0.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study Report on Impact of the Drug Price Control Order (DPCO) 2013 on the price of Cardiac stents Knee implants and six medical devices on industry and consumers in terms of availability and affordability",
+        "type": "Study Report",
+        "description": "Assesses the effects of DPCO 2013 on medical device pricing and accessibility for industry and consumers.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-Impact%20of%20the%20DPCO%202013%20on%20the%20price%20of%20Cardiac%20stents%20Knee%20implants%20.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study report on An analysis on leveraging the patent cliff, with drug sales worth USD 251 billion going off-patent and to analyses the different drug pricing methodologies particularly w.r.t. these patented drugs going off-patent",
+        "type": "Study Report",
+        "description": "Analyzes market opportunities and pricing strategies as major drugs go off-patent.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-An%20analysis%20on%20leveraging%20the%20patent%20cliff.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study on Upgrading NIPERs to meet evolving needs of Pharmaceutical business and NIPERs in top 50 in world ranking",
+        "type": "Study Report",
+        "description": "Evaluates strategies to upgrade NIPERs for global competitiveness and business relevance.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final-Upgrading%20NIPERs%20to%20meet%20evolving%20needs%20of%20Pharmaceutical%20business%20and%20NIPERs%20in%20top%2050%20in%20world%20ranking.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Study on CRO Sector in India",
+        "type": "Sectoral Publication",
+        "description": "Provides a detailed analysis of the Contract Research Organization (CRO) market in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/CRO%20Market%20Report_High%20Resolution.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Survey of Pharma Clusters",
+        "type": "Sectoral Publication",
+        "description": "Presents findings from a survey of pharmaceutical industry clusters in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Pharma%20Clusters.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Survey of Medical Devices Clusters",
+        "type": "Sectoral Publication",
+        "description": "Surveys cluster-based growth in the Indian medical devices sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Medical%20Devices%20Clusters.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Survey for Novel/ Innovative and Cost-effective Technologies for Productoion of APIs",
+        "type": "Sectoral Publication",
+        "description": "Identifies new and cost-effective technologies for API manufacturing in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Novel%20Technologies%20for%20Productoion%20of%20APIs.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Final Boosting of Medical Devices Industry",
+        "type": "Industry Strategy Document",
+        "description": "Proposes measures to strengthen and grow the Indian medical devices industry.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20-%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Assessment of skill requirement of Indian Pharma Industry",
+        "type": "Sectoral Publication",
+        "description": "Analyzes workforce skill requirements in the Indian pharmaceutical industry.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Assessment%20of%20skill%20requirement%20of%20Indian%20Pharma%20Industry_Under%20PMPDS%20scheme%20%281%29.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/study-report?title=&page=1",
+    "documents": [
+      {
+        "year": 2023,
+        "name": "Report on Strategy for Leveraging ASEAN FTA and Trade Potential with the Middle East Countries for Pharma Sector in India",
+        "type": "Industry Strategy Document",
+        "description": "A strategy report analyzing how India's pharma sector can leverage ASEAN FTA and tap trade opportunities in the Middle East.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Updated%20Strategy%20for%20Leveraging%20ASEAN%20FTA%20and%20trade%20potential%20with%20the%20Middle%20East%20Countries%20for%20Pharma%20Sector%20in%20India%20Final%20-%20ISID.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/important-document",
+    "documents": [
+      {
+        "year": 2025,
+        "name": "Frequently Asked Questions (FAQs) regarding the Promotion of Research and Innovation in Pharma MedTech (PRIP) Scheme",
+        "type": "Whitepaper",
+        "description": "Provides clarification on the PRIP Scheme to support research and innovation in pharma and medtech.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/PRIP-%20Frequently%20Asked%20Questions_10032025.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Department of Pharmaceuticals invites Expression of Interest (EoI) from interested entities under the PRIP scheme",
+        "type": "Mission Plan",
+        "description": "EoI invitation from entities under the Promotion of Research and Innovation in Pharma MedTech Scheme.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/PRIP%20Scheme_Expression%20of%20Interest_0.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Modification in the guidelines of Production Linked Incentive (PLI) Scheme Bulk Drugs",
+        "type": "Industry Strategy Document",
+        "description": "Details amendments in the PLI Scheme for bulk drugs.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Corrigendum%20Under%20PLI%20scheme%20for%20Bulk%20Drugs%2025.09.2024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024 - reg",
+        "type": "Industry Strategy Document",
+        "description": "Code outlining fair and ethical practices for pharmaceutical marketing in 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCPMP%202024%20for%20website_0.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/important-document?page=1",
+    "documents": [
+      {
+        "year": 2023,
+        "name": "Approach Paper on Draft National Pharmaceuticals Policy 2023 for stakeholder consultation",
+        "type": "Policy Document",
+        "description": "This draft policy outlines proposals and invites stakeholder inputs on the National Pharmaceuticals Policy 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/31.10.23%20Draft%20National%20Pharmaceuticals%20Policy.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Corrigendum under PLI Scheme for Pharmaceuticals",
+        "type": "Policy Amendment",
+        "description": "Amendment details for the Production Linked Incentive (PLI) Scheme for the pharmaceutical sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Corrigendum%20under%20PLI%20for%20Pharmaceuticals%20dated%2020.10.2023%20%281%29_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Detailed Demand for Grants (DDG), Demand No. 7 for the year 2023-24",
         "type": "Financial Report",
-        "description": "Budget document detailing the Ministry's grant allocation for the year 2023-24.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH%202023-24%20pdf(3).pdf"
+        "description": "Annual financial estimate and allocations for the Department of Pharmaceuticals for 2023-24.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20final%202023-24.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Gazette Notification National Medical Device Policy 2023",
+        "type": "Policy Notification",
+        "description": "Gazette announces the National Medical Devices Policy 2023 regulating and promoting the medical devices sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "List of Applicants Approved under Production Linked Incentive Scheme for Promoting Domestic Manufacturing of Medical Devices - Dated 25th April, 2023",
+        "type": "Industry Report",
+        "description": "List of approved applicants under the PLI scheme for domestic manufacturing of medical devices.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Revised%20list%20of%20applicant%20-%20PLI%20for%20Medical%20Devices%20%28as%20on%2025.04.2023%29_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "NIPER Research Compendium",
+        "type": "Research Publication",
+        "description": "A compendium summarizing key research outputs and activities from the National Institutes of Pharmaceutical Education & Research.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/NIPER%20Research%20Compendium.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "List of Approved Applicants under Production Linked Incentive (PLI) Scheme for Bulk Drug - Dated 22nd March, 2023",
+        "type": "Industry Report",
+        "description": "Approved applicants list for the PLI scheme for bulk drug manufacturing as of March 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Revised%20list%20of%20applicant%20-%20PLI%20for%20Bulk%20Drug%20%28as%20on%2022.03.2023%29.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Annual Report 2022-23 -reg.",
+        "type": "Annual Report",
+        "description": "Comprehensive overview of activities, initiatives, and financial position of the Department of Pharmaceuticals for 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3_0.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/documents-reports",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of September, 2024",
+        "type": "Sectoral Publication",
+        "description": "Contains updates and summary of departmental activities for September 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/MSR-SEP-2024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of August, 2024",
+        "type": "Sectoral Publication",
+        "description": "Summarizes key monthly activities and developments in the pharmaceutical sector for August 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Aug%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of July, 2024",
+        "type": "Sectoral Publication",
+        "description": "Overview of departmental initiatives and sector highlights for July 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Monthly%20Summary%20Report%20July%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly Summary Report in respect of Department of Pharmaceuticals for the month of June, 2024",
+        "type": "Sectoral Publication",
+        "description": "Report covering sectoral updates and actions taken by the department in June 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20summary%20report%20june%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of May, 2024",
+        "type": "Sectoral Publication",
+        "description": "Provides monthly sectoral developments and administrative information for May 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20for%20the%20Month%20of%20May%2C%20%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of April-2024",
+        "type": "Sectoral Publication",
+        "description": "Sectoral summary of major activities and policy progress in April 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20April%202024.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/documents-reports/archive",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of September, 2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for September 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/MSR-SEP-2024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of August, 2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for August 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Aug%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of July, 2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for July 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Monthly%20Summary%20Report%20July%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly Summary Report in respect of Department of Pharmaceuticals for the month of June, 2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for June 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20summary%20report%20june%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of May, 2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for May 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20for%20the%20Month%20of%20May%2C%20%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of April-2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for April 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20April%202024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of January-2024",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for January 2024.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Jan%2024.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of November-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for November 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Nov-2023_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of October-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for October 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Oct-2023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of September-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for September 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Sep%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of August-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for August 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Aug%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of July-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for July 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20July%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of June-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for June 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20June%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of May-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for May 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20May%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of April-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for April 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20April%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of March -2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for March 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20March%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of February -2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for February 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Feb%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of January-2023",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for January 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20January%202023.pdf"
       },
       {
         "year": 2022,
-        "name": "Detailed Demands for Grants for 2022-23",
-        "type": "Financial Report",
-        "description": "Contains the grant demands and allocations of the Ministry for the year 2022-23.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/DDG-PDF-NEW-UPDATED-2022-23-RTH.pdf"
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of December-2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for December 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Dec-2022.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of November-2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for November 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Nov%202022.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of October-2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for October 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Oct%202022.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly Summary report for the month of September-2022 in respect of the Department of Pharmaceuticals",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for September 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Sep%202022.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly Summary report for the month of August-2022 in respect of the Department of Pharmaceuticals",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for August 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Aug%202022%20Final.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly Summary report for the month of July-2022 in respect of the Department of Pharmaceuticals",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for July 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20July%202022%20-1.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly Summary Report in respect of Department of Pharmaceuticals for the month of June, 2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for June 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20June%202022.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly Summary Report in respect of Department of Pharmaceuticals for the month of May, 2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for May 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20May%202022_0.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Monthly summary report in respect of Department of Pharmaceuticals for the month of April, 2022",
+        "type": "Sectoral Publication",
+        "description": "Monthly summary of activities and developments in the Department of Pharmaceuticals for April 2022.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20Report%20Apr%202022.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/documents-reports/archive?page=1",
+    "documents": [
+      {
+        "year": 2021,
+        "name": "Monthly Summary report for the Month of May, 2021",
+        "type": "Monthly Summary Report",
+        "description": "Department of Pharmaceuticals' monthly progress report for May 2021.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Monthly%20Summary%20for%20the%20month%20of%20May-2021.pdf"
       },
       {
         "year": 2021,
-        "name": "Detailed Demands for Grants for 2021-22",
-        "type": "Financial Report",
-        "description": "Presents the Ministry's detailed budgetary demands for the year 2021-22.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Final-2021-22.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-        "type": "Annual Report",
-        "description": "Annual report on the Motor Vehicle Accident Fund and compensation disbursed in 2022.",
-        "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
+        "name": "Budget 2021-22: Transforming the health sector",
+        "type": "Sectoral Publication",
+        "description": "A budget presentation focused on reforms and investments in the health sector for 2021-22.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/PPT%20for%20budget%20related%20Webinar%20related%20to%20health%20sector_0.pdf"
       }
     ]
   }

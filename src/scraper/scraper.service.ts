@@ -1,16 +1,16 @@
 import { Injectable } from '@nestjs/common';
-import { scrapeUrlAsync, bothUrl, findRelevantPageViaMap, filterDocuments } from 'src/utils/relevantPagesMapScrap';
+import {  bothUrl, findRelevantPageViaMap, filterDocuments, DocumentSet, deduplicateResults } from 'src/utils/relevantPagesMapScrap';
 
 
 @Injectable()
 export class ScraperService {
 
-  async map_scrap() {
-    const objective =
-    'reports, annual reports, publications, industry reports, mission plan, etc.';
-    const url = 'https://morth.nic.in/en';
+  async map_scrap(): Promise<DocumentSet[] | null> {
+    // const objective =
+    // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
+    const url = 'https://pharma-dept.gov.in/';
 
-    const relevantPages = await findRelevantPageViaMap(objective, url);
+    const relevantPages = await findRelevantPageViaMap(url);
     console.log('relevantPages', relevantPages);
 
     // Get all documents
@@ -19,14 +19,16 @@ export class ScraperService {
     // Filter documents based on criteria
     const filteredDocuments = await filterDocuments(rawResult);
 
-    return filteredDocuments;
+    // Deduplicate documents
+    const deduplicatedDocuments = await deduplicateResults(filteredDocuments);
+
+    return deduplicatedDocuments;
   }
 
   async main(){
     const result = await this.map_scrap();
     console.log('Final URLs:', result);
     const fs = require('fs');
-    const path = require('path');
 
     // Ensure the file exists
     if (!fs.existsSync('urls.json')) {

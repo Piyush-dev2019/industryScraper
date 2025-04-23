@@ -14,6 +14,19 @@ import FirecrawlApp, {
     reason: string;
   }
 
+  interface Document {
+    year: number;
+    name: string;
+    type: string;
+    description: string;
+    documentUrl: string;
+  }
+
+  interface DocumentSet {
+    sourceUrl: string;
+    documents: Document[];
+  }
+
   async function checkRelevantLink(
     link: string,
   ): Promise<Record<string, any>> {
@@ -26,7 +39,7 @@ import FirecrawlApp, {
         "reason": "reason for the response",
         "isRelevant": true/false
       }`;
-    const result = await gptCall('gpt-4o', prompt, 'system');
+    const result = await gptCall('gpt-4.1', prompt, 'system');
     const jsonResult = await extractJsonFromResponse(result);
     return jsonResult;
   }
@@ -40,10 +53,11 @@ Your task is to extract only the relevant PDF document links that can support in
 - Financial Reports
 - Sectoral Publications
 - Mission Plans
-- Whitepapers
+- Budget Plans
 - Industry Strategy Documents
 
 Ignore any links that do not end in .pdf.
+Ignore any links that appear to be from before 2021 based on dates in the filename, URL, or surrounding context
 
 For each PDF link found, extract and return the following structured JSON object:
 
@@ -91,15 +105,15 @@ Use this format exactly. Do not add extra commentary or explanation.`;
     const nonPdfUrlPrompt = `
     You are an intelligent web assistant that processes Markdown content from government, institutional, or company websites.
 
-Your task is to extract **only the links** (URLs) that are **likely to lead to pages containing important documents** for industry research and analysis, such as:
+Your task is to extract **only the links** (URLs) that are **Highly Likely to lead to pages containing important documents** for industry research and analysis, such as:
+- Sector/Industry Reports
 - Annual Reports
 - Publications
 - Financial Reports
-- Whitepapers
 - Mission Plans
 - Strategy Documents
-- Sector/Industry Reports
-- Archives or Reports Pages
+- Budget Plans
+etc.
 
 Instructions:
 1. **Ignore** any links that point directly to .pdf files (those are handled in a separate step).
@@ -107,7 +121,9 @@ Instructions:
 3. Return a JSON array under the key possibleUrls containing only the actual URLs found in the provided markdown content.
 4. Do not include any example URLs or placeholder URLs.
 5. Only include URLs that are actually present in the markdown content.
-
+6. **Ignore** any links that redirect to content older than 2021 or archive pages before 2021.
+7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
+8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
 Return the response in this exact format:
 {
   "possibleUrls": [
@@ -115,7 +131,7 @@ Return the response in this exact format:
   ]
 }`;
 
-    const result = await gptCall('gpt-4.1', nonPdfUrlPrompt, 'system');
+    const result = await gptCall('gpt-4.1', nonPdfUrlPrompt + '\n\nwebsite - markdown data: ' + markdown, 'system');
     
     if (!result) {
       return null;
@@ -142,6 +158,7 @@ Return the response in this exact format:
 
       const foundDocuments = [];
       const allDocumentUrls = new Set(); // Using Set to automatically handle duplicates
+      const visitedUrls = new Set(links); // Track all visited URLs, starting with initial links
       
       // Process all links asynchronously
       const processingPromises = links.map(async (link) => {
@@ -193,12 +210,15 @@ Return the response in this exact format:
               })
             );
 
-            // Filter out non-relevant URLs
+            // Filter out non-relevant URLs and already visited URLs
             const relevantNonPdfUrls = relevancyChecks
-              .filter(check => check.isRelevant)
+              .filter(check => check.isRelevant && !visitedUrls.has(check.url))
               .map(check => check.url);
 
-            console.log(`Found ${relevantNonPdfUrls.length} relevant non-PDF URLs`);
+            // Add the relevant URLs to visited set
+            relevantNonPdfUrls.forEach(url => visitedUrls.add(url));
+
+            console.log(`Found ${relevantNonPdfUrls.length} relevant non-PDF URLs (excluding already visited)`);
 
             if (relevantNonPdfUrls.length > 0) {
               console.log('\n=== Processing relevant non-PDF URLs ===');
@@ -276,94 +296,136 @@ Return the response in this exact format:
     }
   }
 
-  async function filterDocuments(documents: any[]) {
-    if (!documents || documents.length === 0) {
-      console.log('No documents to filter');
-      return null;
-    }
-
+  async function filterDocuments(document: DocumentSet[]) {
     const filterPrompt = `
-You are assisting in curating a high-quality dataset of documents useful for industry analysis at the national level.
+You are assisting in curating a high-quality dataset of documents useful for industry analysis by a senior financial analyst.
 
-You are given a JSON object containing:
-- sourceUrl: the original page where the documents were found
-- documents: a list of documents, each with a year, name, type, description, and documentUrl
+You are given a document with the following fields:
+- year: publication year
+- name: document title
+- type: document type
+- description: document description
+- documentUrl: URL to access the document
 
-Your task is to filter and return only the documents that meet all of the following conditions:
+Your task is to determine if this document meets all of the following conditions:
 
-1. Are highly relevant for industry analysis, such as:
+1. Is highly relevant for industry analysis, such as:
    - Sectoral and industry-specific reports
-   - Annual or financial reports of ministries or national-level industry bodies
+   - Annual or financial reports of ministries or industry bodies
    - Mission plans and strategic roadmaps
-   - Whitepapers and publications with analytical or statistical insights
+   - Budget Plans and publications with analytical or statistical insights
 
-2. Are recent, i.e., published in the year 2021 or later
+2. Is recent, i.e., published in the year 2021 or later. If the year is missing, assess the relevance based on the content description and type. Only reject documents for missing year if there is no strong indication of recency or analytical value.
 
-3. Are national in scope — exclude any documents that are:
-   - Published by or for state governments
-   - Focused on a specific state or region
-   - Contain mentions in the title or description such as names of Indian states, state departments, or state-level programs
-
-4. Exclude any documents that are:
+3. Is not:
    - General notices, circulars, tenders, guidelines, or operational memos
    - Administrative documents not useful for industry analysis
+   - Monthly or weekly summary reports
 
-5. Only include documents that are in English. Exclude documents that are in Hindi, bilingual (e.g., Hindi-English), or any language other than English.
 
-6. Remove any duplicate documentUrls. If the same document appears under multiple sourceUrls, retain it only under the sourceUrl that makes the most sense — for example, if an annual report appears under both a general bulletin page and a dedicated annual reports page, keep it only under the annual reports page and remove it from the bulletin source.
+4. Is in English (not Hindi, bilingual, or any other language)
 
-Return only the filtered documents in the same structure, like this:
+Return the response in the JSON structure provided below:
 
-{
-  "sourceUrl": "...",
-  "documents": [
-    {
-      "year": ,
-      "name": "",
-      "type": "",
-      "description": "",
-      "documentUrl": ""
-    }
-  ]
-}
+  {
+    "reason": "reason for the response",
+    "isRelevant": true/false
+  }
 
-Do not include any documents that do not meet all of the above criteria. Do not include any explanation or commentary — just return the filtered JSON object.`;
+Do not include any explanation or commentary — just return the JSON object.`;
 
     try {
-      const finalResult = await gptCall('gpt-4.1', filterPrompt + '\n\n' + JSON.stringify(documents, null, 2), 'system');
-      const finalJsonResult = await extractJsonFromResponse(finalResult);
-      console.log('finalJsonResult from filterDocuments', finalJsonResult);
-      if (!finalJsonResult) {
-        console.log('No valid documents found in filtered results');
-        return null;
-      }
-
-      // Handle both single object and array of objects
-      const results = Array.isArray(finalJsonResult) ? finalJsonResult : [finalJsonResult];
+      // Process each document set asynchronously
+      const filteredResults = await Promise.all(
+        document.map(async (docSet) => {
+          const sourceUrl = docSet.sourceUrl;
+          
+          // Process all documents in the set asynchronously
+          const filteredDocs = await Promise.all(
+            docSet.documents.map(async (doc) => {
+              const docPrompt = filterPrompt + '\n\n' + JSON.stringify(doc, null, 2);
+              const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
+              const jsonResult = await extractJsonFromResponse(result);
+              
+              return jsonResult && jsonResult.isRelevant ? doc : null;
+            })
+          );
+          
+          // Filter out null values and return only if there are relevant documents
+          const validDocs = filteredDocs.filter(doc => doc !== null);
+          return validDocs.length > 0 ? { sourceUrl, documents: validDocs } : null;
+        })
+      );
       
-      // Extract all document URLs
-      const allDocumentUrls = results.reduce((urls, result) => {
-        if (result.documents && Array.isArray(result.documents)) {
-          return urls.concat(result.documents.map(doc => doc.documentUrl));
-        }
-        return urls;
-      }, []);
-
-      console.log('All document URLs from final results:', allDocumentUrls);
-      return results;
+      // Filter out null values from the results
+      const finalResults = filteredResults.filter(result => result !== null);
+      
+      console.log('Filtered results:', finalResults);
+      return finalResults;
     } catch (error) {
       console.error('Error in filterDocuments:', error);
       return null;
     }
   }
+
+  async function deduplicateResults(
+    results: DocumentSet[],
+  ): Promise<DocumentSet[] | null> {
+    const prompt = `You are a smart deduplication engine designed to clean and organize document listings as a senior financial analyst. You are provided with a list of sources, where each source has the following structure:
+
+[
+    {
+        "sourceUrl": "string",
+        "documents": [
+            {
+                "year": number | null,
+                "name": string,
+                "type": string,
+                "description": string,
+                "documentUrl": string
+            }
+        ]
+    }
+]
+
+Some documents (identified by the same 'documentUrl') may appear under multiple sources. Your task is to remove any duplicate documentUrl. If the same documentUrl appears under multiple sourceUrls, retain the one with the most semantically appropriate 'sourceUrl' which makes the most sense based on the document's type and description. 
+For example, if a document is annual report and it appear under both a general bulletin page and a dedicated annual report page, retain it only under the annual report page and remove it from the bulletin source.
+
+return the response in the JSON structure provided below no other text or explanation:
+
+[
+{
+  "sourceUrl": "string",
+  "documents": [
+    {
+      "year": number | null,
+      "name": string,
+      "type": string,
+      "description": string,
+      "documentUrl": string
+    }
+  ]
+}
+]
+`;
+
+    const result = await gptCall('gpt-4.1', prompt + '\n\n' + JSON.stringify(results, null, 2), 'system');
+    const jsonResult = await extractJsonFromResponse(result);
+    return jsonResult as DocumentSet[];
+  }
   
   async function rankLinks(
     links: string[],
-    objective: string,
   ): Promise<string[] | null> {
-    const rankPrompt = `RESPOND ONLY WITH JSON.
-      Analyze these URLs and rank the most relevant ones for finding information about: ${objective}
-  
+    const rankPrompt = `
+      Analyze these URLs and rank the most relevant ones for finding information about: 
+  - Annual Reports
+  - Industry Strategy Documents
+  - Financial Reports
+  - Budget Plans
+  - Mission Plans
+  - Sectoral Publications
+
       Return ONLY a JSON array in this exact format - no other text or explanation:
       [
           {
@@ -409,8 +471,8 @@ Do not include any documents that do not meet all of the above criteria. Do not 
     async function tryScrape(
       url: string,
       retryCount = 0,
-      maxRetries = 2,
-    ): Promise<[string | null, boolean]> {
+      maxRetries = 5,
+    ): Promise<[string | null, boolean, boolean]> {
       try {
         const scrapeResult = (await app.scrapeUrl(url, {
           formats: ["markdown"],
@@ -432,10 +494,10 @@ Do not include any documents that do not meet all of the above criteria. Do not 
             pageMarkdown.toLowerCase().includes(indicator.toLowerCase()),
           )
         ) {
-          return [null, true]; // Error detected
+          return [null, true, false]; // Error detected, not rate limited
         }
   
-        return [pageMarkdown, false];
+        return [pageMarkdown, false, false];
       } catch (error: any) {
         const errorMsg = error.toString();
         if (
@@ -452,15 +514,23 @@ Do not include any documents that do not meet all of the above criteria. Do not 
   
         // For non-rate limit errors or exceeding max retries
         console.error(`Error scraping ${url}: ${errorMsg}`);
-        return [null, true];
+        const isRateLimited = /status code[:\s]*(?:429|408)/.test(errorMsg.toLowerCase()) || 
+                            errorMsg.toLowerCase().includes('rate limit exceeded');
+        return [null, true, isRateLimited];
       }
     }
   
     // Try original URL
-    const [pageMarkdown, errorDetected] = await tryScrape(link);
+    const [pageMarkdown, errorDetected, isRateLimited] = await tryScrape(link);
     if (!errorDetected && pageMarkdown) {
       console.log('Page scraping completed successfully.');
       return `Content from ${link}:\n${pageMarkdown}\n---\n`;
+    }
+  
+    // If error is due to rate limiting and max retries exhausted, skip URL modifications
+    if (isRateLimited) {
+      console.log('Rate limit retries exhausted, skipping URL modifications...');
+      return null;
     }
   
     console.log(`Error detected for ${link}, trying alternative URLs...`);
@@ -468,11 +538,17 @@ Do not include any documents that do not meet all of the above criteria. Do not 
     // Try with modified URL (adding/removing trailing slash)
     const modifiedLink = link.endsWith('/') ? link.slice(0, -1) : link + '/';
     console.log(`Retrying scrape with modified URL: ${modifiedLink}`);
-    const [modifiedPageMarkdown, modifiedErrorDetected] =
+    const [modifiedPageMarkdown, modifiedErrorDetected, modifiedIsRateLimited] =
       await tryScrape(modifiedLink);
     if (!modifiedErrorDetected && modifiedPageMarkdown) {
       console.log('Page scraping completed successfully.');
       return `Content from ${modifiedLink}:\n${modifiedPageMarkdown}\n---\n`;
+    }
+  
+    // If error is due to rate limiting and max retries exhausted, skip further URL modifications
+    if (modifiedIsRateLimited) {
+      console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      return null;
     }
   
     console.log(
@@ -491,22 +567,34 @@ Do not include any documents that do not meet all of the above criteria. Do not 
     console.log(
       `Retrying scrape with protocol modified URL (with slash): ${protocolModifiedLink}`,
     );
-    const [protocolPageMarkdown, protocolErrorDetected] =
+    const [protocolPageMarkdown, protocolErrorDetected, protocolIsRateLimited] =
       await tryScrape(protocolModifiedLink);
     if (!protocolErrorDetected && protocolPageMarkdown) {
       console.log('Page scraping completed successfully.');
       return `Content from ${protocolModifiedLink}:\n${protocolPageMarkdown}\n---\n`;
     }
   
+    // If error is due to rate limiting and max retries exhausted, skip further URL modifications
+    if (protocolIsRateLimited) {
+      console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      return null;
+    }
+  
     // Try with protocol modified URL (without slash)
     console.log(
       `Retrying scrape with protocol modified URL (without slash): ${protocolModifiedLinkNoSlash}`,
     );
-    const [protocolNoSlashPageMarkdown, protocolNoSlashErrorDetected] =
+    const [protocolNoSlashPageMarkdown, protocolNoSlashErrorDetected, protocolNoSlashIsRateLimited] =
       await tryScrape(protocolModifiedLinkNoSlash);
     if (!protocolNoSlashErrorDetected && protocolNoSlashPageMarkdown) {
       console.log('Page scraping completed successfully.');
       return `Content from ${protocolModifiedLinkNoSlash}:\n${protocolNoSlashPageMarkdown}\n---\n`;
+    }
+  
+    // If error is due to rate limiting and max retries exhausted, skip further URL modifications
+    if (protocolNoSlashIsRateLimited) {
+      console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      return null;
     }
   
     console.log('All URL variations failed, skipping...');
@@ -514,16 +602,14 @@ Do not include any documents that do not meet all of the above criteria. Do not 
   }
   
   async function findRelevantPageViaMap(
-    objective: string,
     url: string,
   ): Promise<string[] | null> {
     try {
   
-      console.log('Analyzing objective to determine optimal search parameter...');
+      console.log('Getting map of website...');
   
       const mapWebsite = (await firecrawlApp.mapUrl(url, {
         includeSubdomains: true,
-        search: objective
       })) as MapResponse;
       const filteredPages = [...(mapWebsite.links || [])].filter(
         (page) => !String(page).toLowerCase().endsWith('.pdf'),
@@ -534,7 +620,7 @@ Do not include any documents that do not meet all of the above criteria. Do not 
         return null;
       }
   
-      const relevantLinks = await rankLinks(filteredPages, objective);
+      const relevantLinks = await rankLinks(filteredPages);
   
       if (!relevantLinks) {
         console.log('No relevant links found.');
@@ -556,5 +642,8 @@ Do not include any documents that do not meet all of the above criteria. Do not 
     scrapeUrlAsync,
     bothUrl,
     filterDocuments,
+    Document,
+    DocumentSet,
+    deduplicateResults
   };
   
