@@ -2,7 +2,6 @@ async function extractJsonFromResponse(
     response: string,
   ): Promise<Record<string, any>> {
     try {
-      console.log('Raw response before conversion:', response);
   
       // Method 1: Try simple first and last index approach
       const trySimpleExtraction = (str: string): Record<string, any> | null => {
@@ -171,15 +170,17 @@ async function extractJsonFromResponse(
   
       if (cleanedResult) {
         console.log('Successfully extracted JSON after cleaning response');
+        console.log('Cleaned response:', cleanedResponse);
         return cleanedResult;
       }
-  
-      throw new Error('Failed to extract valid JSON using all methods');
+      
+      console.log('Failed to extract valid JSON using all methods');
+      console.log('Raw response before conversion:', response);
+      return null;
     } catch (error) {
       console.error('Error extracting JSON:', error);
-      throw error;
-    }
+    return null;
   }
-  
-  export { extractJsonFromResponse };
-  
+}
+
+export { extractJsonFromResponse };

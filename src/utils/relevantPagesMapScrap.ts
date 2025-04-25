@@ -4,7 +4,7 @@ import FirecrawlApp, {
   } from '@mendable/firecrawl-js';
   import dotenv from 'dotenv';
   import { extractJsonFromResponse } from './jsonExtractor';
-  import { firecrawlApp, gptCall, model_2_0_flash } from './llmModels';
+  import { firecrawlApp, gptCall } from './llmModels';
   
   dotenv.config();
   
@@ -417,8 +417,16 @@ return the response in the JSON structure provided below no other text or explan
   async function rankLinks(
     links: string[],
   ): Promise<string[] | null> {
-    const rankPrompt = `
-      Analyze these URLs and rank the most relevant ones for finding information about: 
+    const batchSize = 25;
+    const batches = [];
+    
+    // Split links into batches of 25
+    for (let i = 0; i < links.length; i += batchSize) {
+      batches.push(links.slice(i, i + batchSize));
+    }
+
+    const rankPrompt = (batchLinks: string[]) => `
+      Analyze the following URLs and rank the most relevant ones for finding information about:
   - Annual Reports
   - Industry Strategy Documents
   - Financial Reports
@@ -426,39 +434,90 @@ return the response in the JSON structure provided below no other text or explan
   - Mission Plans
   - Sectoral Publications
 
-      Return ONLY a JSON array in this exact format - no other text or explanation:
-      [
-          {
-              "url": "http://example.com",
-              "relevance_score": 95,
-              "reason": "Main about page with company information"
-          },
-  
-      ]
-  
-      URLs to analyze:
-      ${JSON.stringify(links, null, 2)}`;
-  
+Strict Filtering Rules:
+1. Ignore any links to content older than 2021 or archive pages before 2021.
+2. Ignore any paginated URLs beyond page 2 (e.g., URLs with "page=3" or "page/4").
+3. Ignore links that are not in English (e.g., URLs containing "/hi/").
+4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, or purely administrative content.
+5. Ignore links to monthly or weekly summary reports.
+6. **Base path filtering logic**:
+   - If both a parent URL and a sub-URL are present (e.g., https://site.com/policy and https://site.com/policy/document-2023), **only keep the parent URL**.
+   - A "parent URL" is any URL that is a prefix of another.
+   - If a parent URL exists, **exclude all deeper sub-URLs that start with the same base path**.
+   - Only include the sub-URL if its parent is not in the list.
+
+Return ONLY a JSON array in this exact format — no explanation or extra output:
+
+[
+  {
+    "url": "http://example.com",
+    "relevance_score": 95,
+    "reason": "High-level document hub covering annual reports and strategies"
+  }
+]
+
+URLs to analyze:
+${JSON.stringify(batchLinks, null, 2)}
+`;
+
     try {
-      const response = await model_2_0_flash.generateContent(rankPrompt);
-      const responseText = response.response.text().trim();
-      console.log('this is responseText', responseText);
-      const rankedResults = await extractJsonFromResponse(responseText);
-  
-      // Sort by relevance score and filter for scores >= 60
-      rankedResults.sort(
+      // Process all batches asynchronously
+      const batchPromises = batches.map(async (batch) => {
+        const response = await gptCall('gpt-4.1', rankPrompt(batch), 'system');
+        const rankedResults = await extractJsonFromResponse(response);
+        return rankedResults;
+      });
+
+      // Wait for all batches to complete
+      const allResults = await Promise.all(batchPromises);
+      
+      // Flatten and combine all results
+      const combinedResults = allResults.flat();
+      
+      // Sort by relevance score and filter for scores >= 70
+      combinedResults.sort(
         (a: RankedResult, b: RankedResult) =>
           b.relevance_score - a.relevance_score,
       );
-      const relevantResults = rankedResults.filter(
-        (result: RankedResult) => result.relevance_score >= 60,
+      const relevantResults = combinedResults.filter(
+        (result: RankedResult) => result.relevance_score >= 70,
       );
-  
+
       return relevantResults.map((result: RankedResult) => result.url);
     } catch (error) {
       console.error('Error ranking URLs:', error);
       return null;
     }
+  }
+  
+  async function filterRelevantLinks(links: string[]): Promise<string[] | null> {
+    const prompt = `
+    You are given a list of URLs from a government website. Your task is to return only the most relevant base URLs which can aid in industry analysis:
+
+Strict Filtering Rule:
+1.  **Base path filtering logic**:
+   - If both a parent URL and a sub-URL are present (e.g., https://site.com/important-document and https://site.com/important-document/document-2023), only keep the parent **hub** URL that hosts the documents.
+   - A parent URL is defined as a prefix of another URL.
+   - If a parent URL exists, **exclude all deeper sub-URLs that start with the same base path**.
+   - Only include the sub-URL if its parent is not in the list.
+
+   return the response in the JSON structure provided below no other text or explanation:
+
+   [
+    {
+      "url": "string",
+      "reason": "reason for the response",
+      "isRelevant": true/false
+    }
+   ]
+
+   URLs to analyze:
+   ${JSON.stringify(links, null, 2)}
+   `;
+
+   const result = await gptCall('gpt-4.1', prompt, 'system');
+   const jsonResult = await extractJsonFromResponse(result);
+   return jsonResult.filter((result: any) => result.isRelevant).map((result: any) => result.url);
   }
   
   async function scrapeUrlAsync(
@@ -621,14 +680,18 @@ return the response in the JSON structure provided below no other text or explan
       }
   
       const relevantLinks = await rankLinks(filteredPages);
+      const filteredRelevantLinks = await filterRelevantLinks(relevantLinks);
   
-      if (!relevantLinks) {
+      if (!filteredRelevantLinks) {
         console.log('No relevant links found.');
         return null;
       }
   
-      console.log(`Found ${relevantLinks.length} relevant links.`);
-      return relevantLinks;
+      console.log(`Found ${filteredRelevantLinks.length} relevant links.`);
+      console.log('relevantPages', filteredRelevantLinks);
+      
+      return filteredRelevantLinks;
+
     } catch (error) {
       console.error(
         'Error encountered during relevant page identification:',

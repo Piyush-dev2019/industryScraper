@@ -8,10 +8,10 @@ export class ScraperService {
   async map_scrap(): Promise<DocumentSet[] | null> {
     // const objective =
     // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
-    const url = 'https://pharma-dept.gov.in/';
+    const url = 'https://tourism.gov.in/';
 
     const relevantPages = await findRelevantPageViaMap(url);
-    console.log('relevantPages', relevantPages);
+    // console.log('relevantPages', relevantPages);
 
     // Get all documents
     const rawResult = await bothUrl(relevantPages);

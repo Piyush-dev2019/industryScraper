@@ -4,32 +4,79 @@
       "sourceUrl": "https://morth.nic.in/en/annual-report",
       "documents": [
         {
+          "year": 2022,
+          "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
+          "type": "Annual Report",
+          "description": "Annual report detailing activity and outcomes related to compensation for victims of hit and run motor accidents in 2022.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
+        },
+        {
           "year": 2024,
           "name": "Annual Report 2024-25",
           "type": "Annual Report",
-          "description": "Comprehensive report on the ministry's activities and achievements for the year 2024-25.",
+          "description": "Comprehensive annual report over the Ministry’s major activities and developments for 2024-25.",
           "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-English-with-Cover.pdf"
         },
         {
           "year": 2023,
           "name": "Annual Report 2023-24",
           "type": "Annual Report",
-          "description": "Overview of projects, initiatives, and financials for the Ministry of Road Transport and Highways for 2023-24.",
+          "description": "A detailed report on performance, achievements, and initiatives of the Ministry for the year 2023-24.",
           "documentUrl": "https://morth.nic.in/sites/default/files/AR-MoRTH_Annual%20Report_2023-24_English.pdf"
         },
         {
           "year": 2022,
           "name": "Annual Report 2022-23",
           "type": "Annual Report",
-          "description": "Detailed summary of ministry operations and sector progress in the year 2022-23.",
+          "description": "This report highlights the key programs, financials, and strategic aims of the Ministry for 2022-23.",
           "documentUrl": "https://morth.nic.in/sites/default/files/MoRTH%20Annual%20Report%20for%20the%20Year%202022-23%20in%20English.pdf"
         },
         {
-          "year": 2022,
-          "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
+          "year": 2021,
+          "name": "Annual Report 2021-22",
           "type": "Annual Report",
-          "description": "Annual statutory report on the implementation of compensation to victims of hit and run motor accidents.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
+          "description": "Annual review of Ministry of Road Transport and Highways’ projects and progress for 2021-22.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Annual%20Report_21-22-1.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://morth.nic.in/en/detailed-demands-grants",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Detailed Demands for Grants for 2023-24",
+          "type": "Budget Plan",
+          "description": "Annual document presenting the detailed budget allocations and demands for grants for financial year 2023-24.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH%202023-24%20pdf(3).pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Detailed Demands for Grants for 2024-25",
+          "type": "Budget Plan",
+          "description": "Annual document presenting the detailed budget allocations and demands for grants for financial year 2024-25.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH-YR--2024-25%20(PDF).pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Detailed Demands for Grants for 2025-26",
+          "type": "Budget Plan",
+          "description": "Annual document presenting the detailed budget allocations and demands for grants for financial year 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Revised-DDG-RTH-2025-26.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Detailed Demands for Grants for 2022-23",
+          "type": "Budget Plan",
+          "description": "Annual document presenting the detailed budget allocations and demands for grants for financial year 2022-23.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-PDF-NEW-UPDATED-2022-23-RTH.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Detailed Demands for Grants for 2021-22",
+          "type": "Budget Plan",
+          "description": "Annual document presenting the detailed budget allocations and demands for grants for financial year 2021-22.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Final-2021-22.pdf"
         }
       ]
     },
@@ -38,81 +85,73 @@
       "documents": [
         {
           "year": 2025,
-          "name": "Allocation and release of fund to National Highways Authority of India (NHAI) for incurring expenditure on the EAP Works, Japan International Cooperation Agency (JICA) loanpart during the Financial Year 2025-26",
-          "type": "Financial Report",
-          "description": "Reports on the allocation and release of funds to NHAI for EAP loanpart works in FY 2025-26.",
+          "name": "Allocation and release of funds to the National Highways & Infrastructure Development Corporation Limited (NHIDCL) for projects under National Highways (Original)-TSP during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Details the allocation and release of funds to NHIDCL for various national highway projects for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/7-Allocation%20and%20release%20of%20fund%20to%20NHIDCL%20under%20NH%20(O)%20TSP%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation and release of fund to National Highways Authority of India (NHAI) for incurring expenditure on the EAP Works, JICA Counterpart during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Outlines the allocation and release of funds to NHAI for EAP Works under JICA Counterpart funding for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/8-Allocation%20and%20release%20of%20fund%20to%20NHAI%20under%20EAP%20Counterpart%20Work%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation and release of fund to National Highways Authority of India (NHAI) for incurring expenditure on the EAP Works, JICA loanpart during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Provides details of fund allocation and release to NHAI for EAP Works financed through JICA loan for FY 2025-26.",
           "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/9-Allocation%20and%20release%20of%20fund%20to%20NHAI%20under%20EAP%20Loanpart%20Work%20dated%2008%20April%202025_0001.pdf"
         },
         {
           "year": 2025,
+          "name": "Allocation and release of fund to NHIDCL for incurring expenditure on the EAP Works, JICA Counter Part during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Describes the release of funds to NHIDCL under EAP Works with JICA Counterpart for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/10-Allocation%20and%20release%20of%20fund%20to%20NHIDCL%20under%20EAP%20Counterpart%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation and release of fund to NHIDCL for incurring expenditure on the EAP Works, JICA Loan Part during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Covers allocation and fund release to NHIDCL for EAP Works with JICA Loan Part during FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/11-Allocation%20and%20release%20of%20fund%20to%20NHIDCL%20under%20EAP%20Loanpart%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation of funds for Maintenance by Border Road Development Board during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Specifies fund allocation for maintenance activities by the Border Road Development Board for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/12-Allocation%20of%20funds%20for%20Maintenance%20by%20BRDB%20dated%2008%20April%202025.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation of funds to the States/UTs for incurring expenditure on maintenance and repairs under Special Repairs (N) [SR (N)] of National Highways during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Includes the allocation of funds to States/UTs for special repairs and maintenance of National Highways for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/13-Allocation%20of%20funds%20to%20the%20State%20UTs%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation of funds to the States/UTs for maintenance and repairs of National Highways under Original Repair (Contract Maintenance) for STMC work executed through State/UT Govt. during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Details allocation of funds for repair and maintenance of highways through State/UT governments under contract maintenance for FY 2025-26.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/14-Allocation%20of%20funds%20to%20the%20state%20dated%2008%20April%202025_0001.pdf"
+        },
+        {
+          "year": 2025,
           "name": "State-wise allocation of funds under Economic Importance and Inter State Connectivity Scheme (EI&ISC) for the Financial Year 2025-26",
-          "type": "Financial Report",
-          "description": "Presents funds allocation by state for the EI&ISC scheme for the year 2025-26.",
+          "type": "Budget Plan",
+          "description": "Lists the allocation of funds by state under the Economic Importance and Inter State Connectivity Scheme for FY 2025-26.",
           "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/15-State-%20wise%20allocation%20of%20fund%20under%20(EIISC)%20dated%2008%20April%202025_0001.pdf"
         },
         {
           "year": 2025,
-          "name": "State-wise allocation of funds for incurring expenditure on the implementation of work sanctioned under LWE Scheme during the Financial Year 2025-26",
-          "type": "Financial Report",
-          "description": "Provides state-wise allocation details for LWE scheme implementation for FY 2025-26.",
+          "name": "State-wise allocation of funds for implementation of work sanctioned under LWE Scheme during the Financial Year 2025-26",
+          "type": "Budget Plan",
+          "description": "Provides details on state-wise fund allocation for projects sanctioned under the LWE Scheme for FY 2025-26.",
           "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/16-State-%20wise%20allocation%20of%20fund%20under%20LWE%20dated%2008%20April%202025_0001.pdf"
-        },
-        {
-          "year": 2025,
-          "name": "Allocation and release of funds to the National Highways Authority of India(NHAI) for incurring expenditure on the Maintenance and Repairs of National Highways during the Financial Year 2025-26",
-          "type": "Financial Report",
-          "description": "Details funds allocated and released to NHAI for national highway maintenance/repairs in FY 2025-26.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/1-Allocation%20and%20release%20of%20fund%20to%20NHAI%20under%20MR%20dated%2008%20April%202025_0001.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/world-banks-report-environmental-and-social-systems-assessment-essa",
-      "documents": [
-        {
-          "year": 2022,
-          "name": "World Bank's Report on Environmental and Social Systems Assessment (ESSA)",
-          "type": "Sectoral Publication",
-          "description": "Comprehensive assessment of environmental and social systems for road safety improvement as part of World Bank supported initiatives.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/World%20Bank%20Report%20on%20Environmental%20and%20Social%20Systems%20Assessment%20%28ESSA%29%281%29.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/presentationsreports12-15",
-      "documents": [
-        {
-          "year": 2022,
-          "name": "World Bank's Report on Environmental and Social Systems Assessment (ESSA)",
-          "type": "Whitepaper",
-          "description": "Assessment report by the World Bank on environmental and social systems relevant to India's road transport sector.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/World%20Bank%20Report%20on%20Environmental%20and%20Social%20Systems%20Assessment%20%28ESSA%29_0.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/road-accident-in-india",
-      "documents": [
-        {
-          "year": 2023,
-          "name": "Annual Report on Motor Vehicle Accident Fund & Compensation to Victims of Hit & Run Motor Accidents Scheme, 2022",
-          "type": "Annual Report",
-          "description": "Annual report detailing the management of the Motor Vehicle Accident Fund and compensation to victims for the year 2022.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Annual-Report-FY-2022-23-MVL.pdf"
-        },
-        {
-          "year": 2022,
-          "name": "Road Accidents in India - 2022",
-          "type": "Sectoral Publication",
-          "description": "Comprehensive statistical report on road accidents in India for the year 2022.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/RA_2022_30_Oct.pdf"
-        },
-        {
-          "year": 2021,
-          "name": "Road Accidents in India - 2021",
-          "type": "Sectoral Publication",
-          "description": "Annual statistical analysis of road accidents in India for the year 2021.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/RA_2021_Compressed.pdf"
         }
       ]
     },
@@ -121,55 +160,38 @@
       "documents": [
         {
           "year": null,
-          "name": "A Booklet on GST in Transport Sector",
+          "name": "Part 1 - Path Bharti Volume 2",
           "type": "Sectoral Publication",
-          "description": "A booklet offering details on the implementation of GST within the transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/road-transport-year-books",
-      "documents": [
+          "description": "First part of Volume 2 of Path Bharti, focusing on recent trends in the road and highway sector.",
+          "documentUrl": "https://morth.nic.in/en/sites/default/files/other_files/SSL_Part_11670371145.pdf"
+        },
         {
           "year": null,
-          "name": "A Booklet on GST in Transport Sector",
+          "name": "Part 2 - Path Bharti Volume 2",
           "type": "Sectoral Publication",
-          "description": "Booklet provides insights into the impact and structure of GST in India's transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/detailed-demands-grants",
-      "documents": [
-        {
-          "year": 2024,
-          "name": "Detailed Demands for Grants for 2024-25",
-          "type": "Financial Report",
-          "description": "Financial report outlining budgetary demands and allocations for the fiscal year 2024-25.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH-YR--2024-25%20(PDF).pdf"
+          "description": "Second part of Volume 2 of Path Bharti, containing updates on road transport and infrastructure.",
+          "documentUrl": "https://morth.nic.in/en/sites/default/files/other_files/SSL_Part_23961185233.pdf"
         },
         {
-          "year": 2023,
-          "name": "Detailed Demands for Grants for 2023-24",
-          "type": "Financial Report",
-          "description": "Annual financial demands and grant allocation report for the Ministry for year 2023-24.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-RTH%202023-24%20pdf(3).pdf"
-        },
-        {
-          "year": 2022,
-          "name": "Detailed Demands for Grants for 2022-23",
-          "type": "Financial Report",
-          "description": "Comprehensive financial allocation and spending plan for the Ministry for 2022-23.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/DDG-PDF-NEW-UPDATED-2022-23-RTH.pdf"
-        },
-        {
-          "year": 2022,
-          "name": "A Booklet on GST in Transport Sector",
+          "year": null,
+          "name": "Part 4 - Path Bharti Volume 2",
           "type": "Sectoral Publication",
-          "description": "Booklet outlining the impact and application of GST in the Indian transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
+          "description": "Fourth part of Volume 2 of Path Bharti, analyzing market and sector growth.",
+          "documentUrl": "https://morth.nic.in/en/sites/default/files/other_files/SSL_Part_49154637237.pdf"
+        },
+        {
+          "year": null,
+          "name": "Part 1 - Path Bharti Volume 1",
+          "type": "Sectoral Publication",
+          "description": "First part of Volume 1 of Path Bharti, highlighting initial issues in the sector series.",
+          "documentUrl": "https://morth.nic.in/en/sites/default/files/other_files/SSL_Part1156138789.pdf"
+        },
+        {
+          "year": null,
+          "name": "Part 3 - Path Bharti Volume 1",
+          "type": "Sectoral Publication",
+          "description": "Third part of Volume 1 of Path Bharti, including sector-relevant articles.",
+          "documentUrl": "https://morth.nic.in/en/sites/default/files/other_files/SSL_part3229484684.pdf"
         }
       ]
     },
@@ -179,57 +201,136 @@
         {
           "year": null,
           "name": "A Booklet on GST in Transport Sector",
-          "type": "Whitepaper",
-          "description": "Booklet outlining the impact and applications of GST in the Indian transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/result-framework-document-rfd",
-      "documents": [
-        {
-          "year": null,
-          "name": "A Booklet on GST in Transport Sector",
-          "type": "Whitepaper",
-          "description": "Booklet summarizing the implications of GST implementation in the Indian transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/national-road-safety-policy-1",
-      "documents": [
-        {
-          "year": null,
-          "name": "A Booklet on GST in Transport Sector",
           "type": "Sectoral Publication",
-          "description": "Booklet providing an overview of the impact and application of GST within the Indian transport sector.",
+          "description": "Booklet explaining Goods and Services Tax (GST) implications for the transport sector.",
           "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
         }
       ]
     },
     {
-      "sourceUrl": "https://morth.nic.in/en/citizen-corner",
-      "documents": [
-        {
-          "year": null,
-          "name": "A Booklet on GST in Transport Sector",
-          "type": "Sectoral Publication",
-          "description": "Booklet providing information on Goods and Services Tax in the transport sector.",
-          "documentUrl": "https://morth.nic.in/en/sites/default/files/File2842.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/technical_circulars",
+      "sourceUrl": "https://nhidcl.com/",
       "documents": [
         {
           "year": 2024,
-          "name": "Expert Committee Report on Cost Effective Long-term Remedial Measures for Landslide Prone Areas in Hilly Regions",
-          "type": "Committee Report",
-          "description": "Report recommending cost-effective, long-term solutions for landslide-prone hilly highway regions.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/OM%20with%20report_circulared_28112024.pdf"
+          "name": "Annual Report 2023-2024",
+          "type": "Annual Report",
+          "description": "Annual report covering NHIDCL activities and financials for FY 2023-24.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2025/04/NHIDCL_AR_2023-24_Eng.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2022-2023",
+          "type": "Annual Report",
+          "description": "Annual report detailing performance, achievements and accounts for FY 2022-23.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2025/01/NHIDCL_AR_2022-23_Eng-Final-29.05.2024-Low-1.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report 2021-2022",
+          "type": "Annual Report",
+          "description": "Annual report with insights on operations, project progress and finances for 2021-22.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2023/06/FINAL-ENGLISH-NHIDCL-2023.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Annual Return 2021",
+          "type": "Annual Return",
+          "description": "Annual statutory return filing with company data for FY 2021.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2023/04/annaul-return-2021.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "NHIDCL all Projects status as on 31.03.2025",
+          "type": "Sectoral Publication",
+          "description": "Status report of all NHIDCL road projects as of March 2025.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2025/04/NHIDCL-all-Projects-status-as-on-31.03.2025.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "NHIDCL Project Status as on 29.02.2024",
+          "type": "Sectoral Publication",
+          "description": "Overview and progress details of ongoing NHIDCL projects as of February 2024.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2024/03/NHIDCL-Project-Status-as-on-29.02.2024-for-uploading-on-Portal.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Sugampath",
+          "type": "Sectoral Publication",
+          "description": "Brochure highlighting NHIDCL's Sugampath initiative for highway infrastructure.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2023/05/Sugampath.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "BGMS eBook",
+          "type": "Sectoral Publication",
+          "description": "Document on BGMS (Bank Guarantee Management System) procedures and usage.",
+          "documentUrl": "https://nhidcl.com/wp-content/uploads/2024/02/BGMS-eBook.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://morth.nic.in/en/world-banks-report-environmental-and-social-systems-assessment-essa",
+      "documents": [
+        {
+          "year": null,
+          "name": "World Bank's Report on Environmental and Social Systems Assessment (ESSA)",
+          "type": "Sectoral Publication",
+          "description": "Assessment report evaluating environmental and social systems relating to World Bank-supported transport sector projects.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/World%20Bank%20Report%20on%20Environmental%20and%20Social%20Systems%20Assessment%20%28ESSA%29%281%29.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://nhai.gov.in/",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "भारत में एनएचएआई बुक - रोड डेवलपमेंट",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive book detailing NHAI's road development initiatives in India.",
+          "documentUrl": "https://nhai.gov.in/assets/pdf/2024_Final_NHAI_book.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Bharatmala NH Highlighted 2023 Project",
+          "type": "Mission Plan",
+          "description": "Map highlighting Bharatmala national highway projects as of 2023.",
+          "documentUrl": "https://nhai.gov.in/assets/pdf/Bharatmala_NH_highlighted_2023_Project.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Navbharat Times Ghaziabad 24-12-2024",
+          "type": "Sectoral Publication",
+          "description": "Report on completion of the first phase of Delhi-Dehradun highway and impact.",
+          "documentUrl": "https://nhai.gov.in/nhai/sites/default/files/2024-12/Navbharat-Times-Ghaziabad-24-12-2024.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Office Order for Tentative List of Road Assets for Monetisation",
+          "type": "Asset Monetization Plan",
+          "description": "List of road assets identified by NHAI for monetisation in financial year 2025-26.",
+          "documentUrl": "https://nhai.gov.in/nhai/sites/default/files/mix_file/Office_order_for_Tentative_List_of_Road_assets_for_monetisation.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "DMEDL Green Bond Framework",
+          "type": "Financial Report",
+          "description": "Framework outlining the green bond issuance by DMEDL for infrastructure funding.",
+          "documentUrl": "https://nhai.gov.in/nhai/sites/default/files/mix_file/DMEDL_Green-BondFramework.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "ATMS 11-53",
+          "type": "Industry Strategy Document",
+          "description": "Standards and implementation plan for Advanced Traffic Management System on highways.",
+          "documentUrl": "https://nhai.gov.in/nhai/sites/default/files/mix_file/ATMS_11-53.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "BOT Projects FY",
+          "type": "Sectoral Publication",
+          "description": "Pipeline document listing BOT toll projects managed or planned by NHAI.",
+          "documentUrl": "https://nhai.gov.in/nhai/sites/default/files/mix_file/BOT-Projects-FY.pdf"
         }
       ]
     },
@@ -240,79 +341,15 @@
           "year": 2024,
           "name": "Changes in the Model Bidding document/Model Concession Agreement being used for Monetization of Public-Funded Operational National Highway Projects under Tolling, Operation, Maintenance and Transfer (TOT) Model",
           "type": "Industry Strategy Document",
-          "description": "Document outlining updates to bidding and concession models for monetizing public-funded highway projects under the TOT model.",
+          "description": "Document details amendments to bidding and concession agreements for monetizing public-funded national highway projects via the TOT model.",
           "documentUrl": "https://morth.nic.in/sites/default/files/2-Monetization%20of%20PublicFunded%20Operational%20National%20Highway%20Projects%20under%20TOT.pdf"
         },
         {
-          "year": 2023,
-          "name": "Inclusions of provisions regarding accepting E-Bank Guarantee and Insurance Surety Bonds as ‘Bid Security’ and ‘Performance Security’ in standard documents of EPC, HAM and BOT (Toll)",
-          "type": "Industry Strategy Document",
-          "description": "Explains the adoption of digital bank guarantees and surety bonds in bidding and contract security documentation.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/1-A-Bid-security-Annexure.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/desk-director-general-road-development-ss",
-      "documents": [
-        {
-          "year": 2023,
-          "name": "Address of DG(RD) & SS on 04-05-2023 on Sanction of Annual Plan NH Works",
-          "type": "Sectoral Publication",
-          "description": "Document outlining actions for the sanction of Annual Plan National Highway works in 2023-24.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/ROs%20and%20Zonal%20Heads%20%28N-I%2C%20NER%20and%20S-I%29%20in%20the%20VC%20on%20strategy%20in%202023-24.pdf"
-        },
-        {
-          "year": 2023,
-          "name": "Address of DG (RD) on 02-05-2023 on award of NH works in 2023-24",
-          "type": "Sectoral Publication",
-          "description": "Strategy presentation for awarding National Highway works for fiscal year 2023-24.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/1-Address%20of%20DG%20%28RD%29%20on%2002-05-2023%20with%20ROs%20and%20Zonal%20Heads%20%28N-I%2C%20NER%20and%20S-I%29.pdf"
-        },
-        {
-          "year": 2022,
-          "name": "First Address of Director General (Road Development) & SS on 04-11-22 after taking charge",
-          "type": "Sectoral Publication",
-          "description": "Introductory address on priorities and work plan for the Road Development division.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/First%20Adress%20of%20DGRD%20%26%20SS%20on%2004-11-22%20after%20taking%20charge%20through%20VC%20.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/presentations-made-22042016-finalization-agenda-group-ministers",
-      "documents": [
-        {
-          "year": null,
-          "name": "Presentation on Documentation and Procedure Simplification",
-          "type": "Industry Strategy Document",
-          "description": "Discusses approaches for simplifying documentation and procedures in the road transport sector.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/5%20Documentation%20Section-1218886253.pdf"
-        },
-        {
-          "year": null,
-          "name": "Presentation on Future of Public Transport",
-          "type": "Sectoral Publication",
-          "description": "Provides insights and strategies for the future development of public transport in India.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/7%20MORTH%2022nd%20April%20Delhi-9360816991.pdf"
-        },
-        {
-          "year": null,
-          "name": "Presentation on Effective Movement of Goods Traffic across the States to Reduce Logistic Cost in India",
-          "type": "Industry Strategy Document",
-          "description": "Outlines strategies to improve inter-state movement of goods and reduce logistics costs.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/9%20Presentation%20road%20safety-0104433746.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/Circulars-Notifications-related-to-Vehicle-Scrapping-Policy",
-      "documents": [
-        {
           "year": 2024,
-          "name": "Status of Forward Auction Portal developed by GeM",
-          "type": "Sectoral Publication",
-          "description": "Overview report on the status of the Forward Auction Portal by Government e-Marketplace (GeM) related to vehicle scrapping.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/OM-%20Status-of-Forward-Auction-Portal-developed-by-GeM-Reg.pdf"
+          "name": "Changes in the provisions of Model Concession Agreement (MCA) for Capacity Augmentation on BOT (Toll)",
+          "type": "Industry Strategy Document",
+          "description": "Describes updates made to the Model Concession Agreement for capacity augmentation on BOT (Toll) highway projects.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/3-(MCA)%20for%20Capacity%20Augmentation%20on%20BOT%20(Toll).pdf"
         }
       ]
     },
@@ -321,140 +358,784 @@
       "documents": [
         {
           "year": 2024,
-          "name": "AIS-115 (Rev.1)(Part-1): Driver-Perceived Noise Level of Agricultural and Forestry Tractor - Draft",
+          "name": "AIS-157A: Hydrogen Fuel Cell Vehicles-Constructional Equipment Vehicles (CEV)",
           "type": "Sectoral Publication",
-          "description": "Draft document specifying driver-perceived noise level standards for tractors.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/7-AIS-115_Part-1_DF_August%202024.pdf"
+          "description": "Draft standards for hydrogen fuel cell vehicles in the construction equipment category.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/9-AIS157A_DF_August%202024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-098 (Rev.1): Offset Frontal Collision - Draft",
+          "name": "AIS-098 (Rev.1): Offset frontal Collision",
           "type": "Sectoral Publication",
-          "description": "Draft requirements for offset frontal collision in automotive vehicles.",
+          "description": "Draft regulation covering safety requirements for offset frontal collisions.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/5-AIS_098_Rev_1_DF_August_2024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-034 (Rev.3)(Part-2): Gas Discharge Light Sources - Draft",
+          "name": "AIS-034 (Rev.3)(Part-2): Gas Discharge Light Sources",
           "type": "Sectoral Publication",
-          "description": "Draft code for gas discharge light sources in automotive lighting systems.",
+          "description": "Draft sectoral standard for gas discharge vehicle light sources.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/4-AIS-034_%28Rev.3%29_%28Part%202%29_DF_August%202024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-198: Light Signalling Devices (LSD) - Draft",
+          "name": "AIS-206: Hydrogen Powered L-Category Vehicles (Compressed Gaseous Hydrogen)",
           "type": "Sectoral Publication",
-          "description": "Draft technical standard for light signaling devices in the automotive industry.",
+          "description": "Draft sectoral requirements for hydrogen-powered L-category vehicles.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/21-AIS-206_DF_August%202024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIS-198: Light Signalling Devices (LSD)",
+          "type": "Sectoral Publication",
+          "description": "Draft requirements for automotive light signaling devices.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/15-AIS-198_DF_August%202024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-201: Frontal Collision with Focus on Restraint Systems - Draft",
+          "name": "AIS-205: On-board weighing equipment",
           "type": "Sectoral Publication",
-          "description": "Draft standards on restraint systems for improved frontal collision safety in vehicles.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/18-AIS_201_DF_August%202024.pdf"
+          "description": "Draft requirements for onboard weighing systems in vehicles.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/20-AIS_205_DF_August_2024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-199: Road Illumination Devices (RID) - Draft",
+          "name": "AIS-199: Road illumination Devices (RID)",
           "type": "Sectoral Publication",
-          "description": "Draft standards for road illumination devices adopted in the automotive sector.",
+          "description": "Draft requirements for road illumination devices in automotive vehicles.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/16-AIS-199_DF_August%202024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-191 (Part-1): Emergency Lane Keeping System (ELKS) - Draft",
+          "name": "AlS-191 (Part-1): Emergency Lane Keeping System (ELKS)",
           "type": "Sectoral Publication",
-          "description": "Draft requirements for emergency lane keeping systems in motor vehicles.",
+          "description": "Draft standard for emergency lane keeping systems in vehicles.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/12-AIS_191_Part1_DF_August%202024.pdf"
         },
         {
           "year": 2024,
-          "name": "AIS-188: Lane Departure Warning System (LDWS) - Draft",
+          "name": "AIS-192: Event Data Recorder (EDR)",
           "type": "Sectoral Publication",
-          "description": "Draft standards for lane departure warning systems in the automotive sector.",
+          "description": "Draft sectoral requirements for event data recorders in vehicles.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/ASI/13-AIS_192_DF_August_2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIS-188: Lane Departure Warning System (LDWS)",
+          "type": "Sectoral Publication",
+          "description": "Draft sectoral publication on lane departure warning systems for vehicles.",
           "documentUrl": "https://morth.nic.in/sites/default/files/ASI/11-AIS_188_DF_August%202024.pdf"
         }
       ]
     },
     {
-      "sourceUrl": "https://morth.nic.in/en/Monthly-Summary",
+      "sourceUrl": "https://morth.nic.in/en/allocation-nhidcl-under-sardp-ne",
       "documents": [
         {
-          "year": 2025,
-          "name": "Monthly Summary for the Cabinet for the Month of February, 2025",
+          "year": 2023,
+          "name": "Allocation to NHIDCL under SARDP-NE",
+          "type": "Budget Plan",
+          "description": "Budget allocation document to NHIDCL for the SARDP-NE programme for 2023.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Sanction/NHIDCL-4969253427.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://morth.nic.in/en/circular-road-safety",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Road Safety Action Plan for road engineering interventions on National Highways",
+          "type": "Mission Plan",
+          "description": "An action plan focused on road engineering measures to enhance safety on national highways.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/circulars_document/13%20Jan%202023%20Road%20Safety%20Action%20Plan.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://morth.nic.in/en/externally-aided-project",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "EIA for the project Rehabilitation and Upgrading to Two Lane Upgradation with Paved Shoulders of KOYYURU-CHAPARATHIPALEMLAMMASINGI-PADERU SECTION OF NH-516E IN THE STATE OF ANDHRA PRADESH UNDER GNHCP SCHEME",
           "type": "Sectoral Publication",
-          "description": "Monthly report detailing the principal activities of the Ministry for February 2025.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Monthly_Summary/Monthly%20Summary%20-%20February,%202025.pdf"
+          "description": "Environmental Impact Assessment for upgrading NH-516E in Andhra Pradesh under the Green National Highways Corridor Project.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Revised%20EIA%20Koyyuru-Paderu%20NH-516E_AC%20(28-Sept-2023)-withcomments_19-12-2023%20v%20RSA%20(1).pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Rehabilitation and Upgrading to 2 lanes/ 2 lane with paved shoulders configuration and strengthening of Hamirpur-Mandi Section (Km 141-Km 265) of NH-70 in the State of Himachal Pradesh",
+          "type": "Sectoral Publication",
+          "description": "Project report for rehabilitation and upgrading of Hamirpur-Mandi Section of NH-70 in Himachal Pradesh.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Draft%20-%20NH-70_EIA%20HP_4-8-23%20(1).pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Draft - TDP for the project Rehabilitation and Upgradation to two Lane with paved shoulder configurations of to Koyyuru-Paderu Road Section of NH -516E in the State of Andhra Pradesh",
+          "type": "Mission Plan",
+          "description": "Draft Tribal Development Plan for the upgrading of NH-516E Koyyuru-Paderu section in Andhra Pradesh.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/TDP-NH-516E-Koyurru-Paderu-11.05.2023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Rehabilitation and Upgradation to two Lane with paved shoulder configurations of to Koyyuru -Paderu Road Section (Km 120+000 to Km 253+09) of NH-516E in the State of Andhra Pradesh under Green National Highways corridor Project (GNHCP) with the loan assistance of the World Bank",
+          "type": "Sectoral Publication",
+          "description": "Social Impact Assessment for upgrading NH-516E Koyyuru-Paderu under the Green National Highways Corridor Project.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/NH-516E%20PKG%201-3%20Draft%20SIA.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Final Draft - EIA-EMP for Bewer-Pilibhit Section of NH-730C & 731K in the State of Uttar Pradesh under GNHCP",
+          "type": "Sectoral Publication",
+          "description": "Environmental Impact and Environmental Management Plan for Bewer-Pilibhit sections of NH-730C & 731K under Green National Highways Corridor Project.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Final%20Draft_%20EIA-EMP%20Report%20-%20NH%20730C%20and%20731K%20-%20Bewar%20Pilibhit%20Section%20in%20UP%2024.08.2022_compressed.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Final Draft - TDP for Rehabilitation and Upgradation to 2-lane with paved shoulder configuration of Paderu to Araku (Upto Bhalluguda) section (Km 2.400 to Km 51.772) of NH-516E in the State of Andhra Pradesh under GNHCP",
+          "type": "Mission Plan",
+          "description": "Final Draft Tribal Development Plan for the Paderu to Araku section of NH-516E in Andhra Pradesh.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/NH-516E%204-5%20TDP-Final%20Draft.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Draft EIA for Upgradation of Bewar-Etawah Section (Km 0.000 to Km 57.346) of NH-92 in the State of Uttar Pradesh under GNHCP",
+          "type": "Sectoral Publication",
+          "description": "Draft Environmental Impact Assessment for the upgradation of Bewar-Etawah Section of NH-92 under Green National Highways Corridor Project.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/GNHCP%20-%20Uttar%20Pradesh%20-%20NH%2092%20-%20Draft%20EIA-EMP%20Report%2008062022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://morth.nic.in/en/presentations-workshop",
+      "documents": [
+        {
+          "year": null,
+          "name": "Pre-Cast Concrete: Manufacturers Perspective including Quality Certification by Shri Anurag Sachan",
+          "type": "Sectoral Publication",
+          "description": "Industry perspective on pre-cast concrete production and quality certification in infrastructure projects.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Pre_Cast%20Concrete%20-%20Manufacturers%20Perspective%20including%20Quality%20Certification%20by%20Shri%20Anurag%20Sachan.pdf"
+        },
+        {
+          "year": null,
+          "name": "Pre-Cast Concrete: Un-reinforced Arch Pre-Cast Concrete by Shri Chetan Pawar",
+          "type": "Sectoral Publication",
+          "description": "Insight into un-reinforced arch pre-cast concrete applications for highway projects.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/Pre_Cast%20Concrete%20-Un_reinforced%20Arch%20Pre-cast%20Concrete%20by%20Shri%20Chetan%20Pawar.pdf"
+        },
+        {
+          "year": null,
+          "name": "UHPFRC-Contractor’s Perspective by Shri Altaf Ahmed Qureshi",
+          "type": "Sectoral Publication",
+          "description": "Contractor's insights on the use and implementation of ultra-high-performance fiber reinforced concrete.",
+          "documentUrl": "https://morth.nic.in/sites/default/files/UHPFRC-Contractor%E2%80%99s%20Perspective%20by%20Shri%20Altaf%20Ahmed%20Qureshi%20.pdf"
+        }
+      ]
+    }
+  ],
+  "Tourism": [
+    {
+      "sourceUrl": "https://tourism.gov.in/whats-new/national-strategy-adventure-tourism",
+      "documents": [
+        {
+          "year": 2022,
+          "name": "National Strategy for Adventure Tourism",
+          "type": "Industry Strategy Document",
+          "description": "A strategic framework document for the growth and regulation of India's adventure tourism sector.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/National%20Strategy%20for%20Adventure%20Tourism_0.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/perspective-plans-statesuts",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Preparation of 20 years Prospective Plan for the state of Orissa",
+          "type": "Mission Plan",
+          "description": "A comprehensive 20-year plan outlining tourism development strategies for the state of Orissa.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/Preparation%20of%2020%20years%20Prospective%20Plan%20for%20the%20state%20of%20Orissa.pdf"
         },
         {
           "year": 2024,
-          "name": "Monthly Summary for the Cabinet for the Month of August, 2024",
-          "type": "Sectoral Publication",
-          "description": "Monthly report detailing the principal activities of the Ministry for August 2024.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Monthly_Summary/Monthly%20Summary%20-%20August,%202024.pdf"
+          "name": "Preparation of 20 years Prospective Plan for the state of Jharkhand",
+          "type": "Mission Plan",
+          "description": "A detailed strategy for developing tourism infrastructure and industry in Jharkhand over 20 years.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/Preparation%20of%2020%20years%20Prospective%20Plan%20for%20the%20state%20of%20Jharkhand%20.pdf"
         }
       ]
     },
     {
-      "sourceUrl": "https://morth.nic.in/en/reports-working-group-4-es-road-safety-0",
-      "documents": [
-        {
-          "year": null,
-          "name": "Report of the Working Group on Road Safety Education (RSE)",
-          "type": "Whitepaper",
-          "description": "Report providing recommendations on road safety education strategies in India.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Report_of_working.pdf"
-        },
-        {
-          "year": null,
-          "name": "Report of the Working Group on Emergency Care in India",
-          "type": "Whitepaper",
-          "description": "Report analyzing emergency care systems and proposals for improvements in India.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/group_on_Emergency_Care%20-3634804396.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/presentations-working-groups-road-safety-0",
-      "documents": [
-        {
-          "year": null,
-          "name": "Road Engineering Aspects of Safety",
-          "type": "Sectoral Publication",
-          "description": "Report discussing the engineering factors involved in improving road safety.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Road_Engineering_Aspects_of_Safety%281%29.pdf"
-        },
-        {
-          "year": null,
-          "name": "Engineering Vehicles",
-          "type": "Sectoral Publication",
-          "description": "Document focusing on engineering vehicles as they relate to road safety.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Engineering_Vehicles_0.pdf"
-        }
-      ]
-    },
-    {
-      "sourceUrl": "https://morth.nic.in/en/whats-new",
+      "sourceUrl": "https://tourism.gov.in/demand-grant-2025-26",
       "documents": [
         {
           "year": 2025,
-          "name": "Detailed Demands for Grants for 2025-26",
+          "name": "DDG 2025-2026",
+          "type": "Budget Plan",
+          "description": "Detailed Demand for Grants for the Ministry of Tourism for the financial year 2025-2026.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "http://tourism.gov.in/study-reports",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Final Report Assessment of Tourist Destination English",
+          "type": "Sectoral Publication",
+          "description": "A study assessing tourist destinations in terms of infrastructure and cleanliness.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-02/Final%20Report_Assessment%20of%20Tourist%20Destination_%20English.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "NCAER India and Coronavirus Report FINAL ENGLISH",
+          "type": "Sectoral Publication",
+          "description": "Analysis of economic losses for households engaged in tourism due to the COVID-19 pandemic (English).",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-01/NCAER_India%20and%20Coronavirus%20Report_FINAL_ENGLISH.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Final Report on Monuments (English)",
+          "type": "Sectoral Publication",
+          "description": "Study analyzing recent trends in visitor arrivals to centrally protected monuments (English).",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-06/Final%20Report%20on%20Monuments%20%28English%29.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Luxury Train Project Report (English)",
+          "type": "Sectoral Publication",
+          "description": "Study on the role of luxury trains in promoting tourism in India (English version).",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/Luxury%20Train%20Project%20Report%20%28English%29_0.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Tourism-Corona Report Print version",
+          "type": "Sectoral Publication",
+          "description": "Report on the economic impact of the coronavirus pandemic on households engaged in tourism and related policy responses (English).",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2021-11/Tourism-Corona%20Report_Print%20version.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/divisions/finance",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "DDG 2025-2026.pdf",
+          "type": "Budget Plan",
+          "description": "Document contains the Detailed Demands for Grants for the Ministry for 2025-26.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "OOMF 2024-2025.pdf",
+          "type": "Outcome Monitoring Framework",
+          "description": "Output Outcome Monitoring Framework prepared for the tourism sector for 2024-25.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/OOMF%202024-2025.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "DDG 2024-2025.pdf",
+          "type": "Budget Plan",
+          "description": "Detailed Demands for Grants document for the Ministry for 2024-25.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Output-Outcome Monitoring Framework 2023-2024.pdf",
+          "type": "Outcome Monitoring Framework",
+          "description": "Output Outcome Monitoring Framework for the Ministry of Tourism for 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024.pdf",
+          "type": "Budget Plan",
+          "description": "Comprehensive financial plan detailing grants for the Ministry of Tourism for 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/index.php/schemes-guidelines-schemes/swadesh-darshan-scheme",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "State wise list of projects under Swadesh Darshan Scheme (SD1.0) till 28.02.2023",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive list of tourism infrastructure projects sanctioned under the Swadesh Darshan Scheme up to February 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/SD%20-%20State%20wise%20list%20of%20projects.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2024-25",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "OOMF 2024-2025",
+          "type": "Budget Plan",
+          "description": "This document outlines the Output Outcome Monitoring Framework for the Ministry of Tourism for 2024-2025.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/OOMF%202024-2025.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/demand-grant-2024-25",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "DDG 2024-2025",
+          "type": "Budget Plan",
+          "description": "Demand for Grants document for the Ministry of Tourism for the financial year 2024-2025.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2023-24",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Output-Outcome Monitoring Framework 2023-2024",
+          "type": "Sectoral Publication",
+          "description": "This document outlines the Output-Outcome Monitoring Framework for the Ministry of Tourism for the year 2023-2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/demand-grant-2023-24",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024",
+          "type": "Budget Plan",
+          "description": "Comprehensive budget plan outlining the financial allocations and demands for the Ministry of Tourism for the year 2023-2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/divisions/finance?page=1",
+      "documents": [
+        {
+          "year": 2022,
+          "name": "Output-Outcome Monitoring Framework 2022-23",
+          "type": "Budget Plan",
+          "description": "This document presents the output and outcome monitoring framework for the Ministry of Tourism for 2022-23.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/Output-Outcome%20Monitoring%20Framework%202022-23.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Detailed Demand For Grants Of Ministry of Tourism For 2022-23",
+          "type": "Budget Plan",
+          "description": "Details the budgetary demand for grants for the Ministry of Tourism for the financial year 2022-23.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/Detailed%20Demand%20For%20Grants%20Of%20Ministry%20of%20Tourism%20For%202022-23.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Demand for Grants of Ministry of Tourism for 2021-2022",
+          "type": "Budget Plan",
+          "description": "Provides details on the demand for grants for the Ministry of Tourism for the year 2021-22.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2021-03/Demand%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%2020212022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/media/annual-reports",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "India Tourism Data Compendium 2024",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive compendium of tourism data for India for the year 2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%202024_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "India Tourism Data Compendium Key Highlights 2024",
+          "type": "Sectoral Publication",
+          "description": "Key highlights from the India Tourism Data Compendium 2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%20Key%20Highlights%202024%20%281%29.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Annual Report 2024-25 - English",
+          "type": "Annual Report",
+          "description": "Ministry of Tourism's annual summary and analysis for the year 2024-25 (English).",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/Ministry%20of%20Tourism%20Annual%20Report_2024-25_ENGLISH_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2023-24",
+          "type": "Annual Report",
+          "description": "Ministry of Tourism's annual summary and analysis for the year 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-08/MOT%20Annual%20Report_2023-24_English%20Final.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/study-reports?page=1",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Regional Tourism Satellite Account for year 2015-16: Puducherry",
+          "type": "Sectoral Publication",
+          "description": "Statistical account assessing the tourism sector's impact in Puducherry for 2015-16, released in 2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/RTSA%20%20Puducherry%202015-16.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2025-26",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "OOMF 2025-2026.pdf",
+          "type": "Budget Plan",
+          "description": "Output Outcome Monitoring Framework outlining planned allocations and outcomes for the Ministry of Tourism for 2025-26.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/OOMF%202025-2026.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/divisions/finance?page=0",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "DDG 2025-2026.pdf",
+          "type": "Budget Plan",
+          "description": "Detailed Demands for Grants for the Ministry of Tourism for fiscal year 2025-26.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "DDG 2024-2025.pdf",
+          "type": "Budget Plan",
+          "description": "Detailed Demands for Grants for the Ministry of Tourism for fiscal year 2024-25.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Output-Outcome Monitoring Framework 2023-2024.pdf",
+          "type": "Monitoring Framework",
+          "description": "Output Outcome Monitoring Framework specifying annual objectives and outcomes for 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024.pdf",
+          "type": "Budget Plan",
+          "description": "Financial plan presenting demands for grants for the Ministry of Tourism for 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://pib.gov.in/Allrel.aspx",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Fact Check in Numbers",
+          "type": "Sectoral Publication",
+          "description": "A report summarizing fact-checking statistics and activities conducted by the PIB Fact Check Unit.",
+          "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc202544533601.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation Budget",
+          "type": "Budget Plan",
+          "description": "Budget allocation details for financial planning within PIB.",
+          "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc2025417541401.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/market-research-and-statistics",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Annual Report 2024-25 - English",
+          "type": "Annual Report",
+          "description": "Comprehensive report on Ministry of Tourism activities, schemes, and initiatives for 2024-25.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/Ministry%20of%20Tourism%20Annual%20Report_2024-25_ENGLISH_0_1.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2023-24 - English",
+          "type": "Annual Report",
+          "description": "Annual summary of Ministry of Tourism’s performance, policy initiatives, and sectoral developments for 2023-24.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/MOT%20Annual%20Report_2023-24_English%20Final%20%281%29_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report 2022-23 - English",
+          "type": "Annual Report",
+          "description": "Details Ministry of Tourism’s major activities, financials, and sector analysis for 2022-23.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/MOT%20Annual%20Report_2022-23_English%20%282%29_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "India Tourism Data Compendium 2024",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive compilation of statistical data and insights on the Indian tourism sector for 2024.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%202024.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "India Tourism Statistics 2023- English",
+          "type": "Sectoral Publication",
+          "description": "Annual statistical overview of tourism trends, arrivals, and sector performance for 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Statistics%202023-English%20%281%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics 2022- English",
+          "type": "Sectoral Publication",
+          "description": "Statistical annual report providing key metrics and analysis of Indian tourism for 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/India%20Tourism%20Statistics%20English%202022%20%28Revise%29%20%281%29.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "India Tourism Statistics 2021- English",
+          "type": "Sectoral Publication",
+          "description": "Provides key statistics and trends in India’s tourism sector for 2021.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/India%20Tourism%20Statistics%202021.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "India Tourism Data Compendium Key Highlights 2024",
+          "type": "Sectoral Publication",
+          "description": "Summary highlights from the India Tourism Data Compendium 2024, featuring key trends and metrics.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%20Key%20Highlights%202024%20%281%29_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics at a Glance 2022-English",
+          "type": "Sectoral Publication",
+          "description": "Compact overview of the latest essential tourism-related statistics for 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%20200%20%28Eng%29_1.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "India Tourism Statistics at a Glance 2021-English",
+          "type": "Sectoral Publication",
+          "description": "Essential tourism statistics presented in a concise format for 2021.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2021-09/English%20Tourisum%202021.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief note on tourism statistics 2022",
+          "type": "Sectoral Publication",
+          "description": "Summary note on tourism statistics for 2022, including ITA, FTA, NRI, FEE, and IND data.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-12/brief%20note%20on%20tourism%20statistics%202022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Year 2022 : Brief-Write-up",
+          "type": "Sectoral Publication",
+          "description": "Brief analytical write-up detailing key trends in Domestic and Foreign Tourist Visits for 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-09/Breif%20Note%20DTV-FTV%2022%20%283%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Year 2022 : Figures",
+          "type": "Sectoral Publication",
+          "description": "Key statistical figures on Domestic and Foreign Tourist Visits for 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-09/Figures%202022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/media/annual-reports/annual-reports-archive",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Annual Report 2022-23",
+          "type": "Annual Report",
+          "description": "Comprehensive report on the Ministry of Tourism's performance and initiatives for 2022-23.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/MOT%20Annual%20Report_2022-23_English.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics at a Glance 2022",
+          "type": "Sectoral Publication",
+          "description": "Statistical overview of tourism indicators in India for the year 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%20200%20%28Eng%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics 2022 (Revised)",
+          "type": "Sectoral Publication",
+          "description": "Revised compilation of detailed statistics on Indian tourism for 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/India%20Tourism%20Statistics%20English%202022%20%28Revised%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics at a Glance 2021",
+          "type": "Sectoral Publication",
+          "description": "Summary of tourism statistics in India for the year 2021, published in 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%202021%20%281%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Tourism Statistics 2021",
+          "type": "Sectoral Publication",
+          "description": "Detailed statistics on Indian tourism sector performance in 2021.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%202021%20%281%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report 2021-22",
+          "type": "Annual Report",
+          "description": "Annual summary of achievements and initiatives by the Ministry of Tourism for 2021-22.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-07/Annual%20Report%202021-22%20%28English%29.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Annual Report 2020-21",
+          "type": "Annual Report",
+          "description": "Documentation of key developments and activities in the tourism sector for 2020-21.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2021-03/Annual%20Report%202021%2021%20English.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tourism.gov.in/market-research-and-statistics?page=1",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Brief Note FTAs March 2023",
+          "type": "Sectoral Publication",
+          "description": "This document provides summarized statistics and analysis of Foreign Tourist Arrivals in India for March 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-05/Brief%20Note%20FTAs%20March%2023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Brief Note Jan-Feb 2023",
+          "type": "Sectoral Publication",
+          "description": "Statistical overview of tourism trends in India for January and February 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/Brief%20Note%20Jan-Feb%202023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "brief Note Feb 2023",
+          "type": "Sectoral Publication",
+          "description": "Statistical analysis of tourist inflow to India for February 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/brief%20Note%20Feb%202023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Brief Note Jan 2023",
+          "type": "Sectoral Publication",
+          "description": "Details and figures on Indian tourism departures and arrivals for January 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/Brief%20Note%20Jan%202023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Brief Note FEE Feb 2023",
           "type": "Financial Report",
-          "description": "This document outlines the ministry’s financial requirements and allocations for the fiscal year 2025-26.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/Revised-DDG-RTH-2025-26.pdf"
+          "description": "Financial report outlining Foreign Exchange Earnings from tourism in February 2023.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Brief%20Note%20FEE%20Feb%2023.pdf"
         },
         {
-          "year": 2025,
-          "name": "Distribution of Consolidated Fee deposited in the National Permit Account among the States & Union territories on pro-rata basis for the month of March, 2025",
+          "year": 2022,
+          "name": "Brief Note FTAs Sep 22",
           "type": "Sectoral Publication",
-          "description": "Report on distribution of consolidated national permit fees among states and UTs for March 2025.",
-          "documentUrl": "https://morth.nic.in/sites/default/files/National_Permit/NPF%20SO%20March%202025.pdf"
+          "description": "Brief note with statistical data for Foreign Tourist Arrivals in September 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-12/Brief%20Note%20FTAs%20Sep%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note June 22",
+          "type": "Sectoral Publication",
+          "description": "Overview of Indian tourism developments for June 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-08/Brief%20Note%20June%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note April 22",
+          "type": "Sectoral Publication",
+          "description": "Statistical summary of the tourism sector for April 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-06/Brief%20Note%20April%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note March 22",
+          "type": "Sectoral Publication",
+          "description": "Key trends and data on the tourism sector for March 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/Brief%20Note%20March%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note Jan 22",
+          "type": "Sectoral Publication",
+          "description": "January 2022 report on India's tourism sector performance.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-03/Brief%20Note%20Jan%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note INDs Sep 22",
+          "type": "Sectoral Publication",
+          "description": "Statistical note on Indian National departures in September 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20INDs%20Sep%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note IND Aug 22",
+          "type": "Sectoral Publication",
+          "description": "Indian National departures statistics for August 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/Brief%20Note%20IND%20Aug%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note IND Mar 22",
+          "type": "Sectoral Publication",
+          "description": "Statistical note on Indian National departures in March 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/Brief%20Note%20IND%20Mar%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note IND 22",
+          "type": "Sectoral Publication",
+          "description": "Summary of Indian National departures for January 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2022-03/Brief%20Note%20IND%20%2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note FEE Dec 2022",
+          "type": "Financial Report",
+          "description": "Report on Foreign Exchange Earnings through tourism in December 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/Brief%20Note%20FEE%20Dec%202022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note FEE November 2022",
+          "type": "Financial Report",
+          "description": "Analysis of tourism-driven Foreign Exchange Earnings for November 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20FEE%20November%202022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "brief Note Oct 22 (FEE)",
+          "type": "Financial Report",
+          "description": "Foreign Exchange Earnings through tourism detailed for October 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/brief%20Note%20Oct%2022%20%28FEE%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Brief Note Aug 22 (FEE)",
+          "type": "Financial Report",
+          "description": "Financial report on Foreign Exchange Earnings from tourism for August 2022.",
+          "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20Aug%2022%20%28FEE%29.pdf"
         }
       ]
     }
   ],
 
+  
   "Pharmaceuticals": [
     {
       "sourceUrl": "https://pharma-dept.gov.in/annual-report",
