@@ -169,8 +169,6 @@ async function extractJsonFromResponse(
         tryFallbackExtraction(cleanedResponse);
   
       if (cleanedResult) {
-        console.log('Successfully extracted JSON after cleaning response');
-        console.log('Cleaned response:', cleanedResponse);
         return cleanedResult;
       }
       

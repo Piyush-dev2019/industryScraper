@@ -35,12 +35,12 @@ import FirecrawlApp, {
       URL: ${link}
       RESPOND ONLY WITH JSON format no other text or explanation.
       {
-        "url": "${link}",
         "reason": "reason for the response",
         "isRelevant": true/false
       }`;
     const result = await gptCall('gpt-4.1', prompt, 'system');
     const jsonResult = await extractJsonFromResponse(result);
+    console.log('jsonResult from checkRelevantLink', link, jsonResult);
     return jsonResult;
   }
 
@@ -68,7 +68,7 @@ For each PDF link found, extract and return the following structured JSON object
       "year": 2022,                      // Extract from the filename or context. Leave null if not found.
       "name": "Annual Report 2021-22",   // Use link text or infer from filename
       "type": "Annual Report",           // Use keywords to classify (Annual Report, Mission Plan, etc.)
-      "description": "Short one-line summary of the document's purpose or content", // Use nearby text
+      "description": "Short one-line summary of the document's purpose or content (Use surrounding or nearby text)", 
       "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
     }
   ]
@@ -281,12 +281,9 @@ Return the response in this exact format:
       const uniqueDocumentUrls = Array.from(allDocumentUrls);
 
       if (foundDocuments.length > 0) {
-        console.log('\n=== Final Results ===');
         console.log(`✅ Found ${foundDocuments.length} document sets with ${uniqueDocumentUrls.length} unique PDF documents`);
-        console.log('Found documents:', foundDocuments);
         return foundDocuments;
       } else {
-        console.log('\n=== Final Results ===');
         console.log('❌ No documents found in any of the processed pages');
         return null;
       }
@@ -315,7 +312,7 @@ Your task is to determine if this document meets all of the following conditions
    - Mission plans and strategic roadmaps
    - Budget Plans and publications with analytical or statistical insights
 
-2. Is recent, i.e., published in the year 2021 or later. If the year is missing, assess the relevance based on the content description and type. Only reject documents for missing year if there is no strong indication of recency or analytical value.
+2. Is recent, i.e., published in the year 2021 or later. If the year is missing, assess the relevance based on the content description and type. Only reject documents for missing year if there is no strong indication of analytical value.
 
 3. Is not:
    - General notices, circulars, tenders, guidelines, or operational memos
@@ -346,7 +343,7 @@ Do not include any explanation or commentary — just return the JSON object.`;
               const docPrompt = filterPrompt + '\n\n' + JSON.stringify(doc, null, 2);
               const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
-              
+              console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
               return jsonResult && jsonResult.isRelevant ? doc : null;
             })
           );
@@ -530,7 +527,7 @@ Strict Filtering Rule:
     async function tryScrape(
       url: string,
       retryCount = 0,
-      maxRetries = 5,
+      maxRetries = 4,
     ): Promise<[string | null, boolean, boolean]> {
       try {
         const scrapeResult = (await app.scrapeUrl(url, {

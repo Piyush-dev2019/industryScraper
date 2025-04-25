@@ -1,600 +1,345 @@
 [
   {
-    "sourceUrl": "https://tourism.gov.in/whats-new/national-strategy-adventure-tourism",
+    "sourceUrl": "https://pharma-dept.gov.in",
     "documents": [
       {
         "year": 2022,
-        "name": "National Strategy for Adventure Tourism",
-        "type": "Industry Strategy Document",
-        "description": "A strategic framework document for the growth and regulation of India's adventure tourism sector.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/National%20Strategy%20for%20Adventure%20Tourism_0.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/perspective-plans-statesuts",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "Preparation of 20 years Prospective Plan for the state of Orissa",
-        "type": "Mission Plan",
-        "description": "A comprehensive 20-year plan outlining tourism development strategies for the state of Orissa.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/Preparation%20of%2020%20years%20Prospective%20Plan%20for%20the%20state%20of%20Orissa.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Preparation of 20 years Prospective Plan for the state of Jharkhand",
-        "type": "Mission Plan",
-        "description": "A detailed strategy for developing tourism infrastructure and industry in Jharkhand over 20 years.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/Preparation%20of%2020%20years%20Prospective%20Plan%20for%20the%20state%20of%20Jharkhand%20.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/demand-grant-2025-26",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "DDG 2025-2026",
-        "type": "Budget Plan",
-        "description": "Detailed Demand for Grants for the Ministry of Tourism for the financial year 2025-2026.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "http://tourism.gov.in/study-reports",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "Final Report Assessment of Tourist Destination English",
-        "type": "Sectoral Publication",
-        "description": "A study assessing tourist destinations in terms of infrastructure and cleanliness.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-02/Final%20Report_Assessment%20of%20Tourist%20Destination_%20English.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "NCAER India and Coronavirus Report FINAL ENGLISH",
-        "type": "Sectoral Publication",
-        "description": "Analysis of economic losses for households engaged in tourism due to the COVID-19 pandemic (English).",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-01/NCAER_India%20and%20Coronavirus%20Report_FINAL_ENGLISH.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Final Report on Monuments (English)",
-        "type": "Sectoral Publication",
-        "description": "Study analyzing recent trends in visitor arrivals to centrally protected monuments (English).",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-06/Final%20Report%20on%20Monuments%20%28English%29.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Luxury Train Project Report (English)",
-        "type": "Sectoral Publication",
-        "description": "Study on the role of luxury trains in promoting tourism in India (English version).",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/Luxury%20Train%20Project%20Report%20%28English%29_0.pdf"
-      },
-      {
-        "year": 2021,
-        "name": "Tourism-Corona Report Print version",
-        "type": "Sectoral Publication",
-        "description": "Report on the economic impact of the coronavirus pandemic on households engaged in tourism and related policy responses (English).",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2021-11/Tourism-Corona%20Report_Print%20version.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/divisions/finance",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "DDG 2025-2026.pdf",
-        "type": "Budget Plan",
-        "description": "Document contains the Detailed Demands for Grants for the Ministry for 2025-26.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "OOMF 2024-2025.pdf",
-        "type": "Outcome Monitoring Framework",
-        "description": "Output Outcome Monitoring Framework prepared for the tourism sector for 2024-25.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/OOMF%202024-2025.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "DDG 2024-2025.pdf",
-        "type": "Budget Plan",
-        "description": "Detailed Demands for Grants document for the Ministry for 2024-25.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Output-Outcome Monitoring Framework 2023-2024.pdf",
-        "type": "Outcome Monitoring Framework",
-        "description": "Output Outcome Monitoring Framework for the Ministry of Tourism for 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024.pdf",
-        "type": "Budget Plan",
-        "description": "Comprehensive financial plan detailing grants for the Ministry of Tourism for 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/index.php/schemes-guidelines-schemes/swadesh-darshan-scheme",
-    "documents": [
-      {
-        "year": 2023,
-        "name": "State wise list of projects under Swadesh Darshan Scheme (SD1.0) till 28.02.2023",
-        "type": "Sectoral Publication",
-        "description": "A comprehensive list of tourism infrastructure projects sanctioned under the Swadesh Darshan Scheme up to February 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/SD%20-%20State%20wise%20list%20of%20projects.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2024-25",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "OOMF 2024-2025",
-        "type": "Budget Plan",
-        "description": "This document outlines the Output Outcome Monitoring Framework for the Ministry of Tourism for 2024-2025.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/OOMF%202024-2025.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/demand-grant-2024-25",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "DDG 2024-2025",
-        "type": "Budget Plan",
-        "description": "Demand for Grants document for the Ministry of Tourism for the financial year 2024-2025.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2023-24",
-    "documents": [
-      {
-        "year": 2023,
-        "name": "Output-Outcome Monitoring Framework 2023-2024",
-        "type": "Sectoral Publication",
-        "description": "This document outlines the Output-Outcome Monitoring Framework for the Ministry of Tourism for the year 2023-2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/demand-grant-2023-24",
-    "documents": [
-      {
-        "year": 2023,
-        "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024",
-        "type": "Budget Plan",
-        "description": "Comprehensive budget plan outlining the financial allocations and demands for the Ministry of Tourism for the year 2023-2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/divisions/finance?page=1",
-    "documents": [
-      {
-        "year": 2022,
-        "name": "Output-Outcome Monitoring Framework 2022-23",
-        "type": "Budget Plan",
-        "description": "This document presents the output and outcome monitoring framework for the Ministry of Tourism for 2022-23.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/Output-Outcome%20Monitoring%20Framework%202022-23.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Detailed Demand For Grants Of Ministry of Tourism For 2022-23",
-        "type": "Budget Plan",
-        "description": "Details the budgetary demand for grants for the Ministry of Tourism for the financial year 2022-23.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/Detailed%20Demand%20For%20Grants%20Of%20Ministry%20of%20Tourism%20For%202022-23.pdf"
-      },
-      {
-        "year": 2021,
-        "name": "Demand for Grants of Ministry of Tourism for 2021-2022",
-        "type": "Budget Plan",
-        "description": "Provides details on the demand for grants for the Ministry of Tourism for the year 2021-22.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2021-03/Demand%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%2020212022.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/media/annual-reports",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "India Tourism Data Compendium 2024",
-        "type": "Sectoral Publication",
-        "description": "Comprehensive compendium of tourism data for India for the year 2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%202024_0.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "India Tourism Data Compendium Key Highlights 2024",
-        "type": "Sectoral Publication",
-        "description": "Key highlights from the India Tourism Data Compendium 2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%20Key%20Highlights%202024%20%281%29.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "Annual Report 2024-25 - English",
+        "name": "Annual Report 2021-22",
         "type": "Annual Report",
-        "description": "Ministry of Tourism's annual summary and analysis for the year 2024-25 (English).",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/Ministry%20of%20Tourism%20Annual%20Report_2024-25_ENGLISH_0.pdf"
+        "description": "Annual summary of activities and performance of the Department of Pharmaceuticals for 2021-22.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/AnnualReport2021-22E.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Annual Report 2022-23",
+        "type": "Annual Report",
+        "description": "Comprehensive overview of initiatives and achievements of the Department of Pharmaceuticals in 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/AnnualReport2022-23_English.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/important-document",
+    "documents": [
+      {
+        "year": 2025,
+        "name": "Frequently Asked Questions (FAQs) regarding the Promotion of Research and Innovation in Pharma MedTech (PRIP) Scheme",
+        "type": "Sectoral Publication",
+        "description": "Provides clarifications and key information about the PRIP Scheme for pharma and medtech innovation.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/PRIP-%20Frequently%20Asked%20Questions_10032025.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Modification in the guidelines of Production Linked Incentive (PLI) Scheme Bulk Drugs",
+        "type": "Industry Strategy Document",
+        "description": "Details changes in the PLI scheme guidelines for bulk drug manufacturing.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Corrigendum%20Under%20PLI%20scheme%20for%20Bulk%20Drugs%2025.09.2024.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Modifications in the guidelines of Production Linked Incentive (PLI) Scheme for promotion of domestic manufacturing of critical Key Starting Materials (KSMs)/ Drug Intermediates and Active Pharmaceutical Ingredients (APIs) in the country (PLI BD)- reg",
+        "type": "Industry Strategy Document",
+        "description": "Describes policy modifications for the PLI scheme focused on domestic KSM/API production.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Corrigendum%20dated%2012.03.2024_0.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/annual-report",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Annual Report 2024-25",
+        "type": "Annual Report",
+        "description": "Comprehensive annual overview of the Department of Pharmaceuticals for 2024-25.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20English%202024-25%20AR%20%281%29.pdf"
       },
       {
         "year": 2023,
         "name": "Annual Report 2023-24",
         "type": "Annual Report",
-        "description": "Ministry of Tourism's annual summary and analysis for the year 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-08/MOT%20Annual%20Report_2023-24_English%20Final.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/study-reports?page=1",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "Regional Tourism Satellite Account for year 2015-16: Puducherry",
-        "type": "Sectoral Publication",
-        "description": "Statistical account assessing the tourism sector's impact in Puducherry for 2015-16, released in 2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-03/RTSA%20%20Puducherry%202015-16.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/output-outcome-monitoring-framework-oomf-2025-26",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "OOMF 2025-2026.pdf",
-        "type": "Budget Plan",
-        "description": "Output Outcome Monitoring Framework outlining planned allocations and outcomes for the Ministry of Tourism for 2025-26.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/OOMF%202025-2026.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/divisions/finance?page=0",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "DDG 2025-2026.pdf",
-        "type": "Budget Plan",
-        "description": "Detailed Demands for Grants for the Ministry of Tourism for fiscal year 2025-26.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-04/DDG%202025-2026.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "DDG 2024-2025.pdf",
-        "type": "Budget Plan",
-        "description": "Detailed Demands for Grants for the Ministry of Tourism for fiscal year 2024-25.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2024-09/DDG%202024-2025.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Output-Outcome Monitoring Framework 2023-2024.pdf",
-        "type": "Monitoring Framework",
-        "description": "Output Outcome Monitoring Framework specifying annual objectives and outcomes for 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Output-Outcome%20Monitoring%20Framework%202023-2024.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Detailed Demands for Grants of Ministry of Tourism for 2023-2024.pdf",
-        "type": "Budget Plan",
-        "description": "Financial plan presenting demands for grants for the Ministry of Tourism for 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Detailed%20Demands%20for%20Grants%20of%20Ministry%20of%20Tourism%20for%202023-2024.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://pib.gov.in/Allrel.aspx",
-    "documents": [
-      {
-        "year": 2025,
-        "name": "Fact Check in Numbers",
-        "type": "Sectoral Publication",
-        "description": "A report summarizing fact-checking statistics and activities conducted by the PIB Fact Check Unit.",
-        "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc202544533601.pdf"
-      },
-      {
-        "year": 2025,
-        "name": "Allocation Budget",
-        "type": "Budget Plan",
-        "description": "Budget allocation details for financial planning within PIB.",
-        "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc2025417541401.pdf"
-      }
-    ]
-  },
-  {
-    "sourceUrl": "https://tourism.gov.in/market-research-and-statistics",
-    "documents": [
-      {
-        "year": 2024,
-        "name": "Annual Report 2024-25 - English",
-        "type": "Annual Report",
-        "description": "Comprehensive report on Ministry of Tourism activities, schemes, and initiatives for 2024-25.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/Ministry%20of%20Tourism%20Annual%20Report_2024-25_ENGLISH_0_1.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Annual Report 2023-24 - English",
-        "type": "Annual Report",
-        "description": "Annual summary of Ministry of Tourism’s performance, policy initiatives, and sectoral developments for 2023-24.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/MOT%20Annual%20Report_2023-24_English%20Final%20%281%29_0.pdf"
+        "description": "Annual summary and review of activities and financials for 2023-24 by the Department of Pharmaceuticals.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20version%20of%20Annual%20Report%202023-24.pdf"
       },
       {
         "year": 2022,
-        "name": "Annual Report 2022-23 - English",
+        "name": "Annual Report 2022-23",
         "type": "Annual Report",
-        "description": "Details Ministry of Tourism’s major activities, financials, and sector analysis for 2022-23.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-02/MOT%20Annual%20Report_2022-23_English%20%282%29_0.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "India Tourism Data Compendium 2024",
-        "type": "Sectoral Publication",
-        "description": "Comprehensive compilation of statistical data and insights on the Indian tourism sector for 2024.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%202024.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "India Tourism Statistics 2023- English",
-        "type": "Sectoral Publication",
-        "description": "Annual statistical overview of tourism trends, arrivals, and sector performance for 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Statistics%202023-English%20%281%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "India Tourism Statistics 2022- English",
-        "type": "Sectoral Publication",
-        "description": "Statistical annual report providing key metrics and analysis of Indian tourism for 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/India%20Tourism%20Statistics%20English%202022%20%28Revise%29%20%281%29.pdf"
+        "description": "Annual report highlighting key initiatives and performance for 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3.pdf"
       },
       {
         "year": 2021,
-        "name": "India Tourism Statistics 2021- English",
-        "type": "Sectoral Publication",
-        "description": "Provides key statistics and trends in India’s tourism sector for 2021.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-04/India%20Tourism%20Statistics%202021.pdf"
-      },
-      {
-        "year": 2024,
-        "name": "India Tourism Data Compendium Key Highlights 2024",
-        "type": "Sectoral Publication",
-        "description": "Summary highlights from the India Tourism Data Compendium 2024, featuring key trends and metrics.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2025-03/India%20Tourism%20Data%20Compendium%20Key%20Highlights%202024%20%281%29_0.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "India Tourism Statistics at a Glance 2022-English",
-        "type": "Sectoral Publication",
-        "description": "Compact overview of the latest essential tourism-related statistics for 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%20200%20%28Eng%29_1.pdf"
-      },
-      {
-        "year": 2021,
-        "name": "India Tourism Statistics at a Glance 2021-English",
-        "type": "Sectoral Publication",
-        "description": "Essential tourism statistics presented in a concise format for 2021.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2021-09/English%20Tourisum%202021.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief note on tourism statistics 2022",
-        "type": "Sectoral Publication",
-        "description": "Summary note on tourism statistics for 2022, including ITA, FTA, NRI, FEE, and IND data.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-12/brief%20note%20on%20tourism%20statistics%202022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Year 2022 : Brief-Write-up",
-        "type": "Sectoral Publication",
-        "description": "Brief analytical write-up detailing key trends in Domestic and Foreign Tourist Visits for 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-09/Breif%20Note%20DTV-FTV%2022%20%283%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Year 2022 : Figures",
-        "type": "Sectoral Publication",
-        "description": "Key statistical figures on Domestic and Foreign Tourist Visits for 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-09/Figures%202022.pdf"
+        "name": "Annual Report 2021-22",
+        "type": "Annual Report",
+        "description": "Report covering developments, policies, and achievements for 2021-22.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20Annual%20Report%202021-22%20%281%29.pdf"
       }
     ]
   },
   {
-    "sourceUrl": "https://tourism.gov.in/media/annual-reports/annual-reports-archive",
+    "sourceUrl": "https://pharma-dept.gov.in/budget-and-expenditure",
     "documents": [
+      {
+        "year": 2021,
+        "name": "Statement indicating Actual 2020-21, BE 2020-21, RE 2020-21 and BE 2021-22 and Expenditure as on 30.6.2021 (1st Quarter)",
+        "type": "Budget Plan",
+        "description": "Financial details of actual and budgeted expenditure for the Department of Pharmaceuticals for 2020-21 and 2021-22 as of June 2021.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Expenditure%20details%20for%20website.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/study-report",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Study report on Bridging Academia-Industry Gap to achieve Self-reliance",
+        "type": "Sectoral Publication",
+        "description": "A study examining how to bridge the gap between academia and industry for self-reliance in the pharma sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Study%20Report%20-%20Bridging%20Academia-Industry%20Gap%20to%20achieve%20Self-reliance_0.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study Report on Impact of the Drug Price Control Order (DPCO) 2013 on the price of Cardiac stents Knee implants and six medical devices on industry and consumers in terms of availability and affordability",
+        "type": "Sectoral Publication",
+        "description": "Study analyzing the effect of DPCO 2013 on the pricing and affordability of key medical devices in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-Impact%20of%20the%20DPCO%202013%20on%20the%20price%20of%20Cardiac%20stents%20Knee%20implants%20.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study report on An analysis on leveraging the patent cliff, with drug sales worth USD 251 billion going off-patent and to analyses the different drug pricing methodologies particularly w.r.t. these patented drugs going off-patent",
+        "type": "Sectoral Publication",
+        "description": "Analysis of strategies and pricing for drugs going off-patent and related opportunities for the Indian pharma sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-An%20analysis%20on%20leveraging%20the%20patent%20cliff.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Study on Upgrading NIPERs to meet evolving needs of Pharmaceutical business and NIPERs in top 50 in world ranking",
+        "type": "Sectoral Publication",
+        "description": "Report on upgrading NIPERs to address current pharmaceutical business trends and global competitiveness.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final-Upgrading%20NIPERs%20to%20meet%20evolving%20needs%20of%20Pharmaceutical%20business%20and%20NIPERs%20in%20top%2050%20in%20world%20ranking.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Study on CRO Sector in India",
+        "type": "Sectoral Publication",
+        "description": "Detailed market analysis of the Contract Research Organization (CRO) sector trends in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/CRO%20Market%20Report_High%20Resolution.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Survey for Novel/ Innovative and Cost-effective Technologies for Productoion of APIs",
+        "type": "Sectoral Publication",
+        "description": "Survey of innovative and cost-effective API production technologies in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Novel%20Technologies%20for%20Productoion%20of%20APIs.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Final Boosting of Medical Devices Industry",
+        "type": "Sectoral Publication",
+        "description": "Final report on strategies to strengthen and expand India's medical devices industry.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20-%202023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Assessment of skill requirement of Indian Pharma Industry",
+        "type": "Sectoral Publication",
+        "description": "Assessment of current and future skill needs for the Indian pharmaceutical industry.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Assessment%20of%20skill%20requirement%20of%20Indian%20Pharma%20Industry_Under%20PMPDS%20scheme%20%281%29.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Strategy for Leveraging ASEAN FTA and Trade Potential with the Middle East Countries for Pharma Sector in India",
+        "type": "Industry Strategy Document",
+        "description": "Report outlining strategies to enhance pharma trade with ASEAN and Middle Eastern countries.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Updated%20Strategy%20for%20Leveraging%20ASEAN%20FTA%20and%20trade%20potential%20with%20the%20Middle%20East%20Countries%20for%20Pharma%20Sector%20in%20India%20Final%20-%20ISID.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Report on Survey of Pharma Clusters",
+        "type": "Sectoral Publication",
+        "description": "Survey report on the status and potential of pharma manufacturing clusters in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Pharma%20Clusters.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "http://pharma-dept.gov.in/policy",
+    "documents": [
+      {
+        "year": 2024,
+        "name": "Uniform Code for Marketing Practices in Medical Devices (UCMPMD) 2024",
+        "type": "Industry Strategy Document",
+        "description": "Establishes ethical marketing standards for medical devices in India.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCMPMD_0.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024",
+        "type": "Industry Strategy Document",
+        "description": "Provides a uniform code of conduct for marketing practices in the pharmaceutical industry.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCPMP%202024%20for%20website.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Strategy Document on National Medical Devices Policy, 2023",
+        "type": "Strategy Document",
+        "description": "Outlines strategies for implementation of the National Medical Devices Policy 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20NMDP%202023_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "National Policy on Research & Development and Innovation in the Pharma-Med Tech Sector in India",
+        "type": "Policy Document",
+        "description": "Policy framework to promote research and innovation in India's pharma-med tech sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Notification%20-%20R%26D%20Policy.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/important-document?page=1",
+    "documents": [
+      {
+        "year": 2023,
+        "name": "Draft National Pharmaceuticals Policy 2023",
+        "type": "Sectoral Publication",
+        "description": "Approach paper for stakeholder consultation on the National Pharmaceuticals Policy 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/31.10.23%20Draft%20National%20Pharmaceuticals%20Policy.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Gazette Notification regarding National Policy on R&D and Innovation in Pharma-Med Tech (18.08.2023)",
+        "type": "Policy Document",
+        "description": "Notification on national policy for research & development and innovation in Pharmaceutical & Med Tech sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20R%26D%20Policy%20-%20Dated%2018%20Aug%2023.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Detailed Demand for Grants (DDG), Demand No. 7 for 2023-24",
+        "type": "Budget Plan",
+        "description": "Comprehensive budget and expenditure details for the Department of Pharmaceuticals for 2023-24.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20final%202023-24.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Gazette Notification National Medical Device Policy 2023",
+        "type": "Policy Document",
+        "description": "Government notification regarding the National Medical Device Policy 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023_0.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "NIPER Research Compendium",
+        "type": "Sectoral Publication",
+        "description": "Compendium of research conducted at National Institutes of Pharmaceutical Education and Research (NIPERs).",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/NIPER%20Research%20Compendium.pdf"
+      },
       {
         "year": 2023,
         "name": "Annual Report 2022-23",
         "type": "Annual Report",
-        "description": "Comprehensive report on the Ministry of Tourism's performance and initiatives for 2022-23.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/MOT%20Annual%20Report_2022-23_English.pdf"
+        "description": "Comprehensive annual activities and achievements report for the Department of Pharmaceuticals for FY 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3_0.pdf"
       },
       {
         "year": 2022,
-        "name": "India Tourism Statistics at a Glance 2022",
+        "name": "Update on PLI for Bulk Drug as on 30.12.2022",
         "type": "Sectoral Publication",
-        "description": "Statistical overview of tourism indicators in India for the year 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%20200%20%28Eng%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "India Tourism Statistics 2022 (Revised)",
-        "type": "Sectoral Publication",
-        "description": "Revised compilation of detailed statistics on Indian tourism for 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/India%20Tourism%20Statistics%20English%202022%20%28Revised%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "India Tourism Statistics at a Glance 2021",
-        "type": "Sectoral Publication",
-        "description": "Summary of tourism statistics in India for the year 2021, published in 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%20at%20a%20Glance%202021%20%281%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "India Tourism Statistics 2021",
-        "type": "Sectoral Publication",
-        "description": "Detailed statistics on Indian tourism sector performance in 2021.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/India%20Tourism%20Statistics%202021%20%281%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Annual Report 2021-22",
-        "type": "Annual Report",
-        "description": "Annual summary of achievements and initiatives by the Ministry of Tourism for 2021-22.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-07/Annual%20Report%202021-22%20%28English%29.pdf"
-      },
-      {
-        "year": 2021,
-        "name": "Annual Report 2020-21",
-        "type": "Annual Report",
-        "description": "Documentation of key developments and activities in the tourism sector for 2020-21.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2021-03/Annual%20Report%202021%2021%20English.pdf"
+        "description": "Update on status of applicants under the Production Linked Incentive Scheme for Bulk Drugs.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/PLI%20Bulk%20Drugs%20list.pdf"
       }
     ]
   },
   {
-    "sourceUrl": "https://tourism.gov.in/market-research-and-statistics?page=1",
+    "sourceUrl": "https://pharma-dept.gov.in/detailed-demand-grants",
+    "documents": [
+      {
+        "year": 2025,
+        "name": "Detailed Demand for Grants 2025-26",
+        "type": "Budget Plan",
+        "description": "Annual budget allocation and detailed expenditure plan for the Department of Pharmaceuticals for FY 2025-26.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FInal%20DDG%20FY%2025-26.pdf"
+      },
+      {
+        "year": 2024,
+        "name": "Detailed Demand for Grants 2024-25",
+        "type": "Budget Plan",
+        "description": "Annual budget and expenditure statement for the Department of Pharmaceuticals for financial year 2024-25.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20FY%202024-25.pdf"
+      },
+      {
+        "year": 2023,
+        "name": "Detailed Demand for Grants 2023-24",
+        "type": "Budget Plan",
+        "description": "Financial and budget allocation details for the Department of Pharmaceuticals for FY 2023-24.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20final%202023-24.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Detailed Demand for Grants 2022-23",
+        "type": "Budget Plan",
+        "description": "Detailed statement of grants and expenditures for the Department of Pharmaceuticals for FY 2022-23.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%2022-23.pdf"
+      },
+      {
+        "year": 2021,
+        "name": "Detailed Demand for Grants 2021-22",
+        "type": "Budget Plan",
+        "description": "Comprehensive budget and grants report for the Department of Pharmaceuticals for 2021-22.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG-2021-22%20Scan.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/policy-medical-devices",
     "documents": [
       {
         "year": 2023,
-        "name": "Brief Note FTAs March 2023",
+        "name": "National Medical Device Policy 2023 & Strategy Document",
+        "type": "Industry Strategy Document",
+        "description": "Strategy document outlining the framework and objectives of the National Medical Devices Policy, 2023 for the Indian MediTech sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20National%20Medical%20Devices%20Policy%202023.pdf"
+      }
+    ]
+  },
+  {
+    "sourceUrl": "https://pharma-dept.gov.in/policy",
+    "documents": [
+      {
+        "year": 2022,
+        "name": "Export Promotion Council for Medical Devices",
         "type": "Sectoral Publication",
-        "description": "This document provides summarized statistics and analysis of Foreign Tourist Arrivals in India for March 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-05/Brief%20Note%20FTAs%20March%2023.pdf"
+        "description": "Details establishment of the Export Promotion Council for Medical Devices.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DoP%20OM%20Dated%2005122022%20reg%20Establishing%20of%20EPC-MD_0.pdf"
       },
       {
         "year": 2023,
-        "name": "Brief Note Jan-Feb 2023",
-        "type": "Sectoral Publication",
-        "description": "Statistical overview of tourism trends in India for January and February 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/Brief%20Note%20Jan-Feb%202023.pdf"
+        "name": "National Medical Device Policy 2023",
+        "type": "Industry Policy Document",
+        "description": "Gazette notification on the national policy for medical devices sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023.pdf"
       },
       {
         "year": 2023,
-        "name": "brief Note Feb 2023",
-        "type": "Sectoral Publication",
-        "description": "Statistical analysis of tourist inflow to India for February 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/brief%20Note%20Feb%202023.pdf"
+        "name": "Strategy Document on National Medical Devices Policy, 2023",
+        "type": "Industry Strategy Document",
+        "description": "Strategic document outlining implementation of the Medical Devices Policy, 2023.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20NMDP%202023_0.pdf"
+      },
+      {
+        "year": 2022,
+        "name": "Reconstitution of National Medical Device Promotion Council under the Chairpersonship of Secretary, Department of Pharmaceuticals",
+        "type": "Mission Plan",
+        "description": "Document detailing the reconstitution of the Medical Device Promotion Council.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/OM%20dated%205-8-2022_Reconstitution%20of%20NMDPC%20under%20chairpersonship%20of%20Secretary%2C%20DoP_0.pdf"
       },
       {
         "year": 2023,
-        "name": "Brief Note Jan 2023",
-        "type": "Sectoral Publication",
-        "description": "Details and figures on Indian tourism departures and arrivals for January 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-03/Brief%20Note%20Jan%202023.pdf"
-      },
-      {
-        "year": 2023,
-        "name": "Brief Note FEE Feb 2023",
-        "type": "Financial Report",
-        "description": "Financial report outlining Foreign Exchange Earnings from tourism in February 2023.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-04/Brief%20Note%20FEE%20Feb%2023.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note FTAs Sep 22",
-        "type": "Sectoral Publication",
-        "description": "Brief note with statistical data for Foreign Tourist Arrivals in September 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-12/Brief%20Note%20FTAs%20Sep%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note June 22",
-        "type": "Sectoral Publication",
-        "description": "Overview of Indian tourism developments for June 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-08/Brief%20Note%20June%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note April 22",
-        "type": "Sectoral Publication",
-        "description": "Statistical summary of the tourism sector for April 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-06/Brief%20Note%20April%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note March 22",
-        "type": "Sectoral Publication",
-        "description": "Key trends and data on the tourism sector for March 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/Brief%20Note%20March%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note Jan 22",
-        "type": "Sectoral Publication",
-        "description": "January 2022 report on India's tourism sector performance.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-03/Brief%20Note%20Jan%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note INDs Sep 22",
-        "type": "Sectoral Publication",
-        "description": "Statistical note on Indian National departures in September 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20INDs%20Sep%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note IND Aug 22",
-        "type": "Sectoral Publication",
-        "description": "Indian National departures statistics for August 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-09/Brief%20Note%20IND%20Aug%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note IND Mar 22",
-        "type": "Sectoral Publication",
-        "description": "Statistical note on Indian National departures in March 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-05/Brief%20Note%20IND%20Mar%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note IND 22",
-        "type": "Sectoral Publication",
-        "description": "Summary of Indian National departures for January 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2022-03/Brief%20Note%20IND%20%2022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note FEE Dec 2022",
-        "type": "Financial Report",
-        "description": "Report on Foreign Exchange Earnings through tourism in December 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-02/Brief%20Note%20FEE%20Dec%202022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note FEE November 2022",
-        "type": "Financial Report",
-        "description": "Analysis of tourism-driven Foreign Exchange Earnings for November 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20FEE%20November%202022.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "brief Note Oct 22 (FEE)",
-        "type": "Financial Report",
-        "description": "Foreign Exchange Earnings through tourism detailed for October 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/brief%20Note%20Oct%2022%20%28FEE%29.pdf"
-      },
-      {
-        "year": 2022,
-        "name": "Brief Note Aug 22 (FEE)",
-        "type": "Financial Report",
-        "description": "Financial report on Foreign Exchange Earnings from tourism for August 2022.",
-        "documentUrl": "https://tourism.gov.in/sites/default/files/2023-01/Brief%20Note%20Aug%2022%20%28FEE%29.pdf"
+        "name": "National Policy on Research & Development and Innovation in the Pharma-Med Tech Sector in India",
+        "type": "Industry Policy Document",
+        "description": "Notification on R&D and innovation policy for pharma-med tech sector.",
+        "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Notification%20-%20R%26D%20Policy.pdf"
       }
     ]
   }
