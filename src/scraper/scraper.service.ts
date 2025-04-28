@@ -5,16 +5,17 @@ import {  bothUrl, findRelevantPageViaMap, filterDocuments, DocumentSet, dedupli
 @Injectable()
 export class ScraperService {
 
-  async map_scrap(): Promise<DocumentSet[] | null> {
+  async map_scrap(prompt: Record<string, string>): Promise<DocumentSet[] | null> {
     // const objective =
     // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
+    // const url = 'https://www.niti.gov.in/';
     const url = 'https://pharma-dept.gov.in/';
 
-    const relevantPages = await findRelevantPageViaMap(url);
+    const relevantPages = await findRelevantPageViaMap(url, prompt);
     // console.log('relevantPages', relevantPages);
 
     // Get all documents
-    const rawResult = await bothUrl(relevantPages);
+    const rawResult = await bothUrl(relevantPages, prompt);
     
     // Filter documents based on criteria
     const filteredDocuments = await filterDocuments(rawResult);
@@ -25,8 +26,8 @@ export class ScraperService {
     return deduplicatedDocuments;
   }
 
-  async main(){
-    const result = await this.map_scrap();
+  async main(prompt: Record<string, string>){
+    const result = await this.map_scrap(prompt);
     console.log('Final URLs:', result);
     const fs = require('fs');
 

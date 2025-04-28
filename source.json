@@ -1481,6 +1481,2311 @@
         }
       ]
     }
+  ],
+
+  "Tata Realty": [
+    {
+      "sourceUrl": "https://theeurekapark-cpmeet.tatarealty.in/investor-info",
+      "documents": [
+        {
+          "year": 2021,
+          "name": "Annual Report 2021",
+          "type": "Annual Report",
+          "description": "Comprehensive report of the company’s activities and financial performance for FY 2020-21.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/XtcCljDGixQXjUSllmFy.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q1 - Financial Results",
+          "type": "Financial Report",
+          "description": "Financial results for Q1 of FY 2022-23 showing revenue and expense trends.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/eW9BHdx9zqJEpCWE8AUK.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.tatahousing.com/investor-info",
+      "documents": [
+        {
+          "year": 2022,
+          "name": "Annual Report 2022",
+          "type": "Annual Report",
+          "description": "Annual performance and financial summary for FY 2021-22.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/NqHDyYY5yBiULkgHqMx5.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2023",
+          "type": "Annual Report",
+          "description": "Comprehensive report on company activities and financial results for FY 2022-23.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/ETKzqk953XgjFf0D07h5.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Annual Report 2024",
+          "type": "Annual Report",
+          "description": "Annual performance review and audited financial statements for FY 2023-24.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/CdPyvarpstgkF7lLbQWV.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "MGT_7_2023",
+          "type": "Statutory Annual Return",
+          "description": "Annual return documenting statutory disclosures for FY 2022-23.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/I01bu7P2FNXHrSsdnxT9.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "MGT_7_2024",
+          "type": "Statutory Annual Return",
+          "description": "Annual return filed for FY 2023-24 including company disclosures.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/9cizE7upRB0wz3CuHo1W.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q2 - Financial Results",
+          "type": "Financial Report",
+          "description": "Quarterly financial performance results for the second quarter of FY 2021-22.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/0IsJ6gXFPI4gW6FyEcpV.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q4 - Financial Results_Consolidated",
+          "type": "Financial Report",
+          "description": "Consolidated financial results for the fourth quarter and year-end of FY 2021-22.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/kjT6LlwIuthPVKMeZ50P.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q4 - Financial Results_Standalone",
+          "type": "Financial Report",
+          "description": "Standalone financial results for the fourth quarter and year-end of FY 2021-22.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/h0j9sTLMXzDejd9wOJI8.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q3 - Financial Results",
+          "type": "Financial Report",
+          "description": "Quarterly results and financial statements for Q3 FY 2022-23.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/ELgxf3Ye206lfb5qx4k9.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q4 - Financial Results",
+          "type": "Financial Report",
+          "description": "Fourth quarter and full year financial results for FY 2022-23.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/5984RifwduVhbsX8lfPl.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q1 - Financial Results",
+          "type": "Financial Report",
+          "description": "Unaudited financial results for Q1 of FY 2023-24.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/Va88YrirudGJKjyuU53I.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q2 - Financial Results",
+          "type": "Financial Report",
+          "description": "Balance sheet and profit & loss account for Q2 FY 2023-24.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/PFBrCZmQHXwYZ1zARvmj.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q4 - Financial Results",
+          "type": "Financial Report",
+          "description": "Reported financial outcomes for Q4 of FY 2023-24.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/deV2CJ85OEfvK56EwJqi.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Q1 - Financial Results",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q1 FY 2024-25.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/iWzySuGgCpffZH9JFM3u.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Q2 - Financial Results",
+          "type": "Financial Report",
+          "description": "Company’s Q2 financial performance for FY 2024-25.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/OEHSBbU9llE1m74qPmKu.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Q3 - Financial Results",
+          "type": "Financial Report",
+          "description": "Third quarter results for FY 2024-25 detailing earnings and expenditure.",
+          "documentUrl": "https://media.tatahousing.com/investor-documents/April2025/XemeQKf3ABYKbtg00xX1.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://tatarealty.in/investor-info",
+      "documents": [
+        {
+          "year": 2022,
+          "name": "Annual Report 2021-2022",
+          "type": "Annual Report",
+          "description": "Comprehensive overview of Tata Realty and Infrastructure Limited's operations and financial performance for the year 2021-2022.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/MqSIq7oOnXQrcUbRvVcp.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2022-2023",
+          "type": "Annual Report",
+          "description": "Detailed account of Tata Realty and Infrastructure Limited's activities and financial results for the financial year 2022-2023.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/NqiDrPCWXKheWZ2h8Z73.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Annual Report 2023-2024",
+          "type": "Annual Report",
+          "description": "Annual review and financial statements of Tata Realty and Infrastructure Limited for the year ending 2024.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/August2024/UQnRcgeTOtrtssrhh69u.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "MGT-7 2022",
+          "type": "Annual Return",
+          "description": "Statutory annual return form filed by Tata Realty for the financial year 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/QHB7nDiMM3eP7419HEW5.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Q2 - Financial Results FY 21-22",
+          "type": "Financial Report",
+          "description": "Unaudited financial results for Q2 of FY 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/EqgsEnohATgSswiNCzpw.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Q3 - Financial Results FY 21-22",
+          "type": "Financial Report",
+          "description": "Unaudited/ltd reviewed financial results for Q3 of FY 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/LXggTDhnpSRI9kgxuyP4.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q4 - Financial Results FY 21-22",
+          "type": "Financial Report",
+          "description": "Financial statements for Q4 of the Financial Year 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/MWaswVcCFug8lfhKCNdW.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q2 - Financial Results FY 22-23",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q2 FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/fMwBuN5F55T3Fbv2wqoa.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Q3 - Financial Results FY 22-23",
+          "type": "Financial Report",
+          "description": "Quarterly financial report for Q3 FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/oIi7BBTjzlkrimnrt8Pn.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q4 - Financial Results FY 22-23",
+          "type": "Financial Report",
+          "description": "Quarterly financial report for Q4 FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/aZTUfPfE30Ns8zR2HfGf.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q1 - Financial Results FY 23-24",
+          "type": "Financial Report",
+          "description": "Quarterly financial results of Tata Realty for Q1 FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/eA1h9ZgggIoDfyVxfyKk.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q2 - Financial Results FY 23-24",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q2 FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/January2024/XKuFpwtm8YAvCSL5OUqw.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Q3 - Financial Results FY 23-24",
+          "type": "Financial Report",
+          "description": "Financial results for Q3 of FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/March2024/9V8GdoOAbk6W4DJb1u2G.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q4 - Financial Results FY 23-24",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q4 FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/May2024/IDkLmtff6P3agJp175ur.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q1 – Financial Results FY 24-25",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q1 of FY 2024-25.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/August2024/V4WaTeFLnAPnVcF6Id1p.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Q2 – Financial Results FY 24-25",
+          "type": "Financial Report",
+          "description": "Quarterly financial results for Q2 of FY 2024-25.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/November2024/MasNKfeN8Rhlvgecc1Qt.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Annual Action Plan FY 2023-2024",
+          "type": "Mission Plan",
+          "description": "CSR annual action plan for FY 2023-24 for TRIL IT4 Private Limited.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/May2024/rSoB0gET72mgJRydCGwE.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Annual Action Plan FY 2024-2025 (Revised)",
+          "type": "Mission Plan",
+          "description": "Revised CSR annual action plan for FY 2024-25 for TRIL IT4 Private Limited.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/October2024/Annual_Action_Plan_FY_2024_25.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report for FY 2021-22 (Infopark Properties Limited)",
+          "type": "Annual Report",
+          "description": "Annual Report detailing operations and financials for Infopark Properties Limited for FY 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/April2024/D6gVq111eUqZ7bGmtARN.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report for FY 2022-23 (Infopark Properties Limited)",
+          "type": "Annual Report",
+          "description": "Annual Report providing performance and operation overview for Infopark Properties Limited for FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/April2024/8ZE9gJTbFRHFjUA9SVe9.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Annual Report for FY 2023-24 (Infopark Properties Limited)",
+          "type": "Annual Report",
+          "description": "Annual performance report and financials for Infopark Properties Limited for FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/September2024/I9gbCqJYAV6wSIYM4TBM.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Form MGT-7 FY 21-22 (Infopark Properties Limited)",
+          "type": "Annual Return",
+          "description": "Form MGT-7 statutory annual return for Infopark Properties Limited for FY 2021-22.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/April2024/n0wRfWmq2MAt2L9H6vtE.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Corporate Governance Report Q4 FY 22-23 (Infopark Properties Limited)",
+          "type": "Governance Report",
+          "description": "Corporate governance disclosures for Infopark Properties Ltd, Q4 FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/April2024/Db2FKqtYawvVym0IsCvM.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Financial Results Q4 FY 22-23 (Infopark Properties Limited)",
+          "type": "Financial Report",
+          "description": "Financial statements for Infopark Properties Ltd for Q4 of FY 2022-23.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/April2024/IBL5JIpur8RecA5bCbAR.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Financial Results Q4 FY 23-24 (Infopark Properties Limited)",
+          "type": "Financial Report",
+          "description": "Financial statements for Infopark Properties Ltd for Q4 of FY 2023-24.",
+          "documentUrl": "https://d1nfgpflnbq58s.cloudfront.net/investor-documents/May2024/YXQPAPrrPj0QG0nG7C4M.pdf"
+        }
+      ]
+    }
+  ],
+
+
+  "EY India ey_in link": [
+    {
+      "sourceUrl": "https://www.ey.com/en_in/wealth-management-research",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "2023 EY Global Wealth Research Report",
+          "type": "Sectoral Publication",
+          "description": "This report explores how wealth managers can adapt amid market volatility and global uncertainty to help clients navigate their financial goals.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/banking-and-capital-markets/ey-global-wealth-research-report-2023.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "http://ey.com/en_in/technical/alerts-hub/2025/02/budget-2025-technology-sector",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "EY Union Budget 2025 Alert: Technology Sector",
+          "type": "Budget Plan",
+          "description": "Detailed analysis of key amendments and policy initiatives for the Technology Sector announced in India's Union Budget 2025.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/technical/alerts-hub/documents/2025/ey-union-budget-2025-alert-technology-sector.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Auto and Mobility",
+          "type": "Sectoral Publication",
+          "description": "GenAI is revolutionizing India's automotive and mobility sector, projecting a 30%-32% productivity boost by 2030.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-auto-and-mobility.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Retail, consumer, and e-commerce",
+          "type": "Sectoral Publication",
+          "description": "How GenAI is transforming India's retail, consumer & e-commerce industries, expecting 35%-37% productivity by 2030.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-retail-sector.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Industrials and Energy",
+          "type": "Sectoral Publication",
+          "description": "GenAI is reshaping India’s industrials & energy sectors, boosting efficiency and driving sustainability efforts.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-industarial-and-energy.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Financial Services",
+          "type": "Sectoral Publication",
+          "description": "Explore how GenAI is revolutionizing financial services in India and driving a productivity gain of 34%-40% by 2030.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-the-aidea-of-india-financial-services.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Healthcare",
+          "type": "Sectoral Publication",
+          "description": "Examines the transformation of India's healthcare sector through GenAI and its projected productivity boost by 2030.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-healthcare.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Media and Entertainment",
+          "type": "Sectoral Publication",
+          "description": "GenAI is reshaping India’s media & entertainment landscape, driving innovation in content production and engagement.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-media-and-entertainment.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Government Services: Better, faster, smarter with GenAI",
+          "type": "Industry Strategy Document",
+          "description": "Explores adoption of GenAI in Indian government services for better governance and public service delivery.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-chapter-5-main-banner.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/ai/generative-ai-india-2025-report",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "The AIdea of India 2025 : How much productivity can GenAI unlock in India",
+          "type": "Sectoral Publication",
+          "description": "An in-depth exploration of GenAI’s current state in Indian enterprises and key trends shaping the future.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/01/ey-the-aidea-of-india-2025-how-much-productivity-can-genai-unlock-in-india.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/financial-accounting-advisory-services/financial-accounting-advisory-services-how-entities-in-the-financial-services-sector-can-plan-their-year-end-closure",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Year end consideration : Financial services sector supplement",
+          "type": "Sectoral Publication",
+          "description": "Critical updates on financial services sector to help finance leaders finalize their financial statements for FY23.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/financial-accounting-advisory-services/documents/ey-year-end-consideration-financial-services-sector-supplement.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/financial-accounting-advisory-services/how-fintech-companies-can-navigate-accounting-and-reporting-challenges",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Accounting in the age of fintech: A guide for Indian financial innovators",
+          "type": "Sectoral Publication",
+          "description": "This guide outlines critical accounting and reporting considerations for fintech companies in India to ensure compliance and drive financial innovation.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/financial-accounting-advisory-services/documents/2025/ey-accounting-in-the-age-of-fintech-a-guide-for-indian-financial-innovators.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/infrastructure",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Building India’s future – EY-Parthenon infrastructure report",
+          "type": "Sectoral Publication",
+          "description": "This report provides an in-depth analysis of India's infrastructure sector and future strategies for growth.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/infrastructure/ey-building-indias-future-lowres.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/mining-metals/how-green-hydrogen-is-transforming-india-s-steel-sector",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Role of Green Hydrogen in Indian Steel Sector",
+          "type": "Sectoral Publication",
+          "description": "This report analyzes the transformative impact of green hydrogen on India's steel industry, outlining investment needs, policy frameworks, and the potential for decarbonization.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/mining-metals/ey-role-of-green-hydrogen-in-indian-steel-sector.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/tax/ifsc-at-gift-city-unpacking-key-factors-driving-investor-attraction",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "India Tax Insights September 2023",
+          "type": "Sectoral Publication",
+          "description": "EY India Tax magazine shares insights from EY Tax Partners & Industry leaders on tax reforms, policy changes, and economic developments impacting businesses.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/tax/documents/ey-india-tax-insights-september-2023.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/cybersecurity/redefining-global-privacy-the-critical-role-of-india-s-gccs",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "India Cybersecurity Domestic Market 2023 Report",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive industry report on the state and trends of India's domestic cybersecurity market in 2023.",
+          "documentUrl": "https://www.dsci.in/files/content/knowledge-centre/2023/India%20Cybersecurity%20Domestic%20Market%202023%20Report.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Indian GCCs: Race for GCCs now in heightened state(s)",
+          "type": "Industry Strategy Document",
+          "description": "A strategy document on the increasing competition among Indian states to attract global capability centers (GCCs) in 2024.",
+          "documentUrl": "https://invest.up.gov.in/wp-content/uploads/2024/12/Indian-GCC_091224.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries/insurance/tax",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Environmental, social and corporate governance (ESG) and the future of finance in insurance",
+          "type": "Sectoral Publication",
+          "description": "Examines the role of ESG in shaping the future financial landscape for the insurance sector.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-esg-and-the-future-of-finance-in-insurance-v8.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "The New Order of Global Taxation: Next Steps for BEPS 2.0 and its Pillars for insurers",
+          "type": "Industry Strategy Document",
+          "description": "Explores BEPS 2.0 and strategic implications for insurers navigating global tax reforms.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-the-new-order-of-global-taxation-next-steps-for-beps-two-point-o-and-its-pillars-for-insurers.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Accounting for taxes considering the impact of IFRS 17 — What insurers need to know now",
+          "type": "Sectoral Publication",
+          "description": "Analyzes tax accounting considerations under IFRS 17 and their impact on insurers.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-accounting-for-taxes-considering-the-impact-of-ifrs-17.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries/insurance/ifrs-17-implementation",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "How addressing your post-IFRS 17 priorities can support the strategic direction of finance",
+          "type": "Industry Strategy Document",
+          "description": "Provides insights on post-implementation priorities and strategic opportunities for finance functions following IFRS 17.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-how-addressing-your-post-ifrs-17-priorities-can-support-the-strategic-direction-of-finance.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Market updates on the impact of IFRS 17 and IFRS 9 October 2023",
+          "type": "Sectoral Publication",
+          "description": "Presents investor-oriented updates on expected impacts from IFRS 17 and IFRS 9 as of October 2023.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-market-updates-on-the-impact-of-ifrs-17-and-ifrs-9-october-2023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Market updates on the impact of IFRS 17 and IFRS 9 July 2023",
+          "type": "Sectoral Publication",
+          "description": "Summarizes investor updates on the expected impacts of IFRS 17 and IFRS 9 for July 2023.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-market-updates-on-the-impact-of-ifrs-17-and-ifrs-9-july-2023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Market updates on impact of IFRS 17 and IFRS 9 March 2023",
+          "type": "Sectoral Publication",
+          "description": "Market update on the impact of IFRS 17 and IFRS 9 as of March 2023.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-market-updates-on-impact-of-ifrs-17-and-ifrs-9-march-2023.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Disclosure of expected impacts of IFRS 17 and IFRS 9 prior to initial application November 2022",
+          "type": "Financial Report",
+          "description": "Discusses disclosures related to the expected impacts of IFRS 17 and IFRS 9 before first-time application.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-disclosure-of-expected-impacts-of-ifrs-17-and-ifrs-9-prior-to-initial-application-november-2022.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Insurance Accounting Alert December 2021",
+          "type": "Industry Strategy Document",
+          "description": "Accounting alert covering significant developments in insurance accounting as of December 2021.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-insurance-accounting-alert-december-2021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Accounting for taxes considering the impact of IFRS 17",
+          "type": "Financial Report",
+          "description": "Explores the tax accounting implications arising from the implementation of IFRS 17.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-accounting-for-taxes-considering-the-impact-of-ifrs-17.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Interim Reporting and IFRS 17 July 2021",
+          "type": "Financial Report",
+          "description": "Guidance on interim financial reporting under the new IFRS 17 standard as of July 2021.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-interim-reporting-and-ifrs-17.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Insurance Accounting Alert July 2021",
+          "type": "Industry Strategy Document",
+          "description": "Highlights key accounting updates for the insurance industry from July 2021.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/industries/insurance/documents/ey-insurance-accounting-alert-29-july-2021.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries/tmt",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "AIdea of India 2025",
+          "type": "Sectoral Publication",
+          "description": "This report explores how Generative AI is revolutionizing industries and productivity in India's digital transformation journey.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-sites/ey-com/en_in/topics/ai/ey-aidea-of-india-2025.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Technology Services",
+          "type": "Sectoral Publication",
+          "description": "Report analyzes how GenAI is reshaping technology services in India with a projected significant productivity boost by 2030.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-sites/ey-com/en_in/topics/ai/ey-aidea-of-india-2025-technology-services.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "AIdea 2025 report - Industries in transformation: Media and Entertainment",
+          "type": "Sectoral Publication",
+          "description": "Examines the impact of generative AI on media and entertainment in India, focusing on innovation in content and audience engagement.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-sites/ey-com/en_in/topics/ai/ey-aidea-of-india-2025-media-and-entertainment.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/energy-resources/india-s-green-manufacturing-revolution-and-the-journey-to-net-zero",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "How green manufacturing is reshaping India’s industrial landscape",
+          "type": "Sectoral Publication",
+          "description": "This report analyzes how regulatory, technological, and sectoral shifts are driving sustainable manufacturing and decarbonization across India’s industrial sectors.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/energy-resources/ey-how-green-manufacturing-is-reshaping-india-s-industrial-landscape.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/mining-metals/how-india-can-lead-the-global-green-steel-revolution-while-balancing-growth",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Green Steel Production Pathways for India",
+          "type": "Industry Strategy Document",
+          "description": "A comprehensive report outlining how India's steel industry can transition to green, low-emission technologies and achieve decarbonization.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/mining-metals/ey-green-steel-production-pathways-for-india.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/mining-metals/decarbonizing-india-s-steel-industry-a-strategic-roadmap",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Roadmap and challenges for iron ore, DRI, pelletisation and induction furnaces/ EAF in India towards decarbonization",
+          "type": "Industry Strategy Document",
+          "description": "A detailed report outlining necessary steps, technologies, and challenges for decarbonizing India's steel industry.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/mining-metals/ey-roadmap-report-digital.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/advanced-manufacturing/key-trends-shaping-india-s-us-dollor-45-bn-building-products-market",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "The ascending trajectory : unveiling the swift growth of the building products market in India",
+          "type": "Sectoral Publication",
+          "description": "In-depth analysis of emerging trends and growth drivers in India's US$45bn building products market, focusing on innovation, sustainability, and market opportunities.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/advanced-manufacturing/documents/ey-the-ascending-trajectory-unveiling-the-swift-growth-of-the-building-products-market-in-india.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/media-entertainment/shape-the-future-the-revolution-in-indian-media-and-entertainment-sector",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Shape the future: Indian media and entertainment is scripting a new story",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive report detailing the growth, transformation, and segmental performance of the Indian Media and Entertainment sector in 2024 with a focus on digital disruption.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/media-entertainment/ey-shape-the-future-indian-media-and-entertainment-is-scripting-a-new-story.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/advanced-manufacturing/how-manufacturing-5-0-in-telangana-can-accelerate-industrial-transition",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Manufacturing 5.0: Accelerating Telangana’s industrial transition from Industry 4.0 to 5.0",
+          "type": "Industry Strategy Document",
+          "description": "This document explores Telangana's transition to Manufacturing 5.0, focusing on human-centric innovation, advanced AI, and sustainable practices to drive industrial growth.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/advanced-manufacturing/documents/ey-manufacturing-5-0-accelerating-telangana-s-industrial-transition-from-industry-4-0-to-5-0.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/financial-services/the-role-of-fintech-in-building-viksit-bharat",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "The role of FinTech in building Viksit Bharat",
+          "type": "Industry Strategy Document",
+          "description": "A comprehensive report on how FinTech is shaping India's inclusive, technology-driven economic development and its expected market growth to 2029.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/financial-services/documents/ey-the-role-of-fintech-in-building-viksit-bharat.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/tax/economy-watch/sailing-through-global-tariff-headwinds",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Economy Watch April 2025",
+          "type": "Sectoral Publication",
+          "description": "Provides an in-depth review of salient developments in India’s macro economy and economic policy amidst global tariff challenges.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/tax/economy-watch/ey-economy-watch-april-2025-v1.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/tax/economy-watch/why-india-should-focus-on-health-and-education-to-achieve-viksit-bharat-status",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "EY Economy Watch March 2025",
+          "type": "Sectoral Publication",
+          "description": "Analysis of India's government health and education expenditure to support sustained growth toward Viksit Bharat goals.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/tax/economy-watch/ey-economy-watch-march-2025.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/energy-resources/powering-the-future-india-s-role-in-global-energy-transition",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Energy transition_India’s journey to net zero",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive report on India's journey toward net zero, policy actions, and investment trends shaping the energy sector and clean technology transition.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/energy-resources/documents/2024/ey-energy-transition-india-s-journey-to-net-zero.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/climate-change-sustainability-services/how-india-s-sustainable-development-goals-are-powering-its-growth-while-striving-for-net-zero",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Energy transition: India’s journey to net zero",
+          "type": "Sectoral Publication",
+          "description": "This report analyzes India's strategies, policies, and milestones toward achieving net zero emissions by 2070, focusing on energy transition and sustainable development goals.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/climate-change-sustainability-services/images/y-energy-transition-india-s-journey-to-net-zero.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/mining-metals/diversify-innovate-and-decarbonize-coking-coal-for-india-s-steel-vision",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Diversifying, innovating and decarbonizing coking coal for steel making",
+          "type": "Industry Strategy Document",
+          "description": "This report outlines demand and supply trends in coking coal for India's steel sector, emphasizing sustainability strategies and technology adoption to meet India's steel vision.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/ey-digital-file-diversifying-innovating-decarbonization-of-coking-coal-for-steel-making.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/advanced-manufacturing/why-india-s-electronics-manufacturing-services-sector-is-growing",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "EY Report : Evolution of India’s electronics manufacturing services sector",
+          "type": "Sectoral Publication",
+          "description": "This report analyzes the evolution, current trends, and future potential of India's electronics manufacturing services sector driven by increased outsourcing, government incentives, and ecosystem development.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/advanced-manufacturing/documents/ey-report-evolution-of-india-s-electronics-manufacturing-services-sector.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/infrastructure/unleashing-india-s-infrastructure-potential-ey-roundtable-insights",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Unleashing India's Infrastructure Potential: EY Roundtable Insights",
+          "type": "Sectoral Publication",
+          "description": "This report presents key takeaways and analysis from EY's Infrastructure Roundtable on India's infrastructure sector, covering investment trends, market dynamics, and future growth projections.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/infrastructure/documents/ey-unleashing-india-s-infrastructure-potential-ey-roundtable-insights.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/financial-services/how-can-india-drive-financial-inclusion-through-technology-and-literacy",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Financial Inclusion through Technology and Literacy in India: Strategies for Sustainable Growth",
+          "type": "Sectoral Publication",
+          "description": "This report presents survey findings and strategic recommendations to advance financial inclusion in India using technology and literacy initiatives.",
+          "documentUrl": "https://www.ey.com/en_in/functional/forms/2025/financial-inclusion-through-technology-and-literacy-in-india-strategies-for-sustainable-growth-landing-page"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries/consumer-products/how-indias-consumer-durables-industry-can-foster-global-leadership-by-2030",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Vision 2030: India’s rise as a global force in consumer electronics and durables",
+          "type": "Industry Strategy Document",
+          "description": "Strategic vision and action plan for India to become a global leader in consumer durables and electronics by 2030, focusing on manufacturing, innovation, and policy initiatives.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/industries/consumer-products-retail/ey-vision-2030-india-s-rise-as-a-global-force-in-consumer-electronics-and-durables.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/insights/technology/digital-twins-creating-intelligent-industries",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "EY India : Tech Trends Series 2024",
+          "type": "Sectoral Publication",
+          "description": "A collection of tech resources focusing on rising shifts in key technology areas and their impact across sectors.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/technology/tech-trends-series/ey-india-tech-trends-series-july-2024-v1.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Is Generative AI beginning to deliver on its promise in India? AIdea of India update",
+          "type": "Sectoral Publication",
+          "description": "Explores the economic and business potential of Generative AI in India.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/technology/documents/ey-is-generative-ai-beginning-to-deliver-on-its-promise-in-india-aidea-of-india-update.pdf"
+        }
+      ]
+    }
+  ],
+
+  "EY India Base link":
+  [
+    {
+      "sourceUrl": "http://ey.com/en_us/board-matters",
+      "documents": [
+        {
+          "year": null,
+          "name": "Corporate governance by the numbers",
+          "type": "Sectoral Publication",
+          "description": "The EY Center for Board Matters collects and analyzes governance data for thousands of US public companies through its proprietary corporate governance database.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-us/campaigns/board-matters/documents/ey-dec-cgbtn-v4-us.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_gl/about-us",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "How will action today shape the future of climate and nature?",
+          "type": "Strategy Document",
+          "description": "The EY Global Environment Strategy outlines how we are managing our environmental impact between FY25 and the end of FY30.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-reporting/documents/ey-gl-how-will-action-today-shape-the-future-of-climate-and-nature-12-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_us/services/tax",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Worldwide Corporate Tax Guide 2024",
+          "type": "Sectoral Publication",
+          "description": "This guide provides a comprehensive overview of corporate tax codes and reforms globally to help businesses navigate international tax landscapes.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-us/services/tax/documents/ey-corporate-tax-book-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_gl/insights/emobility",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Global Data Interoperability Report 03-2024",
+          "type": "Sectoral Publication",
+          "description": "Analysis of data interoperability for improving the EV customer experience and accelerating electric vehicle adoption.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/insights/emobility/documents/ey-eurelectric-global-data-interoperability-report-03-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_gl/value-realized-annual-report",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "EY Value Realized 2024",
+          "type": "Annual Report",
+          "description": "An in-depth annual report on EY’s commitments and actions over the last fiscal year to create sustainable, long-term value for EY people, clients and society.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-value-realized-report-latest-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Our purpose, values and strategy",
+          "type": "Industry Strategy Document",
+          "description": "An overview of EY's purpose, core values, and enterprise-wide strategic direction for shaping the future.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-purpose-values-strategy-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "People value",
+          "type": "Sectoral Publication",
+          "description": "Details EY’s initiatives and investments to foster an environment of growth, inclusion and opportunity for its global workforce.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-people-value-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Client value",
+          "type": "Sectoral Publication",
+          "description": "Highlights how EY helps clients create long-term value and drive sustainable growth.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-value-realized-report-client-value-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Societal value",
+          "type": "Sectoral Publication",
+          "description": "Explains EY’s commitment and actions toward creating positive societal and environmental impact.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-societal-value-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Governance",
+          "type": "Industry Strategy Document",
+          "description": "Describes the structure, governance bodies, and global strategy of the EY organization.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-governance-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "WEF-IBC Stakeholder Capitalism Metrics",
+          "type": "Sectoral Publication",
+          "description": "Outlines EY’s disclosure of the World Economic Forum’s International Business Council (WEF-IBC) stakeholder metrics.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-wef-ibc-metrics-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "EY commitments to the NZFSPA and progress made",
+          "type": "Sectoral Publication",
+          "description": "Reports on EY’s commitments and progress regarding the Net Zero Financial Service Providers’ Alliance (NZFSPA).",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-commitments-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "EY facts and figures",
+          "type": "Financial Report",
+          "description": "Provides key performance metrics, data, and figures for EY’s recent fiscal year.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-facts-and-figures-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Basis of reporting",
+          "type": "Annual Report",
+          "description": "Details the methodologies and criteria used for compiling and presenting EY’s annual reporting data.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-basis-of-reporting-10-2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "BDO Assurance Report",
+          "type": "Financial Report",
+          "description": "An independent assurance report by BDO covering aspects of EY’s annual disclosures.",
+          "documentUrl": "http://ey.com/content/dam/ey-unified-site/ey-com/en-gl/campaigns/value-realized/documents/ey-gl-bdo-assurance-report-10-2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_gl/industries/financial-services",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Global Financial Services Regulatory Outlook 2025",
+          "type": "Sectoral Publication",
+          "description": "A report outlining four regulatory priorities to drive financial institutions' focus in 2025.",
+          "documentUrl": "https://www.ey.com/en_gl/insights/financial-services/four-regulatory-priorities-to-drive-financial-institutions-focus-in-2025/ey-global-financial-services-regulatory-outlook-2025.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "EY Global Wealth Research 2023",
+          "type": "Sectoral Publication",
+          "description": "The 2023 report shines a light on unique features of millennial and younger investors and how wealth managers can build trust with this group.",
+          "documentUrl": "https://www.ey.com/en_gl/insights/wealth-asset-management/global-wealth-research-millennial-trends/ey-2023-global-wealth-research-millennial-trends.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_in/industries",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Media and Entertainment",
+          "type": "Sectoral Publication",
+          "description": "GenAI is reshaping India’s media & entertainment landscape, driving innovation in content production and immersive experiences.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-media-and-entertainment.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Retail, consumer, and e-commerce",
+          "type": "Sectoral Publication",
+          "description": "Discover how GenAI is transforming retail, consumer & e-commerce industries in India, boosting productivity and customer engagement.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-retail-sector.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Financial Services",
+          "type": "Sectoral Publication",
+          "description": "GenAI is revolutionizing financial services in India, driving automation, innovation, and productivity gains in the sector.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-the-aidea-of-india-financial-services.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Government Services: Better, faster, smarter with GenAI",
+          "type": "Sectoral Publication",
+          "description": "Learn how the Indian government is leveraging GenAI to enhance governance, improve services, and drive inclusivity.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-chapter-5-main-banner.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Industrials and Energy",
+          "type": "Sectoral Publication",
+          "description": "Explore how GenAI is boosting efficiency and sustainability in India's industrials and energy sectors with advanced technology.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-industarial-and-energy.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Healthcare",
+          "type": "Sectoral Publication",
+          "description": "Explore how GenAI is transforming healthcare in India, impacting patient care, diagnostics, and telemedicine.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-healthcare.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "AIdea 2025 report - Industries in transformation: Auto and Mobility",
+          "type": "Sectoral Publication",
+          "description": "GenAI is revolutionizing India's automotive and mobility sector, driving productivity and innovation in vehicle design and manufacturing.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/services/ai/aidea/2025/ey-auto-and-mobility.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_ie/insights/cfo-agenda/how-irish-cfos-are-charting-a-course-for-growth-and-expansion",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025",
+          "type": "Sectoral Publication",
+          "description": "This report analyzes Irish CFO priorities, investment strategies, and growth outlook for the financial year ahead.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--7c765411-7992-4bd9-a7ae-4a6b872fffc0/ey-cfo-survey-2025-chapter1.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025 - Chapter 2",
+          "type": "Sectoral Publication",
+          "description": "Chapter 2 covers talent, technology, and cost pressures affecting Irish CFOs' agendas for 2025.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--098ff972-ecf9-4b00-80b4-0b4822be28cd/ey-cfo-survey-2025-chapter2.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025 - Chapter 3",
+          "type": "Sectoral Publication",
+          "description": "Chapter 3 highlights ongoing talent challenges in finance teams as organizations prepare for change.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--4b535106-984d-45f0-abb2-44e9d07b9043/ey-cfo-survey-2025-chapter3.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025 - Chapter 4",
+          "type": "Sectoral Publication",
+          "description": "Chapter 4 explores the integration and future potential of AI in Irish finance functions.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--fc2e9744-e88b-4250-ab47-623d0530c243/ey-cfo-survey-2025-chapter4.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025 - Chapter 5",
+          "type": "Sectoral Publication",
+          "description": "Chapter 5 discusses how CFOs are responding to cybersecurity concerns amid AI adoption.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--248def97-abdc-4236-89fe-b2668e01aaad/ey-cfo-survey-2025-chapter5.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "EY CFO Survey 2025 - Chapter 6",
+          "type": "Sectoral Publication",
+          "description": "Chapter 6 details the CFO's role in ESG reporting and compliance efforts in Ireland.",
+          "documentUrl": "https://www.ey.com/adobe/dynamicmedia/deliver/dm-aid--b71ff458-b011-462e-8fc0-7727e8eaaf2c/ey-cfo-survey-2025-chapter6.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_gl/services/assurance",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "EMEIA board priorities 2023: how to shape tomorrow’s board agenda today",
+          "type": "Industry Strategy Document",
+          "description": "The 2023 board priorities provide insights into key themes boards of companies in EMEIA should focus on for the year ahead.",
+          "documentUrl": "https://www.ey.com/en_gl/board-matters/emeia-board-priorities-2023-how-to-shape-tomorrows-board-agenda-today"
+        },
+        {
+          "year": 2024,
+          "name": "Global Audit Quality Report: a commitment to continuous improvement",
+          "type": "Annual Report",
+          "description": "The global EY organization is committed to continuously improving audit quality, which helps build confidence and trust in the capital markets.",
+          "documentUrl": "https://www.ey.com/en_gl/insights/assurance/global-audit-quality-report"
+        },
+        {
+          "year": 2022,
+          "name": "Global audit quality report 2022: A commitment to continuous improvement",
+          "type": "Annual Report",
+          "description": "The global audit quality report 2022 reaffirms our commitment to audit quality and continuous improvement.",
+          "documentUrl": "https://www.ey.com/en_gl/insights/assurance/global-audit-quality-report-2022-a-commitment-to-continuous-improvement"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_ie/ey-ireland-societal-impact-report",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "EY Ireland Societal Impact Report FY2024",
+          "type": "Sectoral Publication",
+          "description": "This report showcases how EY Ireland is generating societal value in the areas of society, prosperity, and planet for Financial Year 2024.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-ie/campaigns/ey-transparency-report/documents/ey-ireland-societal-impact-report-fy2024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_uk/industries/telecommunications",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Smarter networks, greener planet: A report by EY teams and Liberty Global",
+          "type": "Sectoral Publication",
+          "description": "Discover how telecommunications companies can use AI to become more environmentally friendly.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/services/sustainability/documents/ey-liberty-global-smarter-networks-greener-planet-report.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.ey.com/en_uk/industries/tmt",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Smarter networks, greener planet: A report by EY teams and Liberty Global",
+          "type": "Sectoral Publication",
+          "description": "A report detailing how telecommunications companies can leverage AI to enhance environmental sustainability.",
+          "documentUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/services/sustainability/documents/ey-liberty-global-smarter-networks-greener-planet-report.pdf"
+        }
+      ]
+    }
+  ],
+  "NITI Aayog": [
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/service",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Working Paper: Identifying Potential Service Sub-Sectors: Insights from GVA, Exports, and Employment Data",
+          "type": "Working Paper",
+          "description": "This working paper analyses GVA, exports, and employment data to identify key growth sub-sectors in India's services sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Working%20Paper_Identifying%20Potential%20Service%20Sub-Sectors%20Insights%20from%20GVA_New.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/aspirational-story-transformation",
+      "documents": [
+        {
+          "year": 2021,
+          "name": "Aspirational Districts Programme: An Appraisal",
+          "type": "Sectoral Publication",
+          "description": "An independent appraisal by UNDP highlighting the programme as a global example of leveraging local governance for achieving Sustainable Development Goals.",
+          "documentUrl": "https://www.undp.org/sites/g/files/zskgke326/files/2021-06/ADP-Appraisal-Report_June2021_UNDP-India.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/tourism-and-culture",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Working Group Report on Improving Heritage Management in India",
+          "type": "Sectoral Publication",
+          "description": "A report providing recommendations and strategies to enhance heritage management practices in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/ImprovingHeritageManagement-in-India.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/e-amrit",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Citizen's/Stakeholder's Charter of NITI Aayog",
+          "type": "Strategy Document",
+          "description": "This document outlines the citizen's and stakeholder's charter and serves as a policy framework for NITI Aayog's functioning as of September 2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-01/CitizensCharter-of-NITI-Aayog290921.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/sustainable-development-goal",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "SDG INDIA INDEX 2023-24",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive sectoral review measuring progress on Sustainable Development Goals at the national and sub-national level for 2023-24.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/SDG_India_Index_2023-24.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "The Indian Model of SDG Localisation, VNR 2022",
+          "type": "Sectoral Publication",
+          "description": "Details India’s approach to SDG localisation as presented in the Voluntary National Review 2022.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-08/The_Indian_Model_of_SDG_Localisation_13072022.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Multidimensional Poverty in India since 2005-06",
+          "type": "Sectoral Publication",
+          "description": "A progress review tracking multidimensional poverty trends in India, including recent years.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-01/MPI-22_NITI-Aayog20254.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/managing-urbanisation",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Economic Master Plan to Develop Surat City-Region as a Growth Hub by 2047",
+          "type": "Sectoral Publication",
+          "description": "Provides an economic roadmap to develop the Surat City-Region as a major growth hub by 2047.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Economic_Master_Plan_to_Develop_Surat_Economic_Region_as_a_Growth_Hub_by_2047_Dece.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Transition to Accrual Accounting",
+          "type": "Sectoral Publication",
+          "description": "Discusses the transition process and benefits of accrual accounting in urban sector management.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Transition-toAccrualAccounting.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/science-and-technology",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Global Innovation Index 2024",
+          "type": "Sectoral Publication",
+          "description": "Annual global benchmark ranking for innovation across countries, including India's position and policy insights.",
+          "documentUrl": "https://www.wipo.int/web-publications/global-innovation-index-2024/assets/67729/2000%20Global%20Innovation%20Index%202024_WEB3lite.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "India Innovation Index 2021",
+          "type": "Sectoral Publication",
+          "description": "Annual ranking and analysis framework of India's states and union territories on innovation indicators, published by NITI Aayog.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/India-Innovation-Index-2021-Web-Version_21_7_22.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/reports-sdg",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "SDG India Index 2023-24",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive report tracking India's progress towards Sustainable Development Goals for 2023-24.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/SDA_INDIA.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "The Indian Model of SDG Localisation 2022",
+          "type": "Sectoral Publication",
+          "description": "Document outlining India's approach and model for localising Sustainable Development Goals in 2022.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-08/The_Indian_Model_of_SDG_Localisation_13072022.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "National MPI India 2021",
+          "type": "Sectoral Publication",
+          "description": "Multidimensional Poverty Index report for India, released in November 2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-11/National_MPI_India-11242021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "NER District SDG Index & Dashboard 2021",
+          "type": "Sectoral Publication",
+          "description": "SDG progress index and dashboard for North Eastern Region districts, published in August 2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-08/NER_SDG_Index_NITI_26082021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "SDG India Index 2020-21",
+          "type": "Sectoral Publication",
+          "description": "National index and analysis of India's Sustainable Development Goal performance for the year 2020-21.",
+          "documentUrl": "https://www.niti.gov.in/writereaddata/files/SDG_3.0_Final_04.03.2021_Web_Spreads.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/report-and-publication",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Unlocking $25+ Billion Export Potential - India’s Hand & Power Tools Sector",
+          "type": "Sectoral Publication",
+          "description": "A report analyzing the export potential and growth drivers for India's hand and power tools sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-04/India_Hand_Power_Tools_Sector_Report.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Automotive Industry: Powering India’s participation in Global Value Chains",
+          "type": "Sectoral Publication",
+          "description": "A detailed report on India's automotive industry and its role in global value chains.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-04/Automotive-Industry-Powering-India-participation-in-GVC_Non-Confidential.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "From Borrowers to Builders: Women’s role in India's financial growth story",
+          "type": "Sectoral Publication",
+          "description": "This report highlights the contribution of women to India's financial sector and economic growth.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/From-Borrowers-to-Builders-Women%E2%80%99s-role-in-India%27s-financial-growth-story.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Expanding Quality Higher Education through States and State Public Universities: Policy Brief",
+          "type": "Sectoral Publication",
+          "description": "A policy brief discussing strategies to expand and improve higher education in Indian states and public universities.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Policy_Brief_Education.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Expanding Quality Higher Education through States and State Public Universities: Policy Report",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive report on enhancing quality and access in higher education through state public universities.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Expanding-Quality-Higher-Education-through-SPUs.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Fiscal Health Index -2025",
+          "type": "Financial Report",
+          "description": "A report on the fiscal health of Indian states with detailed analysis and indexing for 2025.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/Fiscal_Health_Index_24012025_Final.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Analysis of Historical Ambient Air Quality Data along with Emission from coal-based Thermal Power Plants for Developing a Decision Support System",
+          "type": "Sectoral Publication",
+          "description": "A study analyzing air quality data and emissions from coal-based thermal power plants to aid decision making.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/Study%20report%20on%20FGD%20installation%20at%20TPPs%20in%20India_UL.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/documents/budget-papers/demands-of-grants",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Detailed Demands for Grants 2024-25 (Ministry of Planning)",
+          "type": "Budget Plan",
+          "description": "Comprehensive statement of budgetary allocations and expenditure for the Ministry of Planning for the fiscal year 2024-25.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-08/Final%20DDG%20-2024-25_compressed.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Detailed Demands for Grants 2023-24 (Ministry of Planning)",
+          "type": "Budget Plan",
+          "description": "Detailed outline of financial demands and allocations for the Ministry of Planning for 2023-24.",
+          "documentUrl": "https://niti.gov.in/sites/default/files/2023-02/DDG_2023-24_14022023.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Detailed Demands for Grants 2022-23 (Ministry of Planning)",
+          "type": "Budget Plan",
+          "description": "Annual budget statement highlighting planned expenditures for the Ministry of Planning for 2022-23.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-02/DDG2022-23.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Detailed Demands for Grants 2021-22",
+          "type": "Budget Plan",
+          "description": "Official document presenting budgetary demands and allocations for the fiscal year 2021-22.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-02/DDG-2021-22.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/planning-commission-archive",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Faster, More Inclusive and Sustainable Growth Volume 1",
+          "type": "Sectoral Publication",
+          "description": "Volume 1 of the Twelfth Five Year Plan, providing strategic frameworks for inclusive and sustainable economic growth.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-08/12fyp_vol1.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Economic Sectors Volume 2",
+          "type": "Sectoral Publication",
+          "description": "Volume 2 of the Twelfth Five Year Plan, discussing growth and strategies across India's economic sectors.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-08/12fyp_vol2.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Economic Sectors Volume 3",
+          "type": "Sectoral Publication",
+          "description": "Volume 3 of the Twelfth Five Year Plan, providing detailed analysis of sector-wise economic developments.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-08/12fyp_vol3.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/index.php/documents/arth-niti",
+      "documents": [
+        {
+          "year": 2022,
+          "name": "ArthNITI Vol 9",
+          "type": "Sectoral Publication",
+          "description": "This issue of ArthNITI focuses on the economic and developmental updates relevant as of March 2022.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/ArthnitiMarch_Uttarakhand-31032022.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "ArthNITI Vol 8",
+          "type": "Sectoral Publication",
+          "description": "This volume of the ArthNITI newsletter provides industry and policy insights up to October 2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/ArthNITI_October_latest_09Nov2021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "ArthNITI Vol 7",
+          "type": "Sectoral Publication",
+          "description": "This ArthNITI edition contains economic and sectoral news from August 2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Arthniti-August_28-08-2021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "ArthNITI Vol 6",
+          "type": "Sectoral Publication",
+          "description": "The February 2021 ArthNITI newsletter offers industry, sectoral, and economic updates.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Arthniti-newsletter-Feb-21q1.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/women-and-child-development",
+      "documents": [
+        {
+          "year": 2023,
+          "name": "Best practices on Millets",
+          "type": "Sectoral Publication",
+          "description": "Report highlighting best practices for promoting millets across states.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/Report-on-Promoting-Best-practices-on-Millet-26_4_23.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Transforming Child Nutrition, State-level Approaches and Practices for Community-Based Comprehensive Care and Management of Acute Malnutrition",
+          "type": "Sectoral Publication",
+          "description": "Guidance document on state-level approaches for community-based management of acute malnutrition.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-12/CMAM-report-NITI-Aayog.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Take Home Ration: Good practices across States/UTs",
+          "type": "Sectoral Publication",
+          "description": "Compilation of good practices related to take home rations in various States and UTs.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-07/Take-home-ration-report-30_06_2022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Preserving Progress on Nutrition In India: Poshan Abhiyaan in Pandemic Times",
+          "type": "Mission Plan",
+          "description": "Monitoring report on the implementation and progress of Poshan Abhiyaan during the pandemic.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-09/Poshan-Abhiyaan-Monitoring.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/annual-report",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Annual Report (English) 2024-25",
+          "type": "Annual Report",
+          "description": "Annual report detailing NITI Aayog's initiatives, performance, and key achievements in 2024-25.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Annual%20Report%202024-25%20English_FINAL_LOW%20RES_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Annual Report (English) 2023-24",
+          "type": "Annual Report",
+          "description": "Comprehensive annual report describing NITI Aayog’s policy focus areas and impact for 2023-24.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-08/Annual%20Report%20June_NEW_16072024_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Annual Report 2022-2023",
+          "type": "Annual Report",
+          "description": "Summary of NITI Aayog’s major activities, projects, and financials for 2022-2023.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual-Report-2022-2023-English_06022023_compressed.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report 2021 - 2022",
+          "type": "Annual Report",
+          "description": "Review of NITI Aayog’s efforts, programmes, and outcomes for the 2021-2022 period.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual-Report2020-2021-English_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Annual Report 2020 - 2021",
+          "type": "Annual Report",
+          "description": "Comprehensive account of NITI Aayog’s sectoral initiatives and institutional performance in 2020-2021.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual_Report_2021_2022_%28English%29_22022022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/index.php/content/information-under-section-4ib",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Annual Report 2023-24",
+          "type": "Annual Report",
+          "description": "Annual report summarizing the key activities and achievements of NITI Aayog for the financial year 2023-24.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-05/Annual%20report%202023-24%20-%20Manual%20-14.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Budget 2024-25",
+          "type": "Budget Plan",
+          "description": "The budget allocation of funds for the Vote on Account period for the financial year 2024-2025 including proposed expenditures.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-05/Budget%202024-25.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Manual 1 Self Appraisal Report for Year 2023-2024 of Aspirational Districts Programme (ADP) and Aspirational Blocks Programme(ABP) (as on 23.02.2024)",
+          "type": "Sectoral Publication",
+          "description": "Self appraisal report outlining yearly outcomes and progress for ADP and ABP programmes.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-04/Manual%201%20Self%20Appraisal%20Report%20for%20Year%202023-2024%20of%20Aspirational%20Districts%20Programme%20%28ADP%29%20and%20Aspirational%20Blocks%20Programme%28ABP%29%20%20%28as%20on%2023.02.2024%29.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Manual 1 Self Appraisal Report for Year 2022-2023 of Aspirational Districts Programme (ADP)(as on 06-2023)",
+          "type": "Sectoral Publication",
+          "description": "Self appraisal report outlining achievements and activities for ADP during 2022-2023.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-06/Self-Appraisal-Report-for-Year-2022-23.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Manual - 12 Expenditure Statement of the Financial Year DMEO 2022-23",
+          "type": "Financial Report",
+          "description": "Detailed expenditure statement of DMEO for the financial year 2022-23.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-06/Manual-12.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/research-paper",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Child Malnutrition & Mortality: Role of Sanitation & Sewage Systems",
+          "type": "Research Paper",
+          "description": "Analysis of the impact of sanitation and sewage systems on child malnutrition and mortality in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Revised%20NITI%20Working%20Paper_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Responsible AI #AIForAll",
+          "type": "Sectoral Publication",
+          "description": "A report discussing frameworks and strategies for responsible use of Artificial Intelligence in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/Responsible%20AI%20AIForAll_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Changes in Labour force and Employment in Rural and Urban India: 2017-18 to 2020-21",
+          "type": "Sectoral Publication",
+          "description": "A study on changes in labour force and employment patterns across rural and urban India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/PresidentialAddressProfRameshChand17012023.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Lessons from Covid-19: A Plan for Action",
+          "type": "Strategy Document",
+          "description": "Strategic recommendations for action based on learnings from the Covid-19 pandemic.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/HarvardJournal010722_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Predicting adoption of agricultural technologies in Indo-Gangetic Region",
+          "type": "Sectoral Publication",
+          "description": "Research on factors predicting adoption of new agricultural technologies in the Indo-Gangetic region.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Predicting-adoption-of-agricultural-technologies-in-Indo-Gangetic-Region.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Pusa Golden Cherry tomato-2: New promising yellow cherry tomato for protected cultivation",
+          "type": "Sectoral Publication",
+          "description": "Report introducing a new variety of yellow cherry tomato for protected agricultural cultivation.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Pusa-Golden-Cherry-tomato-2-New-promising-yellow-cherry-tomato-for-protected-cultivation.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Large-scale staple food fortification as a complementary strategy to address vitamin and mineral vulnerabilities in India: A critical review",
+          "type": "Sectoral Publication",
+          "description": "A critical review analysing staple food fortification as a strategy to tackle vitamin and mineral deficiencies in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Large-scale-staple-food-fortification-as-a-complementary-strategy-to-address-vitamin-and-mineral-vulnerabilities-in-India-A-critical-review.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "104th Annual Conference Indian Economic Association (IEA): Presidential Address by Member Prof. Ramesh Chand",
+          "type": "Annual Report",
+          "description": "Presidential address discussing economic sector developments at the Indian Economic Association Annual Conference.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/PresidentialAddress_29122021.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "UN Food Systems Summit 2021: Address by Member Prof. Ramesh Chand",
+          "type": "Sectoral Publication",
+          "description": "An address shedding light on key issues and opportunities in India's food systems presented at the UN summit.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/UNFoodSystemsSummit31122021.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/index.php/policy-paper",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Renewable Energy Resource Adequacy Planning to meet RPO by the States in India",
+          "type": "Sectoral Publication",
+          "description": "This paper discusses strategies for states in India to achieve Renewable Purchase Obligation (RPO) targets through adequate renewable energy resource planning.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/Policy%20Paper_Energy_RPO_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Bharatiya Model of Inclusive Development",
+          "type": "Policy Paper",
+          "description": "This document outlines an inclusive development model tailored for India, promoting equitable growth.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-06/NITI_policy-paper_BMID_2023-May.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Agricultural challenges and Policies for the 21st Centurys",
+          "type": "Sectoral Publication",
+          "description": "This report examines key agricultural challenges and policy recommendations for sustainable development in India's agricultural sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Paper_Agri-Challenges-and-Policies_NABARD.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Assam",
+          "type": "Sectoral Publication",
+          "description": "Presents a nutritional profile for the state of Assam summarizing key health and nutrition indicators.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/State-Nutrition-Profile-Assam.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Andhra Pradesh",
+          "type": "Sectoral Publication",
+          "description": "Provides a comprehensive report of nutrition status and indicators for Andhra Pradesh.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/State_Nutrition_Profile_Andhra_Pradesh.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Andaman & Nicobar Islands",
+          "type": "Sectoral Publication",
+          "description": "Gives an overview of nutrition and health data for the population of Andaman & Nicobar Islands.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SNP_Andaman%26NicobarIslands_20210924_v2_JAG_38_AC.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Bihar",
+          "type": "Sectoral Publication",
+          "description": "Summarizes Bihar's nutrition indicators to inform interventions and policy.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SNP_Bihar_draft_ap_20210823_v2_JAG_41_ES.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Goa",
+          "type": "Sectoral Publication",
+          "description": "Provides nutrition and health insights for Goa to support sectoral planning.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SNP_Goa_VW_ap_20210922_v2_JAG_42.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Gujarat",
+          "type": "Sectoral Publication",
+          "description": "Discusses nutrition statistics and trends for Gujarat.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SNP_Gujarat_draft_20210922_v2_JAG_43.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "State Nutrition Profile: Himachal Pradesh",
+          "type": "Sectoral Publication",
+          "description": "Offers a detailed nutrition profile for the state of Himachal Pradesh.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SNP_Himachal%20Pradesh_draft_20210924_v2_JAG_44_AC.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/infrastructure",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Impact of Non-Major Ports on Shipping",
+          "type": "Sectoral Publication",
+          "description": "A report analyzing the impact of non-major ports on shipping in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/Final%20%20report%20on%20Impact%20of%20Non-Major%20Ports%20on%20%20Shipping.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Improving Rail Efficiency And Share In India's Freight Transport",
+          "type": "Sectoral Publication",
+          "description": "A study focused on enhancing efficiency and competitiveness of Indian Railways in freight transport.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/Efficiency%20and%20competitiveness%20of%20Indian%20Railways.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Promoting Clean Energy Usage Through Accelerated Localization of E-Mobility Value Chain",
+          "type": "Sectoral Publication",
+          "description": "Examines strategies for promoting clean energy and localizing e-mobility value chains in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-07/Niti-Aayog_Report-VS_compressed_compressed.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Towards Decarbonising Transport 2023",
+          "type": "Sectoral Publication",
+          "description": "Explores pathways for reducing carbon emissions in India's transport sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-07/98_Towards_Decarbonising_Transport_2023_compressed.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Driving Affordable Financing for Electric Vehicles in India",
+          "type": "Industry Strategy Document",
+          "description": "Discusses mechanisms to make financing for electric vehicles more accessible in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-07/ADB-EV-Financing-Report_VS_compressed.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Mine to Market: Critical Minerals Supply Chain for Domestic Value Addition in Lithium-Ion Battery Manufacturing",
+          "type": "Sectoral Publication",
+          "description": "Analyzes the value chain for critical minerals in the context of lithium-ion battery manufacturing in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-07/Mine-to-market_NITI-Aayog-Publication_June-2023.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Banking on Electric Vehicles in India: A Blueprint for Inclusion of EVs in Priority Sector Lending Guidelines",
+          "type": "Industry Strategy Document",
+          "description": "Proposes inclusion strategies for electric vehicles in India's priority sector lending framework.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Banking-on-EV_web_2.0a_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Data-driven Mobility: Improving Passenger Transportation Through Data",
+          "type": "Sectoral Publication",
+          "description": "Examines the use of data for enhancing passenger transportation systems in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Mobility-data.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Draft Battery Swapping Policy",
+          "type": "Mission Plan",
+          "description": "Policy draft aimed at facilitating the adoption of battery swapping for EVs.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/20220420_Battery_Swapping_Policy_Draft_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Draft Model Concession Agreement for Development and Operation of Eco-tourism Resort and Supporting Infrastructure (Version II)",
+          "type": "Sectoral Publication",
+          "description": "Framework for model concession agreements supporting eco-tourism infrastructure projects.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/ModelConcessionAgreement_for_Development_and_Operation_of_Eco-tourism_Resort.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Fast-Tracking Freight in India",
+          "type": "Sectoral Publication",
+          "description": "A report on accelerating freight transport and logistics efficiency in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Freight_report_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Goods on the Move: Efficiency & Sustainability in Indian Logistics",
+          "type": "Sectoral Publication",
+          "description": "Focused on enhancing efficiency and sustainability of logistics in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Freight_report.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Integration of Electric Vehicles Charging Infrastructure with Distribution Grid Global Review, India's Gap Analyses and Way Forward Report",
+          "type": "Sectoral Publication",
+          "description": "Global review and gap analysis for integrating EV charging with power distribution grids in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Integration-of-Electric-Vehicles-Charging-Infrastructure-with-Distribution-report-1.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Integration of Electric Vehicles Charging Infrastructure with Distribution Grid Global Review, India's Gap Analyses and Way Forward Report 2",
+          "type": "Sectoral Publication",
+          "description": "Second volume of the report on EV charging infrastructure integration with India's distribution grid.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Integration-of-Electric-Vehicles-Charging-Infrastructure-with-Distribution-report2.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Model Concession Agreement for Operation and Maintenance of Electric Buses in Cities (OPEX Model)",
+          "type": "Sectoral Publication",
+          "description": "Model concession agreement for OPEX-based operations of electric buses in urban areas.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Model-Concession-Agreement-for-Operation-and-Maintenance-of-Electric-Buses.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Moving Forward Together: Enabling Shared Mobility in India",
+          "type": "Industry Strategy Document",
+          "description": "Outlines pathways and policies to boost shared mobility models in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Shared-mobility.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Need for Advanced Chemistry Cell Energy Storage in India - Part I",
+          "type": "Sectoral Publication",
+          "description": "Discusses India's requirements and opportunities for advanced chemistry cell energy storage solutions.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Need-for-ACC-Energy-Storage-in-India.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Status Quo Analysis of Various Segments of Electric Mobility And Low Carbon Passenger Road Transport In India",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive analysis of current trends in electric mobility and low-carbon passenger transport.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Status-Quo-Analysis-of-Various-Segments-of-Electric-Mobility-And-Low.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Transforming Trucking in India: Pathways to Zero-Emission Truck Deployment",
+          "type": "Sectoral Publication",
+          "description": "Explores strategic pathways for deploying zero-emission trucks in India's freight sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/ZETReport09092022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/report-and-publication?page=1",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "SAFE Accommodation: Worker Housing for Manufacturing Growth",
+          "type": "Sectoral Publication",
+          "description": "Report on worker housing to support manufacturing sector growth.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/SAFE_Accommodation_Worker_Housing_for_Manufacturing_Growth.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Report on Enhancing Domestic Coking Coal Availability to Reduce the Import of Coking Coal",
+          "type": "Industry Strategy Document",
+          "description": "Strategies to enhance domestic coking coal for reducing imports.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-11/Report_Enhancing%20Domestic%20Coking%20Coal%20Availability%20to%20Reduce%20the%20Import%20of%20Coking%20Coal.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Economic Master Plan to Develop Surat City-Region as a Growth Hub by 2047",
+          "type": "Mission Plan",
+          "description": "Strategic roadmap for developing Surat city-region into a major growth hub.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Economic_Master_Plan_to_Develop_Surat_Economic_Region_as_a_Growth_Hub_by_2047_Dece.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Pathways & Strategy for Accelerating Growth in Edible oil towards Goal of Atmanirbharta",
+          "type": "Industry Strategy Document",
+          "description": "Strategy document on growth avenues for edible oil sector towards self-reliance.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-09/a%20Pathways%20and%20Strategy%20for%20Accelerating%20Growth%20in%20Edible%20Oil%20towards%20Goal%20of%20Atmanirbharta%2017092024%20%281%29.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Impact Assessment of Pradhan Mantri Mudra Yojana (PMMY)",
+          "type": "Financial Report",
+          "description": "Assessment report analyzing the impact of PMMY on the industry and economy.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-09/Assessment%20of%20PMMY_Final%20Report%20%282%29.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Strategy for the development of Seaweed Value Chain",
+          "type": "Industry Strategy Document",
+          "description": "Strategic report on developing the seaweed value chain in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-08/Strategy%20for%20the%20Development_04062024_compressed.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Electronics: Powering India’s Participation in Global Value Chains",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive report on India’s electronics sector integration in global value chains.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/GVC%20Report_Updated_Final_11zon_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "SDG India Index 2023-24",
+          "type": "Sectoral Publication",
+          "description": "Assessment of India's progress towards Sustainable Development Goals.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/SDA_INDIA_Publication.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/new-arrivals",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "DOC PLAN NOVEMBER",
+          "type": "Sectoral Publication",
+          "description": "Sectoral updates on recent document arrivals for November 2024.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/DOC%20PLAN%20NOVEMBER.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "DOCPLAN-April 2024",
+          "type": "Sectoral Publication",
+          "description": "April 2024 sectoral plan of new document arrivals.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-05/DOCPLAN-April%202024.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/energy",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Workshop on CCUS in Indian Cement Sector",
+          "type": "Sectoral Publication",
+          "description": "Report on workshop discussing Carbon Capture, Utilisation, and Storage (CCUS) in India's cement sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/Report%20_Workshop%20on%20CCUS%20in%20Indian%20Cement%20Sector.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Analysis of Historical Ambient Air Quality Data along with Emission from coal-based Thermal Power Plants for Developing a Decision Support System",
+          "type": "Sectoral Publication",
+          "description": "Study report on assessing air quality and emission data from coal power plants to support decision systems.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/Study%20report%20on%20FGD%20installation%20at%20TPPs%20in%20India_UL.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Report on Enhancing Domestic Coking Coal Availability to Reduce the Import of Coking Coal",
+          "type": "Sectoral Publication",
+          "description": "Report on improving domestic coking coal supply to reduce import dependency.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-11/Report_Enhancing%20Domestic%20Coking%20Coal%20Availability%20to%20Reduce%20the%20Import%20of%20Coking%20Coal_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Domestic Manufacturing Capacity & Potential Cyber Security Challenges in the wind sector and Way Forward",
+          "type": "Sectoral Publication",
+          "description": "Report analyzing domestic wind sector manufacturing and cybersecurity challenges.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/Domestic%20Manufacturing%20Capacity%20%26%20Potential%20Cyber%20Secuirty%20Challanges%20in%20Wind%20Sector%20and%20Way%20Forward_0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Developing Chemistry Agnostic Standards for Energy Storage Technologies",
+          "type": "Strategy Document",
+          "description": "Final report on establishing technology-neutral standards for energy storage systems.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/Final%20report_for%20approvl_Chemistry_Agnostic_Standards.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "LNG as a Transportation Fuel in Medium & Heavy Commercial Vehicle Segment",
+          "type": "Sectoral Publication",
+          "description": "Updated report on using LNG as transport fuel in medium and heavy commercial vehicles.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/LNG%20in%20M%26HCV%20segment_07022024_updated_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Report of the Inter-Ministerial Committee on Energy Data Management",
+          "type": "Sectoral Publication",
+          "description": "Committee report reviewing and recommending improvements in energy sector data management.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-11/Energy-Data-Management_Report.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Report of the Inter-Ministerial Committee on Just Transition from Coal",
+          "type": "Sectoral Publication",
+          "description": "Committee report on strategies for a just transition away from coal-based energy.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-11/Report_Just-Transition-Committee_compressed.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Report Committee on Low Carbon Technologies",
+          "type": "Strategy Document",
+          "description": "Committee report on the adoption and deployment of low carbon technologies in the energy sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-11/Report-Committee-on-Low-Carbon-Technologies.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Report on Carbon Capture, Utilisation, and Storage (CCUS) Policy Framework and its Deployment Mechanism in India",
+          "type": "Strategy Document",
+          "description": "Policy framework and deployment mechanisms for CCUS in the Indian context.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-12/CCUS-Report.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Harnessing Green Hydrogen Opportunities For Deep Decarbonisation In India",
+          "type": "Strategy Document",
+          "description": "Report on leveraging green hydrogen for India's deep decarbonization objectives.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-06/Harnessing_Green_Hydrogen_V21_DIGITAL_29062022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "State Energy & Climate Index - Round I",
+          "type": "Sectoral Publication",
+          "description": "Index assessing the performance of Indian states on energy and climate parameters.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2022-04/StateEnergy-and-ClimateIndexRoundI-10-04-2022.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Turning Around The Power Distribution Sector: Learning and Best Practices from Reforms",
+          "type": "Sectoral Publication",
+          "description": "Best practices and learning from reforms in India's power distribution sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-08/Electricity-Distribution-Report_030821.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "RE-Integration report, jointly launched by NITI and IEA",
+          "type": "Sectoral Publication",
+          "description": "Report on integrating renewable energy into India's power system and future challenges.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-08/RenewablesIntegrationinIndia2021-compressed.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Roadmap for Ethanol blending in India 2020–25",
+          "type": "Mission Plan",
+          "description": "Expert committee roadmap for achieving ethanol blending targets in India by 2025.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-08/expert-committee-roadmap-ethanol-blending-india-2025"
+        },
+        {
+          "year": 2021,
+          "name": "Geospatial Energy Map of India - Brochure",
+          "type": "Sectoral Publication",
+          "description": "Brochure introducing the Geospatial Energy Map of India for sectoral visualization and planning.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-10/Brochure_IED.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Reports: Agriculture, Buildings, Coal, Electricity, Industry, Oil and Gas, Renewable Energy, Transport",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive energy data subgroup reports for multiple sectoral domains in energy.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportAgriculture.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Buildings",
+          "type": "Sectoral Publication",
+          "description": "Subgroup report on energy data management and analysis for the buildings sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportBuilding.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Coal",
+          "type": "Sectoral Publication",
+          "description": "Report reviewing data management for coal sector energy statistics.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportCoal.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Electricity",
+          "type": "Sectoral Publication",
+          "description": "Sectoral report focusing on electricity sector energy data and management.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportElectricity.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Industry",
+          "type": "Sectoral Publication",
+          "description": "Report on energy data collection and analysis for the industrial sector.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportIndustry.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Oil and Gas",
+          "type": "Sectoral Publication",
+          "description": "Detailed data subgroup report on management of oil and gas sector energy data.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportOil-Gas.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Renewable Energy",
+          "type": "Sectoral Publication",
+          "description": "Report on renewable energy data management for policy and planning.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportRenewableEnergy.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Energy Data Subgroup Report: Transport",
+          "type": "Sectoral Publication",
+          "description": "Data subgroup report focusing on transportation sector energy data management.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-07/SubgroupReportTransport.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Report of Comprehensive Economic and Environment Impact of Coal Washing in India by TERI",
+          "type": "Sectoral Publication",
+          "description": "Comprehensive TERI report assessing the economic and environmental impacts of coal washing.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-08/CoalWasheryReport.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.niti.gov.in/verticals/agriculture",
+      "documents": [
+        {
+          "year": 2024,
+          "name": "Pathways & Strategy for Accelerating Growth in Edible oil towards Goal of Atmanirbharta",
+          "type": "Sectoral Publication",
+          "description": "This report outlines strategies to boost edible oil production in India for self-reliance.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-09/a%20Pathways%20and%20Strategy%20for%20Accelerating%20Growth%20in%20Edible%20Oil%20towards%20Goal%20of%20Atmanirbharta%2017092024__0.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Working Group Report on Crop Husbandry, Agriculture Inputs, Demand & Supply",
+          "type": "Sectoral Publication",
+          "description": "A comprehensive analysis of crop husbandry, inputs, and projections for agricultural demand and supply.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/Working%20Group%20Report%20on%20Demand%20%26%20Supply%20Final_V9.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Greening and Restoration of Wastelands with Agroforestry (G.R.O.W)",
+          "type": "Sectoral Publication",
+          "description": "Report focuses on methods and benefits of restoring wastelands using agroforestry practices.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/Grow%20Report%2020.02.2024.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Millets Mainstreaming in India, Asian and African Countries",
+          "type": "Sectoral Publication",
+          "description": "Compendium presenting status and best practices for mainstreaming millets across nations.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-01/Millet-Compendium.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Compendium of 75 Agri Entrepreneurs and Innovators",
+          "type": "Sectoral Publication",
+          "description": "Showcases leading agricultural entrepreneurs and innovations driving sector development.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Compendium-of-75-Agri-Entrepreneur-and-Innovators.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "A New Paradigm for Indian Agriculture from Agroindustry to Agroecology",
+          "type": "Policy Paper",
+          "description": "Explores structural transformation and calls for sustainable agroecological shifts in agriculture.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/A-New-Paradigm-for-Indian-Agriculture-from-Agroindustry-to-Agroecology.pdf"
+        },
+        {
+          "year": 2021,
+          "name": "Agriculture in Post-Independent India: Looking Back and Looking Ahead",
+          "type": "Sectoral Publication",
+          "description": "Overview of agricultural development in India since independence with future outlook.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/ICAR-Lecture-by-Prof-RameshChand09242021.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Report of the Task Force on Sugarcane and Sugar Industry",
+          "type": "Task Force Report",
+          "description": "Evaluates the sugarcane and sugar industry, issues, and provides recommendations for growth.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/10_Report_of_the_Task_Force_on_Sugarcan_%20and_Sugar_Industry_0.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Buffer Stock Norms of Pulses",
+          "type": "Policy Paper",
+          "description": "Policy document on buffer stock norms for pulses to ensure food security and price stability.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Buffer_Stock_Norms_of_Pulses.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Final Report of the Task Force Sugarcane and Sugar Industry",
+          "type": "Task Force Report",
+          "description": "Recommendations and analysis on the sugarcane and sugar sector from the Task Force.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SugarReport.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Report of the Expert Committee and Model Law on Agricultural Land Leasing",
+          "type": "Expert Committee Report",
+          "description": "Proposes a model law and recommendations for agricultural land leasing in India.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Report-of-the-Expert-Committee-and-Model-Law-on-Agricultural-Land-Leasing.pdf"
+        },
+        {
+          "year": 2023,
+          "name": "Addressing Agrarian Distress: Sops versus Development",
+          "type": "Policy Paper",
+          "description": "Discusses approaches to tackle agrarian distress contrasting subsidies with development-oriented measures.",
+          "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/13_Addressing_Agrarian_Distress_Spos_versus_Development%20%281%29.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 1 - Bamboo - Tissue culture and Micropropagation - Dr. EM Muralidharan",
+          "type": "Sectoral Publication",
+          "description": "Covers the role of tissue culture and micropropagation in bamboo cultivation for industry use.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_1_Bamboo_Tissue_culture_and_Micropropagation_Dr._EM_Muralidharan_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 1 - Bamboo cultivation practices and production potential - Shri Anand Fiske",
+          "type": "Sectoral Publication",
+          "description": "Details cultivation practices and production potential of bamboo for the industry.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_1_Bamboo_cultivation_practices_and_production_potential_Shri_Anand_Fiske_0.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 2 - Engineered bamboo structures Possible game changer in rural economy - Dr. Suresh Bhalla",
+          "type": "Sectoral Publication",
+          "description": "Examines engineered bamboo structures as a transformative opportunity for rural economies.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_2_Engineered_bamboo_structures_Possible_game_changer_in_rural_economy_Dr._Suresh_Bhalla.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 2 - Techno-Economic feasibility of Indian Bamboo - Smt. Sangeeta Baksi",
+          "type": "Sectoral Publication",
+          "description": "Analyzes the techno-economic feasibility of developing the bamboo industry in India.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_2_Techno-Economic_feasibility_of_Indian_Bamboo_Smt._Sangeeta_Baksi.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 3 - Bamboo for fibre and lifestyle products - Shri Yogesh Shinde",
+          "type": "Sectoral Publication",
+          "description": "Studies the potential of bamboo for producing fibre and lifestyle products in India.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_3_Bamboo_for_fibre_and_%20lifestyle_products_Shri_Yogesh_Shinde.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 3 - Bamboo in Agriculture and ancillary industries - Shri Rahul Saxena",
+          "type": "Sectoral Publication",
+          "description": "Explores bamboo's applications across agriculture and related ancillary industries.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_3_Bamboo_in_Agriculture_and_ancillary_industries_Shri_Rahul_Saxena.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 3 - Bamboo in Green Energy Charcoal, biofuel, bioethanol and activated carbon - Shri Prashant Kumar",
+          "type": "Sectoral Publication",
+          "description": "Assesses bamboo's use in the green energy sector including charcoal, biofuel, and bioethanol.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_3_Bamboo_in_Green_Energy_Charcoal%2C_biofuel%2C_bioethanol_and_activated_carbon_Shri_Prashant_Kumar.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 4 - State Best Practices Area Coverage, Variety and Industry Prospective North East India - Shri Samir Jamatia",
+          "type": "Sectoral Publication",
+          "description": "Showcases best practices in bamboo promotion and industry in North East India.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_4_State_Best_Practices_Area_Coverage%2C_Variety_and_Industry_Prospective_North_East_India_Shri_Samir_Jamatia.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 4 - Roadmap of Round Bamboo Stick Market - Shri Pratap Goswami",
+          "type": "Sectoral Publication",
+          "description": "Presents a strategic roadmap for market development of round bamboo sticks in India.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_4_Roadmap_of_Round_Bamboo_Stick_Market_Shri_Pratap_Goswami.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 4 - State Best Practices Area Coverage, Variety and Industry Prospective Madhya Pradesh - Dr. Uttam Kumar Subuddhi",
+          "type": "Sectoral Publication",
+          "description": "Analyses best practices for bamboo industry development in Madhya Pradesh.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_4_State_Best_Practices_Area_Coverage%2C_Variety_and_Industry_Prospective_Madhya_Pradesh_Dr._Uttam_Kumar_Subuddhi.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 4 - State Best Practices Area Coverage, Variety and Industry Prospective Maharashtra - Shri. M. Srinivasa Rao",
+          "type": "Sectoral Publication",
+          "description": "Shares best practices for developing bamboo-based industries in Maharashtra.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_4_State_Best_Practices_Area_Coverage%2C_Variety_and_Industry_Prospective_Maharashtra_Shri._M._Srinivasa_Rao.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Technical Session 4 - State Best Practices Area Coverage, Variety and Industry Prospective North East India - Shri Dina Chhangte",
+          "type": "Sectoral Publication",
+          "description": "Highlights industry prospects and bamboo practices in North East India.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Technical_Session_4_State_Best_Practices_Area_Coverage%2C_Variety_and_Industry_Prospective_North_East_India_Shri_Dina_Chhangte.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "The Mapping & Exchange Of Good Practices (MEGP) Initiative For Millets Mainstreaming In Asian And African Countries",
+          "type": "Sectoral Publication",
+          "description": "Provides background on the MEGP Initiative for millet promotion in Asian and African countries.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/BackgroundDetails-of-TheMEGP_InitiativeEnglish15072022.pdf"
+        },
+        {
+          "year": 2022,
+          "name": "Millets Mainstreaming: A Conceptual Framework",
+          "type": "Sectoral Publication",
+          "description": "Conceptual framework for mainstreaming millets in food systems and policy.",
+          "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Millets-Mainstreaming-FrameworkEnglish15072022.pdf"
+        }
+      ]
+    },
+    {
+      "sourceUrl": "https://www.pib.gov.in/allRel.aspx",
+      "documents": [
+        {
+          "year": 2025,
+          "name": "Fact Check in Numbers",
+          "type": "Sectoral Publication",
+          "description": "A quantitative summary of the Fact Check Unit’s activities and outputs.",
+          "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc202544533601.pdf"
+        },
+        {
+          "year": 2024,
+          "name": "Transparency Audit",
+          "type": "Sectoral Publication",
+          "description": "Audit report on transparency measures implemented by PIB.",
+          "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/apr/doc2024410329001.pdf"
+        },
+        {
+          "year": 2025,
+          "name": "Allocation Budget",
+          "type": "Budget Plan",
+          "description": "Detailed allocation budget for PIB for the corresponding financial year.",
+          "documentUrl": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/apr/doc2025417541401.pdf"
+        }
+      ]
+    }
   ]
-  
 }
