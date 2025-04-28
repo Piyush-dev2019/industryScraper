@@ -44,44 +44,80 @@ import FirecrawlApp, {
     return jsonResult;
   }
 
-  async function getPdfUrls(markdown: string, prompt: string): Promise<any> {
+  async function getPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
+    const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
+    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
+    
+    if (!result || result === 'Objective not met') {
+        console.log('No response received from LLM');
+        return null;
+    }
 
-        const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-        
-        const result = await gptCall('gpt-4.1', fullPrompt, 'system');
-        
-        if (!result || result === 'Objective not met') {
-            console.log('No response received from LLM');
+    try {
+        const jsonResult = await extractJsonFromResponse(result);
+        if (!jsonResult || !jsonResult.documents || !Array.isArray(jsonResult.documents)) {
+            console.log('Invalid JSON structure received from LLM');
+            if (retryCount < 2) { // Maximum 2 retries
+                console.log(`Retrying PDF extraction (attempt ${retryCount + 1})...`);
+                await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2 seconds before retry
+                return getPdfUrls(markdown, prompt, retryCount + 1);
+            }
+            console.log('Max retries reached for PDF extraction');
             return null;
         }
-        try {
-            const jsonResult = await extractJsonFromResponse(result);
-            console.log('Successfully extracted PDF URLs:', jsonResult);
-            return jsonResult;
-        } catch (error) {
-            console.error('Error parsing JSON response:', error);
-            return null;
+        console.log('Successfully extracted PDF URLs:', jsonResult);
+        return jsonResult;
+    } catch (error) {
+        console.error('Error parsing JSON response:', error);
+        if (retryCount < 2) {
+            console.log(`Retrying PDF extraction after error (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getPdfUrls(markdown, prompt, retryCount + 1);
         }
+        console.log('Max retries reached for PDF extraction after error');
+        return null;
+    }
   }
 
-  async function getNonPdfUrls(markdown: string, prompt: string): Promise<any> {
-        const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-        
-        const result = await gptCall('gpt-4.1', fullPrompt, 'system');
-        
-        if (!result) {
-            console.log('No response received from LLM');
+  async function getNonPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
+    const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
+    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
+    
+    if (!result) {
+        console.log('No response received from LLM');
+        if (retryCount < 2) {
+            console.log(`Retrying non-PDF URL extraction (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getNonPdfUrls(markdown, prompt, retryCount + 1);
+        }
+        console.log('Max retries reached for non-PDF URL extraction');
+        return { possibleUrls: [] };
+    }
+
+    try {
+        const jsonResult = await extractJsonFromResponse(result);
+        if (!jsonResult || !jsonResult.possibleUrls || !Array.isArray(jsonResult.possibleUrls)) {
+            console.log('Invalid JSON structure received from LLM');
+            if (retryCount < 2) {
+                console.log(`Retrying non-PDF URL extraction (attempt ${retryCount + 1})...`);
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                return getNonPdfUrls(markdown, prompt, retryCount + 1);
+            }
+            console.log('Max retries reached for non-PDF URL extraction');
             return { possibleUrls: [] };
         }
-
-        try {
-            const jsonResult = await extractJsonFromResponse(result);
-            console.log('Successfully extracted non-PDF URLs:', jsonResult);
-            return jsonResult;
-        } catch (error) {
-            console.error('Error parsing JSON response:', error);
-            return null;
+        console.log('Successfully extracted non-PDF URLs:', jsonResult);
+        return jsonResult;
+    } catch (error) {
+        console.error('Error parsing JSON response:', error);
+        if (retryCount < 2) {
+            console.log(`Retrying non-PDF URL extraction after error (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getNonPdfUrls(markdown, prompt, retryCount + 1);
         }
+        console.log('Max retries reached for non-PDF URL extraction after error');
+        return { possibleUrls: [] };
+    }
   }
 
   async function bothUrl(links: string[], prompt: Record<string, string>) {
@@ -175,7 +211,7 @@ import FirecrawlApp, {
 
                   // Get PDF URLs from the non-PDF URL
                   console.log('Extracting PDF documents from non-PDF URL...');
-                  const secondPdfResult = await getPdfUrls(secondMarkdown, url);
+                  const secondPdfResult = await getPdfUrls(secondMarkdown,  prompt.getPdfUrlsPrompt);
                   if (secondPdfResult && secondPdfResult.documents && secondPdfResult.documents.length > 0) {
                     console.log(`✅ Found ${secondPdfResult.documents.length} additional PDF documents`);
                     foundDocuments.push(secondPdfResult);
@@ -204,7 +240,7 @@ import FirecrawlApp, {
           }
 
           return pdfResult;
-        } catch (error) { 
+        } catch (error) {
           console.error(`❌ Error processing link ${link}:`, error);
           return null;
         }
@@ -360,11 +396,7 @@ return the response in the JSON structure provided below no other text or explan
       batches.push(links.slice(i, i + batchSize));
     }
 
-    const rankPrompt = (batchLinks: string[]) => `${prompt}
-    URLs to analyze:
-    ${JSON.stringify(batchLinks, null, 2)}
-    `;
-
+    const rankPrompt = (batchLinks: string[]) => `${prompt}\n\nURLs to analyze:\n${JSON.stringify(batchLinks, null, 2)}`;
 
     try {
       // Process all batches asynchronously

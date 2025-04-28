@@ -1,0 +1,556 @@
+[
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/SAFE_Accommodation_Worker_Housing_for_Manufacturing_Growth.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "SAFE Accommodation: Worker Housing for Manufacturing Growth",
+      "type": "Sectoral Publication",
+      "description": "A report on worker housing to support manufacturing sector growth through safe accommodation initiatives.",
+      "sources": [
+        "http://niti.gov.in/verticals/Industry-%26-Foreign-Investment"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Policy_Brief_Education.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Expanding Quality Higher Education through States and State Public Universities: Policy Brief",
+      "type": "Sectoral Publication",
+      "description": "This policy brief outlines strategies to improve the quality of higher education through state public universities.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/education",
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Expanding-Quality-Higher-Education-through-SPUs.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Expanding Quality Higher Education through States and State Public Universities: Policy Report",
+      "type": "Sectoral Publication",
+      "description": "This policy report provides in-depth analysis and recommendations for expanding and improving higher education in states and state public universities.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/education",
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2021-11/BCG_SATHE_DIGITAL_13112021_0.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Systemic Transformation of School Education - The SATH-E Experience",
+      "type": "Sectoral Publication",
+      "description": "This report documents the outcomes and lessons learned from the SATH-Education project aimed at transforming school education.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/education"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Economic_Master_Plan_to_Develop_Surat_Economic_Region_as_a_Growth_Hub_by_2047_Dece.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Economic Master Plan to Develop Surat City-Region as a Growth Hub by 2047",
+      "type": "Sectoral Publication",
+      "description": "A strategic plan outlining steps to transform Surat into a major economic growth hub by 2047.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/managing-urbanisation"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Transition-toAccrualAccounting.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Transition to Accrual Accounting",
+      "type": "Sectoral Publication",
+      "description": "A report discussing the shift from cash-based to accrual accounting in urban financial systems.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/managing-urbanisation"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-09/a%20Pathways%20and%20Strategy%20for%20Accelerating%20Growth%20in%20Edible%20Oil%20towards%20Goal%20of%20Atmanirbharta%2017092024__0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Pathways & Strategy for Accelerating Growth in Edible oil towards Goal of Atmanirbharta",
+      "type": "Sectoral Publication",
+      "description": "A strategic report outlining pathways to accelerate growth in India's edible oil sector for self-reliance.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/Working%20Group%20Report%20on%20Demand%20%26%20Supply%20Final_V9.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Working Group Report on Crop Husbandry, Agriculture Inputs, Demand & Supply",
+      "type": "Sectoral Publication",
+      "description": "Detailed analysis of demand and supply trends in crop husbandry and agricultural inputs for policy planning.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-02/Grow%20Report%2020.02.2024.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Greening and Restoration of Wastelands with Agroforestry (G.R.O.W)",
+      "type": "Sectoral Publication",
+      "description": "Review of strategies for greening and restoring wastelands using agroforestry for sustainable land management.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-01/Millet-Compendium.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Millets Mainstreaming in India, Asian and African Countries",
+      "type": "Sectoral Publication",
+      "description": "Compendium highlighting initiatives for mainstreaming millets in India and globally for nutrition and income.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Compendium-of-75-Agri-Entrepreneur-and-Innovators.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Compendium of 75 Agri Entrepreneurs and Innovators",
+      "type": "Sectoral Publication",
+      "description": "Showcases leading agri-entrepreneurs and innovators contributing to sector growth and transformation.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/A-New-Paradigm-for-Indian-Agriculture-from-Agroindustry-to-Agroecology.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "A New Paradigm for Indian Agriculture from Agroindustry to Agroecology",
+      "type": "Policy Paper",
+      "description": "Examines the shift from industrial agriculture to agroecological practices for sustainability.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/ICAR-Lecture-by-Prof-RameshChand09242021.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Agriculture in Post-Independent India: Looking Back and Looking Ahead",
+      "type": "Sectoral Publication",
+      "description": "A reflective analysis of Indian agriculture's evolution since independence with future outlook.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/10_Report_of_the_Task_Force_on_Sugarcan_%20and_Sugar_Industry_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report of the Task Force on Sugarcane and Sugar Industry",
+      "type": "Sectoral Publication",
+      "description": "Insights on challenges and policy actions for India's sugarcane and sugar industry.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Buffer_Stock_Norms_of_Pulses.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Buffer Stock Norms of Pulses",
+      "type": "Sectoral Publication",
+      "description": "Report detailing the recommended buffer stock norms for pulses to ensure food security.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Working-Group-Report-Demand-Supply-30-07-21.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Working Group Report on Demand and Supply Projections towards 2033",
+      "type": "Sectoral Publication",
+      "description": "Projects trends in demand and supply in key agri-commodities through 2033 for planning.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/EnhancingTechnology-Use-in-AgricultureInsurance-30-07-21.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Enhancing Technology Use in Agriculture Insurance",
+      "type": "Sectoral Publication",
+      "description": "Discusses the adoption of technology to improve insurance uptake and effectiveness in agriculture.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/SugarReport.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Final Report of the Task Force Sugarcane and Sugar Industry",
+      "type": "Sectoral Publication",
+      "description": "Conclusive recommendations from the task force for the sugarcane and sugar industry.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Report-of-the-Expert-Committee-and-Model-Law-on-Agricultural-Land-Leasing.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report of the Expert Committee and Model Law on Agricultural Land Leasing",
+      "type": "Policy Paper",
+      "description": "Presents recommended model law and expert review for agricultural land leasing reforms.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/13_Addressing_Agrarian_Distress_Spos_versus_Development%20%281%29.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Addressing Agrarian Distress: Sops versus Development",
+      "type": "Policy Paper",
+      "description": "Evaluates policy choices between short-term incentives and long-term development to address farm distress.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://stagingniti.xyz/sites/default/files/2023-08/Millets-Mainstreaming-FrameworkEnglish15072022.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Millets Mainstreaming: A Conceptual Framework",
+      "type": "Strategy Document",
+      "description": "Provides a framework for mainstreaming millets as a staple for nutrition and income security.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/agriculture"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-02/Annual%20Report%202024-25%20English_FINAL_LOW%20RES_0.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Annual Report (English) 2024-25",
+      "type": "Annual Report",
+      "description": "The official annual report of NITI Aayog detailing activities and achievements for 2024-25 in English.",
+      "sources": [
+        "https://www.niti.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-08/Annual%20Report%20June_NEW_16072024_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Annual Report (English) 2023-24",
+      "type": "Annual Report",
+      "description": "Annual summary of NITI Aayog activities and policy recommendations for 2023-24 in English.",
+      "sources": [
+        "https://www.niti.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual-Report-2022-2023-English_06022023_compressed.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Annual Report 2022-2023",
+      "type": "Annual Report",
+      "description": "A comprehensive overview of NITI Aayog's initiatives, performance, and sectoral insights for 2022-2023.",
+      "sources": [
+        "https://www.niti.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual-Report2020-2021-English_0.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Annual Report 2021 - 2022",
+      "type": "Annual Report",
+      "description": "Annual report outlining major policy recommendations, achievements, and government advisory for 2021-2022 in English.",
+      "sources": [
+        "https://www.niti.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/Annual_Report_2021_2022_%28English%29_22022022.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Annual Report 2020 - 2021",
+      "type": "Annual Report",
+      "description": "Annual report summarizing NITI Aayog's strategic initiatives and sectoral performance for 2020-2021 in English.",
+      "sources": [
+        "https://www.niti.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Working%20Paper_Identifying%20Potential%20Service%20Sub-Sectors%20Insights%20from%20GVA_New.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Working Paper: Identifying Potential Service Sub-Sectors - Insights from GVA, Exports, and Employment Data",
+      "type": "Working Paper",
+      "description": "This working paper analyses data on value added, exports, and employment to identify high-potential service sub-sectors for targeted policy support.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/service"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-04/India_Hand_Power_Tools_Sector_Report.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Unlocking $25+ Billion Export Potential - India’s Hand & Power Tools Sector",
+      "type": "Sectoral Publication",
+      "description": "A report analyzing India’s Hand & Power Tools sector and its export opportunities.",
+      "sources": [
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-04/Automotive-Industry-Powering-India-participation-in-GVC_Non-Confidential.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Automotive Industry: Powering India’s participation in Global Value Chains",
+      "type": "Sectoral Publication",
+      "description": "A detailed review of India’s automotive industry and its integration with global value chains.",
+      "sources": [
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/From-Borrowers-to-Builders-Women%E2%80%99s-role-in-India%27s-financial-growth-story.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "From Borrowers to Builders: Women’s role in India's financial growth story",
+      "type": "Sectoral Publication",
+      "description": "Report on the evolving role of women in India's financial sector and economic growth.",
+      "sources": [
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/Fiscal_Health_Index_24012025_Final.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Fiscal Health Index -2025",
+      "type": "Financial Report",
+      "description": "An index measuring and analyzing fiscal health indicators for the year 2025.",
+      "sources": [
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-01/Study%20report%20on%20FGD%20installation%20at%20TPPs%20in%20India_UL.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Analysis of Historical Ambient Air Quality Data along with Emission from coal-based Thermal Power Plants for Developing a Decision Support System",
+      "type": "Sectoral Publication",
+      "description": "A study assessing air quality and emissions from coal-based thermal power plants in India.",
+      "sources": [
+        "https://www.niti.gov.in/report-and-publication"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2025-03/Future-Front-Quarterly-Frontier-Tech-Insights-March-2025.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Future Front: Quarterly Frontier Tech Insights - March 2025",
+      "type": "Sectoral Publication",
+      "description": "A quarterly publication providing insights into upcoming frontier technologies and their implications.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-12/Revised%20NITI%20Working%20Paper_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Child Malnutrition & Mortality: Role of Sanitation & Sewage Systems",
+      "type": "Research Paper",
+      "description": "Analysis of the impact of sanitation and sewage systems on child malnutrition and mortality in India.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2024-07/Responsible%20AI%20AIForAll_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Responsible AI #AIForAll",
+      "type": "Strategy Document",
+      "description": "Guidelines and best practices for developing and deploying responsible artificial intelligence across industries.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/PresidentialAddressProfRameshChand17012023.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Changes in Labour force and Employment in Rural and Urban India: 2017-18 to 2020-21",
+      "type": "Sectoral Publication",
+      "description": "A statistical overview of labor force and employment trends in India from 2017-18 to 2020-21.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/HarvardJournal010722_0.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Lessons from Covid-19: A Plan for Action",
+      "type": "Mission Plan",
+      "description": "Recommendations for policy action and planning in response to challenges posed by the Covid-19 pandemic.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Predicting-adoption-of-agricultural-technologies-in-Indo-Gangetic-Region.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Predicting adoption of agricultural technologies in Indo-Gangetic Region",
+      "type": "Sectoral Publication",
+      "description": "Research on factors influencing the adoption of agricultural technologies in the Indo-Gangetic region.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Pusa-Golden-Cherry-tomato-2-New-promising-yellow-cherry-tomato-for-protected-cultivation.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Pusa Golden Cherry tomato-2: New promising yellow cherry tomato for protected cultivation",
+      "type": "Sectoral Publication",
+      "description": "A research document on a new variety of yellow cherry tomato suitable for protected cultivation.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-03/Large-scale-staple-food-fortification-as-a-complementary-strategy-to-address-vitamin-and-mineral-vulnerabilities-in-India-A-critical-review.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Large-scale staple food fortification as a complementary strategy to address vitamin and mineral vulnerabilities in India: A critical review",
+      "type": "Sectoral Publication",
+      "description": "Critical review of staple food fortification to combat vitamin and mineral deficiencies in India.",
+      "sources": [
+        "https://www.niti.gov.in/research-paper"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://niti.gov.in/sites/default/files/2023-09/Guidelines_State_Support_Mission.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Guidelines_State_Support_Mission",
+      "type": "Mission Plan",
+      "description": "Outlines the indicative action plan for the State Support Mission and strategies for socioeconomic goals.",
+      "sources": [
+        "https://www.niti.gov.in/state-support-mission"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://niti.gov.in/sites/default/files/2023-09/SSM-Action-Plans_Annexure.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "SSM-Action-Plans_Annexure",
+      "type": "Mission Plan",
+      "description": "Provides State Support Mission guidelines and action plan framework to support states' development strategies.",
+      "sources": [
+        "https://www.niti.gov.in/state-support-mission"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/MigrantsWorker_Inside_10_compressed.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Best Practices on Employment Generation for Migrant Workers",
+      "type": "Sectoral Publication",
+      "description": "A report highlighting successful strategies for generating employment for migrant workers in India.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/skill-development-and-employment"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/25th_June_Final_Report_27062022.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "India’s Booming Gig and Platform Economy: Perspectives and Recommendations on the Future of Work",
+      "type": "Sectoral Publication",
+      "description": "An in-depth report analyzing the growth and policy needs of India's gig and platform economy.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/skill-development-and-employment"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-06/Policy_Brief_India%27s_Booming_Gig_and_Platform_Economy_27062022.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "India’s Booming Gig and Platform Economy: Policy Brief",
+      "type": "Policy Brief",
+      "description": "A concise policy brief with recommendations for India's gig and platform economy.",
+      "sources": [
+        "https://www.niti.gov.in/verticals/skill-development-and-employment"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.niti.gov.in/sites/default/files/2023-02/ITI_Report_02022023_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Transforming Industrial Training Institutes",
+      "type": "Sectoral Publication",
+      "description": "This publication provides insights into reforming and upgrading India's Industrial Training Institutes (ITIs).",
+      "sources": [
+        "https://www.niti.gov.in/verticals/skill-development-and-employment"
+      ]
+    }
+  }
+]

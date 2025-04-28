@@ -107,25 +107,7 @@ Return the response in this exact format:
 
 export const brokerageWebsitePrompt = {
     "rankLinksPrompt": `
-    Analyze the following URLs and rank the most relevant ones for finding information about:
-  - Annual Reports
-  - Industry Strategy Documents
-  - Financial Reports
-  - Budget Plans
-  - Mission Plans
-  - Sectoral Publications
-
-Strict Filtering Rules:
-1. Ignore any links to content older than 2021 or archive pages before 2021.
-2. Ignore any paginated URLs beyond page 2 (e.g., URLs with "page=3" or "page/4").
-3. Ignore links that are not in English (e.g., URLs containing "/hi/").
-4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, or purely administrative content.
-5. Ignore links to monthly or weekly summary reports.
-6. **Base path filtering logic**:
-   - If both a parent URL and a sub-URL are present (e.g., https://site.com/policy and https://site.com/policy/document-2023), **only keep the parent URL**.
-   - A "parent URL" is any URL that is a prefix of another.
-   - If a parent URL exists, **exclude all deeper sub-URLs that start with the same base path**.
-   - Only include the sub-URL if its parent is not in the list.
+    Analyze the following URLs and rank the most relevant ones for finding information about any type ofindustry or sector.
 
 Return ONLY a JSON array in this exact format — no explanation or extra output:
 
@@ -133,7 +115,7 @@ Return ONLY a JSON array in this exact format — no explanation or extra output
   {
     "url": "http://example.com",
     "relevance_score": 95,
-    "reason": "High-level document hub covering annual reports and strategies"
+    "reason": "High-level industry information hub"
   }
 ]
 
