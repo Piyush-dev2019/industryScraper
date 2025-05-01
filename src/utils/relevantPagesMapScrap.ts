@@ -44,110 +44,83 @@ import FirecrawlApp, {
     return jsonResult;
   }
 
-  async function getPdfUrls(markdown: string, link: string): Promise<any> {
-    const pdfUrlPrompt = ` 
-    You are a data extraction assistant helping to analyze a government or institutional webpage provided in Markdown format.
-
-Your task is to extract only the relevant PDF document links that can support industry analysis, such as:
-- Annual Reports
-- Financial Reports
-- Sectoral Publications
-- Mission Plans
-- Budget Plans
-- Industry Strategy Documents
-
-Ignore any links that do not end in .pdf.
-Ignore any links that appear to be from before 2021 based on dates in the filename, URL, or surrounding context
-
-For each PDF link found, extract and return the following structured JSON object:
-
-{
-  "sourceUrl": "${link}",
-  "documents": [
-    {
-      "year": 2022,                      // Extract from the filename or context. Leave null if not found.
-      "name": "Annual Report 2021-22",   // Use link text or infer from filename
-      "type": "Annual Report",           // Use keywords to classify (Annual Report, Mission Plan, etc.)
-      "description": "Short one-line summary of the document's purpose or content (Use surrounding or nearby text)", 
-      "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
-    }
-  ]
-}
-
-Important Instructions:
-- Only include documents that help in industry or market analysis.
-- The type should be inferred if possible using keywords in the document name or nearby text.
-- The description should be concise (1 sentence max), extracted from surrounding paragraph/list text if available.
-- Ensure documentUrl always ends in .pdf.
-- Only include actual PDF URLs found in the markdown content.
-- Do not include any example URLs or placeholder URLs.
-
-Use this format exactly. Do not add extra commentary or explanation.`;
-
-    const prompt = pdfUrlPrompt + '\n\nwebsite - markdown data: ' + markdown;
-    const result = await gptCall('gpt-4.1', prompt, 'system');
+  async function getPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
+    const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
+    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
     
     if (!result || result === 'Objective not met') {
-      return null;
+        console.log('No response received from LLM');
+        return null;
     }
 
     try {
-      const jsonResult = await extractJsonFromResponse(result);
-      console.log('jsonResult from getPdfUrls', jsonResult);
-      return jsonResult;
+        const jsonResult = await extractJsonFromResponse(result);
+        if (!jsonResult || !jsonResult.documents || !Array.isArray(jsonResult.documents)) {
+            console.log('Invalid JSON structure received from LLM');
+            if (retryCount < 2) { // Maximum 2 retries
+                console.log(`Retrying PDF extraction (attempt ${retryCount + 1})...`);
+                await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2 seconds before retry
+                return getPdfUrls(markdown, prompt, retryCount + 1);
+            }
+            console.log('Max retries reached for PDF extraction');
+            return null;
+        }
+        console.log('Successfully extracted PDF URLs:', jsonResult);
+        return jsonResult;
     } catch (error) {
-      console.error('Error in parsing PDF response:', error);
-      return null;
+        console.error('Error parsing JSON response:', error);
+        if (retryCount < 2) {
+            console.log(`Retrying PDF extraction after error (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getPdfUrls(markdown, prompt, retryCount + 1);
+        }
+        console.log('Max retries reached for PDF extraction after error');
+        return null;
     }
   }
 
-  async function getNonPdfUrls(markdown: string): Promise<any> {
-    const nonPdfUrlPrompt = `
-    You are an intelligent web assistant that processes Markdown content from government, institutional, or company websites.
-
-Your task is to extract **only the links** (URLs) that are **Highly Likely to lead to pages containing important documents** for industry research and analysis, such as:
-- Sector/Industry Reports
-- Annual Reports
-- Publications
-- Financial Reports
-- Mission Plans
-- Strategy Documents
-- Budget Plans
-etc.
-
-Instructions:
-1. **Ignore** any links that point directly to .pdf files (those are handled in a separate step).
-2. **Only return** links that likely **lead to** document repositories or report listing pages (e.g., pages with headings like "Reports", "Publications", "Documents", "Resources", "Archives", "Downloads", etc.).
-3. Return a JSON array under the key possibleUrls containing only the actual URLs found in the provided markdown content.
-4. Do not include any example URLs or placeholder URLs.
-5. Only include URLs that are actually present in the markdown content.
-6. **Ignore** any links that redirect to content older than 2021 or archive pages before 2021.
-7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
-8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
-Return the response in this exact format:
-{
-  "possibleUrls": [
-    // List of actual URLs found in the markdown content otherwise return an empty array
-  ]
-}`;
-
-    const result = await gptCall('gpt-4.1', nonPdfUrlPrompt + '\n\nwebsite - markdown data: ' + markdown, 'system');
+  async function getNonPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
+    const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
+    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
     
     if (!result) {
-      return null;
+        console.log('No response received from LLM');
+        if (retryCount < 2) {
+            console.log(`Retrying non-PDF URL extraction (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getNonPdfUrls(markdown, prompt, retryCount + 1);
+        }
+        console.log('Max retries reached for non-PDF URL extraction');
+        return { possibleUrls: [] };
     }
 
     try {
-      const jsonResult = await extractJsonFromResponse(result);
-      console.log('jsonResult from getNonPdfUrls', jsonResult);
-      return jsonResult;
+        const jsonResult = await extractJsonFromResponse(result);
+        if (!jsonResult || !jsonResult.possibleUrls || !Array.isArray(jsonResult.possibleUrls)) {
+            console.log('Invalid JSON structure received from LLM');
+            if (retryCount < 2) {
+                console.log(`Retrying non-PDF URL extraction (attempt ${retryCount + 1})...`);
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                return getNonPdfUrls(markdown, prompt, retryCount + 1);
+            }
+            console.log('Max retries reached for non-PDF URL extraction');
+            return { possibleUrls: [] };
+        }
+        console.log('Successfully extracted non-PDF URLs:', jsonResult);
+        return jsonResult;
     } catch (error) {
-      console.error('Error in parsing non-PDF response:', error);
-      return null;
+        console.error('Error parsing JSON response:', error);
+        if (retryCount < 2) {
+            console.log(`Retrying non-PDF URL extraction after error (attempt ${retryCount + 1})...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getNonPdfUrls(markdown, prompt, retryCount + 1);
+        }
+        console.log('Max retries reached for non-PDF URL extraction after error');
+        return { possibleUrls: [] };
     }
   }
 
-  async function bothUrl(links: string[]) {
+  async function bothUrl(links: string[], prompt: Record<string, string>) {
     try {
       if (!links || links.length === 0) {
         console.log('No links found to analyze.');
@@ -177,7 +150,7 @@ Return the response in this exact format:
 
           // Get PDF URLs
           console.log('Extracting PDF documents from content...');
-          const pdfResult = await getPdfUrls(markdown, link);
+          const pdfResult = await getPdfUrls(markdown, prompt.getPdfUrlsPrompt);
           if (pdfResult && pdfResult.documents && pdfResult.documents.length > 0) {
             console.log(`✅ Found ${pdfResult.documents.length} PDF documents in initial link`);
             foundDocuments.push(pdfResult);
@@ -193,7 +166,7 @@ Return the response in this exact format:
 
           // Get non-PDF URLs
           console.log('Extracting non-PDF URLs from content...');
-          const nonPdfResult = await getNonPdfUrls(markdown);
+          const nonPdfResult = await getNonPdfUrls(markdown, prompt.getNonPdfUrlsPrompt);
           if (nonPdfResult && nonPdfResult.possibleUrls) {
             console.log(`Found ${nonPdfResult.possibleUrls.length} potential non-PDF URLs`);
             
@@ -238,7 +211,7 @@ Return the response in this exact format:
 
                   // Get PDF URLs from the non-PDF URL
                   console.log('Extracting PDF documents from non-PDF URL...');
-                  const secondPdfResult = await getPdfUrls(secondMarkdown, url);
+                  const secondPdfResult = await getPdfUrls(secondMarkdown,  prompt.getPdfUrlsPrompt);
                   if (secondPdfResult && secondPdfResult.documents && secondPdfResult.documents.length > 0) {
                     console.log(`✅ Found ${secondPdfResult.documents.length} additional PDF documents`);
                     foundDocuments.push(secondPdfResult);
@@ -413,6 +386,7 @@ return the response in the JSON structure provided below no other text or explan
   
   async function rankLinks(
     links: string[],
+    prompt: string
   ): Promise<string[] | null> {
     const batchSize = 25;
     const batches = [];
@@ -422,40 +396,7 @@ return the response in the JSON structure provided below no other text or explan
       batches.push(links.slice(i, i + batchSize));
     }
 
-    const rankPrompt = (batchLinks: string[]) => `
-      Analyze the following URLs and rank the most relevant ones for finding information about:
-  - Annual Reports
-  - Industry Strategy Documents
-  - Financial Reports
-  - Budget Plans
-  - Mission Plans
-  - Sectoral Publications
-
-Strict Filtering Rules:
-1. Ignore any links to content older than 2021 or archive pages before 2021.
-2. Ignore any paginated URLs beyond page 2 (e.g., URLs with "page=3" or "page/4").
-3. Ignore links that are not in English (e.g., URLs containing "/hi/").
-4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, or purely administrative content.
-5. Ignore links to monthly or weekly summary reports.
-6. **Base path filtering logic**:
-   - If both a parent URL and a sub-URL are present (e.g., https://site.com/policy and https://site.com/policy/document-2023), **only keep the parent URL**.
-   - A "parent URL" is any URL that is a prefix of another.
-   - If a parent URL exists, **exclude all deeper sub-URLs that start with the same base path**.
-   - Only include the sub-URL if its parent is not in the list.
-
-Return ONLY a JSON array in this exact format — no explanation or extra output:
-
-[
-  {
-    "url": "http://example.com",
-    "relevance_score": 95,
-    "reason": "High-level document hub covering annual reports and strategies"
-  }
-]
-
-URLs to analyze:
-${JSON.stringify(batchLinks, null, 2)}
-`;
+    const rankPrompt = (batchLinks: string[]) => `${prompt}\n\nURLs to analyze:\n${JSON.stringify(batchLinks, null, 2)}`;
 
     try {
       // Process all batches asynchronously
@@ -489,7 +430,7 @@ ${JSON.stringify(batchLinks, null, 2)}
   
   async function filterRelevantLinks(links: string[]): Promise<string[] | null> {
     const prompt = `
-    You are given a list of URLs from a government website. Your task is to return only the most relevant base URLs which can aid in industry analysis:
+    You are given a list of URLs from a website. Your task is to return only the most relevant base URLs which can aid in industry analysis:
 
 Strict Filtering Rule:
 1.  **Base path filtering logic**:
@@ -659,6 +600,7 @@ Strict Filtering Rule:
   
   async function findRelevantPageViaMap(
     url: string,
+    prompt: Record<string, string>
   ): Promise<string[] | null> {
     try {
   
@@ -676,7 +618,7 @@ Strict Filtering Rule:
         return null;
       }
   
-      const relevantLinks = await rankLinks(filteredPages);
+      const relevantLinks = await rankLinks(filteredPages, prompt.rankLinksPrompt);
       const filteredRelevantLinks = await filterRelevantLinks(relevantLinks);
   
       if (!filteredRelevantLinks) {
