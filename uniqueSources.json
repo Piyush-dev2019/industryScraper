@@ -1,0 +1,600 @@
+[
+  {
+    "organization": "Indian Chemical Council (ICC)",
+    "sourceUrl": "https://indianchemicalcouncil.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Confederation of Indian Industry (CII)",
+    "sourceUrl": "https://www.cii.in/",
+    "access": "onMailWithoutOtp",
+    "type": "multiple"
+  },
+  {
+    "organization": "FICCI (Federation of Indian Chambers of Commerce & Industry)",
+    "sourceUrl": "https://ficci.in/",
+    "access": "onMailWithOtp",
+    "type": "multiple"
+  },
+  {
+    "organization": "MarketsandMarkets",
+    "sourceUrl": "https://www.marketsandmarkets.com/",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "Mordor Intelligence",
+    "sourceUrl": "https://www.mordorintelligence.com/",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "Fertiliser Association of India (FAI)",
+    "sourceUrl": "https://www.faidelhi.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "CropLife India",
+    "sourceUrl": "https://www.croplifeindia.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Cement Manufacturers Association (CMA)",
+    "sourceUrl": "https://www.cmaindia.org/",
+    "access": "onMailWithoutOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "CRISIL Research",
+    "sourceUrl": "https://www.crisilresearch.com/",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "ICRA Limited",
+    "sourceUrl": "https://www.icra.in/",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "Federation of Indian Mineral Industries (FIMI)",
+    "sourceUrl": "https://www.fedmin.com/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not Recent"
+  },
+  {
+    "organization": "Indian Steel Association (ISA)",
+    "sourceUrl": "https://indsteel.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not Recent"
+  },
+  {
+    "organization": "Aluminium Secondary Manufacturers Association (India)",
+    "sourceUrl": "https://asmaindia.co.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "International Copper Association India (ICAI)",
+    "sourceUrl": "https://copperindia.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not That Usefull"
+  },
+  {
+    "organization": "India Bullion and Jewellers Association (IBJA)",
+    "sourceUrl": "https://www.ibja.co/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Daily Gold Price"
+  },
+  {
+    "organization": "Indian Paper Manufacturers Association (IPMA)",
+    "sourceUrl": "https://ipmaindia.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not Recent around 2016"
+  },
+  {
+    "organization": "Indian Jute Mills Association (IJMA)",
+    "sourceUrl": "https://www.ijma.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Society of Indian Automobile Manufacturers (SIAM)",
+    "sourceUrl": "https://www.siam.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Automotive Component Manufacturers Association of India (ACMA)",
+    "sourceUrl": "https://www.acma.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Automobile Dealers Associations (FADA)",
+    "sourceUrl": "https://fada.in/",
+    "access": "onMailWithOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "Automotive Tyre Manufacturers' Association (ATMA)",
+    "sourceUrl": "https://atmaindia.org/",
+    "access": "paid",
+    "type": "particular"
+  },
+  {
+    "organization": "All India Rubber Industries Association (AIRIA)",
+    "sourceUrl": "https://www.allindiarubber.net/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Consumer Electronics and Appliances Manufacturers Association (CEAMA)",
+    "sourceUrl": "https://www.ceama.in/",
+    "access": "paid",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Council of Ceramic Tiles & Sanitaryware (ICCTAS)",
+    "sourceUrl": "https://www.icctas.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Gem & Jewellery Export Promotion Council (GJEPC)",
+    "sourceUrl": "https://www.gjepc.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "All India Glass Manufacturers' Federation (AIGMF)",
+    "sourceUrl": "http://www.aigmf.com/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Annual Report Not Found"
+  },
+  {
+    "organization": "Council for Leather Exports (CLE)",
+    "sourceUrl": "https://www.leatherindia.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "No Reports"
+  },
+  {
+    "organization": "Plastics Export Promotion Council (PLEXCONCIL)",
+    "sourceUrl": "https://plexconcil.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "No Annual Report"
+  },
+  {
+    "organization": "Apparel Export Promotion Council (AEPC)",
+    "sourceUrl": "https://aepcindia.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Confederation of Indian Textile Industry (CITI)",
+    "sourceUrl": "https://citiindia.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Broadcasting and Digital Foundation (IBDF)",
+    "sourceUrl": "https://www.ibdf.com/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Annual Report Only for Members"
+  },
+  {
+    "organization": "Internet and Mobile Association of India (IAMAI)",
+    "sourceUrl": "https://www.iamai.in/",
+    "access": "onMailWithoutOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "All India Federation of Master Printers (AIFMP)",
+    "sourceUrl": "https://aifmp.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Confederation of Real Estate Developers' Associations of India (CREDAI)",
+    "sourceUrl": "https://www.credai.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "JLL India",
+    "sourceUrl": "https://www.jll.co.in/",
+    "access": "onMailWithoutOtp",
+    "type": "multiple"
+  },
+  {
+    "organization": "CBRE South Asia Pvt Ltd",
+    "sourceUrl": "https://www.cbre.co.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "JLL India",
+    "sourceUrl": "https://www.jll.co.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Hotel & Restaurant Associations of India (FHRAI)",
+    "sourceUrl": "https://www.fhrai.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "National Restaurant Association of India (NRAI)",
+    "sourceUrl": "https://nrai.org/",
+    "access": "paid",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Association of Amusement Parks and Industries (IAAPI)",
+    "sourceUrl": "https://iaapi.org/",
+    "access": "onMailWithOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Associations in Indian Tourism & Hospitality (FAITH)",
+    "sourceUrl": "https://www.faithtourismindia.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "National Centre for Cold Chain Development (NCCD) (Semi-Private)",
+    "sourceUrl": "http://nccd.nic.in/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not Recent"
+  },
+  {
+    "organization": "Retailers Association of India (RAI)",
+    "sourceUrl": "https://www.rai.net.in/",
+    "access": "onMailWithoutOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "Retailers Association of India (RAI)",
+    "sourceUrl": "https://www.rai.net.in/",
+    "access": "onMailWithOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Indian Petroleum Industry ",
+    "sourceUrl": "https://www.fipi.org.in/",
+    "access": "Open",
+    "type": "multiple"
+  },
+  {
+    "organization": "Federation of Indian Petroleum Industry ",
+    "sourceUrl": "https://www.fipi.org.in/",
+    "access": "onMailWithOtp",
+    "type": "multiple"
+  },
+  {
+    "organization": "Indian Tea Association (ITA)",
+    "sourceUrl": "https://www.indiatea.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Coffee Board of India (Semi-Private)",
+    "sourceUrl": "https://coffeeboard.gov.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Confederation of Indian Alcoholic Beverage Companies (CIABC)",
+    "sourceUrl": "https://ciabc.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Beverage Association (IBA)",
+    "sourceUrl": "https://www.in-beverage.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Tobacco Institute of India (TII)",
+    "sourceUrl": "https://www.tiionline.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Compound Livestock Feed Manufacturers' Association of India (CLFMA)",
+    "sourceUrl": "https://clfma.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Dairy Association (IDA)",
+    "sourceUrl": "https://indiandairyassociation.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "ICAR-Directorate of Poultry Research",
+    "sourceUrl": "https://pdonpoultry.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Indian Chambers of Commerce & Industry (FICCI)",
+    "sourceUrl": "https://ficci.in/",
+    "access": "onMailWithOtp",
+    "type": "multiple"
+  },
+  {
+    "organization": "CareEdge Ratings",
+    "sourceUrl": "https://www.careedge.in/",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "National Housing Bank (NHB) (Semi-Private)",
+    "sourceUrl": "https://nhb.org.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Investment Bankers of India (AIBI)",
+    "sourceUrl": "http://aibi.org.in/",
+    "access": "Open",
+    "type": "Doubt"
+  },
+  {
+    "organization": "Finance Industry Development Council (FIDC)",
+    "sourceUrl": "https://fidc.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Microfinance Institutions Network (MFIN)",
+    "sourceUrl": "https://mfinindia.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Sa-Dhan",
+    "sourceUrl": "https://sa-dhan.net/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Banks' Association (IBA)",
+    "sourceUrl": "https://www.iba.org.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Mutual Funds in India (AMFI)",
+    "sourceUrl": "https://www.amfiindia.com/",
+    "access": "Open",
+    "type": "Doubt"
+  },
+  {
+    "organization": "Infomerics Valuation and Rating Pvt. Ltd.",
+    "sourceUrl": "https://www.infomerics.com/",
+    "access": "Open",
+    "type": "multiple"
+  },
+  {
+    "organization": "General Insurance Council",
+    "sourceUrl": "https://www.gicouncil.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Life Insurance Council",
+    "sourceUrl": "https://www.licindia.in/Bottom-Links/Life-Insurance-Council",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Insurance Brokers Association of India (IBAI)",
+    "sourceUrl": "https://www.ibai.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Fintech Association for Consumer Empowerment (FACE)",
+    "sourceUrl": "https://faceofindia.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Payments Council of India (PCI)",
+    "sourceUrl": "https://paymentscouncil.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Pharmaceutical Alliance (IPA)",
+    "sourceUrl": "https://www.ipa-india.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Organisation of Pharmaceutical Producers of India (OPPI)",
+    "sourceUrl": "https://www.indiaoppi.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Federation of Pharmaceutical Entrepreneurs (FOPE)",
+    "sourceUrl": "https://www.fopeindia.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Biotechnology Led Enterprises (ABLE)",
+    "sourceUrl": "https://www.ableindia.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Healthcare Providers India (AHPI)",
+    "sourceUrl": "https://www.ahpi.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Construction Industry Development Council (CIDC)",
+    "sourceUrl": "https://cidc.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "National Highways Authority of India (NHAI) (Semi-Private)",
+    "sourceUrl": "https://www.nhai.gov.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Tractor and Farm Equipment Manufacturers Association (TAFMA)",
+    "sourceUrl": "https://www.tmaindia.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Construction Equipment Manufacturers Association (ICEMA)",
+    "sourceUrl": "https://www.i-cema.in/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Check if it can download from pdf viewer"
+  },
+  {
+    "organization": "Indian Electrical & Electronics Manufacturers' Association (IEEMA)",
+    "sourceUrl": "https://www.ieema.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian Institute of Packaging (IIP) (Semi-Private)",
+    "sourceUrl": "https://www.iip-in.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Plastics Export Promotion Council (PLEXCONCIL)",
+    "sourceUrl": "https://plexconcil.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "International Copper Association India (ICAI)",
+    "sourceUrl": "https://copperindia.org/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Doubt (Not that useful)"
+  },
+  {
+    "organization": "Indian Steel Association (ISA)",
+    "sourceUrl": "https://indsteel.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "National Association of Software and Service Companies (NASSCOM)",
+    "sourceUrl": "https://nasscom.in/",
+    "access": "onMailWithoutOtp",
+    "type": "particular"
+  },
+  {
+    "organization": "Manufacturers' Association for Information Technology (MAIT)",
+    "sourceUrl": "https://www.mait.com/",
+    "access": "paid",
+    "type": "particular"
+  },
+  {
+    "organization": "Indian National Shipowners' Association (INSA)",
+    "sourceUrl": "https://www.insa.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Airports Authority of India (AAI) (Semi-Private)",
+    "sourceUrl": "https://www.aai.aero/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Confederation of All India Traders (CAIT)",
+    "sourceUrl": "https://cait.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Cellular Operators Association of India (COAI)",
+    "sourceUrl": "https://www.coai.com/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Tower and Infrastructure Providers Association (TAIPA)",
+    "sourceUrl": "https://www.taipa.in/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Power Producers (APP)",
+    "sourceUrl": "https://www.appindia.org.in/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Not Recent"
+  },
+  {
+    "organization": "CRISIL Research",
+    "sourceUrl": "https://www.crisil.com/en/home/our-businesses/research-and-analytics.html",
+    "access": "paid",
+    "type": "multiple"
+  },
+  {
+    "organization": "Power Exchange India Limited (PXIL) (Semi-Private)",
+    "sourceUrl": "https://powerexindia.in/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Export data"
+  },
+  {
+    "organization": "Indian Energy Exchange (IEX) (Semi-Private)",
+    "sourceUrl": "https://www.iexindia.com/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "Export data"
+  },
+  {
+    "organization": "Independent Power Producers Association of India (IPPAI)",
+    "sourceUrl": "https://ippai.org/",
+    "access": "Open",
+    "type": "particular"
+  },
+  {
+    "organization": "Association of Power Producers (APP)",
+    "sourceUrl": "https://www.appindia.org.in/",
+    "access": "Open",
+    "type": "particular",
+    "remarks": "No Recent"
+  },
+  {
+    "organization": "Indian Pollution Control Association (IPCA)",
+    "sourceUrl": "https://www.ipcaworld.co.in/",
+    "access": "Open",
+    "type": "particular"
+  }
+]
