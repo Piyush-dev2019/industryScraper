@@ -47,8 +47,9 @@ export class ScraperService {
   async map_scrap(prompt: Record<string, string>): Promise<TransformedDocument[] | null> {
     // const objective =
     // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
-    const url = 'https://www.niti.gov.in/';
-    // const url = 'https://pharma-dept.gov.in/';
+    // const url = 'https://www.niti.gov.in/';
+    // const url = 'https://www.i-cema.in/';
+    const url = 'https://powerexindia.in/';
 
     const relevantPages = await findRelevantPageViaMap(url, prompt);
     // console.log('relevantPages', relevantPages);
