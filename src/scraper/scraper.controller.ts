@@ -1,5 +1,4 @@
-
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { ScraperService } from './scraper.service';
 import { governmentWebsitePrompt, brokerageWebsitePrompt } from '../utils/prompts';
 
@@ -12,9 +11,13 @@ export class ScraperController {
     return this.scraperService.main(governmentWebsitePrompt);
   }
 
+  @Get('brokerage-website')
+  async getBrokerageWebsite() {
+    return this.scraperService.main(brokerageWebsitePrompt);
+  }
 
-@Get('brokerage-website')
-async getBrokerageWebsite() {
-  return this.scraperService.main(brokerageWebsitePrompt);
-}
+  @Post('upload')
+  async uploadFromUrlsJson(@Body() body: { organizationName: string }) {
+    return this.scraperService.uploadFromUrlsJson(body.organizationName);
+  }
 }

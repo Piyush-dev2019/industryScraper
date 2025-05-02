@@ -1,25 +1,814 @@
 [
   {
-    "documentUrl": "https://powerexindia.in/media/downloads/Power%20Line%20April%202024.pdf",
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023.pdf",
     "characteristics": {
-      "year": 2024,
-      "name": "Power Line April 2024",
-      "type": "Sectoral Publication",
-      "description": "Power Line newsletter assessing utility preparedness to meet summer power demand.",
+      "year": 2023,
+      "name": "Gazette Notification - National Medical Devices Policy 2023",
+      "type": "Policy Document",
+      "description": "Official gazette notification detailing the National Medical Device Policy 2023 meant to regulate and promote the medical device sector.",
       "sources": [
-        "https://powerexindia.in"
+        "https://pharma-dept.gov.in/policy/national-medical-device-policy-2023",
+        "https://pharma-dept.gov.in/policy",
+        "http://pharma-dept.gov.in/policy"
       ]
     }
   },
   {
-    "documentUrl": "https://powerexindia.in/media/downloads/Report_South%20Asia%20(BBIN)%20Power%20Summit%202023.pdf",
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/CDP-PS_0.pdf",
+    "characteristics": {
+      "year": null,
+      "name": "Scheme for Cluster Development Programme for Pharma Sector",
+      "type": "Industry Strategy Document",
+      "description": "Official document outlining the Scheme for Cluster Development Programme for the pharmaceutical sector to enhance industry competitiveness.",
+      "sources": [
+        "https://pharma-dept.gov.in/scheme-cluster-development-programme-pharma-sector"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20National%20Medical%20Devices%20Policy%202023.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "National Medical Device Policy 2023 & Strategy Document",
+      "type": "Industry Strategy Document",
+      "description": "This document outlines the strategy and policies for the MediTech sector including manufacturing, industry issues, and export promotion for 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/policy-medical-devices"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FInal%20DDG%20FY%2025-26.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Detailed Demand for Grants 2025-26",
+      "type": "Budget Plan",
+      "description": "Budget and grant allocation document for Department of Pharmaceuticals for FY 2025-26.",
+      "sources": [
+        "https://pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20FY%202024-25.pdf",
     "characteristics": {
       "year": 2024,
-      "name": "Report_South Asia (BBIN) Power Summit 2023",
-      "type": "Sectoral Publication",
-      "description": "Report documenting outcomes and discussions from the South Asia Power Summit 2023.",
+      "name": "Detailed Demand for Grants 2024-25",
+      "type": "Budget Plan",
+      "description": "Budget and grant allocation document for Department of Pharmaceuticals for FY 2024-25.",
       "sources": [
-        "https://powerexindia.in"
+        "https://pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%20final%202023-24.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Detailed Demand for Grants 2023-24",
+      "type": "Budget Plan",
+      "description": "Budget and grant allocation document for Department of Pharmaceuticals for FY 2023-24.",
+      "sources": [
+        "https://pharma-dept.gov.in/detailed-demand-grants",
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG%2022-23.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Detailed Demand for Grants 2022-23",
+      "type": "Budget Plan",
+      "description": "Budget and grant allocation document for Department of Pharmaceuticals for FY 2022-23.",
+      "sources": [
+        "https://pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/DDG-2021-22%20Scan.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Detailed Demand for Grants 2021-22",
+      "type": "Budget Plan",
+      "description": "Budget and grant allocation document for Department of Pharmaceuticals for FY 2021-22.",
+      "sources": [
+        "https://pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20English%202024-25%20AR%20%281%29.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Annual Report 2024-25",
+      "type": "Annual Report",
+      "description": "Comprehensive annual summary of the Department of Pharmaceuticals’ activities and achievements for 2024-25.",
+      "sources": [
+        "https://pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20version%20of%20Annual%20Report%202023-24.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Annual Report 2023-24",
+      "type": "Annual Report",
+      "description": "Summarizes the Department of Pharmaceuticals’ policies, programs, and sectoral performance for 2023-24.",
+      "sources": [
+        "https://pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Annual Report 2022-23",
+      "type": "Annual Report",
+      "description": "Provides an overview of the Department’s initiatives and industry developments for the year 2022-23.",
+      "sources": [
+        "https://pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/English%20Annual%20Report%202021-22%20%281%29.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Annual Report 2021-22",
+      "type": "Annual Report",
+      "description": "Reports on the Department of Pharmaceuticals’ projects, policies, and financials for 2021-22.",
+      "sources": [
+        "https://pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual_Report_2022-23.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Annual Report 2022-23",
+      "type": "Annual Report",
+      "description": "This report provides a comprehensive overview of the Department of Pharmaceuticals’ initiatives, achievements, and performance for 2022-23.",
+      "sources": [
+        "https://pharma-dept.gov.in"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202021-22.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Annual Report 2021-22",
+      "type": "Annual Report",
+      "description": "Annual summary of the Department of Pharmaceuticals’ activities, industry developments, and sectoral progress for the year 2021-22.",
+      "sources": [
+        "https://pharma-dept.gov.in"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Expenditure%20details%20for%20website.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Expenditure details for website",
+      "type": "Budget Plan",
+      "description": "Statement of Actual 2020-21, BE 2020-21, RE 2020-21, BE 2021-22, and expenditure status as on 30.6.2021 (1st Quarter)",
+      "sources": [
+        "https://pharma-dept.gov.in/budget-and-expenditure"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Department%20of%20Pharmaceuticals%20Statement%20of%20Progressive%20Expenditure%20upto%2022.03.2023.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Department of Pharmaceuticals Statement of Progressive Expenditure upto 21.03.2023",
+      "type": "Budget Plan",
+      "description": "Provides a statement of progressive expenditure in the Department of Pharmaceuticals up to March 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/cca"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Budget%20Deptt%20of%20Pharmaceutical%202022-23.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Budget Pharmaceuticals 2022-23",
+      "type": "Budget Plan",
+      "description": "Annual budget document for the Department of Pharmaceuticals for financial year 2022-23.",
+      "sources": [
+        "https://pharma-dept.gov.in/cca"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Updated%20Proactive%20disclosure%202023-24%2018.06.2024.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Updated Proactive disclosure 2023-24",
+      "type": "Annual Report",
+      "description": "This document provides annual proactive disclosure information for the Department of Pharmaceuticals for 2023-24.",
+      "sources": [
+        "https://pharma-dept.gov.in/proactive-disclosure"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Expenditure%20details%20for%20website.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Expenditure details for website",
+      "type": "Budget Plan",
+      "description": "Statement indicating Actual 2020-21, BE 2020-21, RE 2020-21 and BE 2021-22 and Expenditure as on 30.6.2021 (1st Quarter).",
+      "sources": [
+        "https://www.pharma-dept.gov.in/budget-and-expenditure"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/FInal%20DDG%20FY%2025-26.pdf",
+    "characteristics": {
+      "year": 2025,
+      "name": "Detailed Demand for Grants 2025-26",
+      "type": "Budget Plan",
+      "description": "Annual financial requirements and allocation for the Department of Pharmaceuticals for the year 2025-26.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/DDG%20FY%202024-25.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Detailed Demand for Grants 2024-25",
+      "type": "Budget Plan",
+      "description": "Budget plan outlining grants and allocations for the Department of Pharmaceuticals for the year 2024-25.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/DDG%20final%202023-24.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Detailed Demand for Grants 2023-24",
+      "type": "Budget Plan",
+      "description": "Annual budget details including grants required for the pharmaceuticals sector for 2023-24.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/DDG%2022-23.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Detailed Demand for Grants 2022-23",
+      "type": "Budget Plan",
+      "description": "Document summarizing the budgetary grants for the pharmaceuticals department for year 2022-23.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/DDG-2021-22%20Scan.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Detailed Demand for Grants 2021-22",
+      "type": "Budget Plan",
+      "description": "Detailed financial allocations and grant requirements for the pharmaceuticals sector for 2021-22.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/detailed-demand-grants"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20English%202024-25%20AR%20%281%29.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Annual Report 2024-25",
+      "type": "Annual Report",
+      "description": "Comprehensive yearly review of the activities and performance of the Department of Pharmaceuticals for 2024-25.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/English%20version%20of%20Annual%20Report%202023-24.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Annual Report 2023-24",
+      "type": "Annual Report",
+      "description": "Comprehensive annual overview of the Department of Pharmaceuticals for 2023-24.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3.pdf",
+    "characteristics": {
+      "year": 2022,
+      "name": "Annual Report 2022-23",
+      "type": "Annual Report",
+      "description": "Comprehensive annual report detailing the Department of Pharmaceuticals' activities for 2022-23.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/English%20Annual%20Report%202021-22%20%281%29.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Annual Report 2021-22",
+      "type": "Annual Report",
+      "description": "Annual summary of the Department of Pharmaceuticals' initiatives and outcomes for 2021-22.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/annual-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/five%20year%20report.pdf",
+    "characteristics": {
+      "year": null,
+      "name": "Five Year Report",
+      "type": "Sectoral Publication",
+      "description": "A report detailing departmental procurement projections over a five year period.",
+      "sources": [
+        "https://pharma-dept.gov.in/procurement-projections"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.nppaindia.nic.in/wp-content/uploads/2021/01/NPPA-Procurement-Plan-for-the-Next-05-years.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "NPPA Procurement Plan for the Next 05 Years",
+      "type": "Budget Plan",
+      "description": "Procurement plan by the National Pharmaceutical Pricing Authority for the period 2021-2026.",
+      "sources": [
+        "https://pharma-dept.gov.in/procurement-projections"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.kaplindia.com/wp-content/uploads/2021/01/FIVE-YEAR-PROCUREMENT-PROJECTION-2021_2026.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "KAPL Five Year Procurement Projection 2021-2026",
+      "type": "Budget Plan",
+      "description": "Five year procurement projection for Karnataka Antibiotic and Pharmaceuticals Limited (2021-2026).",
+      "sources": [
+        "https://pharma-dept.gov.in/procurement-projections"
+      ]
+    }
+  },
+  {
+    "documentUrl": "http://www.niperhyd.ac.in/PDFFiles/Purchase_Projection_2021_2026.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "NIPER Hyderabad Purchase Projection 2021-2026",
+      "type": "Budget Plan",
+      "description": "Projected procurement plan for NIPER Hyderabad covering the years 2021-2026.",
+      "sources": [
+        "https://pharma-dept.gov.in/procurement-projections"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20Study%20Report%20-%20Bridging%20Academia-Industry%20Gap%20to%20achieve%20Self-reliance_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study report on Bridging Academia-Industry Gap to achieve Self-reliance",
+      "type": "Sectoral Publication",
+      "description": "A report analyzing methods to bridge the academia-industry gap and support self-reliance in the pharmaceutical sector.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/FINAL-Impact%20of%20the%20DPCO%202013%20on%20the%20price%20of%20Cardiac%20stents%20Knee%20implants%20.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study Report on Impact of the Drug Price Control Order (DPCO) 2013 on the price of Cardiac stents Knee implants and six medical devices on industry and consumers in terms of availability and affordability",
+      "type": "Sectoral Publication",
+      "description": "This study assesses the effects of DPCO 2013 on pricing, availability, and affordability of select medical devices for industry and consumers.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/FINAL-An%20analysis%20on%20leveraging%20the%20patent%20cliff.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study report on An analysis on leveraging the patent cliff, with drug sales worth USD 251 billion going off-patent and to analyses the different drug pricing methodologies particularly w.r.t. these patented drugs going off-patent",
+      "type": "Sectoral Publication",
+      "description": "An analysis focused on leveraging the patent cliff and reviewing drug pricing models for newly off-patent drugs.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final-Upgrading%20NIPERs%20to%20meet%20evolving%20needs%20of%20Pharmaceutical%20business%20and%20NIPERs%20in%20top%2050%20in%20world%20ranking.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study on Upgrading NIPERs to meet evolving needs of Pharmaceutical business and NIPERs in top 50 in world ranking",
+      "type": "Sectoral Publication",
+      "description": "Study examining strategies to upgrade NIPERs for global competitiveness and evolving business requirements.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/CRO%20Market%20Report_High%20Resolution.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Study on CRO Sector in India",
+      "type": "Sectoral Publication",
+      "description": "Provides a comprehensive overview of India's Contract Research Organization sector including current trends and growth factors.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Pharma%20Clusters.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey of Pharma Clusters",
+      "type": "Sectoral Publication",
+      "description": "A survey report outlining the landscape and attributes of pharmaceutical clusters across India.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Medical%20Devices%20Clusters.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey of Medical Devices Clusters",
+      "type": "Sectoral Publication",
+      "description": "Survey summarizing the status and distribution of medical device clusters in India.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Novel%20Technologies%20for%20Productoion%20of%20APIs.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey for Novel/ Innovative and Cost-effective Technologies for Productoion of APIs",
+      "type": "Sectoral Publication",
+      "description": "Report details cost-effective and innovative technologies in API production as identified through a national survey.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Final%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20-%202023.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Final Boosting of Medical Devices Industry",
+      "type": "Sectoral Publication",
+      "description": "Examines final strategies and action points to boost the Indian medical devices industry.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://www.pharma-dept.gov.in/sites/default/files/Assessment%20of%20skill%20requirement%20of%20Indian%20Pharma%20Industry_Under%20PMPDS%20scheme%20%281%29.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Assessment of skill requirement of Indian Pharma Industry",
+      "type": "Sectoral Publication",
+      "description": "Assesses skill requirements in the Indian pharmaceutical industry under the PMPDS scheme.",
+      "sources": [
+        "https://www.pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20of%20PLI%20scheme%20for%20Pharmaceuticals_0_0.pdf",
+    "characteristics": {
+      "year": 2021,
+      "name": "Gazette Notification (Dated- 3rd March, 2021)",
+      "type": "Mission Plan",
+      "description": "Official Gazette notification launching the PLI scheme for Pharmaceuticals sector.",
+      "sources": [
+        "https://pharma-dept.gov.in/schemes/production-linked-incentive-pli-scheme-pharmaceuticals"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Revised%20list%20of%20applicant%20-%20PLI%20for%20Pharma%20as%20on%2003.05.2023_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "List of Approved Applicants Dated 3rd May, 2023",
+      "type": "Sectoral Publication",
+      "description": "Updated list of companies approved for incentives under the PLI scheme for pharmaceuticals.",
+      "sources": [
+        "https://pharma-dept.gov.in/schemes/production-linked-incentive-pli-scheme-pharmaceuticals"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCPMP%202024%20for%20website.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024",
+      "type": "Policy Document",
+      "description": "Provides regulatory framework for pharmaceutical marketing conduct for 2024.",
+      "sources": [
+        "https://pharma-dept.gov.in/policy",
+        "http://pharma-dept.gov.in/policy"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Strategy%20Document%20on%20NMDP%202023_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Strategy Document on National Medical Devices Policy, 2023",
+      "type": "Industry Strategy Document",
+      "description": "Detailed strategy guide for implementing the National Medical Devices Policy, 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/policy",
+        "https://pharma-dept.gov.in/policy/uniform-code-medical-device-marketing-practices",
+        "http://pharma-dept.gov.in/policy"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Notification%20-%20R%26D%20Policy.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "National Policy on Research & Development and Innovation in the Pharma-Med Tech Sector in India",
+      "type": "Policy Document",
+      "description": "Sets out strategy for R&D and innovation in the pharma-med tech sector in India.",
+      "sources": [
+        "https://pharma-dept.gov.in/policy",
+        "http://pharma-dept.gov.in/policy"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCPMP%202024%20for%20website_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024",
+      "type": "Sectoral Publication",
+      "description": "Defines guidelines and ethical marketing practices for pharmaceutical marketing in 2024.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Corrigendum%20dated%2012.03.2024_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Modifications in the guidelines of Production Linked Incentive (PLI) Scheme for promotion of domestic manufacturing of critical Key Starting Materials (KSMs)/ Drug Intermediates and Active Pharmaceutical Ingredients (APIs) in the country (PLI BD)",
+      "type": "Industry Strategy Document",
+      "description": "Announces tweaks to PLI guidelines for APIs/KSMs to promote domestic manufacturing.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Study%20Report%20-%20Bridging%20Academia-Industry%20Gap%20to%20achieve%20Self-reliance_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study report on Bridging Academia-Industry Gap to achieve Self-reliance",
+      "type": "Study Report",
+      "description": "Examines strategies to bridge the gap between academia and industry for achieving self-reliance in the pharmaceutical sector.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-Impact%20of%20the%20DPCO%202013%20on%20the%20price%20of%20Cardiac%20stents%20Knee%20implants%20.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study Report on Impact of the Drug Price Control Order (DPCO) 2013 on the price of Cardiac stents Knee implants and six medical devices on industry and consumers in terms of availability and affordability",
+      "type": "Study Report",
+      "description": "Analyzes the impact of the DPCO 2013 on prices, industry, and consumer access to selected medical devices.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/FINAL-An%20analysis%20on%20leveraging%20the%20patent%20cliff.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study report on An analysis on leveraging the patent cliff, with drug sales worth USD 251 billion going off-patent and to analyses the different drug pricing methodologies particularly w.r.t. these patented drugs going off-patent",
+      "type": "Study Report",
+      "description": "Analyzes the opportunities and pricing strategies as major drugs go off-patent in global markets.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final-Upgrading%20NIPERs%20to%20meet%20evolving%20needs%20of%20Pharmaceutical%20business%20and%20NIPERs%20in%20top%2050%20in%20world%20ranking.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Study on Upgrading NIPERs to meet evolving needs of Pharmaceutical business and NIPERs in top 50 in world ranking",
+      "type": "Study Report",
+      "description": "Assesses the enhancements required for NIPERs to align with business needs and achieve higher global rankings.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/CRO%20Market%20Report_High%20Resolution.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Study on CRO Sector in India",
+      "type": "Sectoral Publication",
+      "description": "Reviews the growth, trends, and opportunities in India’s Contract Research Organization (CRO) sector.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Updated%20Strategy%20for%20Leveraging%20ASEAN%20FTA%20and%20trade%20potential%20with%20the%20Middle%20East%20Countries%20for%20Pharma%20Sector%20in%20India%20Final%20-%20ISID.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Strategy for Leveraging ASEAN FTA and Trade Potential with the Middle East Countries for Pharma Sector in India",
+      "type": "Strategy Document",
+      "description": "Outlines strategies to enhance trade potential for India’s pharma sector via ASEAN FTA and Middle East partnerships.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report",
+        "https://pharma-dept.gov.in/study-report?title=&page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Pharma%20Clusters.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey of Pharma Clusters",
+      "type": "Sectoral Publication",
+      "description": "Presents findings on the structure and performance of major pharma industry clusters in India.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Medical%20Devices%20Clusters.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey of Medical Devices Clusters",
+      "type": "Sectoral Publication",
+      "description": "Provides insights into the location, capacity, and growth potential of India’s medical device clusters.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Report-Survey%20of%20Novel%20Technologies%20for%20Productoion%20of%20APIs.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Survey for Novel/ Innovative and Cost-effective Technologies for Productoion of APIs",
+      "type": "Study Report",
+      "description": "Investigates innovative and cost-effective technologies for API production in India.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Final%20Boosting%20of%20Medical%20Devices%20Industry%20-%20Report%20-%202023.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Report on Final Boosting of Medical Devices Industry",
+      "type": "Study Report",
+      "description": "Explores approaches to enhance the competitiveness of India’s medical devices industry.",
+      "sources": [
+        "https://pharma-dept.gov.in/study-report"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/10.7.2023%20DoCA.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Provision of the Legal Metrology (Packed Commodities) Rules, 2011 on Medical Devices",
+      "type": "Regulatory Policy",
+      "description": "Document on the application of legal metrology rules to packaged medical devices, July 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/policy/uniform-code-medical-device-marketing-practices",
+        "http://pharma-dept.gov.in/policy"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/31.10.23%20Draft%20National%20Pharmaceuticals%20Policy.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Approach Paper on Draft National Pharmaceuticals Policy 2023",
+      "type": "Policy Document",
+      "description": "Draft policy document for stakeholder consultation on the National Pharmaceuticals Policy 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20R%26D%20Policy%20-%20Dated%2018%20Aug%2023.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Gazette Notification regarding National Policy on Research & Development and Innovation in the Pharma-Med Tech Sector in India - Dated 18.08.2023",
+      "type": "Policy Document",
+      "description": "Official notification on the R&D and Innovation Policy for the Pharma-Med Tech Sector in India.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20%20National%20Medical%20Devices%20Policy%202023_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Gazette Notification National Medical Device Policy 2023",
+      "type": "Policy Document",
+      "description": "Official notification of the National Medical Device Policy 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/NIPER%20Research%20Compendium.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "NIPER Research Compendium",
+      "type": "Sectoral Publication",
+      "description": "Compendium highlighting research work from the National Institutes of Pharmaceutical Education and Research (NIPERs).",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Annual%20Report%202022-23%20Final-3_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Annual Report 2022-23",
+      "type": "Annual Report",
+      "description": "Comprehensive annual report for the Department of Pharmaceuticals for FY 2022-23.",
+      "sources": [
+        "https://pharma-dept.gov.in/important-document?page=1"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/UCMPMD_0.pdf",
+    "characteristics": {
+      "year": 2024,
+      "name": "Uniform Code for Marketing Practices in Medical Devices (UCMPMD) 2024",
+      "type": "Industry Strategy Document",
+      "description": "Guidelines governing marketing practices for medical devices in India (2024).",
+      "sources": [
+        "http://pharma-dept.gov.in/policy"
+      ]
+    }
+  },
+  {
+    "documentUrl": "https://pharma-dept.gov.in/sites/default/files/Gazette%20Notification%20PRIP%20-%20Dated%2017%20Aug%2023_0.pdf",
+    "characteristics": {
+      "year": 2023,
+      "name": "Gazette Notification PRIP - Dated 17 Aug 23",
+      "type": "Mission Plan",
+      "description": "Official government notification for the Promotion of Research and Innovation in Pharma MedTech sector (PRIP) scheme launched in 2023.",
+      "sources": [
+        "https://pharma-dept.gov.in/prip/"
       ]
     }
   }
