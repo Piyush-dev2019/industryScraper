@@ -1,5 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { Ministry } from './ministry.entity';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+} from 'typeorm';
+import { ReportMinistry } from './report-ministry.entity';
 
 @Entity()
 export class Report {
@@ -15,32 +20,33 @@ export class Report {
   @Column()
   blobUrl: string;
 
-  @Column()
+  @Column({ type: 'int' })
   year: number;
 
   @Column({
     type: 'enum',
-    enum: ['processed', 'notProcessed', 'failed'],
-    default: 'notProcessed'
+    enum: ['processed', 'idle', 'failed'],
+    default: 'idle',
   })
-  status: 'processed' | 'notProcessed' | 'failed';
+  status: 'processed' | 'idle' | 'failed';
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP', onUpdate: 'CURRENT_TIMESTAMP' })
+  @Column({
+    type: 'timestamp',
+    default: () => 'CURRENT_TIMESTAMP',
+    onUpdate: 'CURRENT_TIMESTAMP',
+  })
   updatedAt: Date;
 
   @Column({ type: 'timestamp', nullable: true })
   deletedAt: Date;
 
-//   @OneToMany(() => ReportMinistry, reportMinistry => reportMinistry.reportId)
-//   reportMinistries: ReportMinistry[];
-
-  @Column()
-  ministryId: number;
-
-  @ManyToOne(() => Ministry, ministry => ministry.reports)
-  @JoinColumn({ name: 'ministry_id' })
-  ministry: Ministry;
-} 
+  @OneToMany(
+    () => ReportMinistry,
+    (reportMinistry) => reportMinistry.report,
+    { cascade: ['insert', 'update'] },
+  )
+  reportMinistries: ReportMinistry[];
+}

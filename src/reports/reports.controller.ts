@@ -7,7 +7,7 @@ export class ReportsController {
   constructor(private readonly reportsService: ReportsService) {}
 
   @Post()
-  async createReport(@Body() createReportDto: CreateReportDto) {
-    return this.reportsService.createReportWithMinistry(createReportDto);
+  async createReportEntry(@Body() createReportDto: CreateReportDto) {
+    return this.reportsService.makeReportEntry(createReportDto);
   }
 } 

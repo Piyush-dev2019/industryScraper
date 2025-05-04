@@ -1,54 +1,58 @@
+// reports.service.ts
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Report } from './entities/report.entity';
 import { Ministry } from './entities/ministry.entity';
+import { ReportMinistry } from './entities/report-ministry.entity';
 import { CreateReportDto } from './dto/create-report.dto';
 
 @Injectable()
 export class ReportsService {
   constructor(
     @InjectRepository(Report)
-    private readonly reportRepository: Repository<Report>,
-    @InjectRepository(Ministry)
-    private readonly ministryRepository: Repository<Ministry>
+    private readonly reportRepo: Repository<Report>,
+
+    // @InjectRepository(Ministry)
+    // private readonly ministryRepo: Repository<Ministry>,
+
+    // @InjectRepository(ReportMinistry)
+    // private readonly mapRepo: Repository<ReportMinistry>,
   ) {}
 
-  async createReport(reportData: Partial<Report>): Promise<Report> {
-    const report = this.reportRepository.create(reportData);
-    return this.reportRepository.save(report);
-  }
-
-  async createMinistry(ministryData: Partial<Ministry>): Promise<Ministry> {
-    const ministry = this.ministryRepository.create(ministryData);
-    return this.ministryRepository.save(ministry);
-  }
-
-  async createReportWithMinistry(createReportDto: CreateReportDto) {
-    // 1. Create or find ministry
-    let ministry = await this.ministryRepository.findOne({ 
-      where: { name: createReportDto.ministryName } 
-    });
-    
-    if (!ministry) {
-      ministry = await this.ministryRepository.save({
-        name: createReportDto.ministryName,
-        url: createReportDto.ministryUrl,
+  async makeReportEntry(dto: CreateReportDto): Promise<Report> {
+    return await this.reportRepo.manager.transaction(async manager => {
+      // 1) find or create ministry
+      let ministry = await manager.findOne(Ministry, {
+        where: { name: dto.ministryName, url: dto.ministryUrl },
       });
-    }
+      if (!ministry) {
+        ministry = manager.create(Ministry, {
+          name: dto.ministryName,
+          url: dto.ministryUrl,
+        });
+        ministry = await manager.save(ministry);
+      }
 
-    // 2. Create report
-    const expReport = new Report();
-    expReport.name = createReportDto.reportName;
-    expReport.documentUrl = createReportDto.documentUrl;
-    expReport.blobUrl = createReportDto.blobUrl;
-    expReport.year = createReportDto.year;
-    expReport.status = 'notProcessed';
-    expReport.ministryId = ministry.id;
-    const report = await this.reportRepository.save(expReport);
+      // 2) create report
+      const report = manager.create(Report, {
+        name: dto.reportName,
+        documentUrl: dto.documentUrl,
+        blobUrl: dto.blobUrl,
+        year: dto.year,
+        status: dto.status,
+      });
+      const savedReport = await manager.save(report);
 
+      // 3) create join row
+      const mapping = manager.create(ReportMinistry, {
+        reportId: savedReport.id,       // FK filled by @ManyToOne + @JoinColumn
+        ministryId: ministry.id,                  // same here
+        exactSourceUrl: dto.exactSourceUrl,
+      });
+      await manager.save(mapping);
 
-
-    return report;
+      return savedReport;
+    });
   }
-} 
+}

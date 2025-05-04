@@ -133,7 +133,7 @@ export class ScraperService {
         const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
         
         // Construct the blob path with RAW as a folder
-        const blobPath = `${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
+        const blobPath = `ministry_reports/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
         
         try {
           // Download the document from the URL using streams

@@ -1,5 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Report } from './report.entity';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+} from 'typeorm';
+import { ReportMinistry } from './report-ministry.entity';
 
 @Entity()
 export class Ministry {
@@ -12,6 +17,10 @@ export class Ministry {
   @Column()
   url: string;
 
-  @OneToMany(() => Report, report => report.ministry)
-  reports: Report[];
-} 
+  @OneToMany(
+    () => ReportMinistry,
+    (reportMinistry) => reportMinistry.ministry,
+    { cascade: ['insert', 'update'] },
+  )
+  reportMinistries: ReportMinistry[];
+}

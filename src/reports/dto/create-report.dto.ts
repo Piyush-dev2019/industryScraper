@@ -14,7 +14,7 @@ export class CreateReportDto {
   year: number;
 
   @IsString()
-  status: 'processed' | 'notProcessed' | 'failed';
+  status: 'processed' | 'idle' | 'failed';
 
   @IsString()
   ministryName: string;
@@ -24,5 +24,7 @@ export class CreateReportDto {
 
   @IsString()
   reportSourceUrl: string;
-  
+
+  @IsString()
+  exactSourceUrl: string;
 } 
