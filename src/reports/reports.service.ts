@@ -24,7 +24,7 @@ export class ReportsService {
     return await this.reportRepo.manager.transaction(async manager => {
       // 1) find or create ministry
       let ministry = await manager.findOne(Ministry, {
-        where: { name: dto.ministryName, url: dto.ministryUrl },
+        where: { url: dto.ministryUrl },
       });
       if (!ministry) {
         ministry = manager.create(Ministry, {
