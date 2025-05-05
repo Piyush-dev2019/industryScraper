@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import { ScraperService } from './scraper.service';
 import { governmentWebsitePrompt, brokerageWebsitePrompt } from '../utils/prompts';
 
@@ -6,18 +6,18 @@ import { governmentWebsitePrompt, brokerageWebsitePrompt } from '../utils/prompt
 export class ScraperController {
   constructor(private readonly scraperService: ScraperService) {}
 
-  @Get('government-website')
-  async getTitles() {
-    return this.scraperService.main(governmentWebsitePrompt);
+  @Post('government-website')
+  async getTitles(@Body() body: { organizationName: string , url: string, folderName: string }) {
+    return this.scraperService.main(governmentWebsitePrompt, body.organizationName, body.url, body.folderName);
   }
 
-  @Get('brokerage-website')
-  async getBrokerageWebsite() {
-    return this.scraperService.main(brokerageWebsitePrompt);
+  @Post('brokerage-website')
+  async getBrokerageWebsite(@Body() body: { organizationName: string , url: string, folderName: string }) {
+    return this.scraperService.main(brokerageWebsitePrompt, body.organizationName, body.url, body.folderName);
   }
 
-  @Post('upload')
-  async uploadFromUrlsJson(@Body() body: { organizationName: string }) {
-    return this.scraperService.uploadFromUrlsJson(body.organizationName);
-  }
+  // @Post('upload')
+  // async uploadFromUrlsJson(@Body() body: { organizationName: string }) {
+  //   return this.scraperService.uploadFromUrlsJson(body.organizationName);
+  // }
 }

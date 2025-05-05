@@ -1,7 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import {  bothUrl, findRelevantPageViaMap, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
+import { bothUrl, findRelevantPageViaMap, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
 import { BlobServiceClient, BlockBlobClient } from '@azure/storage-blob';
-
+import { ReportsService } from 'src/reports/reports.service';
+import { CreateReportDto } from 'src/reports/dto/create-report.dto';
 
 interface Source {
   sourceUrl: string;
@@ -24,7 +25,9 @@ export class ScraperService {
   private blobServiceClient: BlobServiceClient;
   private containerName = 'industry-reports';
 
-  constructor() {
+  constructor(
+    private readonly reportsService: ReportsService
+  ) {
     // Initialize the BlobServiceClient with your connection string
     this.blobServiceClient = BlobServiceClient.fromConnectionString(
       process.env.AZURE_STORAGE_CONNECTION_STRING,
@@ -69,7 +72,14 @@ export class ScraperService {
       });
     });
 
-    return Object.values(documentMap);
+    // Remove duplicates from sources and ensure it's an array
+    return Object.values(documentMap).map(doc => ({
+      ...doc,
+      characteristics: {
+        ...doc.characteristics,
+        sources: Array.from(new Set(doc.characteristics.sources))
+      }
+    }));
   }
 
   async map_scrap(prompt: Record<string, string>, url: string): Promise<TransformedDocument[] | null> {
@@ -90,215 +100,228 @@ export class ScraperService {
     return this.transformData(filteredDocuments);
   }
 
-  async main(prompt: Record<string, string>){
+  private async uploadDocumentToBlob(documentUrl: string, blobPath: string): Promise<{ success: boolean; path: string; error?: any }> {
+    try {
+      // Download the document from the URL using streams
+      const response = await fetch(documentUrl);
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      
+      // Create a PassThrough stream to pipe the response to blob storage
+      const { PassThrough } = require('stream');
+      const passThrough = new PassThrough();
+      
+      // Create a promise that resolves when the stream ends or rejects on error
+      const streamComplete = new Promise((resolve, reject) => {
+        passThrough.on('end', resolve);
+        passThrough.on('error', reject);
+      });
 
-    // const url = 'https://www.niti.gov.in/';
-    // const url = 'https://www.i-cema.in/';
-    const url = 'https://pharma-dept.gov.in/';
-    const organizationName= 'department_of_pharmaceuticals'
+      // Pipe the response body to the PassThrough stream
+      const reader = response.body.getReader();
+      const pump = async () => {
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) {
+              passThrough.end();
+              break;
+            }
+            passThrough.write(Buffer.from(value));
+          }
+        } catch (error) {
+          passThrough.destroy(error);
+        }
+      };
 
+      // Start pumping the stream
+      pump();
+      
+      // Upload directly to Azure Blob Storage using streams
+      const blobClient = this.getBlobClient(blobPath);
+      await blobClient.uploadStream(
+        passThrough,
+        undefined,
+        undefined,
+        {
+          blobHTTPHeaders: {
+            blobContentType: 'application/pdf',
+          },
+        }
+      );
+      
+      // Wait for the stream to complete
+      await streamComplete;
+      
+      console.log(`Successfully uploaded: ${blobPath}`);
+      return { success: true, path: blobPath };
+    } catch (error) {
+      console.log(`Failed to process document: ${documentUrl}`, error);
+      return { success: false, path: blobPath, error };
+    }
+  }
+
+  async main(prompt: Record<string, string>, organizationName: string, url: string, folderName: string) {
     const result = await this.map_scrap(prompt, url);
     console.log('Final URLs:', result);
-    const fs = require('fs');
-    const path = require('path');
-
-    // Ensure the file exists
-    if (!fs.existsSync('urls.json')) {
-      fs.writeFileSync('urls.json', '[]');
-    }
-    
-    fs.writeFileSync('urls.json', JSON.stringify(result, null, 2));
-
-    // Read the JSON file
-    const urlsData = JSON.parse(fs.readFileSync('urls.json', 'utf8'));
-
-    // Create a temporary directory for downloads if it doesn't exist
-    const tempDir = path.join(process.cwd(), 'temp_downloads');
-    if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir);
-    }
 
     // Process files in batches of 10
     const BATCH_SIZE = 10;
-    const totalFiles = urlsData.length;
+    const totalFiles = result.length;
     let processedCount = 0;
 
     while (processedCount < totalFiles) {
-      const batch = urlsData.slice(processedCount, processedCount + BATCH_SIZE);
+      const batch = result.slice(processedCount, processedCount + BATCH_SIZE);
       const batchPromises = batch.map(async (doc) => {
         const { documentUrl, characteristics } = doc;
-        const { year, name } = characteristics;
+        const { year, name, sources } = characteristics;
         
         // Clean the document name (remove .pdf and any special characters)
         const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
         
         // Construct the blob path with RAW as a folder
-        const blobPath = `ministry_reports/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
-        
-        try {
-          // Download the document from the URL using streams
-          const response = await fetch(documentUrl);
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          
-          // Ensure temp directory exists
-          if (!fs.existsSync(tempDir)) {
-            fs.mkdirSync(tempDir, { recursive: true });
-          }
-          
-          const tempFilePath = path.join(tempDir, `${cleanName}.pdf`);
-          const fileStream = fs.createWriteStream(tempFilePath);
-          
-          // Pipe the response body directly to the file
-          const reader = response.body.getReader();
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            fileStream.write(Buffer.from(value));
-          }
-          fileStream.end();
-          
-          // Wait for the file to be completely written
-          await new Promise((resolve) => fileStream.on('finish', resolve));
-          
-          // Verify file exists before uploading
-          if (!fs.existsSync(tempFilePath)) {
-            throw new Error('File was not created successfully');
-          }
-          
-          // Upload to Azure Blob Storage using streams
-          const blobClient = this.getBlobClient(blobPath);
-          const uploadStream = fs.createReadStream(tempFilePath);
-          await blobClient.uploadStream(uploadStream, undefined, undefined, {
-            blobHTTPHeaders: {
-              blobContentType: 'application/pdf',
-            },
-          });
-          
-          console.log(`Successfully uploaded: ${blobPath}`);
-          
-          // Clean up the temporary file
-          if (fs.existsSync(tempFilePath)) {
-            fs.unlinkSync(tempFilePath);
-          }
-          return { success: true, path: blobPath };
-        } catch (error) {
-          console.log(`Failed to process document: ${documentUrl}`, error);
-          return { success: false, path: blobPath, error };
+        organizationName = organizationName.replaceAll(' ', '_');
+        let blobPath = '';
+        if(year == null){
+          blobPath = `${folderName}/${organizationName}/not_found/${cleanName}/RAW/${cleanName}.pdf`;
         }
+      else{
+          blobPath = `${folderName}/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
+        }
+        // Upload to blob storage
+        const uploadResult = await this.uploadDocumentToBlob(documentUrl, blobPath);
+
+        if (uploadResult.success) {
+          // Create database entry
+          const reportDto: CreateReportDto = {
+            documentName: name,
+            documentUrl: documentUrl,
+            blobUrl: uploadResult.path,
+            year: year,
+            status: 'idle',
+            ministryName: organizationName,
+            ministryUrl: url,
+            exactSourceUrl: sources
+          };
+
+          try {
+            await this.reportsService.makeReportEntry(reportDto);
+            console.log(`Database entry created for: ${name}`);
+          } catch (error) {
+            console.error(`Failed to create database entry for ${name}:`, error);
+          }
+        }
+
+        return uploadResult;
       });
 
       // Wait for the current batch to complete
-      await Promise.all(batchPromises);
+      const results = await Promise.all(batchPromises);
       processedCount += batch.length;
       
       // Log batch progress
       console.log(`Processed ${processedCount}/${totalFiles} files`);
+      console.log('Batch results:', results);
       
       // Add a small delay between batches to prevent overwhelming the system
       if (processedCount < totalFiles) {
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
     }
-
-    // Clean up the temporary directory
-    if (fs.existsSync(tempDir)) {
-      fs.rmdirSync(tempDir, { recursive: true });
-    }
   }
 
-  async uploadFromUrlsJson(organizationName: string) {
-    const fs = require('fs');
-    const path = require('path');
+  // async uploadFromUrlsJson(organizationName: string) {
+  //   const fs = require('fs');
+  //   const path = require('path');
 
-    // Read the JSON file
-    const urlsData = JSON.parse(fs.readFileSync('urls.json', 'utf8'));
+  //   // Read the JSON file
+  //   const urlsData = JSON.parse(fs.readFileSync('urls.json', 'utf8'));
 
-    // Create a temporary directory for downloads if it doesn't exist
-    const tempDir = path.join(process.cwd(), 'temp_downloads');
-    if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir, { recursive: true });
-    }
+  //   // Create a temporary directory for downloads if it doesn't exist
+  //   const tempDir = path.join(process.cwd(), 'temp_downloads');
+  //   if (!fs.existsSync(tempDir)) {
+  //     fs.mkdirSync(tempDir, { recursive: true });
+  //   }
 
-    // Process files in batches of 10
-    const BATCH_SIZE = 10;
-    const totalFiles = urlsData.length;
-    let processedCount = 0;
+  //   // Process files in batches of 10
+  //   const BATCH_SIZE = 10;
+  //   const totalFiles = urlsData.length;
+  //   let processedCount = 0;
 
-    while (processedCount < totalFiles) {
-      const batch = urlsData.slice(processedCount, processedCount + BATCH_SIZE);
-      const batchPromises = batch.map(async (doc) => {
-        const { documentUrl, characteristics } = doc;
-        const { year, name } = characteristics;
+  //   while (processedCount < totalFiles) {
+  //     const batch = urlsData.slice(processedCount, processedCount + BATCH_SIZE);
+  //     const batchPromises = batch.map(async (doc) => {
+  //       const { documentUrl, characteristics } = doc;
+  //       const { year, name } = characteristics;
         
-        // Clean the document name (remove .pdf and any special characters)
-        const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
+  //       // Clean the document name (remove .pdf and any special characters)
+  //       const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
         
-        // Construct the blob path with RAW as a folder
-        const blobPath = `${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
+  //       // Construct the blob path with RAW as a folder
+  //       const blobPath = `${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
         
-        try {
-          // Download the document from the URL using streams
-          const response = await fetch(documentUrl);
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+  //       try {
+  //         // Download the document from the URL using streams
+  //         const response = await fetch(documentUrl);
+  //         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           
-          const tempFilePath = path.join(tempDir, `${cleanName}.pdf`);
-          const fileStream = fs.createWriteStream(tempFilePath);
+  //         const tempFilePath = path.join(tempDir, `${cleanName}.pdf`);
+  //         const fileStream = fs.createWriteStream(tempFilePath);
           
-          // Pipe the response body directly to the file
-          const reader = response.body.getReader();
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            fileStream.write(Buffer.from(value));
-          }
-          fileStream.end();
+  //         // Pipe the response body directly to the file
+  //         const reader = response.body.getReader();
+  //         while (true) {
+  //           const { done, value } = await reader.read();
+  //           if (done) break;
+  //           fileStream.write(Buffer.from(value));
+  //         }
+  //         fileStream.end();
           
-          // Wait for the file to be completely written
-          await new Promise((resolve) => fileStream.on('finish', resolve));
+  //         // Wait for the file to be completely written
+  //         await new Promise((resolve) => fileStream.on('finish', resolve));
           
-          // Verify file exists before uploading
-          if (!fs.existsSync(tempFilePath)) {
-            throw new Error('File was not created successfully');
-          }
+  //         // Verify file exists before uploading
+  //         if (!fs.existsSync(tempFilePath)) {
+  //           throw new Error('File was not created successfully');
+  //         }
           
-          // Upload to Azure Blob Storage using streams
-          const blobClient = this.getBlobClient(blobPath);
-          const uploadStream = fs.createReadStream(tempFilePath);
-          await blobClient.uploadStream(uploadStream, undefined, undefined, {
-            blobHTTPHeaders: {
-              blobContentType: 'application/pdf',
-            },
-          });
+  //         // Upload to Azure Blob Storage using streams
+  //         const blobClient = this.getBlobClient(blobPath);
+  //         const uploadStream = fs.createReadStream(tempFilePath);
+  //         await blobClient.uploadStream(uploadStream, undefined, undefined, {
+  //           blobHTTPHeaders: {
+  //             blobContentType: 'application/pdf',
+  //           },
+  //         });
           
-          console.log(`Successfully uploaded: ${blobPath}`);
+  //         console.log(`Successfully uploaded: ${blobPath}`);
           
-          // Clean up the temporary file
-          if (fs.existsSync(tempFilePath)) {
-            fs.unlinkSync(tempFilePath);
-          }
-          return { success: true, path: blobPath };
-        } catch (error) {
-          console.log(`Failed to process document: ${documentUrl}`, error);
-          return { success: false, path: blobPath, error };
-        }
-      });
+  //         // Clean up the temporary file
+  //         if (fs.existsSync(tempFilePath)) {
+  //           fs.unlinkSync(tempFilePath);
+  //         }
+  //         return { success: true, path: blobPath };
+  //       } catch (error) {
+  //         console.log(`Failed to process document: ${documentUrl}`, error);
+  //         return { success: false, path: blobPath, error };
+  //       }
+  //     });
 
-      // Wait for the current batch to complete
-      await Promise.all(batchPromises);
-      processedCount += batch.length;
+  //     // Wait for the current batch to complete
+  //     await Promise.all(batchPromises);
+  //     processedCount += batch.length;
       
-      // Log batch progress
-      console.log(`Processed ${processedCount}/${totalFiles} files`);
+  //     // Log batch progress
+  //     console.log(`Processed ${processedCount}/${totalFiles} files`);
       
-      // Add a small delay between batches to prevent overwhelming the system
-      if (processedCount < totalFiles) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
-    }
+  //     // Add a small delay between batches to prevent overwhelming the system
+  //     if (processedCount < totalFiles) {
+  //       await new Promise(resolve => setTimeout(resolve, 1000));
+  //     }
+  //   }
 
-    // Clean up the temporary directory
-    if (fs.existsSync(tempDir)) {
-      fs.rmdirSync(tempDir, { recursive: true });
-    }
-  }
+  //   // Clean up the temporary directory
+  //   if (fs.existsSync(tempDir)) {
+  //     fs.rmdirSync(tempDir, { recursive: true });
+  //   }
+  // }
 }

@@ -13,8 +13,8 @@ export class ReportMinistry {
   @PrimaryGeneratedColumn()
   id: number;
   
-  @Column({ nullable: true })
-  exactSourceUrl: string;
+  @Column('text', { array: true, nullable: true })
+  exactSourceUrl: string[];
 
   @ManyToOne(
     () => Report,

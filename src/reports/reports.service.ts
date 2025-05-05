@@ -36,7 +36,7 @@ export class ReportsService {
 
       // 2) create report
       const report = manager.create(Report, {
-        name: dto.reportName,
+        name: dto.documentName,
         documentUrl: dto.documentUrl,
         blobUrl: dto.blobUrl,
         year: dto.year,

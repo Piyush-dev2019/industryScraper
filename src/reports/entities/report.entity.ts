@@ -20,7 +20,7 @@ export class Report {
   @Column()
   blobUrl: string;
 
-  @Column({ type: 'int' })
+  @Column({ type: 'int', nullable: true })
   year: number;
 
   @Column({

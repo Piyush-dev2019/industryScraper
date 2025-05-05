@@ -2,7 +2,7 @@ import { IsString, IsNumber } from 'class-validator';
 
 export class CreateReportDto {
   @IsString()
-  reportName: string;
+  documentName: string;
 
   @IsString()
   documentUrl: string;
@@ -22,9 +22,6 @@ export class CreateReportDto {
   @IsString()
   ministryUrl: string;
 
-  @IsString()
-  reportSourceUrl: string;
-
-  @IsString()
-  exactSourceUrl: string;
+  @IsString({ each: true })
+  exactSourceUrl: string[];
 } 
