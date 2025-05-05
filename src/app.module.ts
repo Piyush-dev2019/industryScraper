@@ -3,7 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ScraperModule } from './scraper/scraper.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-
+import { Report } from './reports/entities/report.entity';
+import { Ministry } from './reports/entities/ministry.entity';
+import { ReportMinistry } from './reports/entities/report-ministry.entity';
 
 @Module({
   imports: [
@@ -15,7 +17,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       username: process.env.DATABASE_USER || 'postgres',
       password: process.env.DATABASE_PASSWORD || 'postgress',
       database: process.env.DATABASE_NAME || 'postgres',
-      autoLoadEntities: true,
+      entities: [Report, Ministry, ReportMinistry],
       synchronize: false,
     }),
   ],

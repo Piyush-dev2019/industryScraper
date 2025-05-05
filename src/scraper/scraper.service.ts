@@ -203,7 +203,7 @@ export class ScraperService {
         if (uploadResult.success) {
           // Create database entry
           const reportDto: CreateReportDto = {
-            documentName: name,
+            documentName: name.replaceAll(' ', '_'),
             documentUrl: documentUrl,
             blobUrl: uploadResult.url,
             year: year,
