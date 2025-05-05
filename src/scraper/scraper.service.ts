@@ -50,6 +50,12 @@ export class ScraperService {
     return containerClient.getBlockBlobClient(blobName);
   }
 
+  private getBlobUrl(blobPath: string): string {
+    const containerClient = this.blobServiceClient.getContainerClient(this.containerName);
+    const blobClient = containerClient.getBlockBlobClient(blobPath);
+    return blobClient.url;
+  }
+
   private transformData(sources: Source[]): TransformedDocument[] {
     const documentMap: { [key: string]: TransformedDocument } = {};
 
@@ -100,7 +106,7 @@ export class ScraperService {
     return this.transformData(filteredDocuments);
   }
 
-  private async uploadDocumentToBlob(documentUrl: string, blobPath: string): Promise<{ success: boolean; path: string; error?: any }> {
+  private async uploadDocumentToBlob(documentUrl: string, blobPath: string): Promise<{ success: boolean; path: string; url: string; error?: any }> {
     try {
       // Download the document from the URL using streams
       const response = await fetch(documentUrl);
@@ -152,11 +158,15 @@ export class ScraperService {
       // Wait for the stream to complete
       await streamComplete;
       
+      // Get the complete URL
+      const blobUrl = this.getBlobUrl(blobPath);
+      
       console.log(`Successfully uploaded: ${blobPath}`);
-      return { success: true, path: blobPath };
+      console.log(`Blob URL: ${blobUrl}`);
+      return { success: true, path: blobPath, url: blobUrl };
     } catch (error) {
       console.log(`Failed to process document: ${documentUrl}`, error);
-      return { success: false, path: blobPath, error };
+      return { success: false, path: blobPath, url: '', error };
     }
   }
 
@@ -184,7 +194,7 @@ export class ScraperService {
         if(year == null){
           blobPath = `${folderName}/${organizationName}/not_found/${cleanName}/RAW/${cleanName}.pdf`;
         }
-      else{
+        else{
           blobPath = `${folderName}/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
         }
         // Upload to blob storage
@@ -195,7 +205,7 @@ export class ScraperService {
           const reportDto: CreateReportDto = {
             documentName: name,
             documentUrl: documentUrl,
-            blobUrl: uploadResult.path,
+            blobUrl: uploadResult.url,
             year: year,
             status: 'idle',
             ministryName: organizationName,
@@ -228,100 +238,4 @@ export class ScraperService {
       }
     }
   }
-
-  // async uploadFromUrlsJson(organizationName: string) {
-  //   const fs = require('fs');
-  //   const path = require('path');
-
-  //   // Read the JSON file
-  //   const urlsData = JSON.parse(fs.readFileSync('urls.json', 'utf8'));
-
-  //   // Create a temporary directory for downloads if it doesn't exist
-  //   const tempDir = path.join(process.cwd(), 'temp_downloads');
-  //   if (!fs.existsSync(tempDir)) {
-  //     fs.mkdirSync(tempDir, { recursive: true });
-  //   }
-
-  //   // Process files in batches of 10
-  //   const BATCH_SIZE = 10;
-  //   const totalFiles = urlsData.length;
-  //   let processedCount = 0;
-
-  //   while (processedCount < totalFiles) {
-  //     const batch = urlsData.slice(processedCount, processedCount + BATCH_SIZE);
-  //     const batchPromises = batch.map(async (doc) => {
-  //       const { documentUrl, characteristics } = doc;
-  //       const { year, name } = characteristics;
-        
-  //       // Clean the document name (remove .pdf and any special characters)
-  //       const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
-        
-  //       // Construct the blob path with RAW as a folder
-  //       const blobPath = `${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
-        
-  //       try {
-  //         // Download the document from the URL using streams
-  //         const response = await fetch(documentUrl);
-  //         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          
-  //         const tempFilePath = path.join(tempDir, `${cleanName}.pdf`);
-  //         const fileStream = fs.createWriteStream(tempFilePath);
-          
-  //         // Pipe the response body directly to the file
-  //         const reader = response.body.getReader();
-  //         while (true) {
-  //           const { done, value } = await reader.read();
-  //           if (done) break;
-  //           fileStream.write(Buffer.from(value));
-  //         }
-  //         fileStream.end();
-          
-  //         // Wait for the file to be completely written
-  //         await new Promise((resolve) => fileStream.on('finish', resolve));
-          
-  //         // Verify file exists before uploading
-  //         if (!fs.existsSync(tempFilePath)) {
-  //           throw new Error('File was not created successfully');
-  //         }
-          
-  //         // Upload to Azure Blob Storage using streams
-  //         const blobClient = this.getBlobClient(blobPath);
-  //         const uploadStream = fs.createReadStream(tempFilePath);
-  //         await blobClient.uploadStream(uploadStream, undefined, undefined, {
-  //           blobHTTPHeaders: {
-  //             blobContentType: 'application/pdf',
-  //           },
-  //         });
-          
-  //         console.log(`Successfully uploaded: ${blobPath}`);
-          
-  //         // Clean up the temporary file
-  //         if (fs.existsSync(tempFilePath)) {
-  //           fs.unlinkSync(tempFilePath);
-  //         }
-  //         return { success: true, path: blobPath };
-  //       } catch (error) {
-  //         console.log(`Failed to process document: ${documentUrl}`, error);
-  //         return { success: false, path: blobPath, error };
-  //       }
-  //     });
-
-  //     // Wait for the current batch to complete
-  //     await Promise.all(batchPromises);
-  //     processedCount += batch.length;
-      
-  //     // Log batch progress
-  //     console.log(`Processed ${processedCount}/${totalFiles} files`);
-      
-  //     // Add a small delay between batches to prevent overwhelming the system
-  //     if (processedCount < totalFiles) {
-  //       await new Promise(resolve => setTimeout(resolve, 1000));
-  //     }
-  //   }
-
-  //   // Clean up the temporary directory
-  //   if (fs.existsSync(tempDir)) {
-  //     fs.rmdirSync(tempDir, { recursive: true });
-  //   }
-  // }
 }
