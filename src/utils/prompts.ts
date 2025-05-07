@@ -65,6 +65,7 @@ Important Instructions:
 - Ensure documentUrl always ends in .pdf.
 - Only include actual PDF URLs found in the markdown content.
 - Do not include any example URLs or placeholder URLs.
+- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.
 
 Use this format exactly. Do not add extra commentary or explanation.`,
 
@@ -148,6 +149,7 @@ Important Instructions:
 - Ensure documentUrl always ends in .pdf.
 - Only include actual PDF URLs found in the markdown content.
 - Do not include any example URLs or placeholder URLs.
+- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.
 
 Use this format exactly. Do not add extra commentary or explanation.`,
 

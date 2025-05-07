@@ -131,6 +131,14 @@ import FirecrawlApp, {
       const allDocumentUrls = new Set(); // Using Set to automatically handle duplicates
       const visitedUrls = new Set(links); // Track all visited URLs, starting with initial links
       
+      // Helper function to normalize URL for comparison
+      function normalizeUrl(url: string): string {
+        return url.replace(/^https?:\/\/(www\.)?/, '');
+      }
+
+      // Map to store unique URLs while preserving original format
+      const uniqueUrlMap = new Map<string, string>();
+      
       // Process all links asynchronously
       const processingPromises = links.map(async (link) => {
         try {
@@ -248,8 +256,16 @@ import FirecrawlApp, {
       console.log('\n=== Waiting for all processing to complete ===');
       await Promise.all(processingPromises);
       
-      // Convert Set to Array and log all unique document URLs
-      const uniqueDocumentUrls = Array.from(allDocumentUrls);
+      // Deduplicate URLs while preserving original format
+      allDocumentUrls.forEach((url: string) => {
+        const normalizedUrl = normalizeUrl(url);
+        if (!uniqueUrlMap.has(normalizedUrl)) {
+          uniqueUrlMap.set(normalizedUrl, url);
+        }
+      });
+
+      // Convert Map values to array
+      const uniqueDocumentUrls = Array.from(uniqueUrlMap.values());
 
       if (foundDocuments.length > 0) {
         console.log(`✅ Found ${foundDocuments.length} document sets with ${uniqueDocumentUrls.length} unique PDF documents`);
@@ -286,7 +302,9 @@ Return the response in the JSON structure provided below:
     "isRelevant": true/false
   }
 
-Do not include any explanation or commentary — just return the JSON object.`;
+Do not include any explanation or commentary — just return the JSON object.
+
+name: `;
 
     try {
       // Process each document set asynchronously
@@ -298,10 +316,8 @@ Do not include any explanation or commentary — just return the JSON object.`;
           const filteredDocs = await Promise.all(
             docSet.documents.map(async (doc) => {
               // Only send name to the LLM
-              const docForLLM = {
-                name: doc.name,
-              };
-              const docPrompt = filterPrompt + '\n\n' + JSON.stringify(docForLLM, null, 2);
+              const docPrompt = filterPrompt + doc.name;
+              console.log('docPrompt', docPrompt);
               const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
