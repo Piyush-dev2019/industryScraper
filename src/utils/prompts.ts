@@ -9,7 +9,7 @@ export const governmentWebsitePrompt = {
   - Sectoral Publications
 
 Strict Filtering Rules:
-1. Ignore any links to content older than 2021 or archive pages before 2021.
+1. Ignore any links to content older than 2020 or archive pages before 2020.
 2. Ignore any paginated URLs beyond page 2 (e.g., URLs with "page=3" or "page/4").
 3. Ignore links that are not in English (e.g., URLs containing "/hi/").
 4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, or purely administrative content.
@@ -44,7 +44,7 @@ Your task is to extract only the relevant PDF document links that can support in
 - Industry Strategy Documents
 
 Ignore any links that do not end in .pdf.
-Ignore any links that appear to be from before 2021 based on dates in the filename, URL, or surrounding context
+Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
 
 For each PDF link found, extract and return the following structured JSON object:
 
@@ -53,9 +53,9 @@ For each PDF link found, extract and return the following structured JSON object
   "sourceUrl": "the url from which the pdf is found",
   "documents": [
     {
-      "year": 2022,                      // Extract from the filename or context. Leave null if not found.
-      "name": "Annual Report 2021-22",   // Use link text or infer from filename
-      "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
+      "year": 2021,                      // Extract from the filename or context. Leave null if not found.
+      "name": "Annual Report 2020-21",   // Use link text or infer from filename
+      "documentUrl": "https://actual-domain.com/report2021.pdf"  // The actual PDF URL from the markdown
     }
   ]
 }
@@ -89,7 +89,7 @@ Instructions:
 3. Return a JSON array under the key possibleUrls containing only the actual URLs found in the provided markdown content.
 4. Do not include any example URLs or placeholder URLs.
 5. Only include URLs that are actually present in the markdown content.
-6. **Ignore** any links that redirect to content older than 2021 or archive pages before 2021.
+6. **Ignore** any links that redirect to content older than 2020 or archive pages before 2020.
 7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
 8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
 Return the response in this exact format:
@@ -128,7 +128,7 @@ Your task is to extract only the relevant PDF document links that can support in
 - Industry Strategy Documents
 
 Ignore any links that do not end in .pdf.
-Ignore any links that appear to be from before 2021 based on dates in the filename, URL, or surrounding context
+Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
 
 For each PDF link found, extract and return the following structured JSON object:
 
@@ -137,9 +137,9 @@ For each PDF link found, extract and return the following structured JSON object
   "sourceUrl": "the url from which the pdf is found",
   "documents": [
     {
-      "year": 2022,                      // Extract from the filename or context. Leave null if not found.
-      "name": "Annual Report 2021-22",   // Use link text or infer from filename
-      "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
+      "year": 2021,                      // Extract from the filename or context. Leave null if not found.
+      "name": "Annual Report 2020-21",   // Use link text or infer from filename
+      "documentUrl": "https://actual-domain.com/report2021.pdf"  // The actual PDF URL from the markdown
     }
   ]
 }
@@ -173,7 +173,7 @@ Instructions:
 3. Return a JSON array under the key possibleUrls containing only the actual URLs found in the provided markdown content.
 4. Do not include any example URLs or placeholder URLs.
 5. Only include URLs that are actually present in the markdown content.
-6. **Ignore** any links that redirect to content older than 2021 or archive pages before 2021.
+6. **Ignore** any links that redirect to content older than 2020 or archive pages before 2020.
 7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
 8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
 Return the response in this exact format:
