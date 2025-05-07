@@ -55,8 +55,6 @@ For each PDF link found, extract and return the following structured JSON object
     {
       "year": 2022,                      // Extract from the filename or context. Leave null if not found.
       "name": "Annual Report 2021-22",   // Use link text or infer from filename
-      "type": "Annual Report",           // Use keywords to classify (Annual Report, Mission Plan, etc.)
-      "description": "Short one-line summary of the document's purpose or content (Use surrounding or nearby text)", 
       "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
     }
   ]
@@ -64,8 +62,6 @@ For each PDF link found, extract and return the following structured JSON object
 
 Important Instructions:
 - Only include documents that help in industry or market analysis.
-- The type should be inferred if possible using keywords in the document name or nearby text.
-- The description should be concise (1 sentence max), extracted from surrounding paragraph/list text if available.
 - Ensure documentUrl always ends in .pdf.
 - Only include actual PDF URLs found in the markdown content.
 - Do not include any example URLs or placeholder URLs.
@@ -107,7 +103,7 @@ Return the response in this exact format:
 
 export const brokerageWebsitePrompt = {
     "rankLinksPrompt": `
-    Analyze the following URLs and rank the most relevant ones for finding information about any type ofindustry or sector.
+    Analyze the following URLs and rank the most relevant ones for finding information about any type of industry or sector.
 
 Return ONLY a JSON array in this exact format — no explanation or extra output:
 
@@ -142,8 +138,6 @@ For each PDF link found, extract and return the following structured JSON object
     {
       "year": 2022,                      // Extract from the filename or context. Leave null if not found.
       "name": "Annual Report 2021-22",   // Use link text or infer from filename
-      "type": "Annual Report",           // Use keywords to classify (Annual Report, Mission Plan, etc.)
-      "description": "Short one-line summary of the document's purpose or content (Use surrounding or nearby text)", 
       "documentUrl": "https://actual-domain.com/report2022.pdf"  // The actual PDF URL from the markdown
     }
   ]
@@ -151,8 +145,6 @@ For each PDF link found, extract and return the following structured JSON object
 
 Important Instructions:
 - Only include documents that help in industry or market analysis.
-- The type should be inferred if possible using keywords in the document name or nearby text.
-- The description should be concise (1 sentence max), extracted from surrounding paragraph/list text if available.
 - Ensure documentUrl always ends in .pdf.
 - Only include actual PDF URLs found in the markdown content.
 - Do not include any example URLs or placeholder URLs.

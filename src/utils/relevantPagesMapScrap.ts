@@ -17,8 +17,6 @@ import FirecrawlApp, {
   interface Document {
     year: number;
     name: string;
-    type: string;
-    description: string;
     documentUrl: string;
   }
 
@@ -267,33 +265,19 @@ import FirecrawlApp, {
   }
 
   async function filterDocuments(document: DocumentSet[]) {
+    // First filter out documents by year criteria
+    const yearFilteredDocSets = document.map(docSet => ({
+      sourceUrl: docSet.sourceUrl,
+      documents: docSet.documents.filter(doc => 
+        // Keep document if year is null or >= 2021
+        doc.year === null || doc.year >= 2021
+      )
+    })).filter(docSet => docSet.documents.length > 0);
+
     const filterPrompt = `
 You are assisting in curating a high-quality dataset of documents useful for industry analysis by a senior financial analyst.
 
-You are given a document with the following fields:
-- year: publication year
-- name: document title
-- type: document type
-- description: document description
-- documentUrl: URL to access the document
-
-Your task is to determine if this document meets all of the following conditions:
-
-1. Is highly relevant for industry analysis, such as:
-   - Sectoral and industry-specific reports
-   - Annual or financial reports of ministries or industry bodies
-   - Mission plans and strategic roadmaps
-   - Budget Plans and publications with analytical or statistical insights
-
-2. Is recent, i.e., published in the year 2021 or later. If the year is missing, assess the relevance based on the content description and type. Only reject documents for missing year if there is no strong indication of analytical value.
-
-3. Is not:
-   - General notices, circulars, tenders, guidelines, or operational memos
-   - Administrative documents not useful for industry analysis
-   - Monthly or weekly summary reports
-
-
-4. Is in English (not Hindi, bilingual, or any other language)
+Given only the title of a PDF document, decide if it’s useful for financial analysts, consultants, or investors studying Indian industries. Include only english documents(not Hindi, bilingual, or any other language) with sector data, performance reports, market analysis, price/tariff updates, or credible industry insights. Exclude anything administrative, legal, ceremonial, tender-related, training, General notices, circulars, scheme guideline documents, Monthly or weekly summary reports
 
 Return the response in the JSON structure provided below:
 
@@ -307,13 +291,17 @@ Do not include any explanation or commentary — just return the JSON object.`;
     try {
       // Process each document set asynchronously
       const filteredResults = await Promise.all(
-        document.map(async (docSet) => {
+        yearFilteredDocSets.map(async (docSet) => {
           const sourceUrl = docSet.sourceUrl;
           
           // Process all documents in the set asynchronously
           const filteredDocs = await Promise.all(
             docSet.documents.map(async (doc) => {
-              const docPrompt = filterPrompt + '\n\n' + JSON.stringify(doc, null, 2);
+              // Only send name to the LLM
+              const docForLLM = {
+                name: doc.name,
+              };
+              const docPrompt = filterPrompt + '\n\n' + JSON.stringify(docForLLM, null, 2);
               const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
@@ -336,52 +324,6 @@ Do not include any explanation or commentary — just return the JSON object.`;
       console.error('Error in filterDocuments:', error);
       return null;
     }
-  }
-
-  async function deduplicateResults(
-    results: DocumentSet[],
-  ): Promise<DocumentSet[] | null> {
-    const prompt = `You are a smart deduplication engine designed to clean and organize document listings as a senior financial analyst. You are provided with a list of sources, where each source has the following structure:
-
-[
-    {
-        "sourceUrl": "string",
-        "documents": [
-            {
-                "year": number | null,
-                "name": string,
-                "type": string,
-                "description": string,
-                "documentUrl": string
-            }
-        ]
-    }
-]
-
-Some documents (identified by the same 'documentUrl') may appear under multiple sources. Your task is to remove any duplicate documentUrl. If the same documentUrl appears under multiple sourceUrls, retain the one with the most semantically appropriate 'sourceUrl' which makes the most sense based on the document's type and description. 
-For example, if a document is annual report and it appear under both a general bulletin page and a dedicated annual report page, retain it only under the annual report page and remove it from the bulletin source.
-
-return the response in the JSON structure provided below no other text or explanation:
-
-[
-{
-  "sourceUrl": "string",
-  "documents": [
-    {
-      "year": number | null,
-      "name": string,
-      "type": string,
-      "description": string,
-      "documentUrl": string
-    }
-  ]
-}
-]
-`;
-
-    const result = await gptCall('gpt-4.1', prompt + '\n\n' + JSON.stringify(results, null, 2), 'system');
-    const jsonResult = await extractJsonFromResponse(result);
-    return jsonResult as DocumentSet[];
   }
   
   async function rankLinks(
@@ -645,7 +587,6 @@ Strict Filtering Rule:
     bothUrl,
     filterDocuments,
     Document,
-    DocumentSet,
-    deduplicateResults
+    DocumentSet
   };
   

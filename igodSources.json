@@ -214,6 +214,135 @@
     {
       "organizationName": "Ministry of Labour and Employment",
       "url": "https://labour.gov.in/"
-    }
-  ]
+    },
+        {
+          "url": "https://dpiit.gov.in/",
+          "organizationName": "Department for Promotion of Industry and Internal Trade"
+        },
+        {
+          "url": "https://darpg.gov.in/",
+          "organizationName": "Department of Administrative Reforms and Public Grievances"
+        },
+        {
+          "url": "https://dare.gov.in/",
+          "organizationName": "Department of Agricultural Research and Education"
+        },
+        
+        
+        {
+          "url": "https://dbtindia.gov.in/",
+          "organizationName": "Department of Biotechnology"
+        },
+        
+        {
+          "url": "https://doca.gov.in/",
+          "organizationName": "Department of Consumer Affairs"
+        },
+     
+        {
+          "url": "https://ddpmod.gov.in/",
+          "organizationName": "Department of Defence Production"
+        },
+        {
+          "url": "https://www.drdo.gov.in/",
+          "organizationName": "Department of Defence Research and Development"
+        },
+        {
+          "url": "https://www.jalshakti-ddws.gov.in/",
+          "organizationName": "Department of Drinking Water and Sanitation"
+        },
+        {
+          "url": "https://dea.gov.in/",
+          "organizationName": "Department of Economic Affairs"
+        },
+        {
+          "url": "https://depwd.gov.in/",
+          "organizationName": "Department of Empowerment of Persons with Disabilities"
+        },
+        {
+          "url": "https://www.desw.gov.in/",
+          "organizationName": "Department of Ex-Servicemen Welfare"
+        },
+        {
+          "url": "https://doe.gov.in/",
+          "organizationName": "Department of Expenditure"
+        },
+        {
+          "url": "https://fert.nic.in/",
+          "organizationName": "Department of Fertilizers"
+        },
+        {
+          "url": "https://financialservices.gov.in/",
+          "organizationName": "Department of Financial Services"
+        },
+        {
+          "url": "https://dof.gov.in/",
+          "organizationName": "Department of Fisheries"
+        },
+        
+        {
+          "url": "https://dhr.gov.in/",
+          "organizationName": "Department of Health Research"
+        },
+        
+          {
+            "organizationName": "Department of Investment and Public Asset Management",
+            "url": "https://dipam.gov.in/"    
+          },
+          {
+            "organizationName": "Department of Justice", 
+            "url": "https://doj.gov.in/"
+          },
+          {
+            "organizationName": "Department of Land Resources",
+            "url": "https://dolr.gov.in/"
+          },
+          {
+            "organizationName": "Department of Legal Affairs",
+            "url": "https://legalaffairs.gov.in/"
+          },
+          
+          {
+            "organizationName": "Department of Official Language",
+            "url": "https://rajbhasha.gov.in/en"
+          },
+          {
+            "organizationName": "Department of Pension & Pensioners' Welfare",
+            "url": "https://doppw.gov.in/en"
+          },
+          {
+            "organizationName": "Department of Personnel & Training",
+            "url": "https://dopt.gov.in/"
+          },
+          {
+            "organizationName": "Department of Pharmaceuticals",
+            "url": "https://pharma-dept.gov.in/"
+          },
+          {
+            "organizationName": "Department of Posts",
+            "url": "https://www.indiapost.gov.in/"
+          },
+          {
+            "organizationName": "Department of Public Enterprises",
+            "url": "https://dpe.gov.in/"
+          },
+          {
+            "organizationName": "Department of Revenue",
+            "url": "https://dor.gov.in/"
+          },
+          
+          {
+            "organizationName": "Department of School Education and Literacy",
+            "url": "https://dsel.education.gov.in/dsel"
+          },
+
+          {
+            "organizationName": "Department of Scientific and Industrial Research",
+            "url": "https://dsir.gov.in/"
+          },
+          {
+            "organizationName": "Legislative Department",
+            "url": "https://legislative.gov.in/"
+          }
+      ]
   

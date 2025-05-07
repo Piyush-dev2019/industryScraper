@@ -14,8 +14,6 @@ interface TransformedDocument {
   characteristics: {
     year: number;
     name: string;
-    type: string;
-    description: string;
     sources: string[];
   };
 }
@@ -67,8 +65,6 @@ export class ScraperService {
             characteristics: {
               year: doc.year,
               name: doc.name,
-              type: doc.type,
-              description: doc.description,
               sources: [source.sourceUrl],
             },
           };
@@ -186,10 +182,10 @@ export class ScraperService {
         const { year, name, sources } = characteristics;
         
         // Clean the document name (remove .pdf and any special characters)
-        const cleanName = name.replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
+        const cleanName = name.toLowerCase().replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
         
         // Construct the blob path with RAW as a folder
-        organizationName = organizationName.replaceAll(' ', '_');
+        organizationName = organizationName.toLowerCase().replaceAll(' ', '_');
         let blobPath = '';
         if(year == null){
           blobPath = `${folderName}/${organizationName}/not_found/${cleanName}/RAW/${cleanName}.pdf`;
