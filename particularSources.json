@@ -1,9 +1,5 @@
 [
-  {
-    "organizationName": "Ministry of AYUSH",
-    "url": "https://ayush.gov.in",
-    "type": "particular"
-  },
+  
   {
     "organizationName": "Department of Agriculture and Farmers Welfare",
     "url": "https://agriwelfare.gov.in/",
@@ -23,11 +19,6 @@
     "organizationName": "Ministry of Coal",
     "url": "https://coal.nic.in",
     "type": "particular"
-  },
-  {
-    "organizationName": "Ministry of Commerce and Industry",
-    "url": "https://commerce.gov.in",
-    "type": "multiple"
   },
   {
     "organizationName": "Department of Telecommunications",
@@ -59,7 +50,6 @@
     "url": "https://mod.gov.in",
     "type": "particular"
   },
-
   {
     "organizationName": "Ministry of Earth Sciences",
     "url": "https://moes.gov.in",
@@ -84,11 +74,6 @@
     "organizationName": "Ministry of External Affairs",
     "url": "https://www.mea.gov.in",
     "type": "particular"
-  },
-  {
-    "organizationName": "Ministry of Finance",
-    "url": "https://finmin.gov.in",
-    "type": "multiple"
   },
   {
     "organizationName": "Department of Animal Husbandry and Dairying",
@@ -125,7 +110,6 @@
     "url": "https://mib.gov.in",
     "type": "particular"
   },
-
   {
     "organizationName": "Ministry of Micro, Small and Medium Enterprises",
     "url": "https://msme.gov.in",
@@ -140,11 +124,6 @@
     "organizationName": "Ministry of New and Renewable Energy",
     "url": "https://mnre.gov.in",
     "type": "particular"
-  },
-  {
-    "organizationName": "NITI Aayog",
-    "url": "https://www.niti.gov.in/",
-    "type": "multiple"
   },
   {
     "organizationName": "Ministry of Power",
@@ -180,11 +159,6 @@
     "organizationName": "Department of Social Justice and Empowerment",
     "url": "https://socialjustice.gov.in/",
     "type": "particular"
-  },
-  {
-    "organizationName": "Ministry of Statistics and Programme Implementation",
-    "url": "https://mospi.gov.in",
-    "type": "multiple"
   },
   {
     "organizationName": "Ministry of Steel",
@@ -257,21 +231,6 @@
     "type": "particular"
   },
   {
-    "organizationName": "Ministry of Labour and Employment",
-    "url": "https://labour.gov.in/",
-    "type": "multiple"
-  },
-  {
-    "url": "https://dpiit.gov.in/",
-    "organizationName": "Department for Promotion of Industry and Internal Trade",
-    "type": "multiple"
-  },
-  {
-    "url": "https://darpg.gov.in/",
-    "organizationName": "Department of Administrative Reforms and Public Grievances",
-    "type": "multiple"
-  },
-  {
     "url": "https://dare.gov.in/",
     "organizationName": "Department of Agricultural Research and Education",
     "type": "particular"
@@ -302,11 +261,6 @@
     "type": "particular"
   },
   {
-    "url": "https://dea.gov.in/",
-    "organizationName": "Department of Economic Affairs",
-    "type": "multiple"
-  },
-  {
     "url": "https://depwd.gov.in/",
     "organizationName": "Department of Empowerment of Persons with Disabilities",
     "type": "particular"
@@ -315,11 +269,6 @@
     "url": "https://www.desw.gov.in/",
     "organizationName": "Department of Ex-Servicemen Welfare",
     "type": "particular"
-  },
-  {
-    "url": "https://doe.gov.in/",
-    "organizationName": "Department of Expenditure",
-    "type": "multiple"
   },
   {
     "url": "https://fert.nic.in/",
@@ -346,7 +295,6 @@
     "url": "https://dipam.gov.in/",
     "type": "particular"
   },
-
   {
     "organizationName": "Department of Land Resources",
     "url": "https://dolr.gov.in/",
@@ -386,11 +334,6 @@
     "organizationName": "Department of Public Enterprises",
     "url": "https://dpe.gov.in/",
     "type": "particular"
-  },
-  {
-    "organizationName": "Department of Revenue",
-    "url": "https://dor.gov.in/",
-    "type": "multiple"
   },
   {
     "organizationName": "Department of School Education and Literacy",

@@ -1,13 +1,22 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import FirecrawlApp from '@mendable/firecrawl-js';
 import dotenv from 'dotenv';
-
-import OpenAI from 'openai';
+import { AzureOpenAI } from "openai";
+import "@azure/openai/types";
+import fs from 'fs';
+import path from 'path';
 dotenv.config();
 
 // Models Initialization
-const openaiClient = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+if (!process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO || !process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO_ENDPOINT) {
+  throw new Error('Missing required Azure OpenAI environment variables');
+}
+
+const openaiClient = new AzureOpenAI({
+  apiKey: process.env.AZURE_OPENAI_API_KEY_41,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_41_ENDPOINT,
+  // apiVersion: "2025-04-01-preview" // Using the current stable version
+  apiVersion: "2025-04-14-preview" // Using the current stable version
 });
 
 const gptCall = async (
@@ -17,6 +26,18 @@ const gptCall = async (
   retryCount = 0,
   maxRetries = 3
 ) => {
+  console.log('gptCall function called with model:', modelName);
+  
+  // Save prompt to file with error handling
+  try {
+    const filePath = path.join(process.cwd(), 'prompts.txt');
+    console.log('Writing prompt to file');
+    fs.appendFileSync(filePath, prompt + '\n');
+    console.log('Successfully wrote prompt to file');
+  } catch (error) {
+    console.error('Error writing prompt to file:', error);
+  }
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 seconds timeout
 

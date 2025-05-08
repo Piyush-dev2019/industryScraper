@@ -103,135 +103,228 @@ export class ScraperService {
   }
 
   private async uploadDocumentToBlob(documentUrl: string, blobPath: string): Promise<{ success: boolean; path: string; url: string; error?: any }> {
-    try {
-      // Download the document from the URL using streams
-      const response = await fetch(documentUrl);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      
-      // Create a PassThrough stream to pipe the response to blob storage
-      const { PassThrough } = require('stream');
-      const passThrough = new PassThrough();
-      
-      // Create a promise that resolves when the stream ends or rejects on error
-      const streamComplete = new Promise((resolve, reject) => {
-        passThrough.on('end', resolve);
-        passThrough.on('error', reject);
-      });
+    const MAX_RETRIES = 3;
+    const RETRY_DELAY = 2000; // 2 seconds
 
-      // Pipe the response body to the PassThrough stream
-      const reader = response.body.getReader();
-      const pump = async () => {
-        try {
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) {
-              passThrough.end();
-              break;
-            }
-            passThrough.write(Buffer.from(value));
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        console.log(`Attempt ${attempt} to download: ${documentUrl}`);
+        
+        // Download the document from the URL using streams
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+        const response = await fetch(documentUrl, {
+          signal: controller.signal,
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
           }
-        } catch (error) {
-          passThrough.destroy(error);
-        }
-      };
+        });
 
-      // Start pumping the stream
-      pump();
-      
-      // Upload directly to Azure Blob Storage using streams
-      const blobClient = this.getBlobClient(blobPath);
-      await blobClient.uploadStream(
-        passThrough,
-        undefined,
-        undefined,
-        {
-          blobHTTPHeaders: {
-            blobContentType: 'application/pdf',
-          },
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
-      );
-      
-      // Wait for the stream to complete
-      await streamComplete;
-      
-      // Get the complete URL
-      const blobUrl = this.getBlobUrl(blobPath);
-      
-      console.log(`Successfully uploaded: ${blobPath}`);
-      console.log(`Blob URL: ${blobUrl}`);
-      return { success: true, path: blobPath, url: blobUrl };
-    } catch (error) {
-      console.log(`Failed to process document: ${documentUrl}`, error);
-      return { success: false, path: blobPath, url: '', error };
+        
+        // Create a PassThrough stream to pipe the response to blob storage
+        const { PassThrough } = require('stream');
+        const passThrough = new PassThrough();
+        
+        // Create a promise that resolves when the stream ends or rejects on error
+        const streamComplete = new Promise((resolve, reject) => {
+          passThrough.on('end', resolve);
+          passThrough.on('error', reject);
+        });
+
+        // Pipe the response body to the PassThrough stream
+        const reader = response.body.getReader();
+        const pump = async () => {
+          try {
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) {
+                passThrough.end();
+                break;
+              }
+              passThrough.write(Buffer.from(value));
+            }
+          } catch (error) {
+            passThrough.destroy(error);
+          }
+        };
+
+        // Start pumping the stream
+        pump();
+        
+        // Upload directly to Azure Blob Storage using streams
+        const blobClient = this.getBlobClient(blobPath);
+        await blobClient.uploadStream(
+          passThrough,
+          undefined,
+          undefined,
+          {
+            blobHTTPHeaders: {
+              blobContentType: 'application/pdf',
+            },
+          }
+        );
+        
+        // Wait for the stream to complete
+        await streamComplete;
+        
+        // Get the complete URL
+        const blobUrl = this.getBlobUrl(blobPath);
+        
+        console.log(`Successfully uploaded: ${blobPath}`);
+        console.log(`Blob URL: ${blobUrl}`);
+        return { success: true, path: blobPath, url: blobUrl };
+
+      } catch (error) {
+        console.error(`Attempt ${attempt} failed for ${documentUrl}:`, error.message);
+        
+        if (attempt === MAX_RETRIES) {
+          console.error(`All ${MAX_RETRIES} attempts failed for ${documentUrl}`);
+          return { 
+            success: false, 
+            path: blobPath, 
+            url: '', 
+            error: {
+              message: error.message,
+              attempts: attempt,
+              url: documentUrl
+            }
+          };
+        }
+
+        // Wait before retrying
+        await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * attempt));
+      }
     }
   }
 
   async main(prompt: Record<string, string>, organizationName: string, url: string, folderName: string) {
-    const result = await this.map_scrap(prompt, url);
-    console.log('Final URLs:', result);
-
-    // Process files in batches of 10
-    const BATCH_SIZE = 10;
-    const totalFiles = result.length;
-    let processedCount = 0;
-
-    while (processedCount < totalFiles) {
-      const batch = result.slice(processedCount, processedCount + BATCH_SIZE);
-      const batchPromises = batch.map(async (doc) => {
-        const { documentUrl, characteristics } = doc;
-        const { year, name, sources } = characteristics;
-        
-        // Clean the document name (remove .pdf and any special characters)
-        const cleanName = name.toLowerCase().replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
-        
-        // Construct the blob path with RAW as a folder
-        organizationName = organizationName.toLowerCase().replaceAll(' ', '_');
-        let blobPath = '';
-        if(year == null){
-          blobPath = `${folderName}/${organizationName}/not_found/${cleanName}/RAW/${cleanName}.pdf`;
-        }
-        else{
-          blobPath = `${folderName}/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
-        }
-        // Upload to blob storage
-        const uploadResult = await this.uploadDocumentToBlob(documentUrl, blobPath);
-
-        if (uploadResult.success) {
-          // Create database entry
-          const reportDto: CreateReportDto = {
-            documentName: name.replaceAll(' ', '_'),
-            documentUrl: documentUrl,
-            blobUrl: uploadResult.url,
-            year: year,
-            status: 'idle',
-            ministryName: organizationName,
-            ministryUrl: url,
-            exactSourceUrl: sources
-          };
-
-          try {
-            await this.reportsService.makeReportEntry(reportDto);
-            console.log(`Database entry created for: ${name}`);
-          } catch (error) {
-            console.error(`Failed to create database entry for ${name}:`, error);
-          }
-        }
-
-        return uploadResult;
-      });
-
-      // Wait for the current batch to complete
-      const results = await Promise.all(batchPromises);
-      processedCount += batch.length;
-      
-      // Log batch progress
-      console.log(`Processed ${processedCount}/${totalFiles} files`);
-      console.log('Batch results:', results);
-      
-      // Add a small delay between batches to prevent overwhelming the system
-      if (processedCount < totalFiles) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const result = await this.map_scrap(prompt, url);
+      if (!result) {
+        console.log(`No results found for ${organizationName}`);
+        return {
+          success: false,
+          organizationName,
+          error: 'No results found'
+        };
       }
+      console.log('Final URLs:', result);
+
+      // Process files in batches of 1
+      const BATCH_SIZE = 1;
+      const totalFiles = result.length;
+      let processedCount = 0;
+      const failedFiles = [];
+
+      while (processedCount < totalFiles) {
+        try {
+          const batch = result.slice(processedCount, processedCount + BATCH_SIZE);
+          const batchPromises = batch.map(async (doc) => {
+            try {
+              const { documentUrl, characteristics } = doc;
+              const { year, name, sources } = characteristics;
+              
+              // Clean the document name (remove .pdf and any special characters)
+              const cleanName = name.toLowerCase().replace(/\.(pdf|PDF)$/i, '').replace(/[^a-zA-Z0-9]/g, '_');
+              
+              // Construct the blob path with RAW as a folder
+              organizationName = organizationName.toLowerCase().replaceAll(' ', '_');
+              let blobPath = '';
+              if(year == null){
+                blobPath = `${folderName}/${organizationName}/not_found/${cleanName}/RAW/${cleanName}.pdf`;
+              }
+              else{
+                blobPath = `${folderName}/${organizationName}/${year}/${cleanName}/RAW/${cleanName}.pdf`;
+              }
+              // Upload to blob storage
+              const uploadResult = await this.uploadDocumentToBlob(documentUrl, blobPath);
+
+              if (uploadResult.success) {
+                // Create database entry
+                const reportDto: CreateReportDto = {
+                  documentName: name.replaceAll(' ', '_'),
+                  documentUrl: documentUrl,
+                  blobUrl: uploadResult.url,
+                  year: year,
+                  status: 'idle',
+                  ministryName: organizationName,
+                  ministryUrl: url,
+                  exactSourceUrl: sources
+                };
+
+                try {
+                  await this.reportsService.makeReportEntry(reportDto);
+                  console.log(`Database entry created for: ${name}`);
+                } catch (error) {
+                  console.error(`Failed to create database entry for ${name}:`, error);
+                  failedFiles.push({
+                    name,
+                    error: 'Database entry failed',
+                    details: error.message
+                  });
+                }
+              } else {
+                failedFiles.push({
+                  name,
+                  error: 'Upload failed',
+                  details: uploadResult.error
+                });
+              }
+
+              return uploadResult;
+            } catch (error) {
+              console.error(`Error processing document ${doc.characteristics.name}:`, error);
+              failedFiles.push({
+                name: doc.characteristics.name,
+                error: 'Processing failed',
+                details: error.message
+              });
+              return {
+                success: false,
+                error: error.message,
+                name: doc.characteristics.name
+              };
+            }
+          });
+
+          // Wait for the current batch to complete
+          const results = await Promise.all(batchPromises);
+          processedCount += batch.length;
+          
+          // Log batch progress
+          console.log(`Processed ${processedCount}/${totalFiles} files`);
+          console.log('Batch results:', results);
+          
+          // Add a small delay between batches to prevent overwhelming the system
+          if (processedCount < totalFiles) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+        } catch (batchError) {
+          console.error(`Error processing batch:`, batchError);
+          processedCount += BATCH_SIZE; // Skip this batch and continue
+        }
+      }
+
+      return {
+        success: true,
+        organizationName,
+        totalProcessed: processedCount,
+        totalFiles,
+        failedFiles
+      };
+    } catch (error) {
+      console.error(`Error in main process for ${organizationName}:`, error);
+      return {
+        success: false,
+        organizationName,
+        error: error.message
+      };
     }
   }
 }

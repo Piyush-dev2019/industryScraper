@@ -5,6 +5,7 @@ import FirecrawlApp, {
   import dotenv from 'dotenv';
   import { extractJsonFromResponse } from './jsonExtractor';
   import { firecrawlApp, gptCall } from './llmModels';
+  import { saveFailedUrl } from './failedUrls';
   
   dotenv.config();
   
@@ -36,7 +37,7 @@ import FirecrawlApp, {
         "reason": "reason for the response",
         "isRelevant": true/false
       }`;
-    const result = await gptCall('gpt-4.1', prompt, 'system');
+    const result = await gptCall('gpt-4.1-nano', prompt, 'system');
     const jsonResult = await extractJsonFromResponse(result);
     console.log('jsonResult from checkRelevantLink', link, jsonResult);
     return jsonResult;
@@ -44,7 +45,7 @@ import FirecrawlApp, {
 
   async function getPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-nano', fullPrompt, 'system');
     
     if (!result || result === 'Objective not met') {
         console.log('No response received from LLM');
@@ -79,7 +80,7 @@ import FirecrawlApp, {
 
   async function getNonPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-nano', fullPrompt, 'system');
     
     if (!result) {
         console.log('No response received from LLM');
@@ -293,7 +294,7 @@ import FirecrawlApp, {
     const filterPrompt = `
 You are assisting in curating a high-quality dataset of documents useful for industry analysis by a senior financial analyst.
 
-Given only the title of a PDF document, decide if it’s useful for financial analysts, consultants, or investors studying Indian industries. Include only english documents(not Hindi, bilingual, or any other language) with sector data, performance reports, market analysis, price/tariff updates, or credible industry insights. Exclude anything administrative, legal, ceremonial, tender-related, training, General notices, circulars, scheme guideline documents, Monthly or weekly summary reports
+Given only the title of a PDF document, decide if it’s useful for financial analysts, consultants, or investors studying Indian industries. Include only English documents (not Hindi, bilingual, or any other language) that contain sector data, performance reports, market analysis, price/tariff updates, or credible industry insights. Exclude anything related to administrative, legal, ceremonial, tender-related, training, general notices, circulars, scheme guidelines, or monthly or weekly summary reports. The document should not be focused on a specific state; it should be related to the entire country.
 
 Return the response in the JSON structure provided below:
 
@@ -318,7 +319,7 @@ name: `;
               // Only send name to the LLM
               const docPrompt = filterPrompt + doc.name;
               console.log('docPrompt', docPrompt);
-              const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
+              const result = await gptCall('gpt-4.1-nano', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
               return jsonResult && jsonResult.isRelevant ? doc : null;
@@ -359,7 +360,7 @@ name: `;
     try {
       // Process all batches asynchronously
       const batchPromises = batches.map(async (batch) => {
-        const response = await gptCall('gpt-4.1', rankPrompt(batch), 'system');
+        const response = await gptCall('gpt-4.1-nano', rankPrompt(batch), 'system');
         const rankedResults = await extractJsonFromResponse(response);
         return rankedResults;
       });
@@ -411,7 +412,7 @@ Strict Filtering Rule:
    ${JSON.stringify(links, null, 2)}
    `;
 
-   const result = await gptCall('gpt-4.1', prompt, 'system');
+   const result = await gptCall('gpt-4.1-nano', prompt, 'system');
    const jsonResult = await extractJsonFromResponse(result);
    return jsonResult.filter((result: any) => result.isRelevant).map((result: any) => result.url);
   }
@@ -485,6 +486,7 @@ Strict Filtering Rule:
     // If error is due to rate limiting and max retries exhausted, skip URL modifications
     if (isRateLimited) {
       console.log('Rate limit retries exhausted, skipping URL modifications...');
+      saveFailedUrl(link, 'Rate limit exceeded after max retries');
       return null;
     }
   
@@ -503,6 +505,7 @@ Strict Filtering Rule:
     // If error is due to rate limiting and max retries exhausted, skip further URL modifications
     if (modifiedIsRateLimited) {
       console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      saveFailedUrl(link, 'Rate limit exceeded after URL modification');
       return null;
     }
   
@@ -532,6 +535,7 @@ Strict Filtering Rule:
     // If error is due to rate limiting and max retries exhausted, skip further URL modifications
     if (protocolIsRateLimited) {
       console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      saveFailedUrl(link, 'Rate limit exceeded after protocol modification');
       return null;
     }
   
@@ -549,10 +553,12 @@ Strict Filtering Rule:
     // If error is due to rate limiting and max retries exhausted, skip further URL modifications
     if (protocolNoSlashIsRateLimited) {
       console.log('Rate limit retries exhausted, skipping further URL modifications...');
+      saveFailedUrl(link, 'Rate limit exceeded after protocol and slash modification');
       return null;
     }
   
     console.log('All URL variations failed, skipping...');
+    saveFailedUrl(link, 'All URL variations failed to scrape');
     return null;
   }
   

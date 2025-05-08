@@ -1,44 +1,32 @@
 import fs from 'fs';
 import path from 'path';
 
-interface Source {
-    organization: string;
-    sourceUrl: string;
-    access: string;
+interface IgodSources {
+    organizationName: string;
+    url: string;
     type: string;
-    remarks?: string;
 }
 
-const pvtBodies = JSON.parse(fs.readFileSync(path.join(__dirname, '../../pvtBodies2.json'), 'utf8'));
-const uniqueSources = new Set<string>();
+const igodSources = JSON.parse(fs.readFileSync(path.join(__dirname, '../../igodSources.json'), 'utf8'));
+const particularSources = new Set<string>();
 
-const processSources = (sources: Source[]) => {
+const processSources = (sources: IgodSources[]) => {
     sources.forEach(source => {
-        uniqueSources.add(JSON.stringify(source));
+        if (source.type === 'particular') {
+            particularSources.add(JSON.stringify(source));
+        }
     });
 };
 
-pvtBodies.forEach((item: any) => {
-    if (item.basicIndustries) {
-        // Handle case with basicIndustries array
-        item.basicIndustries.forEach((basicIndustry: any) => {
-            if (basicIndustry.sources) {
-                processSources(basicIndustry.sources);
-            }
-        });
-    } else if (item.sources) {
-        // Handle case with single basicIndustry
-        processSources(item.sources);
-    }
-});
+// Process the sources
+processSources(igodSources);
 
 // Convert Set back to objects
-const uniqueSourceObjects = Array.from(uniqueSources).map(source => JSON.parse(source) as Source);
+const particularSourcesObjects = Array.from(particularSources).map(source => JSON.parse(source) as IgodSources);
 
 // Save to JSON file
-const outputPath = path.join(__dirname, '../../uniqueSources.json');
-fs.writeFileSync(outputPath, JSON.stringify(uniqueSourceObjects, null, 2));
+const outputPath = path.join(__dirname, '../../particularSources.json');
+fs.writeFileSync(outputPath, JSON.stringify(particularSourcesObjects, null, 2));
 
-console.log(`Unique sources have been saved to ${outputPath}`);
-console.log(`Total unique sources found: ${uniqueSourceObjects.length}`);
 
+console.log(`Total particular sources found: ${particularSourcesObjects.length}`);

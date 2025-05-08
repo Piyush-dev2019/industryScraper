@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://cbud.dot.gov.in/",
+    "timestamp": "2025-05-08T09:18:27.647Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dcis.dot.gov.in/page",
+    "timestamp": "2025-05-08T09:23:02.255Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://gatishaktisanchar.gov.in/",
+    "timestamp": "2025-05-08T09:23:31.017Z",
+    "reason": "Rate limit exceeded after max retries"
+  }
+]
