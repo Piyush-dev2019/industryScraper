@@ -1,24 +1,18 @@
 export const governmentWebsitePrompt = {
 
-    "rankLinksPrompt": `Analyze the following URLs and rank the most relevant ones for finding information about:
+"rankLinksPrompt": `Analyze the following URLs and rank the most relevant ones for finding information about:
   - Annual Reports
   - Industry Strategy Documents
   - Financial Reports
-  - Budget Plans
   - Mission Plans
   - Sectoral Publications
 
 Strict Filtering Rules:
 1. Ignore any links to content older than 2020 or archive pages before 2020.
 2. Ignore any paginated URLs beyond page 2 (e.g., URLs with "page=3" or "page/4").
-3. Ignore links that are not in English (e.g., URLs containing "/hi/").
-4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, or purely administrative content.
+3. Ignore links that are not in English (e.g., URLs containing "/hi/" or hindi words).
+4. Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
 5. Ignore links to monthly or weekly summary reports.
-6. **Base path filtering logic**:
-   - If both a parent URL and a sub-URL are present (e.g., https://site.com/policy and https://site.com/policy/document-2023), **only keep the parent URL**.
-   - A "parent URL" is any URL that is a prefix of another.
-   - If a parent URL exists, **exclude all deeper sub-URLs that start with the same base path**.
-   - Only include the sub-URL if its parent is not in the list.
 
 Return ONLY a JSON array in this exact format — no explanation or extra output:
 
@@ -40,11 +34,7 @@ Your task is to extract only the relevant PDF document links that can support in
 - Financial Reports
 - Sectoral Publications
 - Mission Plans
-- Budget Plans
 - Industry Strategy Documents
-
-Ignore any links that do not end in .pdf.
-Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
 
 For each PDF link found, extract and return the following structured JSON object:
 
@@ -53,7 +43,7 @@ For each PDF link found, extract and return the following structured JSON object
   "sourceUrl": "the url from which the pdf is found",
   "documents": [
     {
-      "year": 2021,                      // Extract from the filename or context. Leave null if not found.
+      "year": 2021,       // Extract from the filename or context. Leave null if not found.
       "name": "Annual Report 2020-21",   // Use link text or infer from filename
       "documentUrl": "https://actual-domain.com/report2021.pdf"  // The actual PDF URL from the markdown
     }
@@ -61,14 +51,14 @@ For each PDF link found, extract and return the following structured JSON object
 }
 
 Important Instructions:
-- Only include documents that help in industry or market analysis.
-- Ensure documentUrl always ends in .pdf.
-- Only include actual PDF URLs found in the markdown content.
-- Do not include any example URLs or placeholder URLs.
-- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.
-
-Use this format exactly. Do not add extra commentary or explanation.`,
-
+- Ignore any links that do not end in .pdf.
+- Only include actual PDF URLs found in the markdown content, **Do not** add .pdf on your own to any url.
+- Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
+- Ignore links that are not in English (e.g. URLs containing "/hi/" or hindi words).
+- Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
+- Ignore links to monthly or weekly summary reports.
+- Ignore any state specific links, document should be related to entire country.
+- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.`,
 
     "getNonPdfUrlsPrompt": `
     You are an intelligent web assistant that processes Markdown content from government, institutional, or company websites.
@@ -80,7 +70,6 @@ Your task is to extract **only the links** (URLs) that are **Highly Likely to le
 - Financial Reports
 - Mission Plans
 - Strategy Documents
-- Budget Plans
 etc.
 
 Instructions:
@@ -91,7 +80,10 @@ Instructions:
 5. Only include URLs that are actually present in the markdown content.
 6. **Ignore** any links that redirect to content older than 2020 or archive pages before 2020.
 7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
-8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
+8. Ignore any links that are not in English for example url containing (/hi/) or hindi words.
+9. Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
+10. Ignore links to monthly or weekly summary reports.
+
 Return the response in this exact format:
 {
   "possibleUrls": [
@@ -124,11 +116,7 @@ Your task is to extract only the relevant PDF document links that can support in
 - Financial Reports
 - Sectoral Publications
 - Mission Plans
-- Budget Plans
 - Industry Strategy Documents
-
-Ignore any links that do not end in .pdf.
-Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
 
 For each PDF link found, extract and return the following structured JSON object:
 
@@ -137,7 +125,7 @@ For each PDF link found, extract and return the following structured JSON object
   "sourceUrl": "the url from which the pdf is found",
   "documents": [
     {
-      "year": 2021,                      // Extract from the filename or context. Leave null if not found.
+      "year": 2021,       // Extract from the filename or context. Leave null if not found.
       "name": "Annual Report 2020-21",   // Use link text or infer from filename
       "documentUrl": "https://actual-domain.com/report2021.pdf"  // The actual PDF URL from the markdown
     }
@@ -145,13 +133,14 @@ For each PDF link found, extract and return the following structured JSON object
 }
 
 Important Instructions:
-- Only include documents that help in industry or market analysis.
-- Ensure documentUrl always ends in .pdf.
-- Only include actual PDF URLs found in the markdown content.
-- Do not include any example URLs or placeholder URLs.
-- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.
-
-Use this format exactly. Do not add extra commentary or explanation.`,
+- Ignore any links that do not end in .pdf.
+- Only include actual PDF URLs found in the markdown content, **Do not** add .pdf on your own to any url.
+- Ignore any links that appear to be from before 2020 based on dates in the filename, URL, or surrounding context
+- Ignore links that are not in English (e.g. URLs containing "/hi/" or hindi words).
+- Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
+- Ignore links to monthly or weekly summary reports.
+- Ignore any state specific links, document should be related to entire country.
+- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.`,
 
 
     "getNonPdfUrlsPrompt": `
@@ -164,7 +153,6 @@ Your task is to extract **only the links** (URLs) that are **Highly Likely to le
 - Financial Reports
 - Mission Plans
 - Strategy Documents
-- Budget Plans
 etc.
 
 Instructions:
@@ -175,7 +163,10 @@ Instructions:
 5. Only include URLs that are actually present in the markdown content.
 6. **Ignore** any links that redirect to content older than 2020 or archive pages before 2020.
 7. For paginated URLs, if a URL contains "page" or page numbers (e.g. "page=2", "page/3"), only include URLs up to page 2 and ignore any URLs with higher page numbers.
-8. Ignore any links that are not in English for example url containing (/hi/) are in hindi.
+8. Ignore any links that are not in English for example url containing (/hi/) or hindi words.
+9. Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
+10. Ignore links to monthly or weekly summary reports.
+
 Return the response in this exact format:
 {
   "possibleUrls": [

@@ -13,5 +13,240 @@
     "url": "https://gatishaktisanchar.gov.in/",
     "timestamp": "2025-05-08T09:23:31.017Z",
     "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "http://coal.gov.in/sites/default/files/2024-09/05-09-2024qurt.pdf",
+    "timestamp": "2025-05-08T11:11:24.898Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://coal.nic.in/en/public-information/monthly-report-cabinet",
+    "timestamp": "2025-05-08T11:27:42.777Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/industry-strategy",
+    "timestamp": "2025-05-08T11:55:41.183Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/publications",
+    "timestamp": "2025-05-08T11:55:45.489Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://loksabha.nic.in/",
+    "timestamp": "2025-05-08T11:56:14.741Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://www.bbnl.nic.in/",
+    "timestamp": "2025-05-08T11:56:40.321Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://www.mtcte.tec.gov.in/",
+    "timestamp": "2025-05-08T11:56:42.263Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://sancharsaathi.gov.in/",
+    "timestamp": "2025-05-08T11:56:43.126Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://www.mstcindia.co.in/",
+    "timestamp": "2025-05-08T11:56:44.392Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/trai-analytics",
+    "timestamp": "2025-05-08T11:56:50.701Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://nccs.gov.in/nccs/index_org.html",
+    "timestamp": "2025-05-08T11:59:15.680Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dgtelecom.gov.in/",
+    "timestamp": "2025-05-08T11:59:33.721Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dcis.dot.gov.in",
+    "timestamp": "2025-05-08T12:00:18.471Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://gatishaktisanchar.gov.in/",
+    "timestamp": "2025-05-08T12:01:09.373Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://dcis.dot.gov.in/",
+    "timestamp": "2025-05-08T12:01:09.469Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "http://www.nicf.gov.in/",
+    "timestamp": "2025-05-08T12:01:14.014Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://www.bsnl.co.in/",
+    "timestamp": "2025-05-08T12:06:21.391Z",
+    "reason": "Rate limit exceeded after URL modification"
+  },
+  {
+    "url": "https://coal.nic.in/en/public-information/reports/annual-reports/annual-report-2011-12",
+    "timestamp": "2025-05-08T13:51:14.627Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://coal.gov.in/sites/default/files/2022-05/09-05-2022SummaryVII%20PB.pdf",
+    "timestamp": "2025-05-08T13:55:20.956Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://coal.gov.in/sites/default/files/2022-05/09-05-2022vp1.pdf",
+    "timestamp": "2025-05-08T13:55:21.264Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "http://coal.gov.in/sites/default/files/2022-05/09-05-2022SummaryVII%20PB.pdf",
+    "timestamp": "2025-05-08T13:55:22.040Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "http://coal.gov.in/sites/default/files/2022-05/09-05-2022vp1.pdf",
+    "timestamp": "2025-05-08T13:55:30.234Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://dot.gov.in/national-telecom-policy-2012",
+    "timestamp": "2025-05-08T14:04:31.015Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/5g-bts-deployed",
+    "timestamp": "2025-05-08T14:04:34.461Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://nccs.gov.in/",
+    "timestamp": "2025-05-08T14:05:12.604Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://gatishaktisanchar.gov.in/",
+    "timestamp": "2025-05-08T14:09:37.110Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://dcis.dot.gov.in/",
+    "timestamp": "2025-05-08T14:09:37.131Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://www.competency.dot.gov.in/",
+    "timestamp": "2025-05-08T14:09:37.151Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://coal.nic.in/index.php/hi/public-information/reports/annual-reports/annual-report-2011-12",
+    "timestamp": "2025-05-09T07:10:41.866Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://coal.nic.in/en/public-information/reports/annual-reports/annual-report-2011-12",
+    "timestamp": "2025-05-09T07:11:15.092Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://dot.gov.in/sites/default/files/Details%20of%20HLF%20for%205G%20India%202020_1.pdf#_blank",
+    "timestamp": "2025-05-09T07:53:53.305Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/sites/default/files/Strategy%20for%20ITU-R%20and%20Other%20International%20Organizations_0001.pdf?download=1",
+    "timestamp": "2025-05-09T07:53:57.586Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://dot.gov.in/industry-strategy",
+    "timestamp": "2025-05-09T07:54:05.306Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://loksabha.nic.in/",
+    "timestamp": "2025-05-09T07:54:10.012Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://dot.gov.in/mission-plans",
+    "timestamp": "2025-05-09T07:54:14.371Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://dot.gov.in/annual-reports",
+    "timestamp": "2025-05-09T07:54:16.549Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://dot.gov.in/publications",
+    "timestamp": "2025-05-09T07:54:17.368Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://sancharsaathi.gov.in/",
+    "timestamp": "2025-05-09T07:54:32.225Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://www.mtcte.tec.gov.in/",
+    "timestamp": "2025-05-09T07:54:58.510Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dot.gov.in/sites/default/files/Report%20on%20IARSEMS%20%281%29_0.pdf?download=1",
+    "timestamp": "2025-05-09T07:55:02.804Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://www.mstcindia.co.in/",
+    "timestamp": "2025-05-09T07:55:59.492Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "https://dgtelecom.gov.in/",
+    "timestamp": "2025-05-09T07:58:33.290Z",
+    "reason": "All URL variations failed to scrape"
+  },
+  {
+    "url": "http://www.tcoe.in/",
+    "timestamp": "2025-05-09T07:59:00.754Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://pli-telecom.udyamimitra.in/",
+    "timestamp": "2025-05-09T07:59:02.182Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://dcis.dot.gov.in/",
+    "timestamp": "2025-05-09T07:59:02.204Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://www.competency.dot.gov.in/",
+    "timestamp": "2025-05-09T07:59:02.249Z",
+    "reason": "Rate limit exceeded after max retries"
+  },
+  {
+    "url": "https://gatishaktisanchar.gov.in/",
+    "timestamp": "2025-05-09T07:59:04.721Z",
+    "reason": "Rate limit exceeded after max retries"
   }
 ]

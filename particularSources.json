@@ -3,346 +3,310 @@
   {
     "organizationName": "Department of Agriculture and Farmers Welfare",
     "url": "https://agriwelfare.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Chemicals and Petrochemicals",
     "url": "https://chemicals.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Civil Aviation",
     "url": "https://civilaviation.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Coal",
     "url": "https://coal.nic.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Telecommunications",
     "url": "https://dot.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Food and Public Distribution",
     "url": "https://dfpd.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Cooperation",
     "url": "https://www.cooperation.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Corporate Affairs",
     "url": "https://www.mca.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Ministry of Culture",
-    "url": "https://www.indiaculture.gov.in",
-    "type": "particular"
-  },
+  
   {
     "organizationName": "Ministry of Defence",
     "url": "https://mod.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Earth Sciences",
     "url": "https://moes.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Education",
     "url": "https://www.education.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Electronics and Information Technology",
     "url": "https://meity.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Environment, Forest and Climate Change",
     "url": "https://moef.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of External Affairs",
     "url": "https://www.mea.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Animal Husbandry and Dairying",
     "url": "https://www.dahd.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Food Processing Industries",
     "url": "https://mofpi.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Health and Family Welfare",
     "url": "https://mohfw.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Heavy Industries",
     "url": "https://heavyindustries.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Home Affairs",
     "url": "https://mha.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Housing and Urban Affairs",
     "url": "https://mohua.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Information and Broadcasting",
     "url": "https://mib.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Micro, Small and Medium Enterprises",
     "url": "https://msme.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Mines",
     "url": "https://mines.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of New and Renewable Energy",
     "url": "https://mnre.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Power",
     "url": "https://powermin.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Railways",
     "url": "https://indianrailways.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Road Transport and Highways",
     "url": "https://morth.nic.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Rural Development",
     "url": "https://rural.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Science and Technology",
     "url": "https://dst.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Skill Development and Entrepreneurship",
     "url": "https://msde.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Department of Social Justice and Empowerment",
-    "url": "https://socialjustice.gov.in/",
-    "type": "particular"
-  },
+  
   {
     "organizationName": "Ministry of Steel",
     "url": "https://steel.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Textiles",
     "url": "https://texmin.nic.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Water Resources, River Development and Ganga Rejuvenation",
     "url": "https://www.jalshakti-dowr.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Women and Child Development",
     "url": "https://wcd.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Youth Affairs and Sports",
     "url": "https://yas.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Petroleum and Natural Gas",
     "url": "https://mopng.gov.in/en",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Tourism",
     "url": "https://tourism.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Ministry of Tribal Affairs",
-    "url": "https://tribal.nic.in",
-    "type": "particular"
-  },
+
   {
     "organizationName": "Ministry of Ports, Shipping and Waterways",
     "url": "https://shipmin.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Ministry of Panchayati Raj",
-    "url": "https://panchayat.gov.in",
-    "type": "particular"
-  },
-  {
-    "organizationName": "Ministry of Parliamentary Affairs",
-    "url": "https://mpa.gov.in/",
-    "type": "particular"
-  },
+ 
+ 
   {
     "organizationName": "Ministry of Personnel, Public Grievances and Pensions",
     "url": "https://persmin.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Ministry of Minority Affairs",
-    "url": "https://minorityaffairs.gov.in",
-    "type": "particular"
-  },
+
   {
     "organizationName": "Department of Jal Shakti",
     "url": "https://jalshakti.gov.in",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://dare.gov.in/",
     "organizationName": "Department of Agricultural Research and Education",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://dbtindia.gov.in/",
     "organizationName": "Department of Biotechnology",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://doca.gov.in/",
     "organizationName": "Department of Consumer Affairs",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://ddpmod.gov.in/",
     "organizationName": "Department of Defence Production",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://www.drdo.gov.in/",
     "organizationName": "Department of Defence Research and Development",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://www.jalshakti-ddws.gov.in/",
     "organizationName": "Department of Drinking Water and Sanitation",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://depwd.gov.in/",
     "organizationName": "Department of Empowerment of Persons with Disabilities",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://www.desw.gov.in/",
     "organizationName": "Department of Ex-Servicemen Welfare",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://fert.nic.in/",
     "organizationName": "Department of Fertilizers",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://financialservices.gov.in/",
     "organizationName": "Department of Financial Services",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://dof.gov.in/",
     "organizationName": "Department of Fisheries",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "url": "https://dhr.gov.in/",
     "organizationName": "Department of Health Research",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Investment and Public Asset Management",
     "url": "https://dipam.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Land Resources",
     "url": "https://dolr.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Department of Legal Affairs",
-    "url": "https://legalaffairs.gov.in/",
-    "type": "particular"
-  },
-  {
-    "organizationName": "Department of Official Language",
-    "url": "https://rajbhasha.gov.in/en",
-    "type": "particular"
-  },
+  
+
   {
     "organizationName": "Department of Pension & Pensioners' Welfare",
     "url": "https://doppw.gov.in/en",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Personnel & Training",
     "url": "https://dopt.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Pharmaceuticals",
     "url": "https://pharma-dept.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
-  {
-    "organizationName": "Department of Posts",
-    "url": "https://www.indiapost.gov.in/",
-    "type": "particular"
-  },
+
   {
     "organizationName": "Department of Public Enterprises",
     "url": "https://dpe.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of School Education and Literacy",
     "url": "https://dsel.education.gov.in/dsel",
-    "type": "particular"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Scientific and Industrial Research",
     "url": "https://dsir.gov.in/",
-    "type": "particular"
+    "folderName":"government_reports"
   }
 ]

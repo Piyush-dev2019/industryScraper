@@ -13,10 +13,9 @@ if (!process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO || !process.env.AZURE_O
 }
 
 const openaiClient = new AzureOpenAI({
-  apiKey: process.env.AZURE_OPENAI_API_KEY_41,
-  endpoint: process.env.AZURE_OPENAI_API_KEY_41_ENDPOINT,
-  // apiVersion: "2025-04-01-preview" // Using the current stable version
-  apiVersion: "2025-04-14-preview" // Using the current stable version
+  apiKey: process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO_ENDPOINT,
+  apiVersion: "2024-02-15-preview" // Using the current stable version
 });
 
 const gptCall = async (
@@ -26,14 +25,13 @@ const gptCall = async (
   retryCount = 0,
   maxRetries = 3
 ) => {
-  console.log('gptCall function called with model:', modelName);
   
   // Save prompt to file with error handling
   try {
     const filePath = path.join(process.cwd(), 'prompts.txt');
-    console.log('Writing prompt to file');
+
     fs.appendFileSync(filePath, prompt + '\n');
-    console.log('Successfully wrote prompt to file');
+
   } catch (error) {
     console.error('Error writing prompt to file:', error);
   }

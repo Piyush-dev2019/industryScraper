@@ -64,6 +64,15 @@ import FirecrawlApp, {
             console.log('Max retries reached for PDF extraction');
             return null;
         }
+        // Filter out documents where documentUrl doesn't end with .pdf
+        jsonResult.documents = jsonResult.documents.filter(doc => doc.documentUrl.toLowerCase().endsWith('.pdf'));
+        
+        // If no documents remain after filtering, return null
+        if (!jsonResult.documents || jsonResult.documents.length === 0) {
+            console.log('No PDF documents found after filtering');
+            return null;
+        }
+        
         console.log('Successfully extracted PDF URLs:', jsonResult);
         return jsonResult;
     } catch (error) {
@@ -105,6 +114,15 @@ import FirecrawlApp, {
             console.log('Max retries reached for non-PDF URL extraction');
             return { possibleUrls: [] };
         }
+        // Filter out URLs that end with .pdf
+        jsonResult.possibleUrls = jsonResult.possibleUrls.filter(url => !url.toLowerCase().endsWith('.pdf'));
+        
+        // If no URLs remain after filtering, return empty array
+        if (jsonResult.possibleUrls.length === 0) {
+            console.log('No non-PDF URLs found after filtering');
+            return { possibleUrls: [] };
+        }
+        
         console.log('Successfully extracted non-PDF URLs:', jsonResult);
         return jsonResult;
     } catch (error) {
@@ -294,7 +312,12 @@ import FirecrawlApp, {
     const filterPrompt = `
 You are assisting in curating a high-quality dataset of documents useful for industry analysis by a senior financial analyst.
 
-Given only the title of a PDF document, decide if it’s useful for financial analysts, consultants, or investors studying Indian industries. Include only English documents (not Hindi, bilingual, or any other language) that contain sector data, performance reports, market analysis, price/tariff updates, or credible industry insights. Exclude anything related to administrative, legal, ceremonial, tender-related, training, general notices, circulars, scheme guidelines, or monthly or weekly summary reports. The document should not be focused on a specific state; it should be related to the entire country.
+Given only the title of a PDF document, decide if it's useful for financial analysts, consultants, or investors studying Indian industries. Do this based on whether it contains sector data, performance reports, market analysis, price/tariff updates, or credible industry insights.
+
+Important Instructions:
+1. Only include English documents. If the document name is not in English (Hindi, bilingual or any other regional language), immediately mark it as irrelevant (false).
+2. Exclude anything related to administrative, legal, ceremonial, tender-related, training, general notices, circulars, scheme guidelines, reforms, or monthly or weekly summary reports. 
+3. The document should not be focused on a specific state; it should be related to the entire country.
 
 Return the response in the JSON structure provided below:
 
@@ -318,7 +341,6 @@ name: `;
             docSet.documents.map(async (doc) => {
               // Only send name to the LLM
               const docPrompt = filterPrompt + doc.name;
-              console.log('docPrompt', docPrompt);
               const result = await gptCall('gpt-4.1-nano', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
