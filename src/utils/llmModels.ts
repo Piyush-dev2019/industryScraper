@@ -13,8 +13,8 @@ if (!process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO || !process.env.AZURE_O
 }
 
 const openaiClient = new AzureOpenAI({
-  apiKey: process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO,
-  endpoint: process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO_ENDPOINT,
+  apiKey: process.env.AZURE_OPENAI_API_KEY_41,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_41_ENDPOINT,
   apiVersion: "2024-02-15-preview" // Using the current stable version
 });
 

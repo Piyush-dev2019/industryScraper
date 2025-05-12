@@ -6,6 +6,7 @@ import { governmentWebsitePrompt, brokerageWebsitePrompt } from '../utils/prompt
 import { ScraperDto } from './dto/scraper.dto';
 import * as fs from 'fs';
 import * as path from 'path';
+import axios from 'axios';
 
 @Controller('scraper')
 export class ScraperController {
@@ -51,6 +52,43 @@ export class ScraperController {
       message: 'Batch processing started',
       totalJobs: results.length,
       jobIds: results.map(job => job.id),
+    };
+  }
+
+  @Post('process-sources-sequential')
+  async processSourcesSequential() {
+    const sourcesPath = path.join(process.cwd(), 'particularSources.json');
+    const sources = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'));
+    
+    const results = [];
+    const baseUrl = 'http://localhost:3000/scraper'; // Adjust this URL based on your setup
+    
+    for (const source of sources) {
+      try {
+        const response = await axios.post(`${baseUrl}/government-website`, {
+          organizationName: source.organizationName,
+          url: source.url,
+          folderName: source.folderName
+        });
+        
+        results.push({
+          organizationName: source.organizationName,
+          status: 'success',
+          data: response.data
+        });
+      } catch (error) {
+        results.push({
+          organizationName: source.organizationName,
+          status: 'error',
+          error: error.message
+        });
+      }
+    }
+    
+    return {
+      message: 'Processing completed',
+      totalProcessed: sources.length,
+      results
     };
   }
 }

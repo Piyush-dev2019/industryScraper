@@ -37,7 +37,7 @@ import FirecrawlApp, {
         "reason": "reason for the response",
         "isRelevant": true/false
       }`;
-    const result = await gptCall('gpt-4.1-nano', prompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', prompt, 'system');
     const jsonResult = await extractJsonFromResponse(result);
     console.log('jsonResult from checkRelevantLink', link, jsonResult);
     return jsonResult;
@@ -45,7 +45,7 @@ import FirecrawlApp, {
 
   async function getPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1-nano', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'system');
     
     if (!result || result === 'Objective not met') {
         console.log('No response received from LLM');
@@ -65,13 +65,22 @@ import FirecrawlApp, {
             return null;
         }
         // Filter out documents where documentUrl doesn't end with .pdf
-        jsonResult.documents = jsonResult.documents.filter(doc => doc.documentUrl.toLowerCase().endsWith('.pdf'));
+        jsonResult.documents = jsonResult.documents.filter(doc => 
+          (doc.documentUrl.toLowerCase().endsWith('.pdf')) && 
+          (doc.name !== '')
+        );
         
         // If no documents remain after filtering, return null
         if (!jsonResult.documents || jsonResult.documents.length === 0) {
             console.log('No PDF documents found after filtering');
             return null;
         }
+
+        // Deduplicate documents based on their URLs
+        const uniqueDocuments = Array.from(
+            new Map(jsonResult.documents.map(doc => [doc.documentUrl, doc])).values()
+        );
+        jsonResult.documents = uniqueDocuments;
         
         console.log('Successfully extracted PDF URLs:', jsonResult);
         return jsonResult;
@@ -89,7 +98,7 @@ import FirecrawlApp, {
 
   async function getNonPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1-nano', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'system');
     
     if (!result) {
         console.log('No response received from LLM');
@@ -316,8 +325,9 @@ Given only the title of a PDF document, decide if it's useful for financial anal
 
 Important Instructions:
 1. Only include English documents. If the document name is not in English (Hindi, bilingual or any other regional language), immediately mark it as irrelevant (false).
-2. Exclude anything related to administrative, legal, ceremonial, tender-related, training, general notices, circulars, scheme guidelines, reforms, or monthly or weekly summary reports. 
-3. The document should not be focused on a specific state; it should be related to the entire country.
+2. Exclude anything related to administrative, legal, ceremonial, tender-related, training, general notices, policies, circulars, scheme guidelines, reforms.
+3. The document should not be focused on a specific month or week; it should be related to the entire year or quarter.
+4. The document should not be focused on a specific state; it should be related to the entire country.
 
 Return the response in the JSON structure provided below:
 
@@ -341,7 +351,7 @@ name: `;
             docSet.documents.map(async (doc) => {
               // Only send name to the LLM
               const docPrompt = filterPrompt + doc.name;
-              const result = await gptCall('gpt-4.1-nano', docPrompt, 'system');
+              const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
               return jsonResult && jsonResult.isRelevant ? doc : null;
@@ -382,7 +392,7 @@ name: `;
     try {
       // Process all batches asynchronously
       const batchPromises = batches.map(async (batch) => {
-        const response = await gptCall('gpt-4.1-nano', rankPrompt(batch), 'system');
+        const response = await gptCall('gpt-4.1-mini', rankPrompt(batch), 'system');
         const rankedResults = await extractJsonFromResponse(response);
         return rankedResults;
       });
@@ -434,7 +444,7 @@ Strict Filtering Rule:
    ${JSON.stringify(links, null, 2)}
    `;
 
-   const result = await gptCall('gpt-4.1-nano', prompt, 'system');
+   const result = await gptCall('gpt-4.1-mini', prompt, 'system');
    const jsonResult = await extractJsonFromResponse(result);
    return jsonResult.filter((result: any) => result.isRelevant).map((result: any) => result.url);
   }

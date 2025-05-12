@@ -105,14 +105,15 @@ export class ScraperService {
   private async uploadDocumentToBlob(documentUrl: string, blobPath: string): Promise<{ success: boolean; path: string; url: string; error?: any }> {
     const MAX_RETRIES = 3;
     const RETRY_DELAY = 2000; // 2 seconds
+    const DOWNLOAD_TIMEOUT = 60000; // 60 seconds timeout for download
 
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       try {
-        console.log(`Attempt ${attempt} to download: ${documentUrl}`);
+        console.log(`Starting download attempt ${attempt}/${MAX_RETRIES} for: ${documentUrl}`);
         
         // Download the document from the URL using streams
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+        const timeoutId = setTimeout(() => controller.abort(), DOWNLOAD_TIMEOUT);
 
         const response = await fetch(documentUrl, {
           signal: controller.signal,
@@ -181,7 +182,13 @@ export class ScraperService {
         return { success: true, path: blobPath, url: blobUrl };
 
       } catch (error) {
-        console.error(`Attempt ${attempt} failed for ${documentUrl}:`, error.message);
+        console.error(`Attempt ${attempt}/${MAX_RETRIES} failed for ${documentUrl}:`, error.message);
+        
+        // Check if error is due to timeout
+        const isTimeout = error.name === 'AbortError' || 
+                         error.message.includes('timeout') || 
+                         error.message.includes('terminated') ||
+                         error.cause?.code === 'UND_ERR_BODY_TIMEOUT';
         
         if (attempt === MAX_RETRIES) {
           console.error(`All ${MAX_RETRIES} attempts failed for ${documentUrl}`);
@@ -192,15 +199,31 @@ export class ScraperService {
             error: {
               message: error.message,
               attempts: attempt,
-              url: documentUrl
+              url: documentUrl,
+              isTimeout
             }
           };
         }
 
-        // Wait before retrying
-        await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * attempt));
+        // If it's a timeout, wait longer before retrying
+        const retryDelay = isTimeout ? RETRY_DELAY * 2 : RETRY_DELAY;
+        console.log(`Timeout detected: ${isTimeout}. Waiting ${retryDelay * attempt}ms before retry ${attempt + 1}/${MAX_RETRIES}...`);
+        await new Promise(resolve => setTimeout(resolve, retryDelay * attempt));
       }
     }
+
+    // This should never be reached due to the return statements in the try/catch blocks
+    // But TypeScript needs it for type safety
+    return {
+      success: false,
+      path: blobPath,
+      url: '',
+      error: {
+        message: 'Unexpected end of retry loop',
+        attempts: MAX_RETRIES,
+        url: documentUrl
+      }
+    };
   }
 
   async main(prompt: Record<string, string>, organizationName: string, url: string, folderName: string) {
