@@ -77,20 +77,42 @@ export class ScraperProcessor {
       `Job ${job.id} failed for ${job.data.organizationName}: ${error.message}`,
     );
     
-    // Save the failed job
-    const failedJobs = JSON.parse(fs.readFileSync(this.failedJobsPath, 'utf8'));
-    failedJobs.push({
-      jobId: job.id,
-      timestamp: new Date().toISOString(),
-      organizationName: job.data.organizationName,
-      url: job.data.url,
-      folderName: job.data.folderName,
-      error: {
-        message: error.message,
-        stack: error.stack
-      },
-      jobData: job.data
-    });
-    fs.writeFileSync(this.failedJobsPath, JSON.stringify(failedJobs, null, 2));
+    try {
+      // Initialize failed jobs array
+      let failedJobs = [];
+      
+      // Read existing failed jobs if file exists and has content
+      if (fs.existsSync(this.failedJobsPath)) {
+        const fileContent = fs.readFileSync(this.failedJobsPath, 'utf8');
+        if (fileContent.trim()) {
+          try {
+            failedJobs = JSON.parse(fileContent);
+          } catch (parseError) {
+            this.logger.error(`Error parsing failed jobs file: ${parseError.message}`);
+            // If file is corrupted, start with empty array
+            failedJobs = [];
+          }
+        }
+      }
+
+      // Add new failed job
+      failedJobs.push({
+        jobId: job.id,
+        timestamp: new Date().toISOString(),
+        organizationName: job.data.organizationName,
+        url: job.data.url,
+        folderName: job.data.folderName,
+        error: {
+          message: error.message,
+          stack: error.stack
+        },
+        jobData: job.data
+      });
+
+      // Write back to file
+      fs.writeFileSync(this.failedJobsPath, JSON.stringify(failedJobs, null, 2));
+    } catch (writeError) {
+      this.logger.error(`Error writing to failed jobs file: ${writeError.message}`);
+    }
   }
 } 

@@ -55,7 +55,7 @@ import FirecrawlApp, {
     try {
         const jsonResult = await extractJsonFromResponse(result);
         if (!jsonResult || !jsonResult.documents || !Array.isArray(jsonResult.documents)) {
-            console.log('Invalid JSON structure received from LLM');
+            console.log('Invalid JSON structure received from LLM in getPdfUrls', jsonResult);
             if (retryCount < 2) { // Maximum 2 retries
                 console.log(`Retrying PDF extraction (attempt ${retryCount + 1})...`);
                 await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2 seconds before retry
@@ -108,32 +108,37 @@ import FirecrawlApp, {
             return getNonPdfUrls(markdown, prompt, retryCount + 1);
         }
         console.log('Max retries reached for non-PDF URL extraction');
-        return { possibleUrls: [] };
+        return { urls: [] };
     }
 
     try {
         const jsonResult = await extractJsonFromResponse(result);
-        if (!jsonResult || !jsonResult.possibleUrls || !Array.isArray(jsonResult.possibleUrls)) {
-            console.log('Invalid JSON structure received from LLM');
+        if (!jsonResult || !Array.isArray(jsonResult)) {
+            console.log('Invalid JSON structure received from LLM in getNonPdfUrls', jsonResult);
             if (retryCount < 2) {
                 console.log(`Retrying non-PDF URL extraction (attempt ${retryCount + 1})...`);
                 await new Promise(resolve => setTimeout(resolve, 2000));
                 return getNonPdfUrls(markdown, prompt, retryCount + 1);
             }
             console.log('Max retries reached for non-PDF URL extraction');
-            return { possibleUrls: [] };
+            return { urls: [] };
         }
-        // Filter out URLs that end with .pdf
-        jsonResult.possibleUrls = jsonResult.possibleUrls.filter(url => !url.toLowerCase().endsWith('.pdf'));
+
+        // Filter out URLs that end with .pdf and ensure each item has required fields
+        const filteredUrls = jsonResult
+            .filter(item => 
+                item.url && 
+                !item.url.toLowerCase().endsWith('.pdf')
+            );
         
         // If no URLs remain after filtering, return empty array
-        if (jsonResult.possibleUrls.length === 0) {
+        if (filteredUrls.length === 0) {
             console.log('No non-PDF URLs found after filtering');
-            return { possibleUrls: [] };
+            return { urls: [] };
         }
         
-        console.log('Successfully extracted non-PDF URLs:', jsonResult);
-        return jsonResult;
+        console.log('Successfully extracted non-PDF URLs:', filteredUrls);
+        return { urls: filteredUrls };
     } catch (error) {
         console.error('Error parsing JSON response:', error);
         if (retryCount < 2) {
@@ -142,7 +147,7 @@ import FirecrawlApp, {
             return getNonPdfUrls(markdown, prompt, retryCount + 1);
         }
         console.log('Max retries reached for non-PDF URL extraction after error');
-        return { possibleUrls: [] };
+        return { urls: [] };
     }
   }
 
@@ -201,16 +206,16 @@ import FirecrawlApp, {
           // Get non-PDF URLs
           console.log('Extracting non-PDF URLs from content...');
           const nonPdfResult = await getNonPdfUrls(markdown, prompt.getNonPdfUrlsPrompt);
-          if (nonPdfResult && nonPdfResult.possibleUrls) {
-            console.log(`Found ${nonPdfResult.possibleUrls.length} potential non-PDF URLs`);
+          if (nonPdfResult && nonPdfResult.urls) {
+            console.log(`Found ${nonPdfResult.urls.length} potential non-PDF URLs`);
             
             // Check relevancy of non-PDF URLs
             console.log('Checking relevancy of non-PDF URLs...');
             const relevancyChecks = await Promise.all(
-              nonPdfResult.possibleUrls.map(async (url) => {
-                const relevancyResult = await checkRelevantLink(url);
+              nonPdfResult.urls.map(async (item) => {
+                const relevancyResult = await checkRelevantLink(item.url);
                 return {
-                  url,
+                  url: item.url,
                   isRelevant: relevancyResult.isRelevant,
                   reason: relevancyResult.reason
                 };
@@ -220,10 +225,13 @@ import FirecrawlApp, {
             // Filter out non-relevant URLs and already visited URLs
             const relevantNonPdfUrls = relevancyChecks
               .filter(check => check.isRelevant && !visitedUrls.has(check.url))
-              .map(check => check.url);
+              .map(check => ({
+                url: check.url,
+                reasoning: check.reasoning // Preserve the reasoning in the filtered results
+              }));
 
             // Add the relevant URLs to visited set
-            relevantNonPdfUrls.forEach(url => visitedUrls.add(url));
+            relevantNonPdfUrls.forEach(item => visitedUrls.add(item.url));
 
             console.log(`Found ${relevantNonPdfUrls.length} relevant non-PDF URLs (excluding already visited)`);
 
@@ -231,14 +239,14 @@ import FirecrawlApp, {
               console.log('\n=== Processing relevant non-PDF URLs ===');
               
               // Process each relevant non-PDF URL
-              const secondIterationPromises = relevantNonPdfUrls.map(async (url) => {
+              const secondIterationPromises = relevantNonPdfUrls.map(async (item) => {
                 try {
-                  console.log(`\nProcessing non-PDF URL: ${url}`);
+                  console.log(`\nProcessing non-PDF URL: ${item.url}`);
                   console.log('Scraping content from non-PDF URL...');
-                  const secondMarkdown = await scrapeUrlAsync(firecrawlApp, url);
+                  const secondMarkdown = await scrapeUrlAsync(firecrawlApp, item.url);
                   
                   if (!secondMarkdown) {
-                    console.log(`❌ No content found for non-PDF URL: ${url}`);
+                    console.log(`❌ No content found for non-PDF URL: ${item.url}`);
                     return null;
                   }
                   console.log('✅ Successfully scraped content from non-PDF URL');
@@ -260,7 +268,7 @@ import FirecrawlApp, {
                   }
                   return secondPdfResult;
                 } catch (error) {
-                  console.error(`❌ Error processing non-PDF URL ${url}:`, error);
+                  console.error(`❌ Error processing non-PDF URL ${item.url}:`, error);
                   return null;
                 }
               });
@@ -593,35 +601,34 @@ Strict Filtering Rule:
     saveFailedUrl(link, 'All URL variations failed to scrape');
     return null;
   }
-  
+
   async function findRelevantPageViaMap(
     url: string,
     prompt: Record<string, string>
   ): Promise<string[] | null> {
     try {
-  
       console.log('Getting map of website...');
-  
+
       const mapWebsite = (await firecrawlApp.mapUrl(url, {
         includeSubdomains: true,
       })) as MapResponse;
       const filteredPages = [...(mapWebsite.links || [])].filter(
         (page) => !String(page).toLowerCase().endsWith('.pdf'),
       );
-  
+
       if (!filteredPages.length) {
         console.log('No links found in map response.');
         return null;
       }
-  
+
       const relevantLinks = await rankLinks(filteredPages, prompt.rankLinksPrompt);
       const filteredRelevantLinks = await filterRelevantLinks(relevantLinks);
-  
+
       if (!filteredRelevantLinks) {
         console.log('No relevant links found.');
         return null;
       }
-  
+
       console.log(`Found ${filteredRelevantLinks.length} relevant links.`);
       console.log('relevantPages', filteredRelevantLinks);
       
@@ -635,6 +642,7 @@ Strict Filtering Rule:
       return null;
     }
   }
+
   export {
     findRelevantPageViaMap,
     scrapeUrlAsync,
@@ -643,4 +651,3 @@ Strict Filtering Rule:
     Document,
     DocumentSet
   };
-  

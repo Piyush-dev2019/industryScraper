@@ -2,40 +2,31 @@
   {
     "organizationName": "Ministry of Coal",
     "url": "https://coal.nic.in",
-    "folderName":"government_reports5"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Chemicals and Petrochemicals",
     "url": "https://chemicals.gov.in",
-    "folderName":"government_reports5"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Ministry of Civil Aviation",
     "url": "https://civilaviation.gov.in",
-    "folderName":"government_reports5"
+    "folderName":"government_reports"
   },
 
 
   {
     "organizationName": "Department of Telecommunications",
     "url": "https://dot.gov.in",
-    "folderName":"government_reports5"
+    "folderName":"government_reports"
   },
   {
     "organizationName": "Department of Agriculture and Farmers Welfare",
     "url": "https://agriwelfare.gov.in/",
     "folderName":"government_reports"
   },
-  {
-    "organizationName": "Department of Food and Public Distribution",
-    "url": "https://dfpd.gov.in",
-    "folderName":"government_reports"
-  },
-  {
-    "organizationName": "Ministry of Cooperation",
-    "url": "https://www.cooperation.gov.in/",
-    "folderName":"government_reports"
-  },
+
   {
     "organizationName": "Ministry of Corporate Affairs",
     "url": "https://www.mca.gov.in",

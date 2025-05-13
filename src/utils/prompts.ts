@@ -18,9 +18,9 @@ Return ONLY a JSON array in this exact format — no explanation or extra output
 
 [
   {
+    "reason": "High-level document hub covering annual reports and strategies",
     "url": "http://example.com",
     "relevance_score": 95,
-    "reason": "High-level document hub covering annual reports and strategies"
   }
 ]
 
@@ -87,11 +87,17 @@ Instructions:
 10. Ignore links to monthly or weekly summary reports.
 
 Return the response in this exact format:
-{
-  "possibleUrls": [
-    // List of actual URLs found in the markdown content otherwise return an empty array
-  ]
-}`
+  [
+    {
+      "reasoning": "short one line reasoning for the url",
+      "url": "https://example.com",
+    },
+    {
+      "reasoning": "short one line reasoning for the url",
+      "url": "https://example.com",
+    }
+    ...
+  ]`
 
 }
 
@@ -104,9 +110,9 @@ Return ONLY a JSON array in this exact format — no explanation or extra output
 
 [
   {
+    "reason": "High-level industry information hub",
     "url": "http://example.com",
-    "relevance_score": 95,
-    "reason": "High-level industry information hub"
+    "relevance_score": 95
   }
 ]
 
@@ -120,20 +126,6 @@ Your task is to extract only the relevant PDF document links that can support in
 - Mission Plans
 - Industry Strategy Documents
 
-For each PDF link found, extract and return the following structured JSON object:
-
-
-{
-  "sourceUrl": "the url from which the pdf is found",
-  "documents": [
-    {
-      "year": 2021,       // Extract from the filename or context. Leave null if not found.
-      "name": "Annual Report 2020-21",   // Use link text or infer from filename
-      "documentUrl": "https://actual-domain.com/report2021.pdf"  // The actual PDF URL from the markdown
-    }
-  ]
-}
-
 Important Instructions:
 - Ignore any links that do not end in .pdf.
 - Only include actual PDF URLs found in the markdown content, **Do not** add .pdf on your own to any url.
@@ -142,7 +134,22 @@ Important Instructions:
 - Ignore links to general notices, circulars, tenders, guidelines, operational memos, reforms, or purely administrative content.
 - Ignore links to monthly or weekly summary reports.
 - Ignore any state specific links, document should be related to entire country.
-- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field.`,
+- Use the logically correct year. For example for annual report 2021-22, use the year 2022 in the year field. Do not give preferecne to the published year.
+- Give name of the document based on the url. if you are not sure about the name, leave it blank.
+
+For each PDF link found, extract and return the following structured JSON object:
+
+{
+  "sourceUrl": "the url from which the pdf is found",
+  "documents": [
+    {
+      "reasoning": "short one line reasoning for the name and year of the document", 
+      "year": 2021,       
+      "name": "Annual Report 2020-21",   
+      "documentUrl": "https://actual-domain.com/report2021.pdf"  // Do not add ".pdf" on your own to any url.
+    }
+  ]
+}`,
 
 
     "getNonPdfUrlsPrompt": `
@@ -170,9 +177,15 @@ Instructions:
 10. Ignore links to monthly or weekly summary reports.
 
 Return the response in this exact format:
-{
-  "possibleUrls": [
-    // List of actual URLs found in the markdown content otherwise return an empty array
-  ]
-}`
+  [
+    {
+      "reasoning": "short one line reasoning for the url",
+      "url": "https://example.com",
+    },
+    {
+      "reasoning": "short one line reasoning for the url",
+      "url": "https://example.com",
+    }
+    ...
+  ]`
 }

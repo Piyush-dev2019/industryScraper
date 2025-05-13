@@ -21,6 +21,8 @@ import { ReportsModule } from '../reports/reports.module';
         },
         removeOnComplete: true,
         removeOnFail: false,
+        timeout: 300000, // 5 minutes timeout
+        jobId: undefined, // Let Bull generate job IDs
       },
     }),
     BullModule.registerQueue({
@@ -28,6 +30,11 @@ import { ReportsModule } from '../reports/reports.module';
       limiter: {
         max: 1, // Maximum number of jobs processed
         duration: 1000, // Per 1 second
+      },
+      settings: {
+        stalledInterval: 30000, // Check for stalled jobs every 30 seconds
+        maxStalledCount: 2, // Number of times a job can be marked as stalled before failing
+        lockDuration: 300000, // Lock duration of 5 minutes
       },
     }),
   ],
