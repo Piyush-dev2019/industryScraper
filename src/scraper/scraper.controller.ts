@@ -17,12 +17,12 @@ export class ScraperController {
 
   @Post('government-website')
   async getTitles(@Body() body: ScraperDto) {
-    return this.scraperService.main(governmentWebsitePrompt, body.organizationName, body.url, body.folderName);
+    return this.scraperService.main(governmentWebsitePrompt, body.organizationName, body.url, body.folderName, body.organizationType);
   }
 
   @Post('brokerage-website')
   async getBrokerageWebsite(@Body() body: ScraperDto) {
-    return this.scraperService.main(brokerageWebsitePrompt, body.organizationName, body.url, body.folderName);
+    return this.scraperService.main(brokerageWebsitePrompt, body.organizationName, body.url, body.folderName, body.organizationType);
   }
 
   @Post('batch-government-websites')

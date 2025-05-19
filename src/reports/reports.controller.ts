@@ -8,6 +8,6 @@ export class ReportsController {
 
   @Post()
   async createReportEntry(@Body() createReportDto: CreateReportDto) {
-    return this.reportsService.makeReportEntry(createReportDto);
+    return this.reportsService.makeReportEntryMinistryTable(createReportDto);
   }
 } 

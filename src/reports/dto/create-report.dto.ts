@@ -1,4 +1,4 @@
-import { IsString, IsNumber } from 'class-validator';
+import { IsString, IsNumber, IsOptional } from 'class-validator';
 
 export class CreateReportDto {
   @IsString()
@@ -17,10 +17,20 @@ export class CreateReportDto {
   status: 'processed' | 'idle' | 'failed';
 
   @IsString()
-  ministryName: string;
+  @IsOptional()
+  ministryName?: string;
 
   @IsString()
-  ministryUrl: string;
+  @IsOptional()
+  ministryUrl?: string;
+
+  @IsString()
+  @IsOptional()
+  privateBodyName?: string;
+
+  @IsString()
+  @IsOptional()
+  privateBodyUrl?: string;
 
   @IsString({ each: true })
   exactSourceUrl: string[];

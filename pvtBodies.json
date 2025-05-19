@@ -1,4 +1,135 @@
+table 1:
+{
+  "text": "The table presents a detailed analysis of global and Indian tourism receipts spanning from 2001 to 2023. It includes metrics such as world receipts in US$ billion, global growth rate, India's foreign exchange earnings (FEE) in US$ billion, India's growth rate, percentage share of India in global receipts, and the rank of India. The data reveals trends in international tourism receipts and India's performance in the sector over the years.",
+  "score": 0.67037153,
+  "title": "International and Indian Tourism Receipts Analysis",
+  "doc_intelligence_index": "/sections/18",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__table_31_0_d66dbd66-8299-4626-91d7-40ba83c8c247",
+  "page_num": "31",
+  "table_without_caption": "https://byndpdfstorage.blob.core.windows.net/bynd-pdfs/7/182/india_tourism_data_compendium_2024_0_1__1746776510816_7fc8i1/Processing/Table/table_without_captions/p31_t0.png",
+  "table_with_caption": "https://byndpdfstorage.blob.core.windows.net/bynd-pdfs/7/182/india_tourism_data_compendium_2024_0_1__1746776510816_7fc8i1/Processing/Table/table_with_captions/p31_t0.png"
+}
 
-[
-    
-  ]
+Table 2:
+{
+  "text": "The table provides a month-wise breakdown of international tourist arrivals (ITAs) in India over three years: 2021, 2022, and 2023. It presents the number of tourists each month, with growth percentages comparing 2022 to 2021 and 2023 to 2022. The data highlights recovery and growth in tourism, showing a substantial increase from 2021 to 2022 and further growth from 2022 to 2023.",
+  "score": 0.62248284,
+  "title": "International Tourist Arrivals in India from 2021 to 2023",
+  "doc_intelligence_index": "/sections/4",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__table_54_0_deba8754-66af-43f3-90f0-43f065e650e5",
+  "page_num": "54",
+  "table_without_caption": "https://byndpdfstorage.blob.core.windows.net/bynd-pdfs/7/182/india_tourism_data_compendium_2024_0_1__1746776510816_7fc8i1/Processing/Table/table_without_captions/p54_t0.png",
+  "table_with_caption": "https://byndpdfstorage.blob.core.windows.net/bynd-pdfs/7/182/india_tourism_data_compendium_2024_0_1__1746776510816_7fc8i1/Processing/Table/table_with_captions/p54_t0.png"
+}
+
+=== Graph Nodes (Score >= 0.60) ===
+
+=== Text Nodes (Score >= 0.60) ===
+
+Text 1:
+{
+  "text": "India's tourism industry has also experienced transformative growth evolving into a key contributor to the nation's economy. » India has positioned itself prominently within the global tourism landscape, accounting for 1.45% of total international arrivals and contributing 2.1% to worldwide tourism receipts. » The top 10 ITA source countries worldwide are France, Spain, United States, Italy, Turkey, Mexico, United Kingdom, Germany, Greece and Austria.",
+  "score": 0.82492816,
+  "title": "Global Tourism Recovery and India's Growth",
+  "doc_intelligence_index": "/sections/10",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_21_20_1",
+  "parent_chunk_content": "\n» Global tourism has shown remarkable recovery and growth, with total international arrivals reaching approximately 1,300 million in 2023, reflecting a 33.3% increase from the previous year, according to UNWTO estimates. This resurgence is part of a broader positive trend, as the sector rebounds to\npre-pandemic levels, driving economic development, job creation, and cultural exchange worldwide. The global tourism outlook underscores the sector's vital role in economic diversification, particularly in emerging markets. India's tourism industry has also experienced transformative growth evolving into a key contributor to the nation's economy.\n» India has positioned itself prominently within the global tourism landscape, accounting for 1.45% of total international arrivals and contributing 2.1% to worldwide tourism receipts.\n» The top 10 ITA source countries worldwide are France, Spain, United States, Italy, Turkey, Mexico, United Kingdom, Germany, Greece and Austria.\n» Global Tourism rankings published by the World Economic Forum in their biennial Travel and Tourism Development Index (TTDI) 2024, India has been placed at the 39th rank, reflecting the sector's post- pandemic recovery and performance. Notably, India is one of only three countries to score in the top 10 across all resource pillars-6th in Natural Resources, 9th in Cultural Resources, and 9th in Non-Leisure Resources. The country also excels in price competitiveness (18th) and infrastructure, with strong rankings in Air Transport (26th) and Ground and Port Infrastructure (25th), bolstered by significant government investments, including 517 new air routes, 157 airports, and a road network expansion of approximately 145,000 kilometers.",
+  "parent_chunk_page_num": "21",
+  "parent_chunk_page_num_index": "1"
+}
+
+Text 2:
+{
+  "text": " As per the monthly estimates prepared by Ministry of Tourism, FEEs from tourism in India (in INR) in 2023 was ₹ 2,31,927 crore as compared to ₹1,69,917 crore in 2022 registering a growth of 36.5% in 2023 over 2022. In terms of USD, FEEs from tourism in 2023 were US $ 28.077 billion as compared to US $ 21.360 billion in 2022 with a growth rate of 31.5%.",
+  "score": 0.758958,
+  "title": "Tourism Foreign Exchange Earnings Growth",
+  "doc_intelligence_index": "/sections/11",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_84_75_0",
+  "parent_chunk_content": "\nAs per the monthly estimates prepared by Ministry of Tourism, FEEs from tourism in India (in INR) in 2023 was ₹ 2,31,927 crore as compared to ₹1,69,917 crore in 2022 registering a growth of 36.5% in 2023 over 2022. In terms of USD, FEEs from tourism in 2023 were US $ 28.077 billion as compared to US $ 21.360 billion in 2022 with a growth rate of 31.5%.",
+  "parent_chunk_page_num": "84",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 3:
+{
+  "text": " Tourism plays a crucial role in driving economic growth, fostering cultural exchange, and creating job opportunities. It serves as a powerful catalyst for sustainable development, connecting people and places globally. Under the visionary leadership of the Hon'ble Prime Minister, the Ministry of Tourism has embarked on a mission-driven approach to position India as a premier global travel destination. It is with great pleasure that the Ministry of Tourism presents the 65th edition of India Tourism Statistics.",
+  "score": 0.74563974,
+  "title": "India Tourism Statistics 2023 Overview",
+  "doc_intelligence_index": "/sections/5",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_9_7_0",
+  "parent_chunk_content": "\nTourism plays a crucial role in driving economic growth, fostering cultural exchange, and creating job opportunities. It serves as a powerful catalyst for sustainable development, connecting people and places globally. Under the visionary leadership of the Hon'ble Prime Minister, the Ministry of Tourism has embarked on a mission-driven approach to position India as a premier global travel destination.\nIt is with great pleasure that the Ministry of Tourism presents the 65th edition of India Tourism Statistics. This comprehensive volume is a continuation of our efforts to deliver accurate tourism data, covering key metrics such as Foreign Tourist Arrivals (FTAs), Foreign Exchange Earnings (FEEs), Indian outbound tourism statistics, and much more.\nThe tourism sector has shown remarkable resilience, with 2023 seeing an impressive increase in international tourist arrivals, reaching 1.89 Crore - 31.9% growth compared to the previous year. India's contribution to global tourism also grew, with a 1.45% share of total International Tourist Arrivals and a significant 7.96% share in the Asia-Pacific region. On the domestic front, the year 2023 saw a substantial surge with 250.96 Crore recorded visits.\nThis publication, based on data from the Bureau of Immigration, States/Union Territories, the Archaeological Survey of India, UNWTO, and other sources, has been meticulously prepared by the officers and staff of the Research & Analytics Division of the Ministry of Tourism. I extend sincere appreciation to the dedicated team, led by Smt. Anita Baghel, Additional Director General, for their efforts in creating this valuable resource to support the growth of India's tourism sector.\nV. Udjavertly (V. Vidyavathi) 18/02/2025\nमहानिदेशक पर्यटन मंत्रालय भारत सरकार Director General Ministry of Tourism Government of India",
+  "parent_chunk_page_num": "9",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 4:
+{
+  "text": " » The Tourism Satellite Account (TSA), an accounting methodology used by the United Nations to quantify the goods and services related to tourism, is described in » this Publication. Travel and Tourism in India created 76.17 million (direct + indirect) jobs in the 2022-2023 year. In terms of GDP, during 2022-2023, tourism contributed 5.00 percent (direct + indirect). In 2023, FEEs from Tourism in India are US $ 28.077 billion and it has 2.1% share in world tourism receipt.",
+  "score": 0.7125728,
+  "title": "Tourism Impact in India 2022-2023",
+  "doc_intelligence_index": "/sections/14",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_24_41_0",
+  "parent_chunk_content": "\n» The Tourism Satellite Account (TSA), an accounting methodology used by the United Nations to quantify the goods and services related to tourism, is described in\n»\nthis Publication. Travel and Tourism in India created 76.17 million (direct + indirect) jobs in the 2022-2023 year. In terms of GDP, during 2022-2023, tourism contributed 5.00 percent (direct + indirect).\nIn 2023, FEEs from Tourism in India are US $ 28.077 billion and it has 2.1% share in world tourism receipt. Tourism continues to play an important role as a foreign exchange earner for the country. In 2023, foreign exchange earnings (FEE) from tourism were US $ 28.077 billion as compared to US$ 21.360 billion in 2022, registering a growth of 31.5%.\nCHAPTER 1",
+  "parent_chunk_page_num": "24",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 5:
+{
+  "text": " I am pleased to announce the release of the 65th edition of India Tourism Statistics 2024, marking a significant milestone in our efforts to provide comprehensive and reliable insights into the tourism sector. This publication is a testament to the collaborative efforts of multiple stakeholders and serves as an essential resource for informed decision-making and strategic planning to drive the growth of India's tourism industry. Accurate and up-to-date tourism data is pivotal in shaping policies that foster sectoral development.",
+  "score": 0.69249696,
+  "title": "India Tourism Statistics 2024 Release",
+  "doc_intelligence_index": "/sections/4",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_7_4_0",
+  "parent_chunk_content": "\nI am pleased to announce the release of the 65th edition of India Tourism Statistics 2024, marking a significant milestone in our efforts to provide comprehensive and reliable insights into the tourism sector. This publication is a testament to the collaborative efforts of multiple stakeholders and serves as an essential resource for informed decision-making and strategic planning to drive the growth of India's tourism industry.\nAccurate and up-to-date tourism data is pivotal in shaping policies that foster sectoral development. The invaluable contributions from key organizations such as the Bureau of Immigration (BOI), the Archaeological Survey of India (ASI), and the United Nations World Tourism Organization (UNWTO) have ensured the authenticity and credibility of this edition.\nI extend my heartfelt appreciation to the officials of the Ministry who have contributed to these efforts particularly the entire team of Research & Analytics Division for their tireless efforts in producing this vital publication. I am confident that this edition will be an indispensable tool for policymakers, tourism professionals, and all stakeholders committed to realizing the full potential of India's tourism sector.\n(Suresh Gopi)\nअतुल्य !भारत\nIncredible India\n4\n7\nसचिव भारत सरकार पर्यटन मंत्रालय नई दिल्ली SECRETARY GOVERNMENT OF INDIA MINISTRY OF TOURISM NEW DELHI",
+  "parent_chunk_page_num": "7",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 6:
+{
+  "text": "The share of India in the world tourism receipts has remained between 0.7% and 0.6% during 2001- 2002. However, it has been increasing steadily since 2002 and has reached 2.1% during 2023. The top five countries by International Tourism Receipts in 2023 were the United States, Spain, United Kingdom, France, and the Italy.",
+  "score": 0.657561,
+  "title": "Global Trends in International Tourism Receipts 2023",
+  "doc_intelligence_index": "/sections/18",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_30_47_0",
+  "parent_chunk_content": "\nDuring the year 2023, Europe accounted for about 43.8% of the world's total receipts from international tourism followed by Asia & the Pacific region (23%), Americas (22.1%), Middle East (8.6%) and Africa (2.5%).\nTABLE 1.2.1 INTERNATIONAL TOURISM RECEIPTS WORLDWIDE AND BY REGIONS, 2019, 2021-2023\nThe International tourism receipts worldwide, which were hardly US$ 463.8 billion in 2001, have increased by US$ 1507 billion in 2023. India's rank has also witnessed improvement from 36th in 2001 to 14th in 2023.\nThe share of India in the world tourism receipts has remained between 0.7% and 0.6% during 2001- 2002. However, it has been increasing steadily since 2002 and has reached 2.1% during 2023.\nThe top five countries by International Tourism Receipts in 2023 were the United States, Spain, United Kingdom, France, and the Italy.",
+  "parent_chunk_page_num": "30",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 7:
+{
+  "text": " INBOUND TOURISM IN INDIA The Foreign Tourist Arrivals (FTAs) in India continued to grow from 1.28 million in 1981 to 1.68 million in 1991, 2.54 million in 2001, 6.31 Million in 2011 to reach 10.93 in year 2019. However, due to Covid -19 Pandemic across the world and subsequent lockdown announced in India in year 2020, experienced a decline that year. Subsequently, after opening of economy tourism has shown increasing signs of revival. In year 2023, India registered 9.52 Million FTAs i.e.",
+  "score": 0.6461259,
+  "title": "Reviving Inbound Tourism in India",
+  "doc_intelligence_index": "/sections/33",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_45_51_0",
+  "parent_chunk_content": "\nINBOUND TOURISM IN INDIA\nThe Foreign Tourist Arrivals (FTAs) in India continued to grow from 1.28 million in 1981 to 1.68 million in 1991, 2.54 million in 2001, 6.31 Million in 2011 to reach 10.93 in year 2019. However, due to Covid -19 Pandemic across the world and subsequent lockdown announced in India in year 2020, experienced a decline that year. Subsequently, after opening of economy tourism has shown increasing signs of revival. In year 2023, India registered 9.52 Million FTAs i.e. attained around 87% recovery of pre- pandemic level with a growth of 47.9% over 2022. International Tourist Arrivals (ITAs) have reached 18.89 million, surpassing the previous peak of 17.91 million in 2019 and exceeding pre-pandemic levels, registering a growth of 5.47% over 2019.\nThe highest growth rate in FTAs in India in 2023 as compared to 2022 was from Myanmar (221.0%) followed by China (160.0), Japan (134.5%), Indonesia (134.1%), Kazakhstan (134.0%) and Thailand (113.4%).\nThe top 10 countries for FTAs in India during 2023 are Bangladesh, United States, United Kingdom, Australia, Canada, Sri Lanka, Malaysia, Germany, Nepal and France.",
+  "parent_chunk_page_num": "45",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 8:
+{
+  "text": " Executive Summary 1. The India Tourism Data Compendium 2024 (formerly known as India Tourism Statistics) is the 65th annual edition published by the Ministry of Tourism 2. It is meticulously compiled using data from a diverse range of stakeholders, including the Bureau of Immigration, United Nations World Tourism Organization (UNWTO), Archaeological Survey of India, State and Union Territory Administrations, and the Reserve Bank of India. 3. The publication provides an overview of India's tourism statistics with detailed insights into the following key indicators:",
+  "score": 0.6211049,
+  "title": "India Tourism Data Compendium 2024 Overview",
+  "doc_intelligence_index": "/sections/9",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_21_16_0",
+  "parent_chunk_content": "\nExecutive Summary\n1. The India Tourism Data Compendium 2024 (formerly known as India Tourism Statistics) is the 65th annual edition published by the Ministry of Tourism\n2. It is meticulously compiled using data from a diverse range of stakeholders, including the Bureau of Immigration, United Nations World Tourism Organization (UNWTO), Archaeological Survey of India, State and Union Territory Administrations, and the Reserve Bank of India.\n3. The publication provides an overview of India's tourism statistics with detailed insights into the following key indicators:\na. World Tourism Scenario and Global Indices on Tourism\nb. Inbound Tourism\nc. Outbound Tourism\nd. Domestic Tourism\ne. Human Resource Development- Travel and Tourism Institutions\nf. Additional Indicators\n4. Publication includes various statistics, such as the total number of tourists, gender distribution, age distribution, nationality, tourist arrival trends, peak travel periods, visa type analysis, average stay duration (if exit data is available), mode of entry (land, water, air), top entry ports, flight traffic, tourist distribution by entry point region, regional tourism contribution, year-over-year growth, and tourism recovery trends.\n5. The salient features of the report are as summarized below:",
+  "parent_chunk_page_num": "21",
+  "parent_chunk_page_num_index": "0"
+}
+
+Text 9:
+{
+  "text": " संस्कृति मंत्री एवं पर्यटन मंत्री भारत सरकार Minister of Culture and Minister of Tourism Government of India Data is the cornerstone of informed decision-making, enabling the development of effective policies and strategies. Accurate and reliable data fosters sustainable growth, enhances visitor experiences, and optimizes resource management across the tourism sector. It gives me immense pleasure to announce the publication of the 65th edition of India Tourism Statistics 2024.",
+  "score": 0.6186197,
+  "title": "Launch of India Tourism Statistics 2024",
+  "doc_intelligence_index": "/sections/3",
+  "node_id": "user_india_tourism_data_compendium_2024_0_1__text_3_1_0",
+  "parent_chunk_content": "\nसंस्कृति मंत्री एवं पर्यटन मंत्री भारत सरकार Minister of Culture and Minister of Tourism Government of India\nData is the cornerstone of informed decision-making, enabling the development of effective policies and strategies. Accurate and reliable data fosters sustainable growth, enhances visitor experiences, and optimizes resource management across the tourism sector.\nIt gives me immense pleasure to announce the publication of the 65th edition of India Tourism Statistics 2024. This comprehensive report offers critical insights into key tourism indicators, including Inbound and Outbound tourism trends, Foreign Exchange Earnings, and Domestic and International Tourist Visits. It serves as an invaluable resource for policymakers, industry leaders, and stakeholders, supporting Ministry of Tourism's mission to advance India's tourism sector.\nI would like to express my heartfelt gratitude to the entire team of the Ministry, particularly the Research & Analytics Division, for their relentless efforts in compiling this extensive and meticulously organized data from diverse, credible sources. I am confident that this edition will exceed the expectations of all stakeholders and contribute significantly to the continued growth and success of India's tourism landscape.\nपर्यटन राज्य मंत्री भारत सरकार नई दिल्ली Minister of State for Tourism Government of India New Delhi",
+  "parent_chunk_page_num": "3",
+  "parent_chunk_page_num_index": "0"
+}

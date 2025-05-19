@@ -37,7 +37,7 @@ import FirecrawlApp, {
         "reason": "reason for the response",
         "isRelevant": true/false
       }`;
-    const result = await gptCall('gpt-4.1-mini', prompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', prompt, 'user');
     const jsonResult = await extractJsonFromResponse(result);
     console.log('jsonResult from checkRelevantLink', link, jsonResult);
     return jsonResult;
@@ -45,7 +45,7 @@ import FirecrawlApp, {
 
   async function getPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'user');
     
     if (!result || result === 'Objective not met') {
         console.log('No response received from LLM');
@@ -98,7 +98,7 @@ import FirecrawlApp, {
 
   async function getNonPdfUrls(markdown: string, prompt: string, retryCount = 0): Promise<any> {
     const fullPrompt = `${prompt}\n\nwebsite - markdown data: ${markdown}`;
-    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'system');
+    const result = await gptCall('gpt-4.1-mini', fullPrompt, 'user');
     
     if (!result) {
         console.log('No response received from LLM');
@@ -359,7 +359,7 @@ name: `;
             docSet.documents.map(async (doc) => {
               // Only send name to the LLM
               const docPrompt = filterPrompt + doc.name;
-              const result = await gptCall('gpt-4.1-mini', docPrompt, 'system');
+              const result = await gptCall('gpt-4.1-mini', docPrompt, 'user');
               const jsonResult = await extractJsonFromResponse(result);
               console.log('jsonResult from filterDocuments for', doc.documentUrl, jsonResult);
               return jsonResult && jsonResult.isRelevant ? doc : null;
@@ -400,7 +400,7 @@ name: `;
     try {
       // Process all batches asynchronously
       const batchPromises = batches.map(async (batch) => {
-        const response = await gptCall('gpt-4.1-mini', rankPrompt(batch), 'system');
+        const response = await gptCall('gpt-4.1-mini', rankPrompt(batch), 'user');
         const rankedResults = await extractJsonFromResponse(response);
         return rankedResults;
       });
@@ -452,7 +452,7 @@ Strict Filtering Rule:
    ${JSON.stringify(links, null, 2)}
    `;
 
-   const result = await gptCall('gpt-4.1-mini', prompt, 'system');
+   const result = await gptCall('gpt-4.1-mini', prompt, 'user');
    const jsonResult = await extractJsonFromResponse(result);
    return jsonResult.filter((result: any) => result.isRelevant).map((result: any) => result.url);
   }

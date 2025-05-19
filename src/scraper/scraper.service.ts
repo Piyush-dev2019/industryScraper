@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { bothUrl, findRelevantPageViaMap, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
+// import { bothUrl, findRelevantPageViaMap, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
+import { bothUrl, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
 import { BlobServiceClient, BlockBlobClient } from '@azure/storage-blob';
 import { ReportsService } from 'src/reports/reports.service';
 import { CreateReportDto } from 'src/reports/dto/create-report.dto';
+import { OrganizationType } from './dto/scraper.dto';
 
 interface Source {
   sourceUrl: string;
@@ -89,7 +91,8 @@ export class ScraperService {
     // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
 
     console.log('url', url);
-    const relevantPages = await findRelevantPageViaMap(url, prompt);
+    // const relevantPages = await findRelevantPageViaMap(url, prompt);
+    const relevantPages = [url];
     // console.log('relevantPages', relevantPages);
 
     // Get all documents
@@ -226,7 +229,7 @@ export class ScraperService {
     };
   }
 
-  async main(prompt: Record<string, string>, organizationName: string, url: string, folderName: string) {
+  async main(prompt: Record<string, string>, organizationName: string, url: string, folderName: string, organizationType: OrganizationType) {
     try {
       const result = await this.map_scrap(prompt, url);
       if (!result) {
@@ -276,13 +279,16 @@ export class ScraperService {
                   blobUrl: uploadResult.url,
                   year: year,
                   status: 'idle',
-                  ministryName: organizationName,
-                  ministryUrl: url,
-                  exactSourceUrl: sources
+                  exactSourceUrl: sources,
+                  ...(organizationType === OrganizationType.GOVERNMENT 
+                    ? { ministryName: organizationName, ministryUrl: url }
+                    : { privateBodyName: organizationName, privateBodyUrl: url })
                 };
 
                 try {
-                  await this.reportsService.makeReportEntry(reportDto);
+                  await (organizationType === OrganizationType.GOVERNMENT
+                    ? this.reportsService.makeReportEntryMinistryTable(reportDto)
+                    : this.reportsService.makeReportEntryPrivateBodyTable(reportDto));
                   console.log(`Database entry created for: ${name}`);
                 } catch (error) {
                   console.error(`Failed to create database entry for ${name}:`, error);

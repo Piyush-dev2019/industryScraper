@@ -7,16 +7,95 @@ import fs from 'fs';
 import path from 'path';
 dotenv.config();
 
-// Models Initialization
-if (!process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO || !process.env.AZURE_OPENAI_API_KEY_ALERTS_SWEDEN_NANO_ENDPOINT) {
-  throw new Error('Missing required Azure OpenAI environment variables');
-}
-
 const openaiClient = new AzureOpenAI({
   apiKey: process.env.AZURE_OPENAI_API_KEY_41,
   endpoint: process.env.AZURE_OPENAI_API_KEY_41_ENDPOINT,
   apiVersion: "2024-02-15-preview" // Using the current stable version
 });
+
+const openaiClient_41_Sweden = new AzureOpenAI({
+  apiKey: process.env.AZURE_OPENAI_API_KEY_REPORTWORKFLOW_SWEDEN,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_REPORTWORKFLOW_SWEDEN_ENDPOINT,
+  apiVersion: "2024-12-01-preview" // Using the current stable version
+});
+
+const openaiClient_O3_MINI = new AzureOpenAI({
+  apiKey: process.env.AZURE_OPENAI_API_KEY_O3_MINI,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_O3_MINI_ENDPOINT,
+  apiVersion: "2024-02-15-preview" // Using the current stable version
+});
+
+const openaiClient_4o = new AzureOpenAI({
+  apiKey: process.env.AZURE_OPENAI_API_KEY_4o,
+  endpoint: process.env.AZURE_OPENAI_API_KEY_4o_ENDPOINT,
+  apiVersion: "2024-08-06"
+});
+
+const gptCallImage = async (
+  modelName: string,
+  prompt: string,
+  specifyRole: string,
+  base64Image: string,
+  retryCount = 0,
+  maxRetries = 3
+) => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 seconds timeout
+
+  try {
+    // Validate the image URL format
+    if (!base64Image.match(/^data:(image\/jpeg|image\/png);base64,/)) {
+      throw new Error('Invalid image format. Must be JPEG or PNG with proper data URL format');
+    }
+
+    // Log the image format being used
+    console.log('Using image format:', base64Image.split(';')[0]);
+
+    const completion = await openaiClient_41_Sweden.chat.completions.create({
+      model: modelName,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "text",
+              text: prompt
+            },
+            {
+              type: "image_url",
+              image_url: {
+                url: base64Image
+              }
+            }
+          ]
+        }
+      ],
+      max_tokens: 500
+    }, { signal: controller.signal });
+
+    clearTimeout(timeoutId);
+    return completion.choices[0].message.content?.trim();
+  } catch (error: any) {
+    clearTimeout(timeoutId);
+    // Check if we should retry
+    if (retryCount < maxRetries) {
+      // Calculate exponential backoff delay: 2^retryCount seconds (2, 4, 8 seconds)
+      const delay = Math.pow(2, retryCount) * 1000;
+      console.log(`GPT call failed${error.name === 'AbortError' ? ' (timeout)' : ''}. Retrying in ${delay/1000} seconds... (Attempt ${retryCount + 1} of ${maxRetries})`);
+      console.error('Error details:', error);
+      
+      // Wait for the backoff period
+      await new Promise(resolve => setTimeout(resolve, delay));
+      
+      // Retry the call recursively
+      return gptCallImage(modelName, prompt, specifyRole, base64Image, retryCount + 1, maxRetries);
+    }
+    
+    // If we've exhausted all retries, throw the error
+    console.error('Max retries reached for GPT call. Final error:', error);
+    throw error;
+  }
+};
 
 const gptCall = async (
   modelName: string,
@@ -88,6 +167,9 @@ const firecrawlApp = new FirecrawlApp({
 export {
   firecrawlApp,
   gptCall,
+  gptCallImage,
   model_2_0_flash,
   openaiClient,
+  openaiClient_O3_MINI,
+  openaiClient_4o,
 };

@@ -6,6 +6,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Report } from './reports/entities/report.entity';
 import { Ministry } from './reports/entities/ministry.entity';
 import { ReportMinistry } from './reports/entities/report-ministry.entity';
+import { PrivateBody } from './reports/entities/private-body.entity';
+import { ReportPrivateBody } from './reports/entities/report-private-body.entity';
 
 @Module({
   imports: [
@@ -17,7 +19,7 @@ import { ReportMinistry } from './reports/entities/report-ministry.entity';
       username: process.env.DATABASE_USER || 'postgres',
       password: process.env.DATABASE_PASSWORD || 'postgress',
       database: process.env.DATABASE_NAME || 'postgres',
-      entities: [Report, Ministry, ReportMinistry],
+      entities: [Report, Ministry, ReportMinistry, PrivateBody, ReportPrivateBody],
       synchronize: false,
     }),
   ],

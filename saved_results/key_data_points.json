@@ -1,0 +1,328 @@
+[
+  {
+    "type": "text",
+    "index": 7,
+    "time_period": [
+      "1981",
+      "2023"
+    ],
+    "metrics": {
+      "foreign_tourist_arrivals_million": [
+        1.28,
+        1.68,
+        2.54,
+        6.31,
+        10.93,
+        9.52
+      ]
+    },
+    "units": "million arrivals",
+    "category": "Inbound Tourism in India",
+    "source": "Input text provided",
+    "notes": "FTAs grew steadily from 1981 to 2019, declined in 2020 due to COVID-19 pandemic and lockdown, showing signs of revival in 2023 with 9.52 million arrivals."
+  },
+  {
+    "type": "text",
+    "index": 2,
+    "time_period": [
+      "2022",
+      "2023"
+    ],
+    "metrics": {
+      "revenue": {
+        "INR": [
+          "169917 crore",
+          "231927 crore"
+        ],
+        "USD": [
+          "21.360 billion",
+          "28.077 billion"
+        ]
+      },
+      "growth_rate": {
+        "INR": "36.5%",
+        "USD": "31.5%"
+      }
+    },
+    "units": {
+      "revenue": [
+        "INR crore",
+        "USD billion"
+      ],
+      "growth_rate": "percentage"
+    },
+    "category": "Foreign Exchange Earnings (FEEs) from Tourism in India",
+    "source": "Ministry of Tourism, India",
+    "notes": "Growth rates represent year-over-year increase from 2022 to 2023"
+  },
+  {
+    "type": "text",
+    "index": 4,
+    "time_period": [
+      "2022",
+      "2023"
+    ],
+    "metrics": {
+      "jobs_created": [
+        "76.17 million"
+      ],
+      "GDP_contribution": [
+        "5.00%"
+      ],
+      "revenue": [
+        "28.077 billion"
+      ],
+      "market_share": [
+        "2.1%"
+      ]
+    },
+    "units": {
+      "jobs_created": "million jobs",
+      "GDP_contribution": "percentage",
+      "revenue": "USD billion",
+      "market_share": "percentage"
+    },
+    "category": "Tourism industry in India",
+    "source": "Tourism Satellite Account (TSA), United Nations; Travel and Tourism in India report",
+    "notes": "Values correspond to 2022-2023 period; revenue indicates Foreign Exchange Earnings (FEEs); no explicit growth rate or CAGR provided"
+  },
+  {
+    "type": "table",
+    "index": 7,
+    "time_period": [
+      "1991",
+      "2023"
+    ],
+    "metrics": {
+      "visitor_numbers": [
+        "domestic",
+        "foreign"
+      ],
+      "growth_rate": [
+        "annual growth rate for domestic",
+        "annual growth rate for foreign"
+      ]
+    },
+    "units": {
+      "visitor_numbers": "number of tourists",
+      "growth_rate": "percentage"
+    },
+    "category": "tourism - domestic and foreign visitors",
+    "source": "not provided",
+    "notes": "Table shows yearly tourist visits segmented by domestic and foreign visitors, with respective annual growth rates over the period 1991 to 2023, highlighting trends and fluctuations in tourism numbers."
+  },
+  {
+    "type": "table",
+    "index": 1,
+    "time_period": [
+      "2001",
+      "2023"
+    ],
+    "metrics": {
+      "world_receipts": "US$ billion",
+      "global_growth_rate": "percentage",
+      "india_fee": "US$ billion",
+      "india_growth_rate": "percentage",
+      "india_share_in_global_receipts": "percentage",
+      "india_rank": "integer"
+    },
+    "units": "US$ billion, percentage, rank",
+    "category": "global and Indian tourism receipts",
+    "source": "Not specified",
+    "notes": "Data captures trends in international tourism receipts from 2001 to 2023, showing India's foreign exchange earnings in tourism, growth rates both globally and for India, India's percentage share of global receipts, and India's rank in the sector."
+  },
+  {
+    "type": "table",
+    "index": 2,
+    "time_period": [
+      "2021",
+      "2023"
+    ],
+    "metrics": {
+      "international_tourist_arrivals": [
+        "monthly counts for 2021, 2022, 2023"
+      ],
+      "growth_rate": [
+        "% growth 2022 vs 2021",
+        "% growth 2023 vs 2022"
+      ]
+    },
+    "units": {
+      "international_tourist_arrivals": "number of tourists",
+      "growth_rate": "percentage"
+    },
+    "category": "international tourism - India",
+    "source": "Provided table data (unspecified)",
+    "notes": "Data shows gradual recovery of international tourism in India post-2021 with strong growth in 2022 and continued growth in 2023. Growth is measured year-over-year (YOY) comparing same months across years."
+  },
+  {
+    "type": "table",
+    "index": 8,
+    "time_period": [
+      "2022",
+      "2023"
+    ],
+    "metrics": {
+      "visitation_count": [
+        "domestic visits",
+        "foreign visits",
+        "total visits"
+      ],
+      "growth_rate": [
+        "domestic visit growth rate",
+        "foreign visit growth rate"
+      ],
+      "percentage_share": [
+        "domestic visit % share",
+        "foreign visit % share"
+      ]
+    },
+    "units": [
+      "number of visits",
+      "percentage"
+    ],
+    "category": "tourism visitation by Indian states/regions (North, East, North East)",
+    "source": "unprovided (assumed government/statistical tourism data)",
+    "notes": "Data covers domestic and foreign tourism visits in 2022 and 2023 across various Indian states and union territories, organized by regions; includes total visit counts, growth rates for domestic and foreign visits, and percentage shares of visits. Key observations include notable growth trends in specific regions and share distributions."
+  },
+  {
+    "type": "graph",
+    "index": 2,
+    "time_period": [
+      "2011",
+      "2023"
+    ],
+    "metrics": {
+      "domestic_tourist_visits_millions": [
+        865,
+        2322,
+        678,
+        2510
+      ]
+    },
+    "units": "millions of tourist visits",
+    "category": "domestic tourism",
+    "source": "",
+    "notes": "Tourist visits increased from 865 million in 2011 to a peak of 2322 million in 2019, dropped sharply to 678 million in 2021 likely due to pandemic impact, and rebounded to 2510 million in 2023, exceeding previous peak."
+  },
+  {
+    "type": "table",
+    "index": 9,
+    "time_period": [
+      "2019",
+      "2023"
+    ],
+    "metrics": {
+      "arrivals": [
+        "number of arrivals in 2019 and 2023"
+      ],
+      "annual_change_percentage": [
+        "percentage annual change for each year given (2019, 2021, 2022, 2023)"
+      ],
+      "world_share_percentage": [
+        "percentage share in world arrivals for each region"
+      ],
+      "growth_rate": [
+        "growth rate comparison between 2019 and 2023"
+      ]
+    },
+    "units": {
+      "arrivals": "number of arrivals (absolute count)",
+      "annual_change_percentage": "percentage (%)",
+      "world_share_percentage": "percentage (%)"
+    },
+    "category": [
+      "Middle East",
+      "India"
+    ],
+    "source": "Table on arrivals to the Middle East and India, years 2019-2023",
+    "notes": "Data reflects travel and tourism trends, including impacts on arrival numbers and share of global arrivals, highlighting fluctuations during the period and overall growth comparison from 2019 to 2023."
+  },
+  {
+    "type": "table",
+    "index": 6,
+    "time_period": [
+      "2018-19",
+      "2022-23"
+    ],
+    "metrics": {
+      "Total GVA (crore INR)": [
+        "value per year from 2018-19 to 2022-23"
+      ],
+      "Total GDP (crore INR)": [
+        "value per year from 2018-19 to 2022-23"
+      ],
+      "Tourism Direct GVA (crore INR)": [
+        "value per year from 2018-19 to 2022-23"
+      ],
+      "Tourism Direct GDP (crore INR)": [
+        "value per year from 2018-19 to 2022-23"
+      ],
+      "Tourism contribution to GVA (%)": [
+        "percentage per year from 2018-19 to 2022-23"
+      ],
+      "Tourism contribution to GDP (%)": [
+        "percentage per year from 2018-19 to 2022-23"
+      ],
+      "GVA multiplier": "value(s) given over time if any"
+    },
+    "units": "crore INR and percentage",
+    "category": "Tourism sector contribution to India's economy",
+    "source": "not specified in input",
+    "notes": "Data reflects both direct and indirect tourism contributions to GVA and GDP, highlighting sector impact over 5 years. GVA multiplier indicates economic impact multiplier of tourism sector."
+  },
+  {
+    "type": "table",
+    "index": 3,
+    "time_period": [
+      "2001",
+      "2023"
+    ],
+    "metrics": {
+      "international_tourist_arrivals": [
+        "2019",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "tourism_receipts": [
+        "2001",
+        "2023"
+      ],
+      "India_share_and_rank": [
+        "2001",
+        "2023"
+      ],
+      "foreign_tourist_arrivals_by_country": [
+        "top 10",
+        "top 15 source countries"
+      ],
+      "FTAs_by_region": [
+        "2021",
+        "2023"
+      ],
+      "seasonality_of_arrivals": [
+        "2021",
+        "2023"
+      ],
+      "mode_of_travel": [
+        "2001",
+        "2023"
+      ]
+    },
+    "units": [
+      "number of arrivals",
+      "currency (likely USD)",
+      "percentages",
+      "rank positions"
+    ],
+    "category": [
+      "global",
+      "India",
+      "regions within India",
+      "source countries"
+    ],
+    "source": "Global tourism trends report",
+    "notes": "Includes historical and recent data for inbound tourism in India, details on international tourist arrivals, tourism receipts, India's market share and rank, FTAs by region, seasonality patterns, and travel modes from 2001 to 2023."
+  }
+]

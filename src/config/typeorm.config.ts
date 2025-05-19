@@ -3,6 +3,8 @@ import { config } from 'dotenv';
 import { Report } from '../reports/entities/report.entity';
 import { Ministry } from '../reports/entities/ministry.entity';
 import { ReportMinistry } from '../reports/entities/report-ministry.entity';
+import { PrivateBody } from '../reports/entities/private-body.entity';
+import { ReportPrivateBody } from '../reports/entities/report-private-body.entity';
 
 config(); // Load environment variables
 
@@ -13,7 +15,7 @@ export const typeOrmConfig: DataSourceOptions = {
   username: process.env.DATABASE_USER || 'postgres',
   password: process.env.DATABASE_PASSWORD || 'postgress',
   database: process.env.DATABASE_NAME || 'postgres',
-  entities: [Report, Ministry, ReportMinistry],
+  entities: [Report, Ministry, ReportMinistry, PrivateBody, ReportPrivateBody],
   migrations: ['src/migrations/*.ts'],
   synchronize: false,
 };

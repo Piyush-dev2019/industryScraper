@@ -1,473 +1,304 @@
-[
+[  
   {
-    "organization": "Indian Chemical Council (ICC)",
-    "sourceUrl": "https://indianchemicalcouncil.com/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Coal",
+    "url": "https://coal.nic.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Fertiliser Association of India (FAI)",
-    "sourceUrl": "https://www.faidelhi.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Department of Chemicals and Petrochemicals",
+    "url": "https://chemicals.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "CropLife India",
-    "sourceUrl": "https://www.croplifeindia.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Civil Aviation",
+    "url": "https://civilaviation.gov.in",
+    "folderName":"government_reports"
+  },
+
+
+  {
+    "organizationName": "Department of Telecommunications",
+    "url": "https://dot.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Federation of Indian Mineral Industries (FIMI)",
-    "sourceUrl": "https://www.fedmin.com/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not Recent"
-  },
-  {
-    "organization": "Indian Steel Association (ISA)",
-    "sourceUrl": "https://indsteel.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not Recent"
-  },
-  {
-    "organization": "Aluminium Secondary Manufacturers Association (India)",
-    "sourceUrl": "https://asmaindia.co.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "International Copper Association India (ICAI)",
-    "sourceUrl": "https://copperindia.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not That Usefull"
-  },
-  {
-    "organization": "India Bullion and Jewellers Association (IBJA)",
-    "sourceUrl": "https://www.ibja.co/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Daily Gold Price"
-  },
-  {
-    "organization": "Indian Paper Manufacturers Association (IPMA)",
-    "sourceUrl": "https://ipmaindia.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not Recent around 2016"
-  },
-  {
-    "organization": "Indian Jute Mills Association (IJMA)",
-    "sourceUrl": "https://www.ijma.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Society of Indian Automobile Manufacturers (SIAM)",
-    "sourceUrl": "https://www.siam.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Automotive Component Manufacturers Association of India (ACMA)",
-    "sourceUrl": "https://www.acma.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "All India Rubber Industries Association (AIRIA)",
-    "sourceUrl": "https://www.allindiarubber.net/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Indian Council of Ceramic Tiles & Sanitaryware (ICCTAS)",
-    "sourceUrl": "https://www.icctas.com/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Gem & Jewellery Export Promotion Council (GJEPC)",
-    "sourceUrl": "https://www.gjepc.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "All India Glass Manufacturers' Federation (AIGMF)",
-    "sourceUrl": "http://www.aigmf.com/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Annual Report Not Found"
-  },
-  {
-    "organization": "Council for Leather Exports (CLE)",
-    "sourceUrl": "https://www.leatherindia.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "No Reports"
-  },
-  {
-    "organization": "Plastics Export Promotion Council (PLEXCONCIL)",
-    "sourceUrl": "https://plexconcil.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "No Annual Report"
-  },
-  {
-    "organization": "Apparel Export Promotion Council (AEPC)",
-    "sourceUrl": "https://aepcindia.com/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Confederation of Indian Textile Industry (CITI)",
-    "sourceUrl": "https://citiindia.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Indian Broadcasting and Digital Foundation (IBDF)",
-    "sourceUrl": "https://www.ibdf.com/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Annual Report Only for Members"
-  },
-  {
-    "organization": "All India Federation of Master Printers (AIFMP)",
-    "sourceUrl": "https://aifmp.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Confederation of Real Estate Developers' Associations of India (CREDAI)",
-    "sourceUrl": "https://www.credai.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "CBRE South Asia Pvt Ltd",
-    "sourceUrl": "https://www.cbre.co.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "JLL India",
-    "sourceUrl": "https://www.jll.co.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Federation of Hotel & Restaurant Associations of India (FHRAI)",
-    "sourceUrl": "https://www.fhrai.com/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Federation of Associations in Indian Tourism & Hospitality (FAITH)",
-    "sourceUrl": "https://www.faithtourismindia.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "National Centre for Cold Chain Development (NCCD) (Semi-Private)",
-    "sourceUrl": "http://nccd.nic.in/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not Recent"
+    "organizationName": "Department of Agriculture and Farmers Welfare",
+    "url": "https://agriwelfare.gov.in/",
+    "folderName":"government_reports"
   },
 
   {
-    "organization": "Indian Tea Association (ITA)",
-    "sourceUrl": "https://www.indiatea.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Corporate Affairs",
+    "url": "https://www.mca.gov.in",
+    "folderName":"government_reports"
   },
-  {
-    "organization": "Coffee Board of India (Semi-Private)",
-    "sourceUrl": "https://coffeeboard.gov.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Confederation of Indian Alcoholic Beverage Companies (CIABC)",
-    "sourceUrl": "https://ciabc.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Indian Beverage Association (IBA)",
-    "sourceUrl": "https://www.in-beverage.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Tobacco Institute of India (TII)",
-    "sourceUrl": "https://www.tiionline.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Compound Livestock Feed Manufacturers' Association of India (CLFMA)",
-    "sourceUrl": "https://clfma.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Indian Dairy Association (IDA)",
-    "sourceUrl": "https://indiandairyassociation.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "ICAR-Directorate of Poultry Research",
-    "sourceUrl": "https://pdonpoultry.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "National Housing Bank (NHB) (Semi-Private)",
-    "sourceUrl": "https://nhb.org.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-
-  {
-    "organization": "Finance Industry Development Council (FIDC)",
-    "sourceUrl": "https://fidc.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Microfinance Institutions Network (MFIN)",
-    "sourceUrl": "https://mfinindia.org/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Sa-Dhan",
-    "sourceUrl": "https://sa-dhan.net/",
-    "access": "Open",
-    "type": "particular"
-  },
-  {
-    "organization": "Indian Banks' Association (IBA)",
-    "sourceUrl": "https://www.iba.org.in/",
-    "access": "Open",
-    "type": "particular"
-  },
-
   
   {
-    "organization": "General Insurance Council",
-    "sourceUrl": "https://www.gicouncil.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Defence",
+    "url": "https://mod.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Life Insurance Council",
-    "sourceUrl": "https://www.licindia.in/Bottom-Links/Life-Insurance-Council",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Earth Sciences",
+    "url": "https://moes.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Insurance Brokers Association of India (IBAI)",
-    "sourceUrl": "https://www.ibai.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Education",
+    "url": "https://www.education.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Fintech Association for Consumer Empowerment (FACE)",
-    "sourceUrl": "https://faceofindia.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Electronics and Information Technology",
+    "url": "https://meity.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Payments Council of India (PCI)",
-    "sourceUrl": "https://paymentscouncil.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Environment, Forest and Climate Change",
+    "url": "https://moef.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Pharmaceutical Alliance (IPA)",
-    "sourceUrl": "https://www.ipa-india.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of External Affairs",
+    "url": "https://www.mea.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Organisation of Pharmaceutical Producers of India (OPPI)",
-    "sourceUrl": "https://www.indiaoppi.com/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Department of Animal Husbandry and Dairying",
+    "url": "https://www.dahd.gov.in/",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Federation of Pharmaceutical Entrepreneurs (FOPE)",
-    "sourceUrl": "https://www.fopeindia.com/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Food Processing Industries",
+    "url": "https://mofpi.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Association of Biotechnology Led Enterprises (ABLE)",
-    "sourceUrl": "https://www.ableindia.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Health and Family Welfare",
+    "url": "https://mohfw.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Association of Healthcare Providers India (AHPI)",
-    "sourceUrl": "https://www.ahpi.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Heavy Industries",
+    "url": "https://heavyindustries.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Construction Industry Development Council (CIDC)",
-    "sourceUrl": "https://cidc.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Home Affairs",
+    "url": "https://mha.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "National Highways Authority of India (NHAI) (Semi-Private)",
-    "sourceUrl": "https://www.nhai.gov.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Housing and Urban Affairs",
+    "url": "https://mohua.gov.in/",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Tractor and Farm Equipment Manufacturers Association (TAFMA)",
-    "sourceUrl": "https://www.tmaindia.in/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Information and Broadcasting",
+    "url": "https://mib.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Construction Equipment Manufacturers Association (ICEMA)",
-    "sourceUrl": "https://www.i-cema.in/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Check if it can download from pdf viewer"
+    "organizationName": "Ministry of Micro, Small and Medium Enterprises",
+    "url": "https://msme.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Electrical & Electronics Manufacturers' Association (IEEMA)",
-    "sourceUrl": "https://www.ieema.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Mines",
+    "url": "https://mines.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Institute of Packaging (IIP) (Semi-Private)",
-    "sourceUrl": "https://www.iip-in.com/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of New and Renewable Energy",
+    "url": "https://mnre.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Plastics Export Promotion Council (PLEXCONCIL)",
-    "sourceUrl": "https://plexconcil.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Power",
+    "url": "https://powermin.gov.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Railways",
+    "url": "https://indianrailways.gov.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Road Transport and Highways",
+    "url": "https://morth.nic.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Rural Development",
+    "url": "https://rural.gov.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of Science and Technology",
+    "url": "https://dst.gov.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Skill Development and Entrepreneurship",
+    "url": "https://msde.gov.in",
+    "folderName":"government_reports"
+  },
+  
+  {
+    "organizationName": "Ministry of Steel",
+    "url": "https://steel.gov.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Textiles",
+    "url": "https://texmin.nic.in",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of Water Resources, River Development and Ganga Rejuvenation",
+    "url": "https://www.jalshakti-dowr.gov.in/",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Women and Child Development",
+    "url": "https://wcd.gov.in/",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Youth Affairs and Sports",
+    "url": "https://yas.gov.in/",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Petroleum and Natural Gas",
+    "url": "https://mopng.gov.in/en",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Ministry of Tourism",
+    "url": "https://tourism.gov.in",
+    "folderName":"government_reports"
   },
 
   {
-    "organization": "Indian Steel Association (ISA)",
-    "sourceUrl": "https://indsteel.org/",
-    "access": "Open",
-    "type": "particular"
+    "organizationName": "Ministry of Ports, Shipping and Waterways",
+    "url": "https://shipmin.gov.in",
+    "folderName":"government_reports"
+  },
+ 
+ 
+  {
+    "organizationName": "Ministry of Personnel, Public Grievances and Pensions",
+    "url": "https://persmin.gov.in",
+    "folderName":"government_reports"
+  },
+
+  {
+    "organizationName": "Department of Jal Shakti",
+    "url": "https://jalshakti.gov.in",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian National Shipowners' Association (INSA)",
-    "sourceUrl": "https://www.insa.in/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://dare.gov.in/",
+    "organizationName": "Department of Agricultural Research and Education",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Airports Authority of India (AAI) (Semi-Private)",
-    "sourceUrl": "https://www.aai.aero/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://dbtindia.gov.in/",
+    "organizationName": "Department of Biotechnology",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Confederation of All India Traders (CAIT)",
-    "sourceUrl": "https://cait.in/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://doca.gov.in/",
+    "organizationName": "Department of Consumer Affairs",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Cellular Operators Association of India (COAI)",
-    "sourceUrl": "https://www.coai.com/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://ddpmod.gov.in/",
+    "organizationName": "Department of Defence Production",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Tower and Infrastructure Providers Association (TAIPA)",
-    "sourceUrl": "https://www.taipa.in/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://www.drdo.gov.in/",
+    "organizationName": "Department of Defence Research and Development",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Association of Power Producers (APP)",
-    "sourceUrl": "https://www.appindia.org.in/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Not Recent"
+    "url": "https://www.jalshakti-ddws.gov.in/",
+    "organizationName": "Department of Drinking Water and Sanitation",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Power Exchange India Limited (PXIL) (Semi-Private)",
-    "sourceUrl": "https://powerexindia.in/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Export data"
+    "url": "https://depwd.gov.in/",
+    "organizationName": "Department of Empowerment of Persons with Disabilities",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Energy Exchange (IEX) (Semi-Private)",
-    "sourceUrl": "https://www.iexindia.com/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Export data"
+    "url": "https://www.desw.gov.in/",
+    "organizationName": "Department of Ex-Servicemen Welfare",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Independent Power Producers Association of India (IPPAI)",
-    "sourceUrl": "https://ippai.org/",
-    "access": "Open",
-    "type": "particular"
+    "url": "https://fert.nic.in/",
+    "organizationName": "Department of Fertilizers",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Association of Power Producers (APP)",
-    "sourceUrl": "https://www.appindia.org.in/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "No Recent"
+    "url": "https://financialservices.gov.in/",
+    "organizationName": "Department of Financial Services",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Indian Pollution Control Association (IPCA)",
-    "sourceUrl": "https://www.ipcaworld.co.in/",
-    "access": "Open",
-    "type": "particular"
-  },  
-  {
-    "organization": "Federation of Indian Petroleum Industry ",
-    "sourceUrl": "https://www.fipi.org.in/",
-    "access": "Open",
-    "type": "multiple"
+    "url": "https://dof.gov.in/",
+    "organizationName": "Department of Fisheries",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Infomerics Valuation and Rating Pvt. Ltd.",
-    "sourceUrl": "https://www.infomerics.com/",
-    "access": "Open",
-    "type": "multiple"
-  },
-    {
-    "organization": "Association of Investment Bankers of India (AIBI)",
-    "sourceUrl": "http://aibi.org.in/",
-    "access": "Open",
-    "type": "Doubt"
+    "url": "https://dhr.gov.in/",
+    "organizationName": "Department of Health Research",
+    "folderName":"government_reports"
   },
   {
-    "organization": "Association of Mutual Funds in India (AMFI)",
-    "sourceUrl": "https://www.amfiindia.com/",
-    "access": "Open",
-    "type": "Doubt"
+    "organizationName": "Department of Investment and Public Asset Management",
+    "url": "https://dipam.gov.in/",
+    "folderName":"government_reports"
   },
   {
-    "organization": "International Copper Association India (ICAI)",
-    "sourceUrl": "https://copperindia.org/",
-    "access": "Open",
-    "type": "particular",
-    "remarks": "Doubt (Not that useful)"
+    "organizationName": "Department of Land Resources",
+    "url": "https://dolr.gov.in/",
+    "folderName":"government_reports"
+  },
+  
+
+  {
+    "organizationName": "Department of Pension & Pensioners' Welfare",
+    "url": "https://doppw.gov.in/en",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of Personnel & Training",
+    "url": "https://dopt.gov.in/",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of Pharmaceuticals",
+    "url": "https://pharma-dept.gov.in/",
+    "folderName":"government_reports"
+  },
+
+  {
+    "organizationName": "Department of Public Enterprises",
+    "url": "https://dpe.gov.in/",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of School Education and Literacy",
+    "url": "https://dsel.education.gov.in/dsel",
+    "folderName":"government_reports"
+  },
+  {
+    "organizationName": "Department of Scientific and Industrial Research",
+    "url": "https://dsir.gov.in/",
+    "folderName":"government_reports"
   }
 ]

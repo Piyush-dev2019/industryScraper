@@ -1,4 +1,9 @@
-import { IsString, IsUrl, IsNotEmpty } from 'class-validator';
+import { IsString, IsUrl, IsNotEmpty, IsEnum } from 'class-validator';
+
+export enum OrganizationType {
+  GOVERNMENT = 'government',
+  PRIVATE = 'private',
+}
 
 export class ScraperDto {
   @IsString()
@@ -13,4 +18,8 @@ export class ScraperDto {
   @IsString()
   @IsNotEmpty()
   folderName: string;
+
+  @IsEnum(OrganizationType)
+  @IsNotEmpty()
+  organizationType: OrganizationType;
 } 

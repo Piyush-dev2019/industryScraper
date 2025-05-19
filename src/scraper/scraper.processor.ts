@@ -25,13 +25,14 @@ export class ScraperProcessor {
   async handleScraping(job: Job) {
     try {
       this.logger.log(`Processing job ${job.id} for ${job.data.organizationName}`);
-      const { organizationName, url, folderName } = job.data;
+      const { organizationName, url, folderName, organizationType } = job.data;
       
       const result = await this.scraperService.main(
         governmentWebsitePrompt,
         organizationName,
         url,
         folderName,
+        organizationType
       );
 
       this.logger.log(`Completed job ${job.id} for ${organizationName}`);

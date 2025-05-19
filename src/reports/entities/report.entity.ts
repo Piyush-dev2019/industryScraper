@@ -5,6 +5,7 @@ import {
   OneToMany,
 } from 'typeorm';
 import { ReportMinistry } from './report-ministry.entity';
+import { ReportPrivateBody } from './report-private-body.entity';
 
 @Entity()
 export class Report {
@@ -49,4 +50,11 @@ export class Report {
     { cascade: ['insert', 'update'] },
   )
   reportMinistries: ReportMinistry[];
+
+  @OneToMany(
+    () => ReportPrivateBody,
+    (reportPrivateBody) => reportPrivateBody.report,
+    { cascade: ['insert', 'update'] },
+  )
+  reportPrivateBodies: ReportPrivateBody[];
 }
