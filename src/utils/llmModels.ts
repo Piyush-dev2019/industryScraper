@@ -7,7 +7,7 @@ import fs from 'fs';
 import path from 'path';
 dotenv.config();
 
-const openaiClient = new AzureOpenAI({
+const openaiClient41mini = new AzureOpenAI({
   apiKey: process.env.AZURE_OPENAI_API_KEY_41,
   endpoint: process.env.AZURE_OPENAI_API_KEY_41_ENDPOINT,
   apiVersion: "2024-02-15-preview" // Using the current stable version
@@ -28,7 +28,7 @@ const openaiClient_O3_MINI = new AzureOpenAI({
 const openaiClient_4o = new AzureOpenAI({
   apiKey: process.env.AZURE_OPENAI_API_KEY_4o,
   endpoint: process.env.AZURE_OPENAI_API_KEY_4o_ENDPOINT,
-  apiVersion: "2024-08-06"
+  apiVersion: "2025-03-01-preview"
 });
 
 const gptCallImage = async (
@@ -119,7 +119,7 @@ const gptCall = async (
   const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 seconds timeout
 
   try {
-    const completion = await openaiClient.chat.completions.create({
+    const completion = await openaiClient41mini.chat.completions.create({
       model: modelName,
       messages: [
         {
@@ -169,7 +169,7 @@ export {
   gptCall,
   gptCallImage,
   model_2_0_flash,
-  openaiClient,
+  openaiClient41mini,
   openaiClient_O3_MINI,
   openaiClient_4o,
 };

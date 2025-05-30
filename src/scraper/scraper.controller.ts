@@ -15,7 +15,7 @@ export class ScraperController {
     @InjectQueue('scraping-queue') private scrapingQueue: Queue,
   ) {}
 
-  @Post('government-website')
+  @Post('particular-websites')
   async getTitles(@Body() body: ScraperDto) {
     return this.scraperService.main(governmentWebsitePrompt, body.organizationName, body.url, body.folderName, body.organizationType);
   }

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 // import { bothUrl, findRelevantPageViaMap, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
-import { bothUrl, filterDocuments, Document } from 'src/utils/relevantPagesMapScrap';
+import { bothUrl, filterDocuments, Document, findRelevantPageViaMap } from 'src/utils/relevantPagesMapScrap';
 import { BlobServiceClient, BlockBlobClient } from '@azure/storage-blob';
 import { ReportsService } from 'src/reports/reports.service';
 import { CreateReportDto } from 'src/reports/dto/create-report.dto';
@@ -91,8 +91,8 @@ export class ScraperService {
     // 'Sector/Industry Reports, Annual Reports, Publications, Financial Reports, Mission Plans, Strategy Documents';
 
     console.log('url', url);
-    // const relevantPages = await findRelevantPageViaMap(url, prompt);
-    const relevantPages = [url];
+    const relevantPages = await findRelevantPageViaMap(url, prompt);
+    // const relevantPages = [url];
     // console.log('relevantPages', relevantPages);
 
     // Get all documents

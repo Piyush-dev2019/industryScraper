@@ -615,7 +615,6 @@ Strict Filtering Rule:
       const filteredPages = [...(mapWebsite.links || [])].filter(
         (page) => !String(page).toLowerCase().endsWith('.pdf'),
       );
-
       if (!filteredPages.length) {
         console.log('No links found in map response.');
         return null;
