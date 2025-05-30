@@ -41,6 +41,7 @@ export class ScraperController {
           organizationName: source.organizationName,
           url: source.url,
           folderName: source.folderName,
+          organizationType: source.organizationType
         })
       );
       
@@ -65,10 +66,11 @@ export class ScraperController {
     
     for (const source of sources) {
       try {
-        const response = await axios.post(`${baseUrl}/government-website`, {
+        const response = await axios.post(`${baseUrl}/particular-websites`, {
           organizationName: source.organizationName,
           url: source.url,
-          folderName: source.folderName
+          folderName: source.folderName,
+          organizationType: source.organizationType
         });
         
         results.push({

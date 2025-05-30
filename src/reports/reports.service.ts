@@ -18,15 +18,115 @@ export class ReportsService {
     // @InjectRepository(Ministry)
     // private readonly ministryRepo: Repository<Ministry>,
 
-    // @InjectRepository(ReportMinistry)
-    // private readonly mapRepo: Repository<ReportMinistry>,
+    @InjectRepository(ReportMinistry)
+    private readonly reportMinistryRepo: Repository<ReportMinistry>,
 
     // @InjectRepository(PrivateBody)
     // private readonly privateBodyRepo: Repository<PrivateBody>,
 
-    // @InjectRepository(ReportPrivateBody)
-    // private readonly reportPrivateBodyRepo: Repository<ReportPrivateBody>,
+    @InjectRepository(ReportPrivateBody)
+    private readonly reportPrivateBodyRepo: Repository<ReportPrivateBody>,
   ) {}
+
+  async getGovernmentReports() {
+    return await this.reportMinistryRepo.find({
+      relations: ['report', 'ministry'],
+      where: {
+        report: {
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
+
+  async getPrivateReports() {
+    return await this.reportPrivateBodyRepo.find({
+      relations: ['report', 'privateBody'],
+      where: {
+        report: {
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
+
+  async getGovernmentReportsByYear(year: number) {
+    return await this.reportMinistryRepo.find({
+      relations: ['report', 'ministry'],
+      where: {
+        report: {
+          year,
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
+
+  async getPrivateReportsByYear(year: number) {
+    return await this.reportPrivateBodyRepo.find({
+      relations: ['report', 'privateBody'],
+      where: {
+        report: {
+          year,
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
+
+  async getGovernmentReportsByStatus(status: 'processed' | 'idle' | 'failed') {
+    return await this.reportMinistryRepo.find({
+      relations: ['report', 'ministry'],
+      where: {
+        report: {
+          status,
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
+
+  async getPrivateReportsByStatus(status: 'processed' | 'idle' | 'failed') {
+    return await this.reportPrivateBodyRepo.find({
+      relations: ['report', 'privateBody'],
+      where: {
+        report: {
+          status,
+          deletedAt: null,
+        },
+      },
+      order: {
+        report: {
+          createdAt: 'DESC',
+        },
+      },
+    });
+  }
 
   async makeReportEntryMinistryTable(dto: CreateReportDto): Promise<Report> {
     return await this.reportRepo.manager.transaction(async manager => {
