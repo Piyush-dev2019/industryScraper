@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ScraperModule } from './scraper/scraper.module';
+import { ReportsModule } from './reports/reports.module';
+import { AuthModule } from './auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Report } from './reports/entities/report.entity';
 import { Ministry } from './reports/entities/ministry.entity';
@@ -12,6 +14,8 @@ import { ReportPrivateBody } from './reports/entities/report-private-body.entity
 @Module({
   imports: [
     ScraperModule,
+    ReportsModule,
+    AuthModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DATABASE_HOST || 'postgres',
