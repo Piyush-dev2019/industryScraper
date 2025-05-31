@@ -1,6 +1,4 @@
 import { Controller, Post, Body } from '@nestjs/common';
-import { InjectQueue } from '@nestjs/bull';
-import { Queue } from 'bull';
 import { ScraperService } from './scraper.service';
 import { governmentWebsitePrompt, brokerageWebsitePrompt } from '../utils/prompts';
 import { ScraperDto } from './dto/scraper.dto';
@@ -12,7 +10,6 @@ import axios from 'axios';
 export class ScraperController {
   constructor(
     private readonly scraperService: ScraperService,
-    @InjectQueue('scraping-queue') private scrapingQueue: Queue,
   ) {}
 
   @Post('particular-websites')
@@ -23,37 +20,6 @@ export class ScraperController {
   @Post('brokerage-website')
   async getBrokerageWebsite(@Body() body: ScraperDto) {
     return this.scraperService.main(brokerageWebsitePrompt, body.organizationName, body.url, body.folderName, body.organizationType);
-  }
-
-  @Post('batch-government-websites')
-  async batchProcessGovernmentWebsites() {
-    const sourcesPath = path.join(process.cwd(), 'particularSources.json');
-    const sources = JSON.parse(fs.readFileSync(sourcesPath, 'utf8'));
-    
-    // Process in batches of 1
-    const batchSize = 1;
-    const results = [];
-    
-    for (let i = 0; i < sources.length; i += batchSize) {
-      const batch = sources.slice(i, i + batchSize);
-      const batchPromises = batch.map(source => 
-        this.scrapingQueue.add('scrape-government-website', {
-          organizationName: source.organizationName,
-          url: source.url,
-          folderName: source.folderName,
-          organizationType: source.organizationType
-        })
-      );
-      
-      const batchResults = await Promise.all(batchPromises);
-      results.push(...batchResults);
-    }
-    
-    return {
-      message: 'Batch processing started',
-      totalJobs: results.length,
-      jobIds: results.map(job => job.id),
-    };
   }
 
   @Post('process-sources-sequential')
