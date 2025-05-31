@@ -6,7 +6,7 @@ import {
 } from 'typeorm';
 import { ReportMinistry } from './report-ministry.entity';
 
-@Entity()
+@Entity({ schema: 'sahil_schema', name: 'ministry' })
 export class Ministry {
   @PrimaryGeneratedColumn()
   id: number;

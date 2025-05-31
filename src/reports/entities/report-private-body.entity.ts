@@ -8,7 +8,7 @@ import {
 import { Report } from './report.entity';
 import { PrivateBody } from './private-body.entity';
 
-@Entity()
+@Entity({ schema: 'sahil_schema', name: 'report_private_body' })
 export class ReportPrivateBody {
   @PrimaryGeneratedColumn()
   id: number;

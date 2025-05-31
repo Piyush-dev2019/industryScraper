@@ -8,7 +8,7 @@ import {
 import { Report } from './report.entity';
 import { Ministry } from './ministry.entity';
 
-@Entity()
+@Entity({ schema: 'sahil_schema', name: 'report_ministry' })
 export class ReportMinistry {
   @PrimaryGeneratedColumn()
   id: number;

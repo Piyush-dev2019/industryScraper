@@ -6,7 +6,7 @@ import {
 } from 'typeorm';
 import { ReportPrivateBody } from './report-private-body.entity';
 
-@Entity()
+@Entity({ schema: 'sahil_schema', name: 'private_body' })
 export class PrivateBody {
   @PrimaryGeneratedColumn()
   id: number;
